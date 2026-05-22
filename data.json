@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T19:47:20.757854+00:00",
+  "last_updated": "2026-05-22T20:02:22.229941+00:00",
   "today": {
     "date": "",
     "alerts": {
@@ -511,6 +511,15 @@
           "symbol": "FTNT",
           "msg_id": "19e51388c6554f3a",
           "received_at": "2026-05-22T19:45:19+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 133.8825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "FTNT",
+          "msg_id": "19e5146b1b9b67e5",
+          "received_at": "2026-05-22T20:00:43+00:00"
         }
       ],
       "MU": [
@@ -555,6 +564,15 @@
           "symbol": "MU",
           "msg_id": "19e5025c16399701",
           "received_at": "2026-05-22T14:45:10+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 754.625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e51468170a84ae",
+          "received_at": "2026-05-22T20:00:33+00:00"
         }
       ],
       "ARM": [
@@ -1152,6 +1170,15 @@
           "symbol": "PANW",
           "msg_id": "19e513875992d6ec",
           "received_at": "2026-05-22T19:45:12+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 260.61125000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PANW",
+          "msg_id": "19e5146597a986d3",
+          "received_at": "2026-05-22T20:00:21+00:00"
         }
       ],
       "TSLA": [
@@ -1410,6 +1437,15 @@
           "symbol": "GLW",
           "msg_id": "19e502605e172074",
           "received_at": "2026-05-22T14:45:24+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 193.10500000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e5146435d7d703",
+          "received_at": "2026-05-22T20:00:17+00:00"
         }
       ],
       "LITE": [
@@ -1473,6 +1509,15 @@
           "symbol": "SNDK",
           "msg_id": "19e5025e0f9df902",
           "received_at": "2026-05-22T14:45:18+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 1486.3974999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e5146a4a04724d",
+          "received_at": "2026-05-22T20:00:43+00:00"
         }
       ],
       "AMD": [
