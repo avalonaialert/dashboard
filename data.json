@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T18:19:23.509164+00:00",
+  "last_updated": "2026-05-22T19:11:13.347330+00:00",
   "today": {
     "date": "",
     "alerts": {
@@ -202,6 +202,24 @@
           "symbol": "DELL",
           "msg_id": "19e50d88b831d79d",
           "received_at": "2026-05-22T18:00:27+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 296.985,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e510f93b215134",
+          "received_at": "2026-05-22T19:00:33+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 296.7975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e50f3d8fdf71e4",
+          "received_at": "2026-05-22T18:30:16+00:00"
         }
       ],
       "SPY": [
@@ -466,6 +484,15 @@
           "symbol": "FTNT",
           "msg_id": "19e50d88275da261",
           "received_at": "2026-05-22T18:00:25+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 133.5975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "FTNT",
+          "msg_id": "19e51018dc3e2041",
+          "received_at": "2026-05-22T18:45:14+00:00"
         }
       ],
       "MU": [
@@ -773,6 +800,24 @@
           "symbol": "VRSN",
           "msg_id": "19e50cb5b733e804",
           "received_at": "2026-05-22T17:46:02+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 310.61,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "VRSN",
+          "msg_id": "19e510fe5fea59de",
+          "received_at": "2026-05-22T19:00:55+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 310.5575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "VRSN",
+          "msg_id": "19e5101dae1015d7",
+          "received_at": "2026-05-22T18:45:30+00:00"
         }
       ],
       "CRWD": [
@@ -1284,6 +1329,15 @@
           "symbol": "AAPL",
           "msg_id": "19e50ca7a98cb0e3",
           "received_at": "2026-05-22T17:45:05+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 309.35875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AAPL",
+          "msg_id": "19e510f3db925f0b",
+          "received_at": "2026-05-22T19:00:11+00:00"
         }
       ],
       "GLW": [
@@ -1445,6 +1499,15 @@
           "symbol": "AMD",
           "msg_id": "19e50d8a4aee6fc7",
           "received_at": "2026-05-22T18:00:34+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 472.69624999999996,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e50f3d9679ee0f",
+          "received_at": "2026-05-22T18:30:15+00:00"
         }
       ],
       "GOOG": [
