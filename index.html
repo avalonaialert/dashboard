@@ -192,6 +192,17 @@
     .tile-sma  { background: #0d1b2e; border-color: #1f6feb; }
     .tile-bear { background: #2d0f0f; border-color: #da3633; }
 
+    .tile.recent {
+      border-color: #3b82f6 !important;
+      box-shadow: 0 0 0 2px #3b82f6, 0 0 24px 6px rgba(59,130,246,0.35);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 2px #3b82f6, 0 0 24px 6px rgba(59,130,246,0.35); }
+      50%       { box-shadow: 0 0 0 2px #3b82f6, 0 0 36px 10px rgba(59,130,246,0.55); }
+    }
+
     .tile-call .tile-symbol, .tile-call .tile-close { color: #3fb950; }
     .tile-sma  .tile-symbol, .tile-sma  .tile-close { color: #58a6ff; }
     .tile-bear .tile-symbol, .tile-bear .tile-close { color: #f85149; }
@@ -288,7 +299,7 @@
   </div>
 
   <script>
-    const DATA_URL   = "https://raw.githubusercontent.com/avalonaialert/dashboard/main/data.json";
+    const DATA_URL = "https://api.github.com/repos/avalonaialert/dashboard/contents/data.json";
     const SKIP_ALERTS = new Set([666, 7777]);
 
     const ALERT_META = {
@@ -398,15 +409,16 @@
         const latest = history[0];
         const first  = history[history.length - 1];
         const m = meta(latest.alert);
+        const isRecent = (Date.now() - new Date(latest.received_at).getTime()) <= 20 * 60 * 1000;
         const tile = document.createElement("div");
-        tile.className = `tile ${m.cls}`;
+        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}`;
 
         const gain = fmtGain(first.close, latest.close);
         const gainHtml = gain
           ? `<span class="tile-gain ${gain.positive ? "pos" : "neg"}">${gain.text}</span>`
           : "";
 
-        const histRows = history.slice(1).map(h => {
+        const histRows = history.map(h => {
           const hm = meta(h.alert);
           return `<div class="history-row">
             <span class="hist-badge ${hm.badgeCls}">${hm.icon} ${hm.label}</span>
@@ -415,9 +427,7 @@
           </div>`;
         }).join("");
 
-        const histSection = history.length > 1
-          ? `<div class="tile-history"><div class="history-label">History (${history.length - 1})</div>${histRows}</div>`
-          : "";
+        const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histRows}</div>`;
 
         tile.innerHTML = `
           <div class="tile-header">
@@ -506,9 +516,13 @@
     async function load() {
       const statusEl = document.getElementById("status");
       try {
-        const resp = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
+        const resp = await fetch(DATA_URL, {
+          cache: "no-store",
+          headers: { "Accept": "application/vnd.github.v3+json" }
+        });
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-        _data = await resp.json();
+        const envelope = await resp.json();
+        _data = JSON.parse(atob(envelope.content.replace(/\n/g, "")));
 
         // Migrate old flat format (alerts key) if needed
         if (_data.alerts && !_data.today) {
