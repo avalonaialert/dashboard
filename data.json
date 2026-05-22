@@ -1,0 +1,35 @@
+{
+  "last_updated": "2026-05-22T17:09:11.841015+00:00",
+  "alerts": {
+    "DELL": {
+      "alert": 7,
+      "close": 245.76749999999998,
+      "peak": 0,
+      "cross": 0,
+      "symbol": "DELL",
+      "received_at": "2026-05-15T18:02:37+00:00"
+    },
+    "SPY": {
+      "alert": 3,
+      "close": 743.0875,
+      "symbol": "SPY",
+      "received_at": "2026-05-15T18:15:07+00:00"
+    },
+    "STX": {
+      "alert": 7,
+      "close": 800.5,
+      "peak": 0,
+      "cross": 0,
+      "symbol": "STX",
+      "received_at": "2026-05-15T18:04:18+00:00"
+    },
+    "MSFT": {
+      "alert": 7777,
+      "close": 427.235,
+      "peak": 0,
+      "cross": 0,
+      "symbol": "MSFT",
+      "received_at": "2026-05-15T18:09:34+00:00"
+    }
+  }
+}
