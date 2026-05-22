@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T19:11:13.347330+00:00",
+  "last_updated": "2026-05-22T19:17:13.803470+00:00",
   "today": {
     "date": "",
     "alerts": {
@@ -220,6 +220,15 @@
           "symbol": "DELL",
           "msg_id": "19e50f3d8fdf71e4",
           "received_at": "2026-05-22T18:30:16+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 297.0675,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e511d0586bd627",
+          "received_at": "2026-05-22T19:15:15+00:00"
         }
       ],
       "SPY": [
@@ -1107,6 +1116,15 @@
           "symbol": "PANW",
           "msg_id": "19e50caa508416a3",
           "received_at": "2026-05-22T17:45:14+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 259.49,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PANW",
+          "msg_id": "19e511d2f81986f9",
+          "received_at": "2026-05-22T19:15:26+00:00"
         }
       ],
       "TSLA": [
