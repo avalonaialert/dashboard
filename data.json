@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-05-22T17:13:07.025628+00:00",
+  "last_updated": "2026-05-22T17:22:00.808788+00:00",
   "alerts": {
     "DELL": {
       "alert": 6,
-      "close": 291.05,
+      "close": 291.76750000000004,
       "peak": 0,
       "cross": 0,
       "symbol": "DELL",
-      "received_at": "2026-05-22T14:30:08+00:00"
+      "received_at": "2026-05-22T15:00:39+00:00"
     },
     "SPY": {
       "alert": 66,
@@ -90,12 +90,12 @@
       "received_at": "2026-05-22T16:15:08+00:00"
     },
     "SLV": {
-      "alert": -6,
-      "close": 68.07000000000001,
+      "alert": 666,
+      "close": 68.48625,
       "peak": 0,
       "cross": 0,
       "symbol": "SLV",
-      "received_at": "2026-05-22T14:30:08+00:00"
+      "received_at": "2026-05-22T15:30:19+00:00"
     },
     "AVGO": {
       "alert": 666,
@@ -107,11 +107,11 @@
     },
     "AAPL": {
       "alert": 6,
-      "close": 308.73249999999996,
+      "close": 309.22,
       "peak": 0,
       "cross": 0,
       "symbol": "AAPL",
-      "received_at": "2026-05-22T14:30:20+00:00"
+      "received_at": "2026-05-22T14:45:18+00:00"
     },
     "GLW": {
       "alert": 66,
