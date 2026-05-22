@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Think Alerts Dashboard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid #21262d;
+      flex-shrink: 0;
+    }
+
+    h1 { font-size: 1.2rem; font-weight: 600; letter-spacing: 0.5px; }
+    #last-updated { font-size: 0.75rem; color: #8b949e; }
+
+    /* ── App shell ── */
+    .app {
+      display: flex;
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 148px;
+      flex-shrink: 0;
+      border-right: 1px solid #21262d;
+      padding: 12px 0;
+      overflow-y: auto;
+    }
+
+    .sidebar-label {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #8b949e;
+      padding: 6px 16px 4px;
+    }
+
+    .day-tab {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 9px 16px;
+      font-size: 0.82rem;
+      color: #8b949e;
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      margin: 1px 6px;
+      width: calc(100% - 12px);
+      transition: background 0.12s, color 0.12s;
+    }
+
+    .day-tab:hover { background: #161b22; color: #e6edf3; }
+
+    .day-tab.active {
+      background: #1f2d3d;
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    /* ── Main content ── */
+    .content {
+      flex: 1;
+      padding: 24px;
+      overflow-y: auto;
+      min-width: 0;
+    }
+
+    #status { font-size: 0.82rem; color: #8b949e; margin-bottom: 20px; }
+
+    /* ── Tile grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .tile {
+      border-radius: 12px;
+      border: 1px solid transparent;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      overflow-x: hidden;
+    }
+
+    .tile-header {
+      padding: 18px 18px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .tile-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .tile-symbol { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.5px; }
+
+    .tile-close-wrap { text-align: right; }
+    .tile-close-label { font-size: 0.65rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+    .tile-close { font-size: 1.05rem; font-weight: 600; }
+
+    .tile-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tile-time-latest { font-size: 0.72rem; color: #8b949e; }
+
+    .tile-gain {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      width: fit-content;
+    }
+    .tile-gain.pos { background: #1a4a2e; color: #3fb950; }
+    .tile-gain.neg { background: #4a1a1a; color: #f85149; }
+
+    .tile-history {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 0 18px 14px;
+      margin-top: 4px;
+    }
+
+    .history-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #8b949e;
+      padding: 10px 0 6px;
+    }
+
+    .history-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      gap: 8px;
+    }
+
+    .history-row:last-child { border-bottom: none; }
+
+    .hist-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+      flex-shrink: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .hist-close { font-size: 0.78rem; color: #e6edf3; white-space: nowrap; flex-shrink: 0; }
+    .hist-time  { font-size: 0.68rem; color: #8b949e; white-space: nowrap; flex-shrink: 0; }
+
+    /* ── Tile colour themes ── */
+    .tile-call { background: #0d2118; border-color: #238636; }
+    .tile-sma  { background: #0d1b2e; border-color: #1f6feb; }
+    .tile-bear { background: #2d0f0f; border-color: #da3633; }
+
+    .tile-call .tile-symbol, .tile-call .tile-close { color: #3fb950; }
+    .tile-sma  .tile-symbol, .tile-sma  .tile-close { color: #58a6ff; }
+    .tile-bear .tile-symbol, .tile-bear .tile-close { color: #f85149; }
+
+    .tile-call .tile-badge { background: #1a4a2e; color: #3fb950; }
+    .tile-sma  .tile-badge { background: #0f2d4e; color: #58a6ff; }
+    .tile-bear .tile-badge { background: #4a1a1a; color: #f85149; }
+
+    .badge-call { background: #1a4a2e; color: #3fb950; }
+    .badge-sma  { background: #0f2d4e; color: #58a6ff; }
+    .badge-bear { background: #4a1a1a; color: #f85149; }
+
+    /* ── 4H Gaining section ── */
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #e6af0e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin: 32px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #30240a;
+    }
+
+    .gain-table-wrap {
+      border-radius: 8px;
+      border: 1px solid #3a2e0a;
+      overflow-x: auto;
+    }
+
+    .gain-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .gain-table thead th {
+      background: #1c1800;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #8b7a3a;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #3a2e0a;
+      white-space: nowrap;
+    }
+
+    .gain-table tbody tr { border-bottom: 1px solid #1e1a08; transition: background 0.15s; }
+    .gain-table tbody tr:last-child { border-bottom: none; }
+    .gain-table tbody tr:hover { background: #1c1800; }
+    .gain-table td { padding: 9px 14px; white-space: nowrap; }
+
+    .gain-symbol { font-weight: 700; font-size: 0.95rem; color: #e6af0e; }
+    .gain-close  { color: #e6edf3; }
+    .gain-time   { color: #8b949e; font-size: 0.75rem; }
+
+    #empty { text-align: center; padding: 64px; color: #8b949e; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Think Alerts</h1>
+    <span id="last-updated">—</span>
+  </header>
+
+  <div class="app">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-label">Days</div>
+    </nav>
+
+    <main class="content">
+      <p id="status">Loading…</p>
+      <div class="grid" id="grid"></div>
+      <div id="gain-section" style="display:none">
+        <div class="section-title">⬆ 4H Gaining</div>
+        <div class="gain-table-wrap">
+          <table class="gain-table">
+            <thead><tr><th>Symbol</th><th>Close</th><th>Time (EST)</th></tr></thead>
+            <tbody id="gain-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const DATA_URL   = "https://raw.githubusercontent.com/avalonaialert/dashboard/main/data.json";
+    const SKIP_ALERTS = new Set([666, 7777]);
+
+    const ALERT_META = {
+       "6":  { label: "Call Alert",  cls: "tile-call", badgeCls: "badge-call", icon: "▲" },
+       "66": { label: "SMA Gaining", cls: "tile-sma",  badgeCls: "badge-sma",  icon: "~" },
+      "-6":  { label: "Bear Change", cls: "tile-bear", badgeCls: "badge-bear", icon: "▼" },
+    };
+
+    function meta(v) {
+      return ALERT_META[String(v)] ?? { label: String(v), cls: "tile-sma", badgeCls: "badge-sma", icon: "·" };
+    }
+
+    function fmtTime(iso) {
+      if (!iso) return "—";
+      return new Date(iso).toLocaleString("en-US", {
+        timeZone: "America/New_York",
+        month: "short", day: "numeric",
+        hour: "2-digit", minute: "2-digit", hour12: true,
+      });
+    }
+
+    function fmtDate(iso) {
+      // iso = "2026-05-21"
+      return new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", {
+        timeZone: "America/New_York",
+        month: "short", day: "numeric",
+      });
+    }
+
+    function fmtClose(v) { return v != null ? Number(v).toFixed(2) : "—"; }
+
+    function fmtGain(first, latest) {
+      if (first == null || latest == null || first === 0) return null;
+      const pct = ((latest - first) / first) * 100;
+      const sign = pct >= 0 ? "+" : "";
+      return { text: `${sign}${pct.toFixed(2)}%`, positive: pct >= 0 };
+    }
+
+    // ── Render a day's alerts dict into the main content area ─────────────
+    // dateKey: "today" or "YYYY-MM-DD" — used to filter alerts to that date only
+    function renderDay(alertsRaw, dateKey) {
+      const statusEl = document.getElementById("status");
+      const grid     = document.getElementById("grid");
+      const gainSec  = document.getElementById("gain-section");
+      const gainTbody= document.getElementById("gain-tbody");
+
+      grid.innerHTML = "";
+      gainSec.style.display = "none";
+
+      if (!alertsRaw || Object.keys(alertsRaw).length === 0) {
+        statusEl.textContent = "No alerts for this day.";
+        return;
+      }
+
+      // Determine which calendar date (EST) to keep
+      const filterDateEST = dateKey === "today"
+        ? new Date().toLocaleDateString("en-US", { timeZone: "America/New_York" })
+        : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
+
+      function isTargetDay(iso) {
+        return new Date(iso).toLocaleDateString("en-US", { timeZone: "America/New_York" }) === filterDateEST;
+      }
+
+      const symbolMap = {};
+      const gainMap   = {};
+
+      for (const [sym, val] of Object.entries(alertsRaw)) {
+        const arr = Array.isArray(val) ? val : [val];
+        const seenMain = new Set(), seenGain = new Set();
+
+        for (const a of arr) {
+          const code = Number(a.alert);
+          if (SKIP_ALERTS.has(code)) continue;
+          if (!isTargetDay(a.received_at)) continue;
+          const key = `${a.received_at}|${a.alert}|${a.close}`;
+
+          if (code === 6666) {
+            if (!seenGain.has(key)) { seenGain.add(key); (gainMap[sym] = gainMap[sym] || []).push(a); }
+          } else {
+            if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
+          }
+        }
+      }
+
+      // Drop symbols with only SMA Gaining — keep only if they have a Call Alert too
+      for (const sym of Object.keys(symbolMap)) {
+        if (!symbolMap[sym].some(a => Number(a.alert) === 6)) delete symbolMap[sym];
+      }
+
+      const symbols = Object.entries(symbolMap);
+
+      if (symbols.length === 0 && Object.keys(gainMap).length === 0) {
+        statusEl.textContent = "No alerts for this day.";
+        return;
+      }
+
+      // Sort each symbol's history newest → oldest
+      for (const [, history] of symbols) {
+        history.sort((a, b) => new Date(b.received_at) - new Date(a.received_at));
+      }
+      // Sort symbols by latest alert time
+      symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+
+      statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
+
+      symbols.forEach(([symbol, history]) => {
+        const latest = history[0];
+        const first  = history[history.length - 1];
+        const m = meta(latest.alert);
+        const tile = document.createElement("div");
+        tile.className = `tile ${m.cls}`;
+
+        const gain = fmtGain(first.close, latest.close);
+        const gainHtml = gain
+          ? `<span class="tile-gain ${gain.positive ? "pos" : "neg"}">${gain.text}</span>`
+          : "";
+
+        const histRows = history.slice(1).map(h => {
+          const hm = meta(h.alert);
+          return `<div class="history-row">
+            <span class="hist-badge ${hm.badgeCls}">${hm.icon} ${hm.label}</span>
+            <span class="hist-close">${fmtClose(h.close)}</span>
+            <span class="hist-time">${fmtTime(h.received_at)}</span>
+          </div>`;
+        }).join("");
+
+        const histSection = history.length > 1
+          ? `<div class="tile-history"><div class="history-label">History (${history.length - 1})</div>${histRows}</div>`
+          : "";
+
+        tile.innerHTML = `
+          <div class="tile-header">
+            <div class="tile-top">
+              <div class="tile-symbol">${symbol}</div>
+              <div class="tile-close-wrap">
+                <div class="tile-close-label">Close</div>
+                <div class="tile-close">${fmtClose(latest.close)}</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <span class="tile-badge">${m.icon} ${m.label}</span>
+              ${gainHtml}
+            </div>
+            <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
+          </div>${histSection}`;
+        grid.appendChild(tile);
+      });
+
+      // 4H Gaining table
+      const gainEntries = Object.entries(gainMap);
+      if (gainEntries.length > 0) {
+        const gainRows = gainEntries.map(([sym, alerts]) => ({
+          sym,
+          latest: alerts.reduce((a, b) => new Date(a.received_at) > new Date(b.received_at) ? a : b),
+        }));
+        gainRows.sort((a, b) => new Date(b.latest.received_at) - new Date(a.latest.received_at));
+        gainTbody.innerHTML = gainRows.map(({ sym, latest }) =>
+          `<tr>
+            <td class="gain-symbol">${sym}</td>
+            <td class="gain-close">${fmtClose(latest.close)}</td>
+            <td class="gain-time">${fmtTime(latest.received_at)}</td>
+          </tr>`
+        ).join("");
+        gainSec.style.display = "block";
+      }
+    }
+
+    // ── Build sidebar + load initial data ────────────────────────────────
+    let _data = null;
+    let _activeTab = "today";
+
+    function setActiveTab(key) {
+      _activeTab = key;
+      document.querySelectorAll(".day-tab").forEach(el => {
+        el.classList.toggle("active", el.dataset.key === key);
+      });
+      const alertsRaw = key === "today"
+        ? _data.today?.alerts
+        : _data.history?.[key];
+      renderDay(alertsRaw || {}, key);
+    }
+
+    function buildSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.innerHTML = '<div class="sidebar-label">Days</div>';
+
+      // Today tab
+      const todayBtn = document.createElement("button");
+      todayBtn.className = "day-tab";
+      todayBtn.dataset.key = "today";
+      todayBtn.textContent = "Today";
+      todayBtn.onclick = () => setActiveTab("today");
+      sidebar.appendChild(todayBtn);
+
+      // History tabs — newest date first
+      const histDates = Object.keys(_data.history || {}).sort().reverse();
+      if (histDates.length > 0) {
+        const lbl = document.createElement("div");
+        lbl.className = "sidebar-label";
+        lbl.style.marginTop = "12px";
+        lbl.textContent = "History";
+        sidebar.appendChild(lbl);
+
+        histDates.forEach(dateStr => {
+          const btn = document.createElement("button");
+          btn.className = "day-tab";
+          btn.dataset.key = dateStr;
+          btn.textContent = fmtDate(dateStr);
+          btn.onclick = () => setActiveTab(dateStr);
+          sidebar.appendChild(btn);
+        });
+      }
+    }
+
+    async function load() {
+      const statusEl = document.getElementById("status");
+      try {
+        const resp = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        _data = await resp.json();
+
+        // Migrate old flat format (alerts key) if needed
+        if (_data.alerts && !_data.today) {
+          _data.today = { date: "", alerts: _data.alerts };
+          _data.history = {};
+        }
+
+        document.getElementById("last-updated").textContent =
+          _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
+
+        buildSidebar();
+        setActiveTab(_activeTab);   // re-render current tab on refresh
+      } catch (err) {
+        statusEl.textContent = "Failed to load: " + err.message;
+      }
+    }
+
+    load();
+    setInterval(load, 5 * 60 * 1000);
+  </script>
+</body>
+</html>
