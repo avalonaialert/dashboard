@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Think Alerts Dashboard</title>
+  <title>Avalon Alerts Dashboard</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -215,6 +215,50 @@
     .badge-sma  { background: #0f2d4e; color: #58a6ff; }
     .badge-bear { background: #4a1a1a; color: #f85149; }
 
+    /* ── BackTest Results section ── */
+    .bt-section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #a78bfa;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin: 32px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bt-section-title::after { content: ""; flex: 1; height: 1px; background: #2a1f4a; }
+
+    .bt-table-wrap { border-radius: 8px; border: 1px solid #2a1f4a; overflow-x: auto; }
+
+    .bt-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+
+    .bt-table thead th {
+      background: #16102a;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #7c6aaa;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #2a1f4a;
+      white-space: nowrap;
+    }
+
+    .bt-table tbody tr { border-bottom: 1px solid #1a1228; transition: background 0.15s; }
+    .bt-table tbody tr:last-child { border-bottom: none; }
+    .bt-table tbody tr:hover { background: #16102a; }
+    .bt-table td { padding: 9px 14px; white-space: nowrap; }
+
+    .bt-symbol  { font-weight: 700; font-size: 0.95rem; color: #a78bfa; }
+    .bt-option  { font-size: 0.78rem; color: #8b949e; }
+    .bt-price   { color: #e6edf3; font-weight: 600; }
+    .bt-gain    { font-weight: 700; }
+    .bt-gain.pos { color: #3fb950; }
+    .bt-gain.neg { color: #f85149; }
+    .bt-time    { color: #8b949e; font-size: 0.75rem; }
+
     /* ── 4H Gaining section ── */
     .section-title {
       font-size: 0.85rem;
@@ -286,6 +330,27 @@
     <main class="content">
       <p id="status">Loading…</p>
       <div class="grid" id="grid"></div>
+      <div id="bt-section" style="display:none">
+        <div class="bt-section-title">⚡ BackTest Results</div>
+        <div class="bt-table-wrap">
+          <table class="bt-table">
+            <thead><tr>
+              <th>Symbol</th>
+              <th>Option</th>
+              <th>Strike</th>
+              <th>Entry Price</th>
+              <th>Current Price</th>
+              <th>% Gain</th>
+              <th>High Price</th>
+              <th>% High</th>
+              <th>Entry Time</th>
+              <th>Updated</th>
+            </tr></thead>
+            <tbody id="bt-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
       <div id="gain-section" style="display:none">
         <div class="section-title">⬆ 4H Gaining</div>
         <div class="gain-table-wrap">
@@ -299,7 +364,10 @@
   </div>
 
   <script>
-    const DATA_URL = "https://api.github.com/repos/avalonaialert/dashboard/contents/data.json";
+    const REPO        = "avalonaialert/dashboard";
+    const DATA_URL    = `https://api.github.com/repos/${REPO}/contents/data.json`;
+    const MANIFEST_URL= `https://api.github.com/repos/${REPO}/contents/manifest.json`;
+    const DAY_URL     = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
     const SKIP_ALERTS = new Set([666, 7777]);
 
     const ALERT_META = {
@@ -340,14 +408,17 @@
 
     // ── Render a day's alerts dict into the main content area ─────────────
     // dateKey: "today" or "YYYY-MM-DD" — used to filter alerts to that date only
-    function renderDay(alertsRaw, dateKey) {
+    function renderDay(alertsRaw, dateKey, backtestRaw) {
       const statusEl = document.getElementById("status");
       const grid     = document.getElementById("grid");
       const gainSec  = document.getElementById("gain-section");
       const gainTbody= document.getElementById("gain-tbody");
+      const btSec    = document.getElementById("bt-section");
+      const btTbody  = document.getElementById("bt-tbody");
 
       grid.innerHTML = "";
       gainSec.style.display = "none";
+      btSec.style.display   = "none";
 
       if (!alertsRaw || Object.keys(alertsRaw).length === 0) {
         statusEl.textContent = "No alerts for this day.";
@@ -447,6 +518,41 @@
         grid.appendChild(tile);
       });
 
+      // ── BackTest Results table ──────────────────────────────────────────
+      const btEntries = Object.entries(backtestRaw || {});
+      if (btEntries.length > 0) {
+        btEntries.sort((a, b) => {
+          const ga = a[1].entry_price ? ((a[1].current_price - a[1].entry_price) / a[1].entry_price) : -Infinity;
+          const gb = b[1].entry_price ? ((b[1].current_price - b[1].entry_price) / b[1].entry_price) : -Infinity;
+          return gb - ga;
+        });
+        btTbody.innerHTML = btEntries.map(([sym, bt]) => {
+          const pct = bt.entry_price
+            ? ((bt.current_price - bt.entry_price) / bt.entry_price * 100)
+            : null;
+          const gainStr  = pct != null ? `${pct >= 0 ? "+" : ""}${pct.toFixed(2)}%` : "—";
+          const gainCls  = pct == null ? "" : pct >= 0 ? "pos" : "neg";
+          const highPct = bt.entry_price && bt.highest_price
+            ? ((bt.highest_price - bt.entry_price) / bt.entry_price * 100)
+            : null;
+          const highStr = highPct != null ? `${highPct >= 0 ? "+" : ""}${highPct.toFixed(2)}%` : "—";
+          const highCls = highPct == null ? "" : highPct >= 0 ? "pos" : "neg";
+          return `<tr>
+            <td class="bt-symbol">${sym}</td>
+            <td class="bt-option">${bt.option_symbol ?? "—"}</td>
+            <td class="bt-price">$${bt.strike?.toFixed(2) ?? "—"}</td>
+            <td class="bt-price">$${bt.entry_price?.toFixed(2) ?? "—"}</td>
+            <td class="bt-price">$${bt.current_price?.toFixed(2) ?? "—"}</td>
+            <td class="bt-gain ${gainCls}">${gainStr}</td>
+            <td class="bt-price">${bt.highest_price != null ? "$" + bt.highest_price.toFixed(2) : "—"}</td>
+            <td class="bt-gain ${highCls}">${highStr}</td>
+            <td class="bt-time">${fmtTime(bt.entry_time)}</td>
+            <td class="bt-time">${fmtTime(bt.current_time)}</td>
+          </tr>`;
+        }).join("");
+        btSec.style.display = "block";
+      }
+
       // 4H Gaining table
       const gainEntries = Object.entries(gainMap);
       if (gainEntries.length > 0) {
@@ -466,26 +572,54 @@
       }
     }
 
-    // ── Build sidebar + load initial data ────────────────────────────────
-    let _data = null;
+    // ── State ────────────────────────────────────────────────────────────
+    let _data      = null;   // today's data.json
+    let _manifest  = [];     // ["2026-05-22", "2026-05-21", ...]
+    let _dayCache  = {};     // { "2026-05-22": {date, alerts, backtest} }
     let _activeTab = "today";
 
-    function setActiveTab(key) {
+    async function _ghFetch(url) {
+      const resp = await fetch(url, {
+        cache: "no-store",
+        headers: { "Accept": "application/vnd.github.v3+json" },
+      });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status} ${url}`);
+      const env = await resp.json();
+      return JSON.parse(atob(env.content.replace(/\n/g, "")));
+    }
+
+    async function setActiveTab(key) {
       _activeTab = key;
       document.querySelectorAll(".day-tab").forEach(el => {
         el.classList.toggle("active", el.dataset.key === key);
       });
-      const alertsRaw = key === "today"
-        ? _data.today?.alerts
-        : _data.history?.[key];
-      renderDay(alertsRaw || {}, key);
+
+      if (key === "today") {
+        const alertsRaw   = _data?.today?.alerts  ?? {};
+        const backtestRaw = _data?.today?.backtest ?? {};
+        renderDay(alertsRaw, "today", backtestRaw);
+        return;
+      }
+
+      // Lazy-fetch the per-day file
+      const statusEl = document.getElementById("status");
+      if (!_dayCache[key]) {
+        statusEl.textContent = `Loading ${key}…`;
+        try {
+          _dayCache[key] = await _ghFetch(DAY_URL(key));
+        } catch (err) {
+          statusEl.textContent = "Failed to load " + key + ": " + err.message;
+          return;
+        }
+      }
+      const day = _dayCache[key];
+      renderDay(day.alerts ?? {}, key, day.backtest ?? {});
     }
 
     function buildSidebar() {
       const sidebar = document.getElementById("sidebar");
       sidebar.innerHTML = '<div class="sidebar-label">Days</div>';
 
-      // Today tab
       const todayBtn = document.createElement("button");
       todayBtn.className = "day-tab";
       todayBtn.dataset.key = "today";
@@ -493,16 +627,14 @@
       todayBtn.onclick = () => setActiveTab("today");
       sidebar.appendChild(todayBtn);
 
-      // History tabs — newest date first
-      const histDates = Object.keys(_data.history || {}).sort().reverse();
-      if (histDates.length > 0) {
+      if (_manifest.length > 0) {
         const lbl = document.createElement("div");
         lbl.className = "sidebar-label";
         lbl.style.marginTop = "12px";
         lbl.textContent = "History";
         sidebar.appendChild(lbl);
 
-        histDates.forEach(dateStr => {
+        _manifest.forEach(dateStr => {
           const btn = document.createElement("button");
           btn.className = "day-tab";
           btn.dataset.key = dateStr;
@@ -516,25 +648,27 @@
     async function load() {
       const statusEl = document.getElementById("status");
       try {
-        const resp = await fetch(DATA_URL, {
-          cache: "no-store",
-          headers: { "Accept": "application/vnd.github.v3+json" }
-        });
-        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-        const envelope = await resp.json();
-        _data = JSON.parse(atob(envelope.content.replace(/\n/g, "")));
+        // Fetch today's data and manifest in parallel
+        const [data, manifest] = await Promise.all([
+          _ghFetch(DATA_URL),
+          _ghFetch(MANIFEST_URL).catch(() => []),
+        ]);
 
-        // Migrate old flat format (alerts key) if needed
-        if (_data.alerts && !_data.today) {
-          _data.today = { date: "", alerts: _data.alerts };
-          _data.history = {};
+        // Migrate old flat format if needed
+        if (data.alerts && !data.today) {
+          data.today = { date: "", alerts: data.alerts };
         }
+
+        _data     = data;
+        _manifest = Array.isArray(manifest) ? manifest : [];
+        // Clear day cache on reload so history re-fetches fresh data
+        _dayCache = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
 
         buildSidebar();
-        setActiveTab(_activeTab);   // re-render current tab on refresh
+        setActiveTab(_activeTab);
       } catch (err) {
         statusEl.textContent = "Failed to load: " + err.message;
       }
