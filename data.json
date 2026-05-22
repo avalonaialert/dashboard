@@ -1,149 +1,585 @@
 {
-  "last_updated": "2026-05-22T17:22:00.808788+00:00",
+  "last_updated": "2026-05-22T17:25:02.787843+00:00",
   "alerts": {
-    "DELL": {
-      "alert": 6,
-      "close": 291.76750000000004,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "DELL",
-      "received_at": "2026-05-22T15:00:39+00:00"
-    },
-    "SPY": {
-      "alert": 66,
-      "close": 746.78225,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "SPY",
-      "received_at": "2026-05-22T15:15:15+00:00"
-    },
-    "STX": {
-      "alert": 66,
-      "close": 811.8625,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "STX",
-      "received_at": "2026-05-22T14:45:31+00:00"
-    },
-    "MSFT": {
-      "alert": 7777,
-      "close": 427.235,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "MSFT",
-      "received_at": "2026-05-15T18:09:34+00:00"
-    },
-    "FTNT": {
-      "alert": 6,
-      "close": 132.625,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "FTNT",
-      "received_at": "2026-05-22T15:15:28+00:00"
-    },
-    "MU": {
-      "alert": 66,
-      "close": 760.5775,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "MU",
-      "received_at": "2026-05-22T14:45:10+00:00"
-    },
-    "ARM": {
-      "alert": 6,
-      "close": 303.6075,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "ARM",
-      "received_at": "2026-05-22T14:30:25+00:00"
-    },
-    "VRSN": {
-      "alert": 6,
-      "close": 308.93,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "VRSN",
-      "received_at": "2026-05-22T14:45:35+00:00"
-    },
-    "CRWD": {
-      "alert": 6,
-      "close": 669.8725000000001,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "CRWD",
-      "received_at": "2026-05-22T15:15:17+00:00"
-    },
-    "PANW": {
-      "alert": 6,
-      "close": 257.315,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "PANW",
-      "received_at": "2026-05-22T15:00:21+00:00"
-    },
-    "TSLA": {
-      "alert": 66,
-      "close": 429.6675,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "TSLA",
-      "received_at": "2026-05-22T16:15:08+00:00"
-    },
-    "SLV": {
-      "alert": 666,
-      "close": 68.48625,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "SLV",
-      "received_at": "2026-05-22T15:30:19+00:00"
-    },
-    "AVGO": {
-      "alert": 666,
-      "close": 414.5875,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "AVGO",
-      "received_at": "2026-05-22T15:30:11+00:00"
-    },
-    "AAPL": {
-      "alert": 6,
-      "close": 309.22,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "AAPL",
-      "received_at": "2026-05-22T14:45:18+00:00"
-    },
-    "GLW": {
-      "alert": 66,
-      "close": 193.42749999999998,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "GLW",
-      "received_at": "2026-05-22T14:45:24+00:00"
-    },
-    "LITE": {
-      "alert": 66,
-      "close": 949.7425,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "LITE",
-      "received_at": "2026-05-22T14:45:19+00:00"
-    },
-    "SNDK": {
-      "alert": 66,
-      "close": 1511.95875,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "SNDK",
-      "received_at": "2026-05-22T14:45:18+00:00"
-    },
-    "AMD": {
-      "alert": 66,
-      "close": 468.6925,
-      "peak": 0,
-      "cross": 0,
-      "symbol": "AMD",
-      "received_at": "2026-05-22T14:45:09+00:00"
-    }
+    "DELL": [
+      {
+        "alert": 6,
+        "close": 291.76750000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T15:00:39+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 295.22249999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T17:00:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 295.075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T16:45:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 295.11,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T16:30:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 294.3075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T16:15:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 292.25,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T16:00:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 292.09749999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T15:15:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 291.76750000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "received_at": "2026-05-22T15:00:39+00:00"
+      }
+    ],
+    "SPY": [
+      {
+        "alert": 66,
+        "close": 746.78225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SPY",
+        "received_at": "2026-05-22T15:15:15+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 746.78225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SPY",
+        "received_at": "2026-05-22T15:15:15+00:00"
+      }
+    ],
+    "STX": [
+      {
+        "alert": 66,
+        "close": 811.8625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "received_at": "2026-05-22T14:45:31+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 813.1324999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "received_at": "2026-05-22T16:30:43+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 811.8625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "received_at": "2026-05-22T14:45:31+00:00"
+      }
+    ],
+    "MSFT": [
+      {
+        "alert": 7777,
+        "close": 427.235,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "MSFT",
+        "received_at": "2026-05-15T18:09:34+00:00"
+      }
+    ],
+    "FTNT": [
+      {
+        "alert": 6,
+        "close": 132.625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T15:15:28+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 133.44125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T17:15:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 133.38,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T17:00:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 133.11249999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T16:30:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 133.11749999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T16:15:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 132.8,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T16:00:48+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 132.47750000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T15:30:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 132.625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "received_at": "2026-05-22T15:15:28+00:00"
+      }
+    ],
+    "MU": [
+      {
+        "alert": 66,
+        "close": 760.5775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "MU",
+        "received_at": "2026-05-22T14:45:10+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 766.72,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "MU",
+        "received_at": "2026-05-22T17:00:14+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 760.5775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "MU",
+        "received_at": "2026-05-22T14:45:10+00:00"
+      }
+    ],
+    "ARM": [
+      {
+        "alert": 6,
+        "close": 303.6075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "received_at": "2026-05-22T14:30:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.62,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "received_at": "2026-05-22T16:30:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.42,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "received_at": "2026-05-22T15:15:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.465,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "received_at": "2026-05-22T15:00:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.0325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "received_at": "2026-05-22T14:45:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 303.6075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "received_at": "2026-05-22T14:30:25+00:00"
+      }
+    ],
+    "VRSN": [
+      {
+        "alert": 6,
+        "close": 308.93,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "VRSN",
+        "received_at": "2026-05-22T14:45:35+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.37,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "VRSN",
+        "received_at": "2026-05-22T17:16:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.915,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "VRSN",
+        "received_at": "2026-05-22T16:16:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 311.56874999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "VRSN",
+        "received_at": "2026-05-22T15:16:04+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 308.93,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "VRSN",
+        "received_at": "2026-05-22T14:45:35+00:00"
+      }
+    ],
+    "CRWD": [
+      {
+        "alert": 6,
+        "close": 669.8725000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "received_at": "2026-05-22T15:15:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 673.3499999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "received_at": "2026-05-22T16:15:55+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 671.8149999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "received_at": "2026-05-22T16:00:48+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 670.5125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "received_at": "2026-05-22T15:45:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 669.8725000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "received_at": "2026-05-22T15:15:17+00:00"
+      }
+    ],
+    "PANW": [
+      {
+        "alert": 6,
+        "close": 257.315,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T15:00:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 260.90999999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T16:15:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 259.77725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T16:00:47+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 258.63,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T15:45:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 258.08500000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T15:30:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 258.35875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T15:15:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 257.315,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "received_at": "2026-05-22T15:00:21+00:00"
+      }
+    ],
+    "TSLA": [
+      {
+        "alert": 66,
+        "close": 429.6675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "received_at": "2026-05-22T16:15:08+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 429.6675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "received_at": "2026-05-22T16:15:08+00:00"
+      }
+    ],
+    "SLV": [
+      {
+        "alert": 666,
+        "close": 68.48625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SLV",
+        "received_at": "2026-05-22T15:30:19+00:00"
+      },
+      {
+        "alert": 666,
+        "close": 68.48625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SLV",
+        "received_at": "2026-05-22T15:30:19+00:00"
+      }
+    ],
+    "AVGO": [
+      {
+        "alert": 666,
+        "close": 414.5875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "received_at": "2026-05-22T15:30:11+00:00"
+      },
+      {
+        "alert": 666,
+        "close": 414.5875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "received_at": "2026-05-22T15:30:11+00:00"
+      }
+    ],
+    "AAPL": [
+      {
+        "alert": 6,
+        "close": 309.22,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "received_at": "2026-05-22T14:45:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 311.0775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "received_at": "2026-05-22T15:30:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.71625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "received_at": "2026-05-22T15:15:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.84499999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "received_at": "2026-05-22T15:00:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.22,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "received_at": "2026-05-22T14:45:18+00:00"
+      }
+    ],
+    "GLW": [
+      {
+        "alert": 66,
+        "close": 193.42749999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "received_at": "2026-05-22T14:45:24+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 193.42749999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "received_at": "2026-05-22T14:45:24+00:00"
+      }
+    ],
+    "LITE": [
+      {
+        "alert": 66,
+        "close": 949.7425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LITE",
+        "received_at": "2026-05-22T14:45:19+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 949.7425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LITE",
+        "received_at": "2026-05-22T14:45:19+00:00"
+      }
+    ],
+    "SNDK": [
+      {
+        "alert": 66,
+        "close": 1511.95875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SNDK",
+        "received_at": "2026-05-22T14:45:18+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 1511.95875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SNDK",
+        "received_at": "2026-05-22T14:45:18+00:00"
+      }
+    ],
+    "AMD": [
+      {
+        "alert": 66,
+        "close": 468.6925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "received_at": "2026-05-22T14:45:09+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 471.03499999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "received_at": "2026-05-22T17:15:16+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 468.6925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "received_at": "2026-05-22T14:45:09+00:00"
+      }
+    ]
   }
 }
