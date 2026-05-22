@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T19:17:13.803470+00:00",
+  "last_updated": "2026-05-22T19:32:13.409693+00:00",
   "today": {
     "date": "",
     "alerts": {
@@ -1125,6 +1125,15 @@
           "symbol": "PANW",
           "msg_id": "19e511d2f81986f9",
           "received_at": "2026-05-22T19:15:26+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 259.9325,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PANW",
+          "msg_id": "19e512a9b301c327",
+          "received_at": "2026-05-22T19:30:05+00:00"
         }
       ],
       "TSLA": [
