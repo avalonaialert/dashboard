@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T20:17:59.555175+00:00",
+  "last_updated": "2026-05-22T20:22:23.224342+00:00",
   "today": {
     "date": "",
     "alerts": {
@@ -1624,6 +1624,87 @@
       ]
     },
     "backtest": {
+      "DELL": {
+        "option_symbol": "DELL261218C00250000",
+        "strike": 250.0,
+        "expiry": "2026-12-18",
+        "entry_price": 83.81,
+        "entry_time": "2026-05-21T17:30:40+00:00",
+        "current_price": 83.81,
+        "current_time": "2026-05-22T20:22:19.590598+00:00"
+      },
+      "FTNT": {
+        "option_symbol": "FTNT261218C00130000",
+        "strike": 130.0,
+        "expiry": "2026-12-18",
+        "entry_price": 22.55,
+        "entry_time": "2026-05-21T17:30:52+00:00",
+        "current_price": 22.55,
+        "current_time": "2026-05-22T20:22:20.071894+00:00"
+      },
+      "ARM": {
+        "option_symbol": "ARM261218C00300000",
+        "strike": 300.0,
+        "expiry": "2026-12-18",
+        "entry_price": 82.77,
+        "entry_time": "2026-05-22T14:00:26+00:00",
+        "current_price": 82.77,
+        "current_time": "2026-05-22T20:22:20.581324+00:00"
+      },
+      "VRSN": {
+        "option_symbol": "VRSN261218C00310000",
+        "strike": 310.0,
+        "expiry": "2026-12-18",
+        "entry_price": 33.73,
+        "entry_time": "2026-05-21T20:02:00+00:00",
+        "current_price": 33.73,
+        "current_time": "2026-05-22T20:22:20.954465+00:00"
+      },
+      "CRWD": {
+        "option_symbol": "CRWD261218C00650000",
+        "strike": 650.0,
+        "expiry": "2026-12-18",
+        "entry_price": 120.35,
+        "entry_time": "2026-05-21T17:30:43+00:00",
+        "current_price": 120.35,
+        "current_time": "2026-05-22T20:22:21.307215+00:00"
+      },
+      "PANW": {
+        "option_symbol": "PANW1261218C00250000",
+        "strike": 250.0,
+        "expiry": "2026-12-18",
+        "entry_price": 380.95,
+        "entry_time": "2026-05-21T17:30:55+00:00",
+        "current_price": 380.95,
+        "current_time": "2026-05-22T20:22:21.888892+00:00"
+      },
+      "AAPL": {
+        "option_symbol": "AAPL261218C00310000",
+        "strike": 310.0,
+        "expiry": "2026-12-18",
+        "entry_price": 26.02,
+        "entry_time": "2026-05-21T17:30:34+00:00",
+        "current_price": 26.02,
+        "current_time": "2026-05-22T20:22:22.269251+00:00"
+      },
+      "AMD": {
+        "option_symbol": "AMD261218C00480000",
+        "strike": 480.0,
+        "expiry": "2026-12-18",
+        "entry_price": 98.06,
+        "entry_time": "2026-05-22T17:45:05+00:00",
+        "current_price": 98.06,
+        "current_time": "2026-05-22T20:22:22.837478+00:00"
+      },
+      "EBAY": {
+        "option_symbol": "EBAY261218C00120000",
+        "strike": 120.0,
+        "expiry": "2026-12-18",
+        "entry_price": 12.06,
+        "entry_time": "2026-05-21T17:30:44+00:00",
+        "current_price": 12.06,
+        "current_time": "2026-05-22T20:22:23.224300+00:00"
+      }
     }
   },
   "history": {}
