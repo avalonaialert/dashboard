@@ -952,8 +952,9 @@
       }
     }
 
-    load();
-    setInterval(load, 5 * 60 * 1000);
+    load().then(() => {
+      setTimeout(() => location.reload(), 5 * 60 * 1000);
+    });
 
     // ── Top Gainers bar ──────────────────────────────────────────────────
     function renderMoversBar() {
@@ -988,7 +989,6 @@
     }
 
     loadTopMovers();
-    setInterval(loadTopMovers, 5 * 60 * 1000);
   </script>
 </body>
 </html>
