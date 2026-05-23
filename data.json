@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-05-23T14:43:14.823039+00:00",
+  "last_updated": "2026-05-23T15:02:46.544500+00:00",
   "today": {
     "date": "2026-05-23",
-    "alerts": {},
+    "alerts": {
+      "GOOG": [
+        {
+          "alert": 7,
+          "close": 401.445,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GOOG",
+          "msg_id": "19e555c2425b1c30",
+          "received_at": "2026-05-23T15:02:39+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
