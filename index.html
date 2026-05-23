@@ -88,7 +88,36 @@
       border-right: 1px solid #21262d;
       padding: 12px 0;
       overflow-y: auto;
+      overflow-x: hidden;
+      transition: width 0.22s ease;
     }
+
+    .sidebar.collapsed {
+      width: 36px;
+      overflow-y: hidden;
+    }
+
+    .sidebar.collapsed .sidebar-label,
+    .sidebar.collapsed .day-tab { display: none; }
+
+    .sidebar-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin: 2px 4px 8px;
+      background: none;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #8b949e;
+      cursor: pointer;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      transition: background 0.12s, color 0.12s;
+    }
+
+    .sidebar-toggle:hover { background: #161b22; color: #e6edf3; }
 
     .sidebar-label {
       font-size: 0.62rem;
@@ -515,6 +544,7 @@
 
   <div class="app">
     <nav class="sidebar" id="sidebar">
+      <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar">◀</button>
       <div class="sidebar-label">Days</div>
     </nav>
 
@@ -598,6 +628,17 @@
       });
       document.getElementById("login-user").addEventListener("keydown", e => {
         if (e.key === "Enter") document.getElementById("login-pass").focus();
+      });
+    })();
+
+    // ── Sidebar toggle ───────────────────────────────────────────────────
+    (function () {
+      const sidebar = document.getElementById("sidebar");
+      const btn     = document.getElementById("sidebar-toggle");
+      btn.addEventListener("click", () => {
+        const collapsed = sidebar.classList.toggle("collapsed");
+        btn.textContent = collapsed ? "▶" : "◀";
+        btn.title       = collapsed ? "Expand sidebar" : "Collapse sidebar";
       });
     })();
 
