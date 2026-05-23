@@ -266,6 +266,15 @@
     .tile-sma  { background: #0d1b2e; border-color: #1f6feb; }
     .tile-bear { background: #2d0f0f; border-color: #da3633; }
 
+    .tile-5min { background: #1a0d00; border-color: #f97316; }
+    .tile-5min-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #f97316;
+      letter-spacing: 0.4px;
+    }
+    .five-sym  { font-weight: 700; font-size: 0.82rem; color: #f97316; white-space: nowrap; flex-shrink: 0; }
+
     .tile.recent {
       border-color: #3b82f6 !important;
       box-shadow: 0 0 0 2px #3b82f6, 0 0 24px 6px rgba(59,130,246,0.35);
@@ -714,9 +723,11 @@
         return new Date(iso).toLocaleDateString("en-US", { timeZone: "America/New_York" }) === filterDateEST;
       }
 
-      const symbolMap = {};
-      const gainMap   = {};
-      const rsi70Map  = {};  // sym -> latest alert-7 record
+      const symbolMap  = {};
+      const gainMap    = {};
+      const rsi70Map   = {};   // sym -> latest alert-7 record
+      const alert5List = [];   // flat list of {sym, a} for alert code 5
+      const seen5      = new Set();
 
       for (const [sym, val] of Object.entries(alertsRaw)) {
         const arr = Array.isArray(val) ? val : [val];
@@ -730,6 +741,9 @@
 
           if (code === 6666) {
             if (!seenGain.has(key)) { seenGain.add(key); (gainMap[sym] = gainMap[sym] || []).push(a); }
+          } else if (code === 5) {
+            const k5 = `${sym}|${key}`;
+            if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
           } else {
             if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
             if (code === 7) {
@@ -768,6 +782,32 @@
       });
 
       statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
+
+      // ── 5 Min Alerts tile — rendered first ─────────────────────────────
+      if (alert5List.length > 0) {
+        alert5List.sort((x, y) => new Date(y.a.received_at) - new Date(x.a.received_at));
+        const tile5 = document.createElement("div");
+        tile5.className = "tile tile-5min";
+        const rows5 = alert5List.map(({ sym, a }) =>
+          `<div class="history-row">
+            <span class="five-sym">${sym}</span>
+            <span class="hist-close">${fmtClose(a.close)}</span>
+            <span class="hist-time">${fmtTime(a.received_at)}</span>
+          </div>`
+        ).join("");
+        tile5.innerHTML = `
+          <div class="tile-header">
+            <div class="tile-top">
+              <div class="tile-5min-title">⚡ 5 Min Alerts</div>
+              <span class="tile-badge" style="background:#3a1800;color:#f97316">${alert5List.length}</span>
+            </div>
+          </div>
+          <div class="tile-history">
+            <div class="history-label">Stocks (${alert5List.length})</div>
+            ${rows5}
+          </div>`;
+        grid.appendChild(tile5);
+      }
 
       symbols.forEach(([symbol, history]) => {
         const latest = history[0];
