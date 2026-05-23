@@ -718,8 +718,13 @@
       for (const [, history] of symbols) {
         history.sort((a, b) => new Date(b.received_at) - new Date(a.received_at));
       }
-      // Sort symbols by latest alert time
-      symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+      // RSI-70 symbols first, then by latest alert time
+      symbols.sort((a, b) => {
+        const ar = rsi70Symbols.has(a[0]) ? 1 : 0;
+        const br = rsi70Symbols.has(b[0]) ? 1 : 0;
+        if (br !== ar) return br - ar;
+        return new Date(b[1][0].received_at) - new Date(a[1][0].received_at);
+      });
 
       statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
 
