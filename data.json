@@ -3,17 +3,6 @@
   "today": {
     "date": "2026-05-23",
     "alerts": {
-      "GOOG": [
-        {
-          "alert": 7,
-          "close": 401.445,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "GOOG",
-          "msg_id": "19e555c2425b1c30",
-          "received_at": "2026-05-23T15:02:39+00:00"
-        }
-      ]
     },
     "backtest": {}
   }
