@@ -1,0 +1,199 @@
+{
+  "date": "2026-05-21",
+  "alerts": {
+    "DELL": [
+      {
+        "alert": 6,
+        "close": 251.66875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "msg_id": "19e4c20db9f56ec1",
+        "received_at": "2026-05-21T20:01:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 246.115,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "msg_id": "19e4b96f628fe26d",
+        "received_at": "2026-05-21T17:30:40+00:00"
+      }
+    ],
+    "FTNT": [
+      {
+        "alert": 6,
+        "close": 128.5,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e4b97186b5194a",
+        "received_at": "2026-05-21T17:30:52+00:00"
+      }
+    ],
+    "VRSN": [
+      {
+        "alert": 6,
+        "close": 306.2125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "VRSN",
+        "msg_id": "19e4c2176ac98de4",
+        "received_at": "2026-05-21T20:02:00+00:00"
+      }
+    ],
+    "CRWD": [
+      {
+        "alert": 6,
+        "close": 649.4425000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "msg_id": "19e4b96f62b59c84",
+        "received_at": "2026-05-21T17:30:43+00:00"
+      }
+    ],
+    "PANW": [
+      {
+        "alert": 6,
+        "close": 251.37750000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "msg_id": "19e4c21f92f8c81f",
+        "received_at": "2026-05-21T20:02:33+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 246.02249999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PANW",
+        "msg_id": "19e4b97264123ac7",
+        "received_at": "2026-05-21T17:30:55+00:00"
+      }
+    ],
+    "AAPL": [
+      {
+        "alert": 6,
+        "close": 304.7325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e4c1fe5b983c67",
+        "received_at": "2026-05-21T20:00:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 302.72,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e4b96d7c417410",
+        "received_at": "2026-05-21T17:30:34+00:00"
+      }
+    ],
+    "LITE": [
+      {
+        "alert": 66,
+        "close": 917.5450000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LITE",
+        "msg_id": "19e4b9709ba4c25a",
+        "received_at": "2026-05-21T17:30:48+00:00"
+      }
+    ],
+    "EBAY": [
+      {
+        "alert": 6,
+        "close": 118.18,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "EBAY",
+        "msg_id": "19e4b9701f2be100",
+        "received_at": "2026-05-21T17:30:44+00:00"
+      }
+    ]
+  },
+  "backtest": {
+    "DELL": {
+      "option_symbol": "DELL261218C00250000",
+      "strike": 280.0,
+      "expiry": "2026-12-18",
+      "entry_price": 61.18,
+      "entry_time": "2026-05-21T17:30:40+00:00",
+      "current_price": 83.81,
+      "current_time": "2026-05-23T14:40:25.673998+00:00",
+      "highest_price": 83.81,
+      "highest_time": "2026-05-23T14:37:01.934560+00:00"
+    },
+    "FTNT": {
+      "option_symbol": "FTNT261218C00130000",
+      "strike": 130.0,
+      "expiry": "2026-12-18",
+      "entry_price": 20.88,
+      "entry_time": "2026-05-21T17:30:52+00:00",
+      "current_price": 22.55,
+      "current_time": "2026-05-23T14:40:25.853456+00:00",
+      "highest_price": 22.68,
+      "highest_time": "2026-05-22T21:10:29.712489+00:00"
+    },
+    "VRSN": {
+      "option_symbol": "VRSN261218C00310000",
+      "strike": 310.0,
+      "expiry": "2026-12-18",
+      "entry_price": 33.2,
+      "entry_time": "2026-05-21T20:02:00+00:00",
+      "current_price": 33.73,
+      "current_time": "2026-05-23T14:40:26.243456+00:00",
+      "highest_price": 35.15,
+      "highest_time": "2026-05-22T21:10:30.431914+00:00"
+    },
+    "CRWD": {
+      "option_symbol": "CRWD261218C00650000",
+      "strike": 650.0,
+      "expiry": "2026-12-18",
+      "entry_price": 124.65,
+      "entry_time": "2026-05-21T17:30:43+00:00",
+      "current_price": 120.35,
+      "current_time": "2026-05-23T14:40:26.419508+00:00",
+      "highest_price": 128.05,
+      "highest_time": "2026-05-22T21:10:30.921391+00:00"
+    },
+    "PANW": {
+      "option_symbol": "PANW1261218C00250000",
+      "strike": 250.0,
+      "expiry": "2026-12-18",
+      "entry_price": 380.95,
+      "entry_time": "2026-05-21T17:30:55+00:00",
+      "current_price": 380.95,
+      "current_time": "2026-05-23T14:40:26.620365+00:00",
+      "highest_price": 380.95,
+      "highest_time": "2026-05-23T14:37:03.360498+00:00"
+    },
+    "AAPL": {
+      "option_symbol": "AAPL261218C00310000",
+      "strike": 310.0,
+      "expiry": "2026-12-18",
+      "entry_price": 25.5,
+      "entry_time": "2026-05-21T17:30:34+00:00",
+      "current_price": 26.02,
+      "current_time": "2026-05-23T14:40:26.798449+00:00",
+      "highest_price": 27.4,
+      "highest_time": "2026-05-22T21:10:31.869717+00:00"
+    },
+    "EBAY": {
+      "option_symbol": "EBAY261218C00120000",
+      "strike": 120.0,
+      "expiry": "2026-12-18",
+      "entry_price": 12.06,
+      "entry_time": "2026-05-21T17:30:44+00:00",
+      "current_price": 12.06,
+      "current_time": "2026-05-23T14:40:27.155875+00:00",
+      "highest_price": 12.06,
+      "highest_time": "2026-05-23T14:37:04.115093+00:00"
+    }
+  }
+}
