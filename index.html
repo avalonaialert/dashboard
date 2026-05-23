@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avalon Alerts Dashboard</title>
+  <title>Think Alerts Dashboard</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -314,9 +314,148 @@
     .gain-time   { color: #8b949e; font-size: 0.75rem; }
 
     #empty { text-align: center; padding: 64px; color: #8b949e; }
+
+    /* ── RSI 70 Pre-Market section ── */
+    .rsi70-section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #06b6d4;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin: 32px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .rsi70-section-title::after { content: ""; flex: 1; height: 1px; background: #0a2a30; }
+
+    .rsi70-table-wrap { border-radius: 8px; border: 1px solid #0a3a45; overflow-x: auto; }
+    .rsi70-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .rsi70-table thead th {
+      background: #061820;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #0891b2;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #0a3a45;
+      white-space: nowrap;
+    }
+    .rsi70-table tbody tr { border-bottom: 1px solid #061820; transition: background 0.15s; }
+    .rsi70-table tbody tr:last-child { border-bottom: none; }
+    .rsi70-table tbody tr:hover { background: #061820; }
+    .rsi70-table td { padding: 9px 14px; white-space: nowrap; }
+    .rsi70-symbol { font-weight: 700; font-size: 0.95rem; color: #06b6d4; }
+    .rsi70-close  { color: #e6edf3; }
+    .rsi70-time   { color: #8b949e; font-size: 0.75rem; }
+
+    /* Tile highlight for RSI-70 pre-market stocks */
+    .badge-rsi70 { background: #0a3a45; color: #06b6d4; }
+    .tile.has-rsi70 {
+      border-color: #06b6d4 !important;
+      box-shadow: 0 0 0 2px #06b6d4, 0 0 20px 4px rgba(6,182,212,0.45);
+    }
+
+    /* ── Login overlay ── */
+    #login-overlay {
+      position: fixed;
+      inset: 0;
+      background: #0d1117;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    #login-overlay.hidden { display: none; }
+
+    .login-box {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 14px;
+      padding: 40px 36px;
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .login-box h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      color: #e6edf3;
+      text-align: center;
+    }
+
+    .login-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .login-field label {
+      font-size: 0.75rem;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .login-field input {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: #e6edf3;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .login-field input:focus { border-color: #58a6ff; }
+
+    .login-btn {
+      background: #238636;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 11px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .login-btn:hover { background: #2ea043; }
+
+    #login-error {
+      font-size: 0.8rem;
+      color: #f85149;
+      text-align: center;
+      min-height: 1.1em;
+    }
   </style>
 </head>
 <body>
+  <div id="login-overlay">
+    <div class="login-box">
+      <h2>Avalon Alerts</h2>
+      <div class="login-field">
+        <label for="login-user">Username</label>
+        <input id="login-user" type="text" autocomplete="username" placeholder="username" />
+      </div>
+      <div class="login-field">
+        <label for="login-pass">Password</label>
+        <input id="login-pass" type="password" autocomplete="current-password" placeholder="password" />
+      </div>
+      <div id="login-error"></div>
+      <button class="login-btn" id="login-btn">Sign In</button>
+    </div>
+  </div>
+
   <header>
     <h1>Think Alerts</h1>
     <span id="last-updated">—</span>
@@ -330,6 +469,16 @@
     <main class="content">
       <p id="status">Loading…</p>
       <div class="grid" id="grid"></div>
+      <div id="rsi70-section" style="display:none">
+        <div class="rsi70-section-title">◆ RSI 70 Pre-Market</div>
+        <div class="rsi70-table-wrap">
+          <table class="rsi70-table">
+            <thead><tr><th>Symbol</th><th>Close</th><th>Time (EST)</th></tr></thead>
+            <tbody id="rsi70-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
       <div id="bt-section" style="display:none">
         <div class="bt-section-title">⚡ BackTest Results</div>
         <div class="bt-table-wrap">
@@ -364,6 +513,42 @@
   </div>
 
   <script>
+    // ── Auth ─────────────────────────────────────────────────────────────
+    (function () {
+      const overlay = document.getElementById("login-overlay");
+      const errorEl = document.getElementById("login-error");
+
+      function unlock() { overlay.classList.add("hidden"); }
+
+      if (sessionStorage.getItem("ta_auth") === "1") { unlock(); return; }
+
+      const EU = "V1ZkU2RHRlhORDA9";
+      const EP = "VFZSR2VtUkhWbmRqZHowOQ==";
+
+      function encode3(s) { return btoa(btoa(btoa(s))); }
+
+      function attempt() {
+        const u = document.getElementById("login-user").value.trim();
+        const p = document.getElementById("login-pass").value;
+        if (encode3(u) === EU && encode3(p) === EP) {
+          sessionStorage.setItem("ta_auth", "1");
+          errorEl.textContent = "";
+          unlock();
+        } else {
+          errorEl.textContent = "Invalid username or password.";
+          document.getElementById("login-pass").value = "";
+        }
+      }
+
+      document.getElementById("login-btn").addEventListener("click", attempt);
+      document.getElementById("login-pass").addEventListener("keydown", e => {
+        if (e.key === "Enter") attempt();
+      });
+      document.getElementById("login-user").addEventListener("keydown", e => {
+        if (e.key === "Enter") document.getElementById("login-pass").focus();
+      });
+    })();
+
     const REPO        = "avalonaialert/dashboard";
     const DATA_URL    = `https://api.github.com/repos/${REPO}/contents/data.json`;
     const MANIFEST_URL= `https://api.github.com/repos/${REPO}/contents/manifest.json`;
@@ -371,9 +556,10 @@
     const SKIP_ALERTS = new Set([666, 7777]);
 
     const ALERT_META = {
-       "6":  { label: "Call Alert",  cls: "tile-call", badgeCls: "badge-call", icon: "▲" },
-       "66": { label: "SMA Gaining", cls: "tile-sma",  badgeCls: "badge-sma",  icon: "~" },
-      "-6":  { label: "Bear Change", cls: "tile-bear", badgeCls: "badge-bear", icon: "▼" },
+       "6":  { label: "Call Alert",    cls: "tile-call", badgeCls: "badge-call", icon: "▲" },
+       "66": { label: "SMA Gaining",   cls: "tile-sma",  badgeCls: "badge-sma",  icon: "~" },
+      "-6":  { label: "Bear Change",   cls: "tile-bear", badgeCls: "badge-bear", icon: "▼" },
+       "7":  { label: "RSI 70 Pre-Mkt",cls: "tile-sma",  badgeCls: "badge-rsi70", icon: "◆" },
     };
 
     function meta(v) {
@@ -417,8 +603,9 @@
       const btTbody  = document.getElementById("bt-tbody");
 
       grid.innerHTML = "";
-      gainSec.style.display = "none";
-      btSec.style.display   = "none";
+      gainSec.style.display  = "none";
+      btSec.style.display    = "none";
+      document.getElementById("rsi70-section").style.display = "none";
 
       if (!alertsRaw || Object.keys(alertsRaw).length === 0) {
         statusEl.textContent = "No alerts for this day.";
@@ -436,6 +623,7 @@
 
       const symbolMap = {};
       const gainMap   = {};
+      const rsi70Map  = {};  // sym -> latest alert-7 record
 
       for (const [sym, val] of Object.entries(alertsRaw)) {
         const arr = Array.isArray(val) ? val : [val];
@@ -451,6 +639,11 @@
             if (!seenGain.has(key)) { seenGain.add(key); (gainMap[sym] = gainMap[sym] || []).push(a); }
           } else {
             if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
+            if (code === 7) {
+              if (!rsi70Map[sym] || new Date(a.received_at) > new Date(rsi70Map[sym].received_at)) {
+                rsi70Map[sym] = a;
+              }
+            }
           }
         }
       }
@@ -462,10 +655,12 @@
 
       const symbols = Object.entries(symbolMap);
 
-      if (symbols.length === 0 && Object.keys(gainMap).length === 0) {
+      if (symbols.length === 0 && Object.keys(gainMap).length === 0 && Object.keys(rsi70Map).length === 0) {
         statusEl.textContent = "No alerts for this day.";
         return;
       }
+
+      const rsi70Symbols = new Set(Object.keys(rsi70Map));
 
       // Sort each symbol's history newest → oldest
       for (const [, history] of symbols) {
@@ -480,9 +675,10 @@
         const latest = history[0];
         const first  = history[history.length - 1];
         const m = meta(latest.alert);
-        const isRecent = (Date.now() - new Date(latest.received_at).getTime()) <= 20 * 60 * 1000;
+        const isRecent  = (Date.now() - new Date(latest.received_at).getTime()) <= 20 * 60 * 1000;
+        const hasRsi70  = rsi70Symbols.has(symbol);
         const tile = document.createElement("div");
-        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}`;
+        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}`;
 
         const gain = fmtGain(first.close, latest.close);
         const gainHtml = gain
@@ -512,6 +708,7 @@
             <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
               <span class="tile-badge">${m.icon} ${m.label}</span>
               ${gainHtml}
+              ${hasRsi70 ? '<span class="hist-badge badge-rsi70">◆ RSI 70 Pre-Mkt</span>' : ""}
             </div>
             <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
           </div>${histSection}`;
@@ -551,6 +748,24 @@
           </tr>`;
         }).join("");
         btSec.style.display = "block";
+      }
+
+      // RSI 70 Pre-Market table
+      const rsi70Sec    = document.getElementById("rsi70-section");
+      const rsi70Tbody  = document.getElementById("rsi70-tbody");
+      const rsi70Entries = Object.entries(rsi70Map);
+      if (rsi70Entries.length > 0) {
+        rsi70Entries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
+        rsi70Tbody.innerHTML = rsi70Entries.map(([sym, a]) =>
+          `<tr>
+            <td class="rsi70-symbol">${sym}</td>
+            <td class="rsi70-close">${fmtClose(a.close)}</td>
+            <td class="rsi70-time">${fmtTime(a.received_at)}</td>
+          </tr>`
+        ).join("");
+        rsi70Sec.style.display = "block";
+      } else {
+        rsi70Sec.style.display = "none";
       }
 
       // 4H Gaining table
