@@ -33,25 +33,30 @@ jobs:
               b = s.encode()
               return base64.b64encode(base64.b64encode(base64.b64encode(b))).decode()
 
-          eu = encode3(os.environ["DASH_USER"])
-          ep = encode3(os.environ["DASH_PASS"])
+          eu  = encode3(os.environ["DASH_USER"])
+          ep  = encode3(os.environ["DASH_PASS"])
+          tok = os.environ["GH_READ_TOKEN"]
 
           with open("index.html", "r") as f:
               html = f.read()
 
-          assert "__ENCODED_USER__" in html, "Placeholder __ENCODED_USER__ not found in index.html"
-          assert "__ENCODED_PASS__" in html, "Placeholder __ENCODED_PASS__ not found in index.html"
+          assert "__ENCODED_USER__"  in html, "Placeholder __ENCODED_USER__ missing"
+          assert "__ENCODED_PASS__"  in html, "Placeholder __ENCODED_PASS__ missing"
+          assert "__GH_READ_TOKEN__" in html, "Placeholder __GH_READ_TOKEN__ missing"
 
-          html = html.replace("__ENCODED_USER__", eu).replace("__ENCODED_PASS__", ep)
+          html = html.replace("__ENCODED_USER__",  eu)
+          html = html.replace("__ENCODED_PASS__",  ep)
+          html = html.replace("__GH_READ_TOKEN__", tok)
 
           with open("index.html", "w") as f:
               f.write(html)
 
-          print("Credentials injected successfully.")
+          print("Credentials injected.")
           EOF
         env:
-          DASH_USER: ${{ secrets.DASH_USER }}
-          DASH_PASS: ${{ secrets.DASH_PASS }}
+          DASH_USER:      ${{ secrets.DASH_USER }}
+          DASH_PASS:      ${{ secrets.DASH_PASS }}
+          GH_READ_TOKEN:  ${{ secrets.GH_READ_TOKEN }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
