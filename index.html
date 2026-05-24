@@ -151,6 +151,15 @@
       font-weight: 600;
     }
 
+    .day-tab.tab-15min {
+      color: #c2560a;
+    }
+    .day-tab.tab-15min:hover { color: #f97316; }
+    .day-tab.tab-15min.active {
+      background: #2d1400;
+      color: #f97316;
+    }
+
     /* ── Main content ── */
     .content {
       flex: 1;
@@ -590,7 +599,7 @@
   <div class="app">
     <nav class="sidebar" id="sidebar">
       <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar">◀</button>
-      <div class="sidebar-label">Days</div>
+      <div class="sidebar-label">15 Mins</div>
     </nav>
 
     <main class="content">
@@ -762,11 +771,15 @@
       }
 
       // Determine which calendar date (EST) to keep
+      // For "today", use the stored date from data.json rather than current system time
+      // so that alerts whose received_at timestamp falls on a prior UTC date still show.
       const filterDateEST = dateKey === "today"
-        ? new Date().toLocaleDateString("en-US", { timeZone: "America/New_York" })
+        ? new Date(((_data?.today?.date) ?? new Date().toISOString().slice(0, 10)) + "T12:00:00Z")
+            .toLocaleDateString("en-US", { timeZone: "America/New_York" })
         : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
 
       function isTargetDay(iso) {
+        if (dateKey === "today") return true; // data.json only holds today's alerts
         return new Date(iso).toLocaleDateString("en-US", { timeZone: "America/New_York" }) === filterDateEST;
       }
 
@@ -835,7 +848,7 @@
 
       statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
 
-      // ── 5 Min Alerts tile — rendered first ─────────────────────────────
+      // ── 5 Min Alerts tile — rendered first ────────────────────────────
       if (alert5List.length > 0) {
         alert5List.sort((x, y) => new Date(y.a.received_at) - new Date(x.a.received_at));
         const tile5 = document.createElement("div");
@@ -998,12 +1011,13 @@
     }
 
     // ── State ────────────────────────────────────────────────────────────
-    let _data        = null;
-    let _manifest    = [];
-    let _dayCache    = {};
-    let _activeTab   = "today";
-    let _rsi70Syms   = new Set();   // symbols with alert 7 in current view
-    let _topGainers  = [];          // cached top-gainer records from CNBC
+    let _data         = null;
+    let _manifest     = [];
+    let _dayCache     = {};
+    let _activeTab    = "today";
+    let _active15Tab  = null;       // active 15 Mins - Simple tab key
+    let _rsi70Syms    = new Set();
+    let _topGainers   = [];
 
     async function _ghFetch(url) {
       const resp = await fetch(url, {
@@ -1015,25 +1029,132 @@
       return JSON.parse(atob(env.content.replace(/\n/g, "")));
     }
 
-    async function setActiveTab(key) {
-      _activeTab = key;
-      document.querySelectorAll(".day-tab").forEach(el => {
-        el.classList.toggle("active", el.dataset.key === key);
+    // Returns true if alertsObj contains at least one alert-4 record
+    function hasAlert5(alertsObj) {
+      if (!alertsObj) return false;
+      return Object.values(alertsObj).some(records => {
+        const arr = Array.isArray(records) ? records : [records];
+        return arr.some(a => Number(a.alert) === 4);
+      });
+    }
+
+    // Render alert-4 records as one tile per symbol
+    function render15minDay(alertsRaw, dateKey) {
+      const statusEl = document.getElementById("status");
+      const grid     = document.getElementById("grid");
+      grid.innerHTML = "";
+      ["gain-section","bt-section","rsi70-section","bigmove-section"].forEach(id => {
+        document.getElementById(id).style.display = "none";
       });
 
-      if (key === "today") {
-        const alertsRaw   = _data?.today?.alerts  ?? {};
-        const backtestRaw = _data?.today?.backtest ?? {};
-        renderDay(alertsRaw, "today", backtestRaw);
+      const filterDateEST = dateKey === "today"
+        ? new Date(((_data?.today?.date) ?? new Date().toISOString().slice(0, 10)) + "T12:00:00Z")
+            .toLocaleDateString("en-US", { timeZone: "America/New_York" })
+        : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
+
+      // Group by symbol, keep only alert-4 on the target day
+      const symMap = {};
+      for (const [sym, val] of Object.entries(alertsRaw || {})) {
+        const arr = Array.isArray(val) ? val : [val];
+        for (const a of arr) {
+          if (Number(a.alert) !== 4) continue;
+          if (dateKey !== "today") {
+            const d = new Date(a.received_at).toLocaleDateString("en-US", { timeZone: "America/New_York" });
+            if (d !== filterDateEST) continue;
+          }
+          (symMap[sym] = symMap[sym] || []).push(a);
+        }
+      }
+
+      const symbols = Object.entries(symMap);
+      if (symbols.length === 0) {
+        statusEl.textContent = "No 15 Min alerts for this day.";
         return;
       }
 
-      // Lazy-fetch the per-day file
+      // Sort each symbol's occurrences newest → oldest, then sort symbols by latest hit
+      symbols.forEach(([, hits]) => hits.sort((a, b) => new Date(b.received_at) - new Date(a.received_at)));
+      symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+
+      statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
+
+      symbols.forEach(([sym, hits]) => {
+        const latest = hits[0];
+        const tile   = document.createElement("div");
+        tile.className = "tile tile-call";
+
+        const occRows = hits.map(h => `
+          <div class="history-row">
+            <span class="hist-badge badge-call">⚡ 15 Min</span>
+            <span class="hist-close">${fmtClose(h.close)}</span>
+            <span class="hist-time">${fmtTime(h.received_at)}</span>
+          </div>`).join("");
+
+        tile.innerHTML = `
+          <div class="tile-header">
+            <div class="tile-top">
+              <div class="tile-symbol">${sym}</div>
+              <div class="tile-close-wrap">
+                <div class="tile-close-label">Close</div>
+                <div class="tile-close">${fmtClose(latest.close)}</div>
+              </div>
+            </div>
+            <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
+          </div>
+          <div class="tile-history">
+            <div class="history-label">Occurrences (${hits.length})</div>
+            ${occRows}
+          </div>`;
+        grid.appendChild(tile);
+      });
+    }
+
+    async function setActive15Tab(key) {
+      _active15Tab = key;
+      _activeTab   = null;   // deactivate main tabs
+      document.querySelectorAll(".day-tab:not(.tab-15min)").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".tab-15min").forEach(el => {
+        el.classList.toggle("active", el.dataset.key15 === key);
+      });
+
+      if (key === "today") {
+        render15minDay(_data?.today?.alerts ?? {}, "today");
+        return;
+      }
+
       const statusEl = document.getElementById("status");
       if (!_dayCache[key]) {
         statusEl.textContent = `Loading ${key}…`;
         try {
           _dayCache[key] = await _ghFetch(DAY_URL(key));
+          buildSidebar();   // may reveal new 15min tabs
+        } catch (err) {
+          statusEl.textContent = "Failed to load " + key + ": " + err.message;
+          return;
+        }
+      }
+      render15minDay(_dayCache[key].alerts ?? {}, key);
+    }
+
+    async function setActiveTab(key) {
+      _activeTab   = key;
+      _active15Tab = null;   // deactivate 15min tabs
+      document.querySelectorAll(".tab-15min").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".day-tab:not(.tab-15min)").forEach(el => {
+        el.classList.toggle("active", el.dataset.key === key);
+      });
+
+      if (key === "today") {
+        renderDay(_data?.today?.alerts ?? {}, "today", _data?.today?.backtest ?? {});
+        return;
+      }
+
+      const statusEl = document.getElementById("status");
+      if (!_dayCache[key]) {
+        statusEl.textContent = `Loading ${key}…`;
+        try {
+          _dayCache[key] = await _ghFetch(DAY_URL(key));
+          buildSidebar();   // may reveal new 15min tabs after fetch
         } catch (err) {
           statusEl.textContent = "Failed to load " + key + ": " + err.message;
           return;
@@ -1044,26 +1165,65 @@
     }
 
     function buildSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.innerHTML = '<div class="sidebar-label">Days</div>';
+      const sidebar  = document.getElementById("sidebar");
+      const toggle   = document.getElementById("sidebar-toggle");
+      sidebar.innerHTML = "";
+      sidebar.appendChild(toggle);
+
+      // ── Main days section ───────────────────────────────────────────────
+      const lbl0 = document.createElement("div");
+      lbl0.className = "sidebar-label";
+      lbl0.textContent = "15 Mins";
+      sidebar.appendChild(lbl0);
 
       const todayBtn = document.createElement("button");
-      todayBtn.className = "day-tab";
+      todayBtn.className = "day-tab" + (_activeTab === "today" ? " active" : "");
       todayBtn.dataset.key = "today";
       todayBtn.textContent = "Today";
       todayBtn.onclick = () => setActiveTab("today");
       sidebar.appendChild(todayBtn);
 
+      // ── 15 Mins – Simple section ────────────────────────────────────────
+      // Collect dates that have alert-5 data (from what's already loaded/cached)
+      const dates15 = [];
+      if (hasAlert5(_data?.today?.alerts)) dates15.push("today");
+      for (const [dateStr, dayData] of Object.entries(_dayCache)) {
+        if (hasAlert5(dayData.alerts)) dates15.push(dateStr);
+      }
+      // Sort history dates newest first, today always first
+      const sortedDates15 = [
+        ...dates15.filter(d => d === "today"),
+        ...dates15.filter(d => d !== "today").sort().reverse(),
+      ];
+
+      if (sortedDates15.length > 0) {
+        const lbl15 = document.createElement("div");
+        lbl15.className = "sidebar-label";
+        lbl15.style.marginTop = "16px";
+        lbl15.style.color = "#f97316";
+        lbl15.textContent = "15 Mins – Simple";
+        sidebar.appendChild(lbl15);
+
+        sortedDates15.forEach(key => {
+          const btn = document.createElement("button");
+          btn.className = "day-tab tab-15min" + (_active15Tab === key ? " active" : "");
+          btn.dataset.key15 = key;
+          btn.textContent = key === "today" ? "Today" : fmtDate(key);
+          btn.onclick = () => setActive15Tab(key);
+          sidebar.appendChild(btn);
+        });
+      }
+
+      // ── History section ─────────────────────────────────────────────────
       if (_manifest.length > 0) {
         const lbl = document.createElement("div");
         lbl.className = "sidebar-label";
-        lbl.style.marginTop = "12px";
+        lbl.style.marginTop = "16px";
         lbl.textContent = "History";
         sidebar.appendChild(lbl);
-
         _manifest.forEach(dateStr => {
           const btn = document.createElement("button");
-          btn.className = "day-tab";
+          btn.className = "day-tab" + (_activeTab === dateStr ? " active" : "");
           btn.dataset.key = dateStr;
           btn.textContent = fmtDate(dateStr);
           btn.onclick = () => setActiveTab(dateStr);
@@ -1075,27 +1235,23 @@
     async function load() {
       const statusEl = document.getElementById("status");
       try {
-        // Fetch today's data and manifest in parallel
         const [data, manifest] = await Promise.all([
           _ghFetch(DATA_URL),
           _ghFetch(MANIFEST_URL).catch(() => []),
         ]);
-
-        // Migrate old flat format if needed
         if (data.alerts && !data.today) {
           data.today = { date: "", alerts: data.alerts };
         }
-
         _data     = data;
         _manifest = Array.isArray(manifest) ? manifest : [];
-        // Clear day cache on reload so history re-fetches fresh data
         _dayCache = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
 
         buildSidebar();
-        setActiveTab(_activeTab);
+        if (_active15Tab) setActive15Tab(_active15Tab);
+        else setActiveTab(_activeTab);
       } catch (err) {
         statusEl.textContent = "Failed to load: " + err.message;
       }
