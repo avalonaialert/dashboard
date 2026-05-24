@@ -113,6 +113,27 @@
     }
 
 
+    /* ── Economic calendar bar ── */
+    #econ-bar {
+      display: flex; align-items: center; gap: 8px;
+      padding: 6px 24px; border-bottom: 1px solid #21262d;
+      background: #0d1117; flex-wrap: wrap; flex-shrink: 0; min-height: 34px;
+    }
+
+    .econ-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      border-radius: 16px; padding: 3px 10px;
+      font-size: 0.75rem; white-space: nowrap;
+    }
+    .econ-high   { background: #2d0f0f; border: 1px solid #da3633; color: #f85149; }
+    .econ-medium { background: #1c1400; border: 1px solid #9a6e00; color: #d4a017; }
+    .econ-low    { background: #161b22; border: 1px solid #30363d; color: #8b949e; }
+    .econ-time   { font-weight: 700; flex-shrink: 0; }
+    .econ-name   { font-weight: 600; }
+    .econ-data   { opacity: 0.75; font-size: 0.7rem; }
+    .econ-actual-pos { color: #3fb950; font-weight: 700; }
+    .econ-actual-neg { color: #f85149; font-weight: 700; }
+
     .contender-label { color: #f59e0b; margin-left: 16px; }
     .mover-chip.contender {
       background: #1c1400;
@@ -646,6 +667,10 @@
     <span class="movers-label">Top Gainers</span>
   </div>
 
+  <div id="econ-bar" style="display:none">
+    <span class="movers-label">Today's Events</span>
+  </div>
+
   <div class="app">
     <nav class="sidebar" id="sidebar">
       <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar">◀</button>
@@ -762,7 +787,8 @@
     const MANIFEST_URL= `https://api.github.com/repos/${REPO}/contents/manifest.json`;
     const DAY_URL     = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
     const SKIP_ALERTS = new Set([666, 7777]);
-    const AV_API_KEY  = "AH5RPA872FMOTDD8"; // free key from alphavantage.co
+    const AV_API_KEY      = "AH5RPA872FMOTDD8"; // free key from alphavantage.co
+    const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
     const ALERT_META = {
        "6":  { label: "Call Alert",    cls: "tile-call", badgeCls: "badge-call", icon: "▲" },
@@ -1387,6 +1413,50 @@
       }
     }
 
+    // ── Economic calendar (Finnhub) ─────────────────────────────────────
+    async function loadEconCalendar() {
+      if (!FINNHUB_API_KEY || FINNHUB_API_KEY === "YOUR_FINNHUB_KEY") return;
+      try {
+        const today = new Date().toISOString().slice(0, 10);
+        const url   = `https://finnhub.io/api/v1/calendar/economic?from=${today}&to=${today}&token=${FINNHUB_API_KEY}`;
+        const resp  = await fetch(url, { cache: "no-store" });
+        const json  = await resp.json();
+
+        const events = (json.economicCalendar || [])
+          .filter(e => e.country === "US" && e.impact !== "low")
+          .sort((a, b) => new Date(a.time) - new Date(b.time));
+
+        const bar = document.getElementById("econ-bar");
+        if (!events.length) { bar.style.display = "none"; return; }
+
+        bar.style.display = "flex";
+        bar.innerHTML = '<span class="movers-label">Today\'s Events</span>' +
+          events.map(e => {
+            const time = new Date(e.time).toLocaleTimeString("en-US", {
+              timeZone: "America/New_York", hour: "numeric", minute: "2-digit"
+            });
+            const unit    = e.unit || "";
+            const estStr  = e.estimate != null ? `Est: ${e.estimate}${unit}` : "";
+            const prevStr = e.prev     != null ? `Prev: ${e.prev}${unit}`    : "";
+            let   actStr  = "";
+            let   actCls  = "";
+            if (e.actual != null) {
+              const beat = e.estimate != null && e.actual > e.estimate;
+              const miss = e.estimate != null && e.actual < e.estimate;
+              actCls  = beat ? "econ-actual-pos" : miss ? "econ-actual-neg" : "";
+              actStr  = `<span class="${actCls}">Actual: ${e.actual}${unit}</span>`;
+            }
+            const dataParts = [estStr, prevStr].filter(Boolean).join(" · ");
+            return `<span class="econ-chip econ-${e.impact}" title="${e.event}">
+              <span class="econ-time">${time}</span>
+              <span class="econ-name">${e.event}</span>
+              ${dataParts ? `<span class="econ-data">${dataParts}</span>` : ""}
+              ${actStr}
+            </span>`;
+          }).join("");
+      } catch (_) { /* non-critical */ }
+    }
+
     // ── Earnings calendar (Alpha Vantage) ───────────────────────────────
     async function loadEarnings() {
       if (!AV_API_KEY || AV_API_KEY === "YOUR_ALPHAVANTAGE_KEY") return;
@@ -1458,7 +1528,8 @@
         if (_active15Tab) setActive15Tab(_active15Tab);
         else setActiveTab(_activeTab);
 
-        // Load earnings in background; re-render active tab when done so badges appear
+        // Load econ calendar + earnings in background
+        loadEconCalendar();
         loadEarnings().then(() => {
           if (_earningsSyms.size > 0) { // Map.size works the same
             _renderCache = {};
