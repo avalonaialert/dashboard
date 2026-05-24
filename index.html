@@ -444,6 +444,42 @@
       box-shadow: 0 0 0 2px #06b6d4, 0 0 20px 4px rgba(6,182,212,0.45);
     }
 
+    /* ── Start of Big Moves section ── */
+    .bigmove-section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #e879f9;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin: 32px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bigmove-section-title::after { content: ""; flex: 1; height: 1px; background: #2d0a3a; }
+
+    .bigmove-table-wrap { border-radius: 8px; border: 1px solid #3a0a4a; overflow-x: auto; }
+    .bigmove-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .bigmove-table thead th {
+      background: #1a0820;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #b94fd4;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #3a0a4a;
+      white-space: nowrap;
+    }
+    .bigmove-table tbody tr { border-bottom: 1px solid #1a0820; transition: background 0.15s; }
+    .bigmove-table tbody tr:last-child { border-bottom: none; }
+    .bigmove-table tbody tr:hover { background: #1a0820; }
+    .bigmove-table td { padding: 9px 14px; white-space: nowrap; }
+    .bigmove-symbol { font-weight: 700; font-size: 0.95rem; color: #e879f9; }
+    .bigmove-close  { color: #e6edf3; }
+    .bigmove-time   { color: #8b949e; font-size: 0.75rem; }
+
     /* ── Login overlay ── */
     #login-overlay {
       position: fixed;
@@ -566,6 +602,16 @@
           <table class="rsi70-table">
             <thead><tr><th>Symbol</th><th>Close</th><th>Time (EST)</th></tr></thead>
             <tbody id="rsi70-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="bigmove-section" style="display:none">
+        <div class="bigmove-section-title">🚀 Start of Big Moves</div>
+        <div class="bigmove-table-wrap">
+          <table class="bigmove-table">
+            <thead><tr><th>Symbol</th><th>Close</th><th>Time (EST)</th></tr></thead>
+            <tbody id="bigmove-tbody"></tbody>
           </table>
         </div>
       </div>
@@ -707,7 +753,8 @@
       grid.innerHTML = "";
       gainSec.style.display  = "none";
       btSec.style.display    = "none";
-      document.getElementById("rsi70-section").style.display = "none";
+      document.getElementById("rsi70-section").style.display  = "none";
+      document.getElementById("bigmove-section").style.display = "none";
 
       if (!alertsRaw || Object.keys(alertsRaw).length === 0) {
         statusEl.textContent = "No alerts for this day.";
@@ -726,6 +773,7 @@
       const symbolMap  = {};
       const gainMap    = {};
       const rsi70Map   = {};   // sym -> latest alert-7 record
+      const bigMoveMap = {};   // sym -> latest alert-66666 record
       const alert5List = [];   // flat list of {sym, a} for alert code 5
       const seen5      = new Set();
 
@@ -741,6 +789,10 @@
 
           if (code === 6666) {
             if (!seenGain.has(key)) { seenGain.add(key); (gainMap[sym] = gainMap[sym] || []).push(a); }
+          } else if (code === 66666) {
+            if (!bigMoveMap[sym] || new Date(a.received_at) > new Date(bigMoveMap[sym].received_at)) {
+              bigMoveMap[sym] = a;
+            }
           } else if (code === 5) {
             const k5 = `${sym}|${key}`;
             if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
@@ -762,7 +814,7 @@
 
       const symbols = Object.entries(symbolMap);
 
-      if (symbols.length === 0 && Object.keys(gainMap).length === 0 && Object.keys(rsi70Map).length === 0) {
+      if (symbols.length === 0 && Object.keys(gainMap).length === 0 && Object.keys(rsi70Map).length === 0 && Object.keys(bigMoveMap).length === 0) {
         statusEl.textContent = "No alerts for this day.";
         return;
       }
@@ -904,6 +956,22 @@
         rsi70Sec.style.display = "block";
       } else {
         rsi70Sec.style.display = "none";
+      }
+
+      // Start of Big Moves table
+      const bigMoveSec   = document.getElementById("bigmove-section");
+      const bigMoveTbody = document.getElementById("bigmove-tbody");
+      const bigMoveEntries = Object.entries(bigMoveMap);
+      if (bigMoveEntries.length > 0) {
+        bigMoveEntries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
+        bigMoveTbody.innerHTML = bigMoveEntries.map(([sym, a]) =>
+          `<tr>
+            <td class="bigmove-symbol">${sym}</td>
+            <td class="bigmove-close">${fmtClose(a.close)}</td>
+            <td class="bigmove-time">${fmtTime(a.received_at)}</td>
+          </tr>`
+        ).join("");
+        bigMoveSec.style.display = "block";
       }
 
       // 4H Gaining table
