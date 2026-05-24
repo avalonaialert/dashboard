@@ -35,6 +35,14 @@
       background: #2d1600; border: 1px solid #b45309; color: #fb923c;
       white-space: nowrap;
     }
+    #sound-toggle {
+      font-size: 0.78rem; cursor: pointer; user-select: none;
+      padding: 2px 9px; border-radius: 12px; border: 1px solid #30363d;
+      background: #161b22; color: #8b949e; white-space: nowrap;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    #sound-toggle.on  { border-color: #238636; color: #3fb950; background: #0d2118; }
+    #sound-toggle.off { border-color: #30363d; color: #484f58; }
 
     .header-right { display: flex; align-items: center; gap: 12px; }
 
@@ -686,6 +694,7 @@
     <div class="header-right">
       <span id="market-status"></span>
       <span id="stale-warning">⚠ Feed may be stale</span>
+      <button id="sound-toggle" title="Toggle alert sound">🔔 Sound</button>
       <span id="last-updated">—</span>
     </div>
   </header>
@@ -1622,7 +1631,31 @@
     setInterval(checkStaleness, 60 * 1000);
 
     // ── Alert sound notification ─────────────────────────────────────────
+    let _soundEnabled = localStorage.getItem("ta_sound") !== "off";
+
+    function _applySoundToggleUI() {
+      const btn = document.getElementById("sound-toggle");
+      if (_soundEnabled) {
+        btn.textContent = "🔔 Sound";
+        btn.className   = "on";
+        btn.title       = "Sound alerts on — click to mute";
+      } else {
+        btn.textContent = "🔕 Muted";
+        btn.className   = "off";
+        btn.title       = "Sound alerts off — click to enable";
+      }
+    }
+
+    document.getElementById("sound-toggle").addEventListener("click", () => {
+      _soundEnabled = !_soundEnabled;
+      localStorage.setItem("ta_sound", _soundEnabled ? "on" : "off");
+      _applySoundToggleUI();
+      if (_soundEnabled) playAlertTone(); // preview the sound when turning on
+    });
+    _applySoundToggleUI();
+
     function playAlertTone() {
+      if (!_soundEnabled) return;
       try {
         const ctx  = new (window.AudioContext || window.webkitAudioContext)();
         const osc  = ctx.createOscillator();
