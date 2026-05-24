@@ -74,6 +74,14 @@
     .mover-chip.rsi70 .mover-sym { color: #06b6d4; }
     .mover-chip.rsi70 .mover-pct { color: #22d3ee; }
 
+    .contender-label { color: #f59e0b; margin-left: 16px; }
+    .mover-chip.contender {
+      background: #1c1400;
+      border-color: #f59e0b;
+      box-shadow: 0 0 0 2px #f59e0b, 0 0 12px 3px rgba(245,158,11,0.4);
+    }
+    .contender-sym { font-weight: 700; color: #fbbf24; font-size: 0.82rem; }
+
     /* ── App shell ── */
     .app {
       display: flex;
@@ -789,6 +797,7 @@
       const bigMoveMap = {};   // sym -> latest alert-66666 record
       const alert5List = [];   // flat list of {sym, a} for alert code 5
       const seen5      = new Set();
+      const symsCode4  = new Set(); // symbols with 15-min-simple alert (code 4)
 
       for (const [sym, val] of Object.entries(alertsRaw)) {
         const arr = Array.isArray(val) ? val : [val];
@@ -809,6 +818,8 @@
           } else if (code === 5) {
             const k5 = `${sym}|${key}`;
             if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
+          } else if (code === 4) {
+            symsCode4.add(sym);
           } else {
             if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
             if (code === 7) {
@@ -1005,8 +1016,12 @@
         gainSec.style.display = "block";
       }
 
-      // Sync RSI-70 set and refresh movers bar highlights
+      // Sync RSI-70 set, compute top contenders, refresh movers bar
       _rsi70Syms = rsi70Symbols;
+      const symsCall = new Set(Object.keys(symbolMap));
+      _contenderSyms = new Set(
+        [...Object.keys(rsi70Map)].filter(s => symsCall.has(s) && symsCode4.has(s))
+      );
       renderMoversBar();
     }
 
@@ -1016,8 +1031,9 @@
     let _dayCache     = {};
     let _activeTab    = "today";
     let _active15Tab  = null;       // active 15 Mins - Simple tab key
-    let _rsi70Syms    = new Set();
-    let _topGainers   = [];
+    let _rsi70Syms      = new Set();
+    let _contenderSyms  = new Set();
+    let _topGainers     = [];
 
     async function _ghFetch(url) {
       const resp = await fetch(url, {
@@ -1263,17 +1279,31 @@
 
     // ── Top Gainers bar ──────────────────────────────────────────────────
     function renderMoversBar() {
-      if (_topGainers.length === 0) return;
       const bar = document.getElementById("movers-bar");
-      bar.innerHTML = '<span class="movers-label">Top Gainers</span>' +
-        _topGainers.map(s => {
-          const pct      = s.symbolData.changePct.toFixed(2);
-          const isRsi70  = _rsi70Syms.has(s.cnbcSymbol);
-          return `<span class="mover-chip${isRsi70 ? " rsi70" : ""}">
-            <span class="mover-sym">${s.cnbcSymbol}</span>
-            <span class="mover-pct">+${pct}%</span>
-          </span>`;
-        }).join("");
+      let html = "";
+
+      if (_topGainers.length > 0) {
+        html += '<span class="movers-label">Top Gainers</span>' +
+          _topGainers.map(s => {
+            const pct     = s.symbolData.changePct.toFixed(2);
+            const isRsi70 = _rsi70Syms.has(s.cnbcSymbol);
+            return `<span class="mover-chip${isRsi70 ? " rsi70" : ""}">
+              <span class="mover-sym">${s.cnbcSymbol}</span>
+              <span class="mover-pct">+${pct}%</span>
+            </span>`;
+          }).join("");
+      }
+
+      if (_contenderSyms.size > 0) {
+        html += '<span class="movers-label contender-label">Top Contender (Call + RSI + Simple):</span>' +
+          [..._contenderSyms].map(sym =>
+            `<span class="mover-chip contender">
+              <span class="contender-sym">★ ${sym}</span>
+            </span>`
+          ).join("");
+      }
+
+      if (html) bar.innerHTML = html;
     }
 
     async function loadTopMovers() {
