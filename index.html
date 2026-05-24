@@ -763,8 +763,8 @@
 
       if (sessionStorage.getItem("ta_auth") === "1") { unlock(); return; }
 
-      const EU = "V1ZkU2RHRlhORDA9";
-      const EP = "VFZSR2VtUkhWbmRqZHowOQ==";
+      const EU = "__ENCODED_USER__";
+      const EP = "__ENCODED_PASS__";
 
       function encode3(s) { return btoa(btoa(btoa(s))); }
 
