@@ -74,6 +74,9 @@
     .mover-chip.rsi70 .mover-sym { color: #06b6d4; }
     .mover-chip.rsi70 .mover-pct { color: #22d3ee; }
 
+    .sym-link { color: inherit; text-decoration: none; }
+    .sym-link:hover { text-decoration: underline; opacity: 0.85; }
+
     .contender-label { color: #f59e0b; margin-left: 16px; }
     .mover-chip.contender {
       background: #1c1400;
@@ -749,6 +752,9 @@
     }
 
     function fmtClose(v) { return v != null ? Number(v).toFixed(2) : "—"; }
+    function symLink(sym) {
+      return `<a href="https://finviz.com/quote?t=${sym}&p=d" target="_blank" rel="noopener" class="sym-link">${sym}</a>`;
+    }
 
     function fmtGain(first, latest) {
       if (first == null || latest == null || first === 0) return null;
@@ -866,7 +872,7 @@
         tile5.className = "tile tile-5min";
         const rows5 = alert5List.map(({ sym, a }) =>
           `<div class="history-row">
-            <span class="five-sym">${sym}</span>
+            <span class="five-sym">${symLink(sym)}</span>
             <span class="hist-close">${fmtClose(a.close)}</span>
             <span class="hist-time">${fmtTime(a.received_at)}</span>
           </div>`
@@ -913,7 +919,7 @@
         tile.innerHTML = `
           <div class="tile-header">
             <div class="tile-top">
-              <div class="tile-symbol">${symbol}</div>
+              <div class="tile-symbol">${symLink(symbol)}</div>
               <div class="tile-close-wrap">
                 <div class="tile-close-label">Close</div>
                 <div class="tile-close">${fmtClose(latest.close)}</div>
@@ -949,7 +955,7 @@
           const highStr = highPct != null ? `${highPct >= 0 ? "+" : ""}${highPct.toFixed(2)}%` : "—";
           const highCls = highPct == null ? "" : highPct >= 0 ? "pos" : "neg";
           return `<tr>
-            <td class="bt-symbol">${sym}</td>
+            <td class="bt-symbol">${symLink(sym)}</td>
             <td class="bt-option">${bt.option_symbol ?? "—"}</td>
             <td class="bt-price">$${bt.strike?.toFixed(2) ?? "—"}</td>
             <td class="bt-price">$${bt.entry_price?.toFixed(2) ?? "—"}</td>
@@ -972,7 +978,7 @@
         rsi70Entries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
         rsi70Tbody.innerHTML = rsi70Entries.map(([sym, a]) =>
           `<tr>
-            <td class="rsi70-symbol">${sym}</td>
+            <td class="rsi70-symbol">${symLink(sym)}</td>
             <td class="rsi70-close">${fmtClose(a.close)}</td>
             <td class="rsi70-time">${fmtTime(a.received_at)}</td>
           </tr>`
@@ -990,7 +996,7 @@
         bigMoveEntries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
         bigMoveTbody.innerHTML = bigMoveEntries.map(([sym, a]) =>
           `<tr>
-            <td class="bigmove-symbol">${sym}</td>
+            <td class="bigmove-symbol">${symLink(sym)}</td>
             <td class="bigmove-close">${fmtClose(a.close)}</td>
             <td class="bigmove-time">${fmtTime(a.received_at)}</td>
           </tr>`
@@ -1008,7 +1014,7 @@
         gainRows.sort((a, b) => new Date(b.latest.received_at) - new Date(a.latest.received_at));
         gainTbody.innerHTML = gainRows.map(({ sym, latest }) =>
           `<tr${rsi70Symbols.has(sym) ? ' class="rsi70"' : ""}>
-            <td class="gain-symbol">${sym}</td>
+            <td class="gain-symbol">${symLink(sym)}</td>
             <td class="gain-close">${fmtClose(latest.close)}</td>
             <td class="gain-time">${fmtTime(latest.received_at)}</td>
           </tr>`
@@ -1109,7 +1115,7 @@
         tile.innerHTML = `
           <div class="tile-header">
             <div class="tile-top">
-              <div class="tile-symbol">${sym}</div>
+              <div class="tile-symbol">${symLink(sym)}</div>
               <div class="tile-close-wrap">
                 <div class="tile-close-label">Close</div>
                 <div class="tile-close">${fmtClose(latest.close)}</div>
@@ -1288,7 +1294,7 @@
             const pct     = s.symbolData.changePct.toFixed(2);
             const isRsi70 = _rsi70Syms.has(s.cnbcSymbol);
             return `<span class="mover-chip${isRsi70 ? " rsi70" : ""}">
-              <span class="mover-sym">${s.cnbcSymbol}</span>
+              <span class="mover-sym">${symLink(s.cnbcSymbol)}</span>
               <span class="mover-pct">+${pct}%</span>
             </span>`;
           }).join("");
@@ -1298,7 +1304,7 @@
         html += '<span class="movers-label contender-label">Top Contender (Call + RSI + Simple):</span>' +
           [..._contenderSyms].map(sym =>
             `<span class="mover-chip contender">
-              <span class="contender-sym">★ ${sym}</span>
+              <span class="contender-sym">★ ${symLink(sym)}</span>
             </span>`
           ).join("");
       }
