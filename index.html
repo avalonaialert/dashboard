@@ -105,6 +105,14 @@
     .sym-link { color: inherit; text-decoration: none; }
     .sym-link:hover { text-decoration: underline; opacity: 0.85; }
 
+    .earnings-badge {
+      font-size: 0.68rem; font-weight: 600;
+      padding: 2px 8px; border-radius: 12px;
+      background: #111d2e; border: 1px solid #2d5a8e; color: #7eb3e0;
+      white-space: nowrap;
+    }
+
+
     .contender-label { color: #f59e0b; margin-left: 16px; }
     .mover-chip.contender {
       background: #1c1400;
@@ -754,6 +762,7 @@
     const MANIFEST_URL= `https://api.github.com/repos/${REPO}/contents/manifest.json`;
     const DAY_URL     = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
     const SKIP_ALERTS = new Set([666, 7777]);
+    const AV_API_KEY  = "AH5RPA872FMOTDD8"; // free key from alphavantage.co
 
     const ALERT_META = {
        "6":  { label: "Call Alert",    cls: "tile-call", badgeCls: "badge-call", icon: "▲" },
@@ -952,6 +961,8 @@
 
         const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histRows}</div>`;
 
+        const earningsDate = _earningsSyms.get(symbol);
+        const hasEarnings  = earningsDate !== undefined;
         tile.innerHTML = `
           <div class="tile-header">
             <div class="tile-top">
@@ -965,9 +976,11 @@
               <span class="tile-badge">${m.icon} ${m.label}</span>
               ${gainHtml}
               ${hasRsi70 ? '<span class="hist-badge badge-rsi70">◆ RSI 70 Pre-Mkt</span>' : ""}
+              ${hasEarnings ? `<span class="earnings-badge">Earnings: ${earningsDate}</span>` : ""}
             </div>
             <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
-          </div>${histSection}`;
+          </div>${histSection}
+          `;
         grid.appendChild(tile);
       });
 
@@ -1078,6 +1091,7 @@
     let _topGainers      = [];
     let _renderCache     = {};   // key -> saved DOM snapshot
     let _showAllHistory  = false;
+    let _earningsSyms    = new Map();  // sym -> days until earnings
     const MAX_DAY_CACHE  = 7;
     const SIDEBAR_CAP    = 30;
 
@@ -1373,6 +1387,44 @@
       }
     }
 
+    // ── Earnings calendar (Alpha Vantage) ───────────────────────────────
+    async function loadEarnings() {
+      if (!AV_API_KEY || AV_API_KEY === "YOUR_ALPHAVANTAGE_KEY") return;
+      try {
+        const url  = `https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&horizon=3month&apikey=${AV_API_KEY}`;
+        const resp = await fetch(url, { cache: "no-store" });
+        const csv  = await resp.text();
+        const now  = Date.now();
+        const ms3d = 10 * 24 * 60 * 60 * 1000;
+        _earningsSyms.clear();
+        csv.trim().split("\n").slice(1).forEach(line => {
+          const [sym,, reportDate] = line.split(",");
+          if (!sym || !reportDate) return;
+          const t = new Date(reportDate.trim()).getTime();
+          if (t >= now && t <= now + ms3d) {
+            const days     = Math.round((t - now) / (24 * 60 * 60 * 1000));
+            const rDate    = new Date(t);
+            let   label;
+            const dateLabel = rDate.toLocaleDateString("en-US", { timeZone: "America/New_York", month: "short", day: "numeric" });
+            if (days === 0) {
+              label = `${dateLabel} (Today)`;
+            } else if (days === 1) {
+              label = `${dateLabel} (Tomorrow)`;
+            } else {
+              const dayName  = rDate.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/New_York" });
+              const weekOf   = d => { const j = new Date(d.getFullYear(), 0, 1); return Math.ceil(((d - j) / 86400000 + j.getDay() + 1) / 7); };
+              const thisWeek = weekOf(new Date(now));
+              const thatWeek = weekOf(rDate);
+              const suffix   = thatWeek === thisWeek ? "This Week" : thatWeek === thisWeek + 1 ? "Next Week" : "In 2 Weeks";
+              label = `${dateLabel} (${dayName} - ${suffix})`;
+            }
+            _earningsSyms.set(sym.trim(), label);
+          }
+        });
+      } catch (_) { /* silently skip — earnings are non-critical */ }
+    }
+
+
     async function load() {
       const statusEl = document.getElementById("status");
       statusEl.innerHTML = "Loading…";
@@ -1405,6 +1457,15 @@
         buildSidebar();
         if (_active15Tab) setActive15Tab(_active15Tab);
         else setActiveTab(_activeTab);
+
+        // Load earnings in background; re-render active tab when done so badges appear
+        loadEarnings().then(() => {
+          if (_earningsSyms.size > 0) { // Map.size works the same
+            _renderCache = {};
+            if (_active15Tab) setActive15Tab(_active15Tab);
+            else if (_activeTab) setActiveTab(_activeTab);
+          }
+        });
       } catch (err) {
         statusEl.innerHTML =
           `Failed to load: ${err.message} ` +
