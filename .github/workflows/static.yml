@@ -1,28 +1,20 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -31,13 +23,44 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Inject credentials
+        run: |
+          python3 - <<'EOF'
+          import base64, os
+
+          def encode3(s):
+              b = s.encode()
+              return base64.b64encode(base64.b64encode(base64.b64encode(b))).decode()
+
+          eu = encode3(os.environ["DASH_USER"])
+          ep = encode3(os.environ["DASH_PASS"])
+
+          with open("index.html", "r") as f:
+              html = f.read()
+
+          assert "__ENCODED_USER__" in html, "Placeholder __ENCODED_USER__ not found in index.html"
+          assert "__ENCODED_PASS__" in html, "Placeholder __ENCODED_PASS__ not found in index.html"
+
+          html = html.replace("__ENCODED_USER__", eu).replace("__ENCODED_PASS__", ep)
+
+          with open("index.html", "w") as f:
+              f.write(html)
+
+          print("Credentials injected successfully.")
+          EOF
+        env:
+          DASH_USER: ${{ secrets.DASH_USER }}
+          DASH_PASS: ${{ secrets.DASH_PASS }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
