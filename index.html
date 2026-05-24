@@ -29,6 +29,34 @@
     h1 { font-size: 1.2rem; font-weight: 600; letter-spacing: 0.5px; }
     #last-updated { font-size: 0.75rem; color: #8b949e; }
 
+    .header-right { display: flex; align-items: center; gap: 12px; }
+
+    .market-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.72rem; font-weight: 600;
+      padding: 3px 10px; border-radius: 20px; white-space: nowrap;
+    }
+    .market-open   { background:#0d2118; border:1px solid #238636; color:#3fb950; }
+    .market-pre    { background:#0d1b2e; border:1px solid #1f6feb; color:#58a6ff; }
+    .market-after  { background:#1c1400; border:1px solid #f59e0b; color:#fbbf24; }
+    .market-closed { background:#161b22; border:1px solid #30363d; color:#8b949e; }
+
+    #sym-search {
+      display: block; width: 100%; max-width: 280px;
+      margin-bottom: 16px; padding: 7px 12px;
+      background: #161b22; border: 1px solid #30363d;
+      border-radius: 8px; color: #e6edf3; font-size: 0.85rem; outline: none;
+    }
+    #sym-search:focus { border-color: #58a6ff; }
+    #sym-search::placeholder { color: #484f58; }
+
+    @keyframes newAlertPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(251,191,36,0.8); }
+      60%  { box-shadow: 0 0 0 10px rgba(251,191,36,0.12); }
+      100% { box-shadow: 0 0 0 0 rgba(251,191,36,0); }
+    }
+    .tile.new-alert { animation: newAlertPulse 1.8s ease-out 2; }
+
     /* ── Top movers bar ── */
     #movers-bar {
       display: flex;
@@ -600,7 +628,10 @@
 
   <header>
     <h1>Avalon Alerts</h1>
-    <span id="last-updated">—</span>
+    <div class="header-right">
+      <span id="market-status"></span>
+      <span id="last-updated">—</span>
+    </div>
   </header>
 
   <div id="movers-bar">
@@ -615,6 +646,7 @@
 
     <main class="content">
       <p id="status">Loading…</p>
+      <input id="sym-search" type="text" placeholder="Filter symbols…" autocomplete="off" />
       <div class="grid" id="grid"></div>
       <div id="rsi70-section" style="display:none">
         <div class="rsi70-section-title">◆ RSI 70 Pre-Market</div>
@@ -899,6 +931,7 @@
         const hasRsi70  = rsi70Symbols.has(symbol);
         const tile = document.createElement("div");
         tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}`;
+        tile.dataset.symbol = symbol;
 
         const gain = fmtGain(first.close, latest.close);
         const gainHtml = gain
@@ -1104,6 +1137,7 @@
         const latest = hits[0];
         const tile   = document.createElement("div");
         tile.className = "tile tile-call";
+        tile.dataset.symbol = sym;
 
         const occRows = hits.map(h => `
           <div class="history-row">
@@ -1279,9 +1313,71 @@
       }
     }
 
-    load().then(() => {
-      setTimeout(() => location.reload(), 5 * 60 * 1000);
+    // ── Market hours indicator ───────────────────────────────────────────
+    function getMarketStatus() {
+      const est  = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+      const day  = est.getDay();
+      const mins = est.getHours() * 60 + est.getMinutes();
+      if (day === 0 || day === 6 || mins < 240 || mins >= 1200)
+        return { label: "Closed",      cls: "market-closed", dot: "●" };
+      if (mins < 570)  return { label: "Pre-Market",  cls: "market-pre",    dot: "●" };
+      if (mins < 960)  return { label: "Market Open", cls: "market-open",   dot: "●" };
+      return             { label: "After Hours",  cls: "market-after",  dot: "●" };
+    }
+    function updateMarketClock() {
+      const { label, cls, dot } = getMarketStatus();
+      const el = document.getElementById("market-status");
+      el.className = `market-chip ${cls}`;
+      el.textContent = `${dot} ${label}`;
+    }
+    updateMarketClock();
+    setInterval(updateMarketClock, 60 * 1000);
+
+    // ── Symbol search filter ─────────────────────────────────────────────
+    document.getElementById("sym-search").addEventListener("input", function () {
+      const q = this.value.trim().toUpperCase();
+      document.querySelectorAll("#grid .tile[data-symbol]").forEach(t => {
+        t.style.display = !q || t.dataset.symbol.toUpperCase().includes(q) ? "" : "none";
+      });
+      ["rsi70-symbol","gain-symbol","bigmove-symbol","bt-symbol"].forEach(cls => {
+        document.querySelectorAll(`.${cls}`).forEach(td => {
+          const sym = td.querySelector(".sym-link")?.textContent.trim().toUpperCase() ?? "";
+          td.closest("tr").style.display = !q || sym.includes(q) ? "" : "none";
+        });
+      });
     });
+
+    // ── Silent 5-min refresh (preserves active tab + scroll) ────────────
+    async function silentRefresh() {
+      try {
+        const data = await _ghFetch(DATA_URL);
+        if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
+        if (data.last_updated === _data?.last_updated) return; // nothing changed
+
+        const prevSyms = new Set(
+          [...document.querySelectorAll("#grid .tile[data-symbol]")].map(t => t.dataset.symbol)
+        );
+
+        const manifest = await _ghFetch(MANIFEST_URL).catch(() => []);
+        _data     = data;
+        _manifest = Array.isArray(manifest) ? manifest : [];
+        _dayCache = {};
+
+        document.getElementById("last-updated").textContent =
+          _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
+
+        buildSidebar();
+        if (_active15Tab) await setActive15Tab(_active15Tab);
+        else await setActiveTab(_activeTab);
+
+        // Highlight tiles that are new since last fetch
+        document.querySelectorAll("#grid .tile[data-symbol]").forEach(t => {
+          if (!prevSyms.has(t.dataset.symbol)) t.classList.add("new-alert");
+        });
+      } catch (_) { /* silent — don't disrupt the UI */ }
+    }
+
+    load().then(() => setInterval(silentRefresh, 5 * 60 * 1000));
 
     // ── Top Gainers bar ──────────────────────────────────────────────────
     function renderMoversBar() {
