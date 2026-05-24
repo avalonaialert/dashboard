@@ -28,6 +28,13 @@
 
     h1 { font-size: 1.2rem; font-weight: 600; letter-spacing: 0.5px; }
     #last-updated { font-size: 0.75rem; color: #8b949e; }
+    #stale-warning {
+      display: none;
+      font-size: 0.72rem; font-weight: 600;
+      padding: 2px 10px; border-radius: 12px;
+      background: #2d1600; border: 1px solid #b45309; color: #fb923c;
+      white-space: nowrap;
+    }
 
     .header-right { display: flex; align-items: center; gap: 12px; }
 
@@ -678,6 +685,7 @@
     <h1>Avalon Alerts</h1>
     <div class="header-right">
       <span id="market-status"></span>
+      <span id="stale-warning">⚠ Feed may be stale</span>
       <span id="last-updated">—</span>
     </div>
   </header>
@@ -801,11 +809,12 @@
       });
     })();
 
-    const REPO        = "avalonaialert/dashboard";
-    const DATA_URL    = `https://api.github.com/repos/${REPO}/contents/data.json`;
-    const MANIFEST_URL= `https://api.github.com/repos/${REPO}/contents/manifest.json`;
-    const DAY_URL     = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
-    const SKIP_ALERTS = new Set([666, 7777]);
+    const REPO          = "avalonaialert/dashboard";
+    const DATA_URL      = `https://api.github.com/repos/${REPO}/contents/data.json`;
+    const MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/manifest.json`;
+    const DAY_URL       = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
+    const GH_READ_TOKEN = "__GH_READ_TOKEN__"; // injected by CI from GitHub Secret
+    const SKIP_ALERTS   = new Set([666, 7777]);
     const AV_API_KEY      = "AH5RPA872FMOTDD8"; // free key from alphavantage.co
     const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
@@ -1152,10 +1161,11 @@
     const SIDEBAR_CAP    = 30;
 
     async function _ghFetch(url) {
-      const resp = await fetch(url, {
-        cache: "no-store",
-        headers: { "Accept": "application/vnd.github.v3+json" },
-      });
+      const headers = { "Accept": "application/vnd.github.v3+json" };
+      if (GH_READ_TOKEN && !GH_READ_TOKEN.startsWith("__")) {
+        headers["Authorization"] = `token ${GH_READ_TOKEN}`;
+      }
+      const resp = await fetch(url, { cache: "no-store", headers });
       if (!resp.ok) throw new Error(`HTTP ${resp.status} ${url}`);
       const env = await resp.json();
       return JSON.parse(atob(env.content.replace(/\n/g, "")));
@@ -1598,6 +1608,37 @@
     }
 
 
+    // ── Staleness warning ────────────────────────────────────────────────
+    function checkStaleness() {
+      const el = document.getElementById("stale-warning");
+      if (!_data?.last_updated) { el.style.display = "none"; return; }
+      const status = getMarketStatus();
+      if (status.cls !== "market-open" && status.cls !== "market-pre") {
+        el.style.display = "none"; return;
+      }
+      const ageMin = (Date.now() - new Date(_data.last_updated).getTime()) / 60000;
+      el.style.display = ageMin > 20 ? "inline" : "none";
+    }
+    setInterval(checkStaleness, 60 * 1000);
+
+    // ── Alert sound notification ─────────────────────────────────────────
+    function playAlertTone() {
+      try {
+        const ctx  = new (window.AudioContext || window.webkitAudioContext)();
+        const osc  = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(880, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(440, ctx.currentTime + 0.25);
+        gain.gain.setValueAtTime(0.25, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.4);
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + 0.4);
+      } catch (_) {}
+    }
+
     async function load() {
       const statusEl = document.getElementById("status");
       statusEl.innerHTML = "Loading…";
@@ -1617,6 +1658,7 @@
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
+        checkStaleness();
 
         // Restore tab from URL hash
         const hash = window.location.hash.slice(1); // strip #
@@ -1691,6 +1733,13 @@
         if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
         if (data.last_updated === _data?.last_updated) return; // nothing changed
 
+        // Sound alert: play tone if any alert arrived in the last 5 min
+        const now = Date.now();
+        const hasFreshAlert = Object.values(data.today?.alerts ?? {}).some(records =>
+          records.some(r => now - new Date(r.received_at).getTime() < 5 * 60 * 1000)
+        );
+        if (hasFreshAlert) playAlertTone();
+
         const manifest = await _ghFetch(MANIFEST_URL).catch(() => []);
         _data        = data;
         _manifest    = Array.isArray(manifest) ? manifest : [];
@@ -1700,6 +1749,7 @@
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
+        checkStaleness();
 
         buildSidebar();
         if (_active15Tab) await setActive15Tab(_active15Tab);
