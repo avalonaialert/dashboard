@@ -11,6 +11,15 @@
         "msg_id": "19e4c20db9f56ec1",
         "received_at": "2026-05-21T20:01:20+00:00"
       },
+            {
+        "alert": 5,
+        "close": 251.66875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DELL",
+        "msg_id": "19e4c20db9f56ec1",
+        "received_at": "2026-05-21T20:01:20+00:00"
+      },
       {
         "alert": 66666,
         "close": 291.76750000000004,
@@ -54,6 +63,15 @@
     "CRWD": [
       {
         "alert": 6,
+        "close": 649.4425000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CRWD",
+        "msg_id": "19e4b96f62b59c84",
+        "received_at": "2026-05-21T17:30:43+00:00"
+      },
+            {
+        "alert": 5,
         "close": 649.4425000000001,
         "peak": 0,
         "cross": 0,
