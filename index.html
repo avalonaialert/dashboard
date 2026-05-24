@@ -55,7 +55,7 @@
       60%  { box-shadow: 0 0 0 10px rgba(251,191,36,0.12); }
       100% { box-shadow: 0 0 0 0 rgba(251,191,36,0); }
     }
-    .tile.new-alert { animation: newAlertPulse 1.8s ease-out 2; }
+    .tile.new-alert { animation: newAlertPulse 2.4s ease-in-out infinite; }
 
     /* ── Top movers bar ── */
     #movers-bar {
@@ -776,10 +776,9 @@
     }
 
     function fmtDate(iso) {
-      // iso = "2026-05-21"
       return new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", {
         timeZone: "America/New_York",
-        month: "short", day: "numeric",
+        weekday: "short", month: "short", day: "numeric",
       });
     }
 
@@ -927,10 +926,14 @@
         const latest = history[0];
         const first  = history[history.length - 1];
         const m = meta(latest.alert);
-        const isRecent  = (Date.now() - new Date(latest.received_at).getTime()) <= 20 * 60 * 1000;
+        const age       = Date.now() - new Date(latest.received_at).getTime();
+        const isRecent  = age <= 20 * 60 * 1000;
+        const isNew     = age <= 15 * 60 * 1000;
         const hasRsi70  = rsi70Symbols.has(symbol);
         const tile = document.createElement("div");
-        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}`;
+        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}${isNew ? " new-alert" : ""}`;
+        // Auto-remove pulse once the 15-min window expires
+        if (isNew) setTimeout(() => tile.classList.remove("new-alert"), 15 * 60 * 1000 - age);
         tile.dataset.symbol = symbol;
 
         const gain = fmtGain(first.close, latest.close);
@@ -1070,9 +1073,13 @@
     let _dayCache     = {};
     let _activeTab    = "today";
     let _active15Tab  = null;       // active 15 Mins - Simple tab key
-    let _rsi70Syms      = new Set();
-    let _contenderSyms  = new Set();
-    let _topGainers     = [];
+    let _rsi70Syms       = new Set();
+    let _contenderSyms   = new Set();
+    let _topGainers      = [];
+    let _renderCache     = {};   // key -> saved DOM snapshot
+    let _showAllHistory  = false;
+    const MAX_DAY_CACHE  = 7;
+    const SIDEBAR_CAP    = 30;
 
     async function _ghFetch(url) {
       const resp = await fetch(url, {
@@ -1165,16 +1172,59 @@
       });
     }
 
+    // ── Day cache helpers ────────────────────────────────────────────────
+    function _cacheDay(key, data) {
+      if (!_dayCache[key]) {
+        const keys = Object.keys(_dayCache);
+        if (keys.length >= MAX_DAY_CACHE) delete _dayCache[keys[0]];
+      }
+      _dayCache[key] = data;
+    }
+
+    function saveRender(cacheKey) {
+      _renderCache[cacheKey] = {
+        statusText: document.getElementById("status").textContent,
+        gridHTML:   document.getElementById("grid").innerHTML,
+        sections:   ["rsi70-section","bigmove-section","gain-section","bt-section"].map(id => {
+          const el = document.getElementById(id);
+          return { id, display: el.style.display, innerHTML: el.innerHTML };
+        }),
+        rsi70Syms:      new Set(_rsi70Syms),
+        contenderSyms:  new Set(_contenderSyms),
+      };
+    }
+
+    function restoreRender(cached) {
+      document.getElementById("status").textContent = cached.statusText;
+      document.getElementById("grid").innerHTML     = cached.gridHTML;
+      cached.sections.forEach(({ id, display, innerHTML }) => {
+        const el = document.getElementById(id);
+        el.style.display = display;
+        el.innerHTML     = innerHTML;
+      });
+      _rsi70Syms     = cached.rsi70Syms;
+      _contenderSyms = cached.contenderSyms;
+      renderMoversBar();
+      // Re-apply any active search filter
+      const q = document.getElementById("sym-search")?.value.trim().toUpperCase();
+      if (q) document.getElementById("sym-search").dispatchEvent(new Event("input"));
+    }
+
     async function setActive15Tab(key) {
       _active15Tab = key;
-      _activeTab   = null;   // deactivate main tabs
+      _activeTab   = null;
+      history.replaceState(null, "", "#15-" + key);
       document.querySelectorAll(".day-tab:not(.tab-15min)").forEach(el => el.classList.remove("active"));
       document.querySelectorAll(".tab-15min").forEach(el => {
         el.classList.toggle("active", el.dataset.key15 === key);
       });
 
+      const cacheKey = "15-" + key;
+      if (_renderCache[cacheKey]) { restoreRender(_renderCache[cacheKey]); return; }
+
       if (key === "today") {
         render15minDay(_data?.today?.alerts ?? {}, "today");
+        saveRender(cacheKey);
         return;
       }
 
@@ -1182,26 +1232,36 @@
       if (!_dayCache[key]) {
         statusEl.textContent = `Loading ${key}…`;
         try {
-          _dayCache[key] = await _ghFetch(DAY_URL(key));
-          buildSidebar();   // may reveal new 15min tabs
+          _cacheDay(key, await _ghFetch(DAY_URL(key)));
         } catch (err) {
           statusEl.textContent = "Failed to load " + key + ": " + err.message;
           return;
         }
       }
+      if (Object.keys(_dayCache[key]?.alerts ?? {}).length === 0) {
+        buildSidebar();
+        setActiveTab("today");
+        return;
+      }
+      buildSidebar();
       render15minDay(_dayCache[key].alerts ?? {}, key);
+      saveRender(cacheKey);
     }
 
     async function setActiveTab(key) {
       _activeTab   = key;
-      _active15Tab = null;   // deactivate 15min tabs
+      _active15Tab = null;
+      history.replaceState(null, "", "#" + key);
       document.querySelectorAll(".tab-15min").forEach(el => el.classList.remove("active"));
       document.querySelectorAll(".day-tab:not(.tab-15min)").forEach(el => {
         el.classList.toggle("active", el.dataset.key === key);
       });
 
+      if (_renderCache[key]) { restoreRender(_renderCache[key]); return; }
+
       if (key === "today") {
         renderDay(_data?.today?.alerts ?? {}, "today", _data?.today?.backtest ?? {});
+        saveRender(key);
         return;
       }
 
@@ -1209,15 +1269,22 @@
       if (!_dayCache[key]) {
         statusEl.textContent = `Loading ${key}…`;
         try {
-          _dayCache[key] = await _ghFetch(DAY_URL(key));
-          buildSidebar();   // may reveal new 15min tabs after fetch
+          _cacheDay(key, await _ghFetch(DAY_URL(key)));
         } catch (err) {
           statusEl.textContent = "Failed to load " + key + ": " + err.message;
           return;
         }
       }
+      // If empty, remove from sidebar and fall back to today
+      if (Object.keys(_dayCache[key]?.alerts ?? {}).length === 0) {
+        buildSidebar();
+        setActiveTab("today");
+        return;
+      }
+      buildSidebar();
       const day = _dayCache[key];
       renderDay(day.alerts ?? {}, key, day.backtest ?? {});
+      saveRender(key);
     }
 
     function buildSidebar() {
@@ -1271,13 +1338,21 @@
       }
 
       // ── History section ─────────────────────────────────────────────────
-      if (_manifest.length > 0) {
+      // Newest first; skip dates already loaded and known empty
+      const allDates = [..._manifest].reverse().filter(d => {
+        if (_dayCache[d]) return Object.keys(_dayCache[d]?.alerts ?? {}).length > 0;
+        return true; // not yet loaded — show optimistically
+      });
+
+      if (allDates.length > 0) {
         const lbl = document.createElement("div");
         lbl.className = "sidebar-label";
         lbl.style.marginTop = "16px";
         lbl.textContent = "History";
         sidebar.appendChild(lbl);
-        _manifest.forEach(dateStr => {
+
+        const visible = _showAllHistory ? allDates : allDates.slice(0, SIDEBAR_CAP);
+        visible.forEach(dateStr => {
           const btn = document.createElement("button");
           btn.className = "day-tab" + (_activeTab === dateStr ? " active" : "");
           btn.dataset.key = dateStr;
@@ -1285,11 +1360,22 @@
           btn.onclick = () => setActiveTab(dateStr);
           sidebar.appendChild(btn);
         });
+
+        if (!_showAllHistory && allDates.length > SIDEBAR_CAP) {
+          const more = document.createElement("button");
+          more.className = "day-tab";
+          more.style.color = "#58a6ff";
+          more.style.fontSize = "0.75rem";
+          more.textContent = `Show ${allDates.length - SIDEBAR_CAP} older…`;
+          more.onclick = () => { _showAllHistory = true; buildSidebar(); };
+          sidebar.appendChild(more);
+        }
       }
     }
 
     async function load() {
       const statusEl = document.getElementById("status");
+      statusEl.innerHTML = "Loading…";
       try {
         const [data, manifest] = await Promise.all([
           _ghFetch(DATA_URL),
@@ -1298,18 +1384,33 @@
         if (data.alerts && !data.today) {
           data.today = { date: "", alerts: data.alerts };
         }
-        _data     = data;
-        _manifest = Array.isArray(manifest) ? manifest : [];
-        _dayCache = {};
+        _data        = data;
+        _manifest    = Array.isArray(manifest) ? manifest : [];
+        _dayCache    = {};
+        _renderCache = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
+
+        // Restore tab from URL hash
+        const hash = window.location.hash.slice(1); // strip #
+        if (hash.startsWith("15-")) {
+          _active15Tab = hash.slice(3);
+          _activeTab   = null;
+        } else if (hash) {
+          _activeTab   = hash;
+          _active15Tab = null;
+        }
 
         buildSidebar();
         if (_active15Tab) setActive15Tab(_active15Tab);
         else setActiveTab(_activeTab);
       } catch (err) {
-        statusEl.textContent = "Failed to load: " + err.message;
+        statusEl.innerHTML =
+          `Failed to load: ${err.message} ` +
+          `<button onclick="load()" style="margin-left:10px;padding:4px 12px;background:#1f2d3d;` +
+          `border:1px solid #58a6ff;border-radius:6px;color:#58a6ff;cursor:pointer;font-size:0.8rem;">` +
+          `↺ Retry</button>`;
       }
     }
 
@@ -1354,14 +1455,11 @@
         if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
         if (data.last_updated === _data?.last_updated) return; // nothing changed
 
-        const prevSyms = new Set(
-          [...document.querySelectorAll("#grid .tile[data-symbol]")].map(t => t.dataset.symbol)
-        );
-
         const manifest = await _ghFetch(MANIFEST_URL).catch(() => []);
-        _data     = data;
-        _manifest = Array.isArray(manifest) ? manifest : [];
-        _dayCache = {};
+        _data        = data;
+        _manifest    = Array.isArray(manifest) ? manifest : [];
+        _dayCache    = {};
+        _renderCache = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
@@ -1370,10 +1468,6 @@
         if (_active15Tab) await setActive15Tab(_active15Tab);
         else await setActiveTab(_activeTab);
 
-        // Highlight tiles that are new since last fetch
-        document.querySelectorAll("#grid .tile[data-symbol]").forEach(t => {
-          if (!prevSyms.has(t.dataset.symbol)) t.classList.add("new-alert");
-        });
       } catch (_) { /* silent — don't disrupt the UI */ }
     }
 
