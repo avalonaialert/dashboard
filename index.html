@@ -112,6 +112,25 @@
       white-space: nowrap;
     }
 
+    .streak-badge {
+      font-size: 0.68rem; font-weight: 700;
+      padding: 2px 8px; border-radius: 12px; white-space: nowrap;
+    }
+    .streak-2 { background: #1a0d00; border: 1px solid #7c2d12; color: #f97316; }
+    .streak-3 { background: #1c0a00; border: 1px solid #b45309; color: #fb923c; }
+    .streak-4 { background: #2d0f0f; border: 1px solid #dc2626; color: #f87171; }
+
+    .tile-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 6px 18px 12px; gap: 8px;
+    }
+    .tile-gap { font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+    .tile-gap.pos { color: #3fb950; }
+    .tile-gap.neg { color: #f85149; }
+    .tile-gap.flat { color: #8b949e; }
+    .tile-gap-loading { font-size: 0.7rem; color: #484f58; }
+    .sparkline { display: block; flex-shrink: 0; }
+
 
     /* ── Economic calendar bar ── */
     #econ-bar {
@@ -989,6 +1008,10 @@
 
         const earningsDate = _earningsSyms.get(symbol);
         const hasEarnings  = earningsDate !== undefined;
+        const streak       = getStreak(symbol);
+        const streakHtml   = streak >= 2
+          ? `<span class="streak-badge streak-${Math.min(streak, 4)}">🔥 ${streak}d</span>`
+          : "";
         tile.innerHTML = `
           <div class="tile-header">
             <div class="tile-top">
@@ -1003,9 +1026,14 @@
               ${gainHtml}
               ${hasRsi70 ? '<span class="hist-badge badge-rsi70">◆ RSI 70 Pre-Mkt</span>' : ""}
               ${hasEarnings ? `<span class="earnings-badge">Earnings: ${earningsDate}</span>` : ""}
+              ${streakHtml}
             </div>
             <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
           </div>${histSection}
+          <div class="tile-footer">
+            <div id="gap-${symbol}" class="tile-gap-wrap"><span class="tile-gap-loading">loading gap…</span></div>
+            ${buildSparkline(symbol)}
+          </div>
           `;
         grid.appendChild(tile);
       });
@@ -1104,6 +1132,7 @@
         [...Object.keys(rsi70Map)].filter(s => symsCall.has(s) && symsCode4.has(s))
       );
       renderMoversBar();
+      loadQuotes([...new Set([...Object.keys(symbolMap), ...Object.keys(rsi70Map)])]);
     }
 
     // ── State ────────────────────────────────────────────────────────────
@@ -1117,7 +1146,8 @@
     let _topGainers      = [];
     let _renderCache     = {};   // key -> saved DOM snapshot
     let _showAllHistory  = false;
-    let _earningsSyms    = new Map();  // sym -> days until earnings
+    let _earningsSyms    = new Map();  // sym -> label string
+    let _quoteCache      = {};         // sym -> Finnhub quote {c, pc, dp}
     const MAX_DAY_CACHE  = 7;
     const SIDEBAR_CAP    = 30;
 
@@ -1413,6 +1443,79 @@
       }
     }
 
+    // ── Sparkline: alert frequency over last 7 calendar days ────────────
+    function buildSparkline(sym) {
+      const today = new Date();
+      const days  = Array.from({ length: 7 }, (_, i) => {
+        const d = new Date(today);
+        d.setDate(d.getDate() - (6 - i));
+        return d.toISOString().slice(0, 10);
+      });
+      const todayDate = _data?.today?.date;
+
+      const counts = days.map(date => {
+        if (date === todayDate) return (_data?.today?.alerts?.[sym]?.length ?? 0);
+        if (_dayCache[date])   return (_dayCache[date]?.alerts?.[sym]?.length ?? 0);
+        return -1; // unknown
+      });
+
+      const max = Math.max(...counts.filter(c => c >= 0), 1);
+      const W = 8, H = 20, GAP = 2, TOTAL = 7 * W + 6 * GAP;
+
+      const bars = counts.map((c, i) => {
+        const x = i * (W + GAP);
+        if (c < 0)  return `<rect x="${x}" y="0" width="${W}" height="${H}" fill="#21262d" rx="2"/>`;
+        if (c === 0) return `<rect x="${x}" y="${H - 2}" width="${W}" height="2" fill="#2d333b" rx="2"/>`;
+        const h = Math.max(3, Math.round((c / max) * H));
+        return `<rect x="${x}" y="${H - h}" width="${W}" height="${h}" fill="#3fb950" rx="2"/>`;
+      }).join("");
+
+      return `<svg width="${TOTAL}" height="${H}" class="sparkline" title="Alert frequency – last 7 days">${bars}</svg>`;
+    }
+
+    // ── Multi-day streak: consecutive days this symbol appeared ─────────
+    function getStreak(sym) {
+      const todayDate = _data?.today?.date;
+      if (!todayDate || !_data?.today?.alerts?.[sym]) return 0;
+      let streak = 1;
+      const base = new Date(todayDate + "T12:00:00Z");
+      for (let i = 1; i <= 6; i++) {
+        const d = new Date(base);
+        d.setUTCDate(d.getUTCDate() - i);
+        const dateStr = d.toISOString().slice(0, 10);
+        if (_dayCache[dateStr]?.alerts?.[sym]) streak++;
+        else break;
+      }
+      return streak;
+    }
+
+    // ── Pre-market / intraday gap vs prev close (Finnhub) ───────────────
+    async function loadQuotes(symbols) {
+      if (!FINNHUB_API_KEY || FINNHUB_API_KEY === "YOUR_FINNHUB_KEY" || !symbols.length) return;
+      const toFetch = symbols.filter(s => !_quoteCache[s]);
+      await Promise.all(toFetch.map(async sym => {
+        try {
+          const resp = await fetch(
+            `https://finnhub.io/api/v1/quote?symbol=${sym}&token=${FINNHUB_API_KEY}`,
+            { cache: "no-store" }
+          );
+          _quoteCache[sym] = await resp.json();
+        } catch (_) {}
+      }));
+
+      // Update gap elements in current DOM
+      symbols.forEach(sym => {
+        const el = document.getElementById(`gap-${sym}`);
+        if (!el) return;
+        const q = _quoteCache[sym];
+        if (!q?.pc || !q?.c) { el.innerHTML = ""; return; }
+        const gap  = ((q.c - q.pc) / q.pc) * 100;
+        const cls  = Math.abs(gap) < 0.1 ? "flat" : gap > 0 ? "pos" : "neg";
+        const sign = gap > 0 ? "+" : "";
+        el.innerHTML = `<span class="tile-gap ${cls}">${sign}${gap.toFixed(2)}% vs prev close</span>`;
+      });
+    }
+
     // ── Economic calendar (Finnhub) ─────────────────────────────────────
     async function loadEconCalendar() {
       if (!FINNHUB_API_KEY || FINNHUB_API_KEY === "YOUR_FINNHUB_KEY") return;
@@ -1510,6 +1613,7 @@
         _manifest    = Array.isArray(manifest) ? manifest : [];
         _dayCache    = {};
         _renderCache = {};
+        _quoteCache  = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
@@ -1592,6 +1696,7 @@
         _manifest    = Array.isArray(manifest) ? manifest : [];
         _dayCache    = {};
         _renderCache = {};
+        _quoteCache  = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
