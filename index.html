@@ -1156,9 +1156,12 @@
       // Sync RSI-70 set, compute top contenders, refresh movers bar
       _rsi70Syms = rsi70Symbols;
       const symsCall = new Set(Object.keys(symbolMap));
-      _contenderSyms = new Set(
-        [...Object.keys(rsi70Map)].filter(s => symsCall.has(s) && symsCode4.has(s) && symsCode30.has(s))
-      );
+      const allSyms  = new Set([...symsCall, ...Object.keys(rsi70Map), ...symsCode4, ...symsCode30]);
+      _contenderSyms = new Set([...allSyms].filter(s => {
+        const score = (symsCall.has(s) ? 1 : 0) + (rsi70Map[s] ? 1 : 0)
+                    + (symsCode4.has(s) ? 1 : 0) + (symsCode30.has(s) ? 1 : 0);
+        return score >= 3;
+      }));
       renderMoversBar();
       loadQuotes([...new Set([...Object.keys(symbolMap), ...Object.keys(rsi70Map)])]);
     }
