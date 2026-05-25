@@ -405,9 +405,14 @@
     .tile-sma  .tile-badge { background: #0f2d4e; color: #58a6ff; }
     .tile-bear .tile-badge { background: #4a1a1a; color: #f85149; }
 
-    .badge-call { background: #1a4a2e; color: #3fb950; }
-    .badge-sma  { background: #0f2d4e; color: #58a6ff; }
-    .badge-bear { background: #4a1a1a; color: #f85149; }
+    .badge-call  { background: #1a4a2e; color: #3fb950; }
+    .badge-sma   { background: #0f2d4e; color: #58a6ff; }
+    .badge-bear  { background: #4a1a1a; color: #f85149; }
+    .tile-sar { background: #1e1b4b; border-color: #6d28d9; }
+    .tile-sar .tile-symbol, .tile-sar .tile-close { color: #c084fc; }
+    .tile-sar .tile-badge { background: #2d1b4e; color: #c084fc; }
+    .badge-sar   { background: #2d1b4e; color: #c084fc; }
+    .badge-break { background: #4a1a1a; color: #f85149; }
 
     /* ── BackTest Results section ── */
     .bt-section-title {
@@ -828,10 +833,12 @@
     const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
     const ALERT_META = {
-       "6":  { label: "Call Alert",    cls: "tile-call", badgeCls: "badge-call", icon: "▲" },
-       "66": { label: "SMA Gaining",   cls: "tile-sma",  badgeCls: "badge-sma",  icon: "~" },
-      "-6":  { label: "Bear Change",   cls: "tile-bear", badgeCls: "badge-bear", icon: "▼" },
-       "7":  { label: "RSI 70 Pre-Mkt",cls: "tile-sma",  badgeCls: "badge-rsi70", icon: "◆" },
+       "6":   { label: "Call Alert",    cls: "tile-call", badgeCls: "badge-call",  icon: "▲" },
+       "66":  { label: "SMA Gaining",   cls: "tile-sma",  badgeCls: "badge-sma",   icon: "~" },
+      "-6":   { label: "Bear Change",   cls: "tile-bear", badgeCls: "badge-bear",  icon: "▼" },
+       "7":   { label: "RSI 70 Pre-Mkt",cls: "tile-sma",  badgeCls: "badge-rsi70", icon: "◆" },
+       "30":  { label: "Bull SAR",      cls: "tile-sar",  badgeCls: "badge-sar",   icon: "◉" },
+      "-30":  { label: "Break",         cls: "tile-sar",  badgeCls: "badge-break", icon: "✕" },
     };
 
     function meta(v) {
@@ -907,6 +914,7 @@
       const alert5List = [];   // flat list of {sym, a} for alert code 5
       const seen5      = new Set();
       const symsCode4  = new Set(); // symbols with 15-min-simple alert (code 4)
+      const symsCode30 = new Set(); // symbols with Bull SAR alert (code 30 or -30)
 
       for (const [sym, val] of Object.entries(alertsRaw)) {
         const arr = Array.isArray(val) ? val : [val];
@@ -929,6 +937,8 @@
             if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
           } else if (code === 4) {
             symsCode4.add(sym);
+          } else if (code === 30 || code === -30) {
+            symsCode30.add(sym);
           } else {
             if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
             if (code === 7) {
@@ -1147,7 +1157,7 @@
       _rsi70Syms = rsi70Symbols;
       const symsCall = new Set(Object.keys(symbolMap));
       _contenderSyms = new Set(
-        [...Object.keys(rsi70Map)].filter(s => symsCall.has(s) && symsCode4.has(s))
+        [...Object.keys(rsi70Map)].filter(s => symsCall.has(s) && symsCode4.has(s) && symsCode30.has(s))
       );
       renderMoversBar();
       loadQuotes([...new Set([...Object.keys(symbolMap), ...Object.keys(rsi70Map)])]);
@@ -1159,6 +1169,7 @@
     let _dayCache     = {};
     let _activeTab    = "today";
     let _active15Tab  = null;       // active 15 Mins - Simple tab key
+    let _activeSarTab = null;       // active Bull SAR tab key
     let _rsi70Syms       = new Set();
     let _contenderSyms   = new Set();
     let _topGainers      = [];
@@ -1180,12 +1191,19 @@
       return JSON.parse(atob(env.content.replace(/\n/g, "")));
     }
 
-    // Returns true if alertsObj contains at least one alert-4 record
     function hasAlert5(alertsObj) {
       if (!alertsObj) return false;
       return Object.values(alertsObj).some(records => {
         const arr = Array.isArray(records) ? records : [records];
         return arr.some(a => Number(a.alert) === 4);
+      });
+    }
+
+    function hasAlertSar(alertsObj) {
+      if (!alertsObj) return false;
+      return Object.values(alertsObj).some(records => {
+        const arr = Array.isArray(records) ? records : [records];
+        return arr.some(a => Number(a.alert) === 30 || Number(a.alert) === -30);
       });
     }
 
@@ -1261,6 +1279,84 @@
       });
     }
 
+    // ── Render Bull SAR / Break alerts (codes 30 / -30) ──────────────────
+    function renderSarDay(alertsRaw, dateKey) {
+      const statusEl = document.getElementById("status");
+      const grid     = document.getElementById("grid");
+      grid.innerHTML = "";
+      ["gain-section","bt-section","rsi70-section","bigmove-section"].forEach(id => {
+        document.getElementById(id).style.display = "none";
+      });
+
+      const filterDateEST = dateKey === "today"
+        ? new Date(((_data?.today?.date) ?? new Date().toISOString().slice(0, 10)) + "T12:00:00Z")
+            .toLocaleDateString("en-US", { timeZone: "America/New_York" })
+        : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
+
+      const symMap = {};
+      for (const [sym, val] of Object.entries(alertsRaw || {})) {
+        const arr = Array.isArray(val) ? val : [val];
+        for (const a of arr) {
+          const code = Number(a.alert);
+          if (code !== 30 && code !== -30) continue;
+          if (dateKey !== "today") {
+            const d = new Date(a.received_at).toLocaleDateString("en-US", { timeZone: "America/New_York" });
+            if (d !== filterDateEST) continue;
+          }
+          (symMap[sym] = symMap[sym] || []).push(a);
+        }
+      }
+
+      const symbols = Object.entries(symMap);
+      if (symbols.length === 0) {
+        statusEl.textContent = "No Bull SAR alerts for this day.";
+        return;
+      }
+
+      symbols.forEach(([, hits]) => hits.sort((a, b) => new Date(b.received_at) - new Date(a.received_at)));
+      symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+      statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
+
+      symbols.forEach(([sym, hits]) => {
+        const latest   = hits[0];
+        const hasBull  = hits.some(h => Number(h.alert) === 30);
+        const hasBreak = hits.some(h => Number(h.alert) === -30);
+        const tile     = document.createElement("div");
+        tile.className = "tile tile-sar";
+        tile.dataset.symbol = sym;
+
+        const occRows = hits.map(h => {
+          const isBull = Number(h.alert) === 30;
+          return `<div class="history-row">
+            <span class="hist-badge ${isBull ? "badge-sar" : "badge-break"}">${isBull ? "◉ Bull SAR" : "✕ Break"}</span>
+            <span class="hist-close">${fmtClose(h.close)}</span>
+            <span class="hist-time">${fmtTime(h.received_at)}</span>
+          </div>`;
+        }).join("");
+
+        tile.innerHTML = `
+          <div class="tile-header">
+            <div class="tile-top">
+              <div class="tile-symbol">${symLink(sym)}</div>
+              <div class="tile-close-wrap">
+                <div class="tile-close-label">Close</div>
+                <div class="tile-close">${fmtClose(latest.close)}</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              ${hasBull  ? '<span class="tile-badge badge-sar">◉ Bull SAR</span>'  : ""}
+              ${hasBreak ? '<span class="tile-badge badge-break">✕ Break</span>'   : ""}
+            </div>
+            <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
+          </div>
+          <div class="tile-history">
+            <div class="history-label">Occurrences (${hits.length})</div>
+            ${occRows}
+          </div>`;
+        grid.appendChild(tile);
+      });
+    }
+
     // ── Day cache helpers ────────────────────────────────────────────────
     function _cacheDay(key, data) {
       if (!_dayCache[key]) {
@@ -1299,9 +1395,49 @@
       if (q) document.getElementById("sym-search").dispatchEvent(new Event("input"));
     }
 
+    async function setActiveSarTab(key) {
+      _activeSarTab = key;
+      _activeTab    = null;
+      _active15Tab  = null;
+      history.replaceState(null, "", "#sar-" + key);
+      document.querySelectorAll(".day-tab:not(.tab-sar)").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".tab-sar").forEach(el => {
+        el.classList.toggle("active", el.dataset.keySar === key);
+      });
+
+      const cacheKey = "sar-" + key;
+      if (_renderCache[cacheKey]) { restoreRender(_renderCache[cacheKey]); return; }
+
+      if (key === "today") {
+        renderSarDay(_data?.today?.alerts ?? {}, "today");
+        saveRender(cacheKey);
+        return;
+      }
+
+      const statusEl = document.getElementById("status");
+      if (!_dayCache[key]) {
+        statusEl.textContent = `Loading ${key}…`;
+        try {
+          _cacheDay(key, await _ghFetch(DAY_URL(key)));
+        } catch (err) {
+          statusEl.textContent = "Failed to load " + key + ": " + err.message;
+          return;
+        }
+      }
+      if (Object.keys(_dayCache[key]?.alerts ?? {}).length === 0) {
+        buildSidebar();
+        setActiveTab("today");
+        return;
+      }
+      buildSidebar();
+      renderSarDay(_dayCache[key].alerts ?? {}, key);
+      saveRender(cacheKey);
+    }
+
     async function setActive15Tab(key) {
-      _active15Tab = key;
-      _activeTab   = null;
+      _active15Tab  = key;
+      _activeTab    = null;
+      _activeSarTab = null;
       history.replaceState(null, "", "#15-" + key);
       document.querySelectorAll(".day-tab:not(.tab-15min)").forEach(el => el.classList.remove("active"));
       document.querySelectorAll(".tab-15min").forEach(el => {
@@ -1338,8 +1474,9 @@
     }
 
     async function setActiveTab(key) {
-      _activeTab   = key;
-      _active15Tab = null;
+      _activeTab    = key;
+      _active15Tab  = null;
+      _activeSarTab = null;
       history.replaceState(null, "", "#" + key);
       document.querySelectorAll(".tab-15min").forEach(el => el.classList.remove("active"));
       document.querySelectorAll(".day-tab:not(.tab-15min)").forEach(el => {
@@ -1422,6 +1559,35 @@
           btn.dataset.key15 = key;
           btn.textContent = key === "today" ? "Today" : fmtDate(key);
           btn.onclick = () => setActive15Tab(key);
+          sidebar.appendChild(btn);
+        });
+      }
+
+      // ── Bull SAR section ────────────────────────────────────────────────
+      const datesSar = [];
+      if (hasAlertSar(_data?.today?.alerts)) datesSar.push("today");
+      for (const [dateStr, dayData] of Object.entries(_dayCache)) {
+        if (hasAlertSar(dayData.alerts)) datesSar.push(dateStr);
+      }
+      const sortedDatesSar = [
+        ...datesSar.filter(d => d === "today"),
+        ...datesSar.filter(d => d !== "today").sort().reverse(),
+      ];
+
+      if (sortedDatesSar.length > 0) {
+        const lblSar = document.createElement("div");
+        lblSar.className = "sidebar-label";
+        lblSar.style.marginTop = "16px";
+        lblSar.style.color = "#c084fc";
+        lblSar.textContent = "Bull SAR";
+        sidebar.appendChild(lblSar);
+
+        sortedDatesSar.forEach(key => {
+          const btn = document.createElement("button");
+          btn.className = "day-tab tab-sar" + (_activeSarTab === key ? " active" : "");
+          btn.dataset.keySar = key;
+          btn.textContent = key === "today" ? "Today" : fmtDate(key);
+          btn.onclick = () => setActiveSarTab(key);
           sidebar.appendChild(btn);
         });
       }
@@ -1696,15 +1862,22 @@
         // Restore tab from URL hash
         const hash = window.location.hash.slice(1); // strip #
         if (hash.startsWith("15-")) {
-          _active15Tab = hash.slice(3);
-          _activeTab   = null;
+          _active15Tab  = hash.slice(3);
+          _activeTab    = null;
+          _activeSarTab = null;
+        } else if (hash.startsWith("sar-")) {
+          _activeSarTab = hash.slice(4);
+          _activeTab    = null;
+          _active15Tab  = null;
         } else if (hash) {
-          _activeTab   = hash;
-          _active15Tab = null;
+          _activeTab    = hash;
+          _active15Tab  = null;
+          _activeSarTab = null;
         }
 
         buildSidebar();
-        if (_active15Tab) setActive15Tab(_active15Tab);
+        if (_activeSarTab)   setActiveSarTab(_activeSarTab);
+        else if (_active15Tab) setActive15Tab(_active15Tab);
         else setActiveTab(_activeTab);
 
         // Load econ calendar + earnings in background
@@ -1712,8 +1885,9 @@
         loadEarnings().then(() => {
           if (_earningsSyms.size > 0) { // Map.size works the same
             _renderCache = {};
-            if (_active15Tab) setActive15Tab(_active15Tab);
-            else if (_activeTab) setActiveTab(_activeTab);
+            if (_activeSarTab)       setActiveSarTab(_activeSarTab);
+            else if (_active15Tab)   setActive15Tab(_active15Tab);
+            else if (_activeTab)     setActiveTab(_activeTab);
           }
         });
       } catch (err) {
@@ -1785,8 +1959,9 @@
         checkStaleness();
 
         buildSidebar();
-        if (_active15Tab) await setActive15Tab(_active15Tab);
-        else await setActiveTab(_activeTab);
+        if (_activeSarTab)       await setActiveSarTab(_activeSarTab);
+        else if (_active15Tab)   await setActive15Tab(_active15Tab);
+        else                     await setActiveTab(_activeTab);
 
       } catch (_) { /* silent — don't disrupt the UI */ }
     }
@@ -1811,7 +1986,7 @@
       }
 
       if (_contenderSyms.size > 0) {
-        html += '<span class="movers-label contender-label">Top Contender (Call + RSI + Simple):</span>' +
+        html += '<span class="movers-label contender-label">Top Contender (Call + RSI + Simple + SAR):</span>' +
           [..._contenderSyms].map(sym =>
             `<span class="mover-chip contender">
               <span class="contender-sym">★ ${symLink(sym)}</span>
