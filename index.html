@@ -408,13 +408,6 @@
     .badge-call { background: #1a4a2e; color: #3fb950; }
     .badge-sma  { background: #0f2d4e; color: #58a6ff; }
     .badge-bear { background: #4a1a1a; color: #f85149; }
-    .badge-call-inline   { background: #1a4a2e; color: #3fb950; border: 1px solid #238636; }
-    .badge-simple-inline { background: #1e1b4b; color: #a5b4fc; border: 1px solid #4f46e5; }
-    .pre945-banner {
-      grid-column: 1 / -1; padding: 8px 16px; border-radius: 8px; margin-bottom: 4px;
-      background: #0d1b2e; border: 1px solid #1f6feb; color: #58a6ff;
-      font-size: 0.78rem; font-weight: 500;
-    }
 
     /* ── BackTest Results section ── */
     .bt-section-title {
@@ -873,94 +866,6 @@
       return { text: `${sign}${pct.toFixed(2)}%`, positive: pct >= 0 };
     }
 
-    // ── 9:45 AM filter helpers ────────────────────────────────────────────
-    function isPast945(dateKey) {
-      if (dateKey !== "today") return true; // historical days: always apply filter
-      const est  = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
-      return est.getHours() * 60 + est.getMinutes() >= 9 * 60 + 45;
-    }
-    function isAt945OrLater(ts) {
-      const est = new Date(new Date(ts).toLocaleString("en-US", { timeZone: "America/New_York" }));
-      return est.getHours() * 60 + est.getMinutes() >= 9 * 60 + 45;
-    }
-
-    // ── Shared alert splitter ─────────────────────────────────────────────
-    // Returns primary (qualifying) and other (non-qualifying) buckets.
-    // Qualifying = symbol has code 6 or code 4 at/after 9:45 AM (or before 9:45 → all qualify).
-    function _splitAlerts(alertsRaw, dateKey) {
-      const filterDateEST = dateKey === "today"
-        ? new Date(((_data?.today?.date) ?? new Date().toISOString().slice(0, 10)) + "T12:00:00Z")
-            .toLocaleDateString("en-US", { timeZone: "America/New_York" })
-        : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
-
-      function isTargetDay(iso) {
-        if (dateKey === "today") return true;
-        return new Date(iso).toLocaleDateString("en-US", { timeZone: "America/New_York" }) === filterDateEST;
-      }
-
-      const callMap    = {};  // sym -> [code-6 records]
-      const simpleMap  = {};  // sym -> [code-4 records]
-      const fullHist   = {};  // sym -> [all tile-history records: 6,4,7,66,-6]
-      const rsi70Map   = {};
-      const gainMap    = {};
-      const bigMoveMap = {};
-      const alert5List = [];
-      const seen5      = new Set();
-
-      for (const [sym, val] of Object.entries(alertsRaw || {})) {
-        const arr = Array.isArray(val) ? val : [val];
-        const seenKeys = new Set(), seenGain = new Set();
-        for (const a of arr) {
-          const code = Number(a.alert);
-          if (SKIP_ALERTS.has(code)) continue;
-          if (!isTargetDay(a.received_at)) continue;
-          const key = `${a.received_at}|${a.alert}|${a.close}`;
-          if (code === 6666) {
-            if (!seenGain.has(key)) { seenGain.add(key); (gainMap[sym] = gainMap[sym] || []).push(a); }
-          } else if (code === 66666) {
-            if (!bigMoveMap[sym] || new Date(a.received_at) > new Date(bigMoveMap[sym].received_at)) bigMoveMap[sym] = a;
-          } else if (code === 5) {
-            const k5 = `${sym}|${key}`;
-            if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
-          } else {
-            if (!seenKeys.has(key)) { seenKeys.add(key); (fullHist[sym] = fullHist[sym] || []).push(a); }
-            if (code === 6) (callMap[sym] = callMap[sym] || []).push(a);
-            else if (code === 4) (simpleMap[sym] = simpleMap[sym] || []).push(a);
-            else if (code === 7) {
-              if (!rsi70Map[sym] || new Date(a.received_at) > new Date(rsi70Map[sym].received_at)) rsi70Map[sym] = a;
-            }
-          }
-        }
-      }
-
-      // Determine qualifying symbols
-      const past945 = isPast945(dateKey);
-      const qualifyingSyms = new Set();
-      for (const sym of new Set([...Object.keys(callMap), ...Object.keys(simpleMap)])) {
-        if (!past945) {
-          qualifyingSyms.add(sym);
-        } else {
-          if ((callMap[sym]   || []).some(a => isAt945OrLater(a.received_at))) qualifyingSyms.add(sym);
-          if ((simpleMap[sym] || []).some(a => isAt945OrLater(a.received_at))) qualifyingSyms.add(sym);
-        }
-      }
-
-      // Split fullHist into primary and other
-      const primaryHistMap = {}, otherHistMap = {}, otherCallMap = {}, otherSimpleMap = {};
-      for (const [sym, hist] of Object.entries(fullHist)) {
-        if (qualifyingSyms.has(sym)) {
-          primaryHistMap[sym] = hist;
-        } else if (callMap[sym] || simpleMap[sym]) {
-          otherHistMap[sym]  = hist;
-          if (callMap[sym])   otherCallMap[sym]   = callMap[sym];
-          if (simpleMap[sym]) otherSimpleMap[sym] = simpleMap[sym];
-        }
-      }
-
-      return { callMap, simpleMap, primaryHistMap, otherHistMap, otherCallMap, otherSimpleMap,
-               rsi70Map, gainMap, bigMoveMap, alert5List, qualifyingSyms, past945 };
-    }
-
     // ── Render a day's alerts dict into the main content area ─────────────
     // dateKey: "today" or "YYYY-MM-DD" — used to filter alerts to that date only
     function renderDay(alertsRaw, dateKey, backtestRaw) {
@@ -982,40 +887,88 @@
         return;
       }
 
-      const { callMap, simpleMap, primaryHistMap, otherHistMap, otherCallMap, otherSimpleMap,
-              rsi70Map, gainMap, bigMoveMap, alert5List, qualifyingSyms, past945 } = _splitAlerts(alertsRaw, dateKey);
+      // Determine which calendar date (EST) to keep
+      // For "today", use the stored date from data.json rather than current system time
+      // so that alerts whose received_at timestamp falls on a prior UTC date still show.
+      const filterDateEST = dateKey === "today"
+        ? new Date(((_data?.today?.date) ?? new Date().toISOString().slice(0, 10)) + "T12:00:00Z")
+            .toLocaleDateString("en-US", { timeZone: "America/New_York" })
+        : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
 
-      // Cache other-alerts for the Other Alerts tab and rebuild sidebar
-      _otherAlertsData[dateKey] = { symMap: otherHistMap, callMap: otherCallMap, simpleMap: otherSimpleMap };
-      buildSidebar();
+      function isTargetDay(iso) {
+        if (dateKey === "today") return true; // data.json only holds today's alerts
+        return new Date(iso).toLocaleDateString("en-US", { timeZone: "America/New_York" }) === filterDateEST;
+      }
+
+      const symbolMap  = {};
+      const gainMap    = {};
+      const rsi70Map   = {};   // sym -> latest alert-7 record
+      const bigMoveMap = {};   // sym -> latest alert-66666 record
+      const alert5List = [];   // flat list of {sym, a} for alert code 5
+      const seen5      = new Set();
+      const symsCode4  = new Set(); // symbols with 15-min-simple alert (code 4)
+
+      for (const [sym, val] of Object.entries(alertsRaw)) {
+        const arr = Array.isArray(val) ? val : [val];
+        const seenMain = new Set(), seenGain = new Set();
+
+        for (const a of arr) {
+          const code = Number(a.alert);
+          if (SKIP_ALERTS.has(code)) continue;
+          if (!isTargetDay(a.received_at)) continue;
+          const key = `${a.received_at}|${a.alert}|${a.close}`;
+
+          if (code === 6666) {
+            if (!seenGain.has(key)) { seenGain.add(key); (gainMap[sym] = gainMap[sym] || []).push(a); }
+          } else if (code === 66666) {
+            if (!bigMoveMap[sym] || new Date(a.received_at) > new Date(bigMoveMap[sym].received_at)) {
+              bigMoveMap[sym] = a;
+            }
+          } else if (code === 5) {
+            const k5 = `${sym}|${key}`;
+            if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
+          } else if (code === 4) {
+            symsCode4.add(sym);
+          } else {
+            if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
+            if (code === 7) {
+              if (!rsi70Map[sym] || new Date(a.received_at) > new Date(rsi70Map[sym].received_at)) {
+                rsi70Map[sym] = a;
+              }
+            }
+          }
+        }
+      }
+
+      // Drop symbols with only SMA Gaining — keep only if they have a Call Alert too
+      for (const sym of Object.keys(symbolMap)) {
+        if (!symbolMap[sym].some(a => Number(a.alert) === 6)) delete symbolMap[sym];
+      }
+
+      const symbols = Object.entries(symbolMap);
+
+      if (symbols.length === 0 && Object.keys(gainMap).length === 0 && Object.keys(rsi70Map).length === 0 && Object.keys(bigMoveMap).length === 0) {
+        statusEl.textContent = "No alerts for this day.";
+        return;
+      }
 
       const rsi70Symbols = new Set(Object.keys(rsi70Map));
 
-      // Build sorted primary entries
-      const primaryEntries = Object.entries(primaryHistMap).map(([sym, hist]) =>
-        [sym, [...hist].sort((a, b) => new Date(b.received_at) - new Date(a.received_at))]
-      );
-      primaryEntries.sort((a, b) => {
+      // Sort each symbol's history newest → oldest
+      for (const [, history] of symbols) {
+        history.sort((a, b) => new Date(b.received_at) - new Date(a.received_at));
+      }
+      // RSI-70 symbols first, then by latest alert time
+      symbols.sort((a, b) => {
         const ar = rsi70Symbols.has(a[0]) ? 1 : 0;
         const br = rsi70Symbols.has(b[0]) ? 1 : 0;
         if (br !== ar) return br - ar;
         return new Date(b[1][0].received_at) - new Date(a[1][0].received_at);
       });
 
-      const hasAny = primaryEntries.length > 0 || Object.keys(gainMap).length > 0
-                   || Object.keys(rsi70Map).length > 0 || Object.keys(bigMoveMap).length > 0;
-      if (!hasAny) { statusEl.textContent = "No alerts for this day."; return; }
+      statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
 
-      statusEl.textContent = `${primaryEntries.length} symbol${primaryEntries.length !== 1 ? "s" : ""}`;
-
-      if (!past945) {
-        const banner = document.createElement("div");
-        banner.className = "pre945-banner";
-        banner.textContent = "Showing all alerts · Priority filter activates at 9:45 AM EST";
-        grid.appendChild(banner);
-      }
-
-      // ── 5 Min Alerts tile ────────────────────────────────────────────────
+      // ── 5 Min Alerts tile — rendered first ────────────────────────────
       if (alert5List.length > 0) {
         alert5List.sort((x, y) => new Date(y.a.received_at) - new Date(x.a.received_at));
         const tile5 = document.createElement("div");
@@ -1041,19 +994,17 @@
         grid.appendChild(tile5);
       }
 
-      // ── Primary tiles (combined Call + Simple) ───────────────────────────
-      primaryEntries.forEach(([symbol, history]) => {
-        const latest    = history[0];
-        const first     = history[history.length - 1];
-        const hasCall   = !!callMap[symbol];
-        const hasSimple = !!simpleMap[symbol];
-        const hasRsi70  = rsi70Symbols.has(symbol);
+      symbols.forEach(([symbol, history]) => {
+        const latest = history[0];
+        const first  = history[history.length - 1];
+        const m = meta(latest.alert);
         const age       = Date.now() - new Date(latest.received_at).getTime();
         const isRecent  = age <= 20 * 60 * 1000;
         const isNew     = age <= 15 * 60 * 1000;
-
+        const hasRsi70  = rsi70Symbols.has(symbol);
         const tile = document.createElement("div");
-        tile.className = `tile tile-call${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}${isNew ? " new-alert" : ""}`;
+        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}${isNew ? " new-alert" : ""}`;
+        // Auto-remove pulse once the 15-min window expires
         if (isNew) setTimeout(() => tile.classList.remove("new-alert"), 15 * 60 * 1000 - age);
         tile.dataset.symbol = symbol;
 
@@ -1072,13 +1023,13 @@
         }).join("");
 
         const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histRows}</div>`;
+
         const earningsDate = _earningsSyms.get(symbol);
         const hasEarnings  = earningsDate !== undefined;
         const streak       = getStreak(symbol);
         const streakHtml   = streak >= 2
           ? `<span class="streak-badge streak-${Math.min(streak, 4)}">🔥 ${streak}d</span>`
           : "";
-
         tile.innerHTML = `
           <div class="tile-header">
             <div class="tile-top">
@@ -1089,10 +1040,9 @@
               </div>
             </div>
             <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-              ${hasCall   ? '<span class="tile-badge badge-call-inline">▲ Call Alert</span>'      : ""}
-              ${hasSimple ? '<span class="tile-badge badge-simple-inline">⚡ 15 Min Simple</span>' : ""}
+              <span class="tile-badge">${m.icon} ${m.label}</span>
               ${gainHtml}
-              ${hasRsi70  ? '<span class="hist-badge badge-rsi70">◆ RSI 70 Pre-Mkt</span>' : ""}
+              ${hasRsi70 ? '<span class="hist-badge badge-rsi70">◆ RSI 70 Pre-Mkt</span>' : ""}
               ${hasEarnings ? `<span class="earnings-badge">Earnings: ${earningsDate}</span>` : ""}
               ${streakHtml}
             </div>
@@ -1101,7 +1051,8 @@
           <div class="tile-footer">
             <div id="gap-${symbol}" class="tile-gap-wrap"><span class="tile-gap-loading">loading gap…</span></div>
             ${buildSparkline(symbol)}
-          </div>`;
+          </div>
+          `;
         grid.appendChild(tile);
       });
 
@@ -1141,8 +1092,8 @@
       }
 
       // RSI 70 Pre-Market table
-      const rsi70Sec     = document.getElementById("rsi70-section");
-      const rsi70Tbody   = document.getElementById("rsi70-tbody");
+      const rsi70Sec    = document.getElementById("rsi70-section");
+      const rsi70Tbody  = document.getElementById("rsi70-tbody");
       const rsi70Entries = Object.entries(rsi70Map);
       if (rsi70Entries.length > 0) {
         rsi70Entries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
@@ -1158,9 +1109,9 @@
         rsi70Sec.style.display = "none";
       }
 
-      // Big Moves table
-      const bigMoveSec     = document.getElementById("bigmove-section");
-      const bigMoveTbody   = document.getElementById("bigmove-tbody");
+      // Start of Big Moves table
+      const bigMoveSec   = document.getElementById("bigmove-section");
+      const bigMoveTbody = document.getElementById("bigmove-tbody");
       const bigMoveEntries = Object.entries(bigMoveMap);
       if (bigMoveEntries.length > 0) {
         bigMoveEntries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
@@ -1194,11 +1145,12 @@
 
       // Sync RSI-70 set, compute top contenders, refresh movers bar
       _rsi70Syms = rsi70Symbols;
+      const symsCall = new Set(Object.keys(symbolMap));
       _contenderSyms = new Set(
-        [...qualifyingSyms].filter(s => callMap[s] && rsi70Map[s] && simpleMap[s])
+        [...Object.keys(rsi70Map)].filter(s => symsCall.has(s) && symsCode4.has(s))
       );
       renderMoversBar();
-      loadQuotes([...qualifyingSyms]);
+      loadQuotes([...new Set([...Object.keys(symbolMap), ...Object.keys(rsi70Map)])]);
     }
 
     // ── State ────────────────────────────────────────────────────────────
@@ -1214,7 +1166,6 @@
     let _showAllHistory  = false;
     let _earningsSyms    = new Map();  // sym -> label string
     let _quoteCache      = {};         // sym -> Finnhub quote {c, pc, dp}
-    let _otherAlertsData = {};         // dateKey -> {symMap, callMap, simpleMap}
     const MAX_DAY_CACHE  = 7;
     const SIDEBAR_CAP    = 30;
 
@@ -1229,19 +1180,17 @@
       return JSON.parse(atob(env.content.replace(/\n/g, "")));
     }
 
-    // Returns true if a day has any code-4 or code-6 alerts (used to show Other Alerts tab)
-    function _hasOtherAlerts(key) {
-      if (_otherAlertsData[key]) return Object.keys(_otherAlertsData[key].symMap || {}).length > 0;
-      const alerts = key === "today" ? _data?.today?.alerts : _dayCache[key]?.alerts;
-      if (!alerts) return false;
-      return Object.values(alerts).some(records => {
+    // Returns true if alertsObj contains at least one alert-4 record
+    function hasAlert5(alertsObj) {
+      if (!alertsObj) return false;
+      return Object.values(alertsObj).some(records => {
         const arr = Array.isArray(records) ? records : [records];
-        return arr.some(a => [4, 6].includes(Number(a.alert)));
+        return arr.some(a => Number(a.alert) === 4);
       });
     }
 
-    // Render non-qualifying (pre-9:45) symbols for the Other Alerts tab
-    function renderOtherAlerts(alertsRaw, dateKey) {
+    // Render alert-4 records as one tile per symbol
+    function render15minDay(alertsRaw, dateKey) {
       const statusEl = document.getElementById("status");
       const grid     = document.getElementById("grid");
       grid.innerHTML = "";
@@ -1249,39 +1198,49 @@
         document.getElementById(id).style.display = "none";
       });
 
-      if (!_otherAlertsData[dateKey]) {
-        const split = _splitAlerts(alertsRaw, dateKey);
-        _otherAlertsData[dateKey] = { symMap: split.otherHistMap, callMap: split.otherCallMap, simpleMap: split.otherSimpleMap };
+      const filterDateEST = dateKey === "today"
+        ? new Date(((_data?.today?.date) ?? new Date().toISOString().slice(0, 10)) + "T12:00:00Z")
+            .toLocaleDateString("en-US", { timeZone: "America/New_York" })
+        : new Date(dateKey + "T12:00:00Z").toLocaleDateString("en-US", { timeZone: "America/New_York" });
+
+      // Group by symbol, keep only alert-4 on the target day
+      const symMap = {};
+      for (const [sym, val] of Object.entries(alertsRaw || {})) {
+        const arr = Array.isArray(val) ? val : [val];
+        for (const a of arr) {
+          if (Number(a.alert) !== 4) continue;
+          if (dateKey !== "today") {
+            const d = new Date(a.received_at).toLocaleDateString("en-US", { timeZone: "America/New_York" });
+            if (d !== filterDateEST) continue;
+          }
+          (symMap[sym] = symMap[sym] || []).push(a);
+        }
       }
 
-      const { symMap, callMap, simpleMap } = _otherAlertsData[dateKey];
       const symbols = Object.entries(symMap);
-
       if (symbols.length === 0) {
-        statusEl.textContent = "No other alerts for this day.";
+        statusEl.textContent = "No 15 Min alerts for this day.";
         return;
       }
 
+      // Sort each symbol's occurrences newest → oldest, then sort symbols by latest hit
       symbols.forEach(([, hits]) => hits.sort((a, b) => new Date(b.received_at) - new Date(a.received_at)));
       symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+
       statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
 
-      symbols.forEach(([sym, history]) => {
-        const latest    = history[0];
-        const hasCall   = !!callMap[sym];
-        const hasSimple = !!simpleMap[sym];
-        const tile      = document.createElement("div");
-        tile.className  = "tile tile-call";
+      symbols.forEach(([sym, hits]) => {
+        const latest = hits[0];
+        const tile   = document.createElement("div");
+        tile.className = "tile tile-call";
         tile.dataset.symbol = sym;
 
-        const histRows = history.map(h => {
-          const hm = meta(h.alert);
-          return `<div class="history-row">
-            <span class="hist-badge ${hm.badgeCls}">${hm.icon} ${hm.label}</span>
+        const occRows = hits.map(h => `
+          <div class="history-row">
+            <span class="hist-badge badge-call">⚡ 15 Min</span>
             <span class="hist-close">${fmtClose(h.close)}</span>
             <span class="hist-time">${fmtTime(h.received_at)}</span>
-          </div>`;
-        }).join("");
+          </div>`).join("");
 
         tile.innerHTML = `
           <div class="tile-header">
@@ -1292,15 +1251,11 @@
                 <div class="tile-close">${fmtClose(latest.close)}</div>
               </div>
             </div>
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-              ${hasCall   ? '<span class="tile-badge badge-call-inline">▲ Call Alert</span>'      : ""}
-              ${hasSimple ? '<span class="tile-badge badge-simple-inline">⚡ 15 Min Simple</span>' : ""}
-            </div>
             <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
           </div>
           <div class="tile-history">
-            <div class="history-label">History (${history.length})</div>
-            ${histRows}
+            <div class="history-label">Occurrences (${hits.length})</div>
+            ${occRows}
           </div>`;
         grid.appendChild(tile);
       });
@@ -1357,7 +1312,7 @@
       if (_renderCache[cacheKey]) { restoreRender(_renderCache[cacheKey]); return; }
 
       if (key === "today") {
-        renderOtherAlerts(_data?.today?.alerts ?? {}, "today");
+        render15minDay(_data?.today?.alerts ?? {}, "today");
         saveRender(cacheKey);
         return;
       }
@@ -1378,7 +1333,7 @@
         return;
       }
       buildSidebar();
-      renderOtherAlerts(_dayCache[key].alerts ?? {}, key);
+      render15minDay(_dayCache[key].alerts ?? {}, key);
       saveRender(cacheKey);
     }
 
@@ -1440,12 +1395,14 @@
       todayBtn.onclick = () => setActiveTab("today");
       sidebar.appendChild(todayBtn);
 
-      // ── Other Alerts section ─────────────────────────────────────────────
+      // ── 15 Mins – Simple section ────────────────────────────────────────
+      // Collect dates that have alert-5 data (from what's already loaded/cached)
       const dates15 = [];
-      if (_hasOtherAlerts("today")) dates15.push("today");
-      for (const dateStr of Object.keys(_dayCache)) {
-        if (_hasOtherAlerts(dateStr)) dates15.push(dateStr);
+      if (hasAlert5(_data?.today?.alerts)) dates15.push("today");
+      for (const [dateStr, dayData] of Object.entries(_dayCache)) {
+        if (hasAlert5(dayData.alerts)) dates15.push(dateStr);
       }
+      // Sort history dates newest first, today always first
       const sortedDates15 = [
         ...dates15.filter(d => d === "today"),
         ...dates15.filter(d => d !== "today").sort().reverse(),
@@ -1455,8 +1412,8 @@
         const lbl15 = document.createElement("div");
         lbl15.className = "sidebar-label";
         lbl15.style.marginTop = "16px";
-        lbl15.style.color = "#a5b4fc";
-        lbl15.textContent = "Other Alerts";
+        lbl15.style.color = "#f97316";
+        lbl15.textContent = "15 Mins – Simple";
         sidebar.appendChild(lbl15);
 
         sortedDates15.forEach(key => {
@@ -1726,12 +1683,11 @@
         if (data.alerts && !data.today) {
           data.today = { date: "", alerts: data.alerts };
         }
-        _data            = data;
-        _manifest        = Array.isArray(manifest) ? manifest : [];
-        _dayCache        = {};
-        _renderCache     = {};
-        _quoteCache      = {};
-        _otherAlertsData = {};
+        _data        = data;
+        _manifest    = Array.isArray(manifest) ? manifest : [];
+        _dayCache    = {};
+        _renderCache = {};
+        _quoteCache  = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
@@ -1818,12 +1774,11 @@
         if (hasFreshAlert) playAlertTone();
 
         const manifest = await _ghFetch(MANIFEST_URL).catch(() => []);
-        _data            = data;
-        _manifest        = Array.isArray(manifest) ? manifest : [];
-        _dayCache        = {};
-        _renderCache     = {};
-        _quoteCache      = {};
-        _otherAlertsData = {};
+        _data        = data;
+        _manifest    = Array.isArray(manifest) ? manifest : [];
+        _dayCache    = {};
+        _renderCache = {};
+        _quoteCache  = {};
 
         document.getElementById("last-updated").textContent =
           _data.last_updated ? "Updated " + fmtTime(_data.last_updated) : "";
