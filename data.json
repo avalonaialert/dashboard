@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T13:16:14.409569+00:00",
+  "last_updated": "2026-05-26T13:34:14.713342+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -455,6 +455,15 @@
           "symbol": "AMD",
           "msg_id": "19e646cdbdc077ea",
           "received_at": "2026-05-26T13:15:13+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 483.79,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e647c0421764d7",
+          "received_at": "2026-05-26T13:31:47+00:00"
         }
       ],
       "QCOM": [
@@ -1022,6 +1031,15 @@
           "symbol": "WDC",
           "msg_id": "19e6428bb8a147b0",
           "received_at": "2026-05-26T12:00:49+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 502.695,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e647c55aa5b3b5",
+          "received_at": "2026-05-26T13:32:05+00:00"
         }
       ],
       "MU": [
@@ -1087,6 +1105,15 @@
           "symbol": "MU",
           "msg_id": "19e646cda97742f3",
           "received_at": "2026-05-26T13:15:11+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 818.25,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e647c2fdc7f83e",
+          "received_at": "2026-05-26T13:31:55+00:00"
         }
       ],
       "IBM": [
