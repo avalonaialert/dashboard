@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T13:34:14.713342+00:00",
+  "last_updated": "2026-05-26T13:46:18.112686+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -192,6 +192,15 @@
           "symbol": "DELL",
           "msg_id": "19e643620cf24e84",
           "received_at": "2026-05-26T12:15:27+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 302.95125,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e648866ffb6f2c",
+          "received_at": "2026-05-26T13:45:18+00:00"
         }
       ],
       "AMD": [
@@ -646,6 +655,15 @@
           "symbol": "QCOM",
           "msg_id": "19e645170cbcecb6",
           "received_at": "2026-05-26T12:45:17+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 240.7575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e64883ddeae69c",
+          "received_at": "2026-05-26T13:45:08+00:00"
         }
       ],
       "ARM": [
@@ -1040,6 +1058,15 @@
           "symbol": "WDC",
           "msg_id": "19e647c55aa5b3b5",
           "received_at": "2026-05-26T13:32:05+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 509.355,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e6488949d707e1",
+          "received_at": "2026-05-26T13:45:30+00:00"
         }
       ],
       "MU": [
@@ -1114,6 +1141,15 @@
           "symbol": "MU",
           "msg_id": "19e647c2fdc7f83e",
           "received_at": "2026-05-26T13:31:55+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 837.1724999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e648861b762327",
+          "received_at": "2026-05-26T13:45:17+00:00"
         }
       ],
       "IBM": [
@@ -1134,6 +1170,15 @@
           "symbol": "IBM",
           "msg_id": "19e6435d731aab4d",
           "received_at": "2026-05-26T12:15:08+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 251.37,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "IBM",
+          "msg_id": "19e6488ce27dde2c",
+          "received_at": "2026-05-26T13:45:46+00:00"
         }
       ],
       "SNDK": [
@@ -1182,8 +1227,31 @@
           "msg_id": "19e646ce90f9ffc8",
           "received_at": "2026-05-26T13:15:17+00:00"
         }
+      ],
+      "APP": [
+        {
+          "alert": 6,
+          "close": 522.7650000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e6488bd8a1a17a",
+          "received_at": "2026-05-26T13:45:40+00:00"
+        }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "APP": {
+        "option_symbol": "APP261218C00530000",
+        "strike": 530.0,
+        "expiry": "2026-12-18",
+        "entry_price": 114.3,
+        "entry_time": "2026-05-26T13:45:40+00:00",
+        "current_price": 114.3,
+        "current_time": "2026-05-26T13:46:18.112364+00:00",
+        "highest_price": 114.3,
+        "highest_time": "2026-05-26T13:46:18.112381+00:00"
+      }
+    }
   }
 }
