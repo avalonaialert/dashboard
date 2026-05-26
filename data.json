@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T15:26:30.992346+00:00",
+  "last_updated": "2026-05-26T15:31:28.447761+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -958,6 +958,15 @@
           "symbol": "FTNT",
           "msg_id": "19e646d731d97184",
           "received_at": "2026-05-26T13:15:53+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 134.345,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "FTNT",
+          "msg_id": "19e64e901e7fc870",
+          "received_at": "2026-05-26T15:30:44+00:00"
         }
       ],
       "F": [
@@ -1501,8 +1510,8 @@
         "expiry": "2026-12-18",
         "entry_price": 114.3,
         "entry_time": "2026-05-26T13:45:40+00:00",
-        "current_price": 123.17,
-        "current_time": "2026-05-26T15:26:30.992303+00:00",
+        "current_price": 121.29,
+        "current_time": "2026-05-26T15:31:28.447713+00:00",
         "highest_price": 126.09,
         "highest_time": "2026-05-26T15:01:29.064385+00:00"
       },
@@ -1512,8 +1521,8 @@
         "expiry": "2026-12-18",
         "entry_price": 108.45,
         "entry_time": "2026-05-26T14:00:38+00:00",
-        "current_price": 106.36,
-        "current_time": "2026-05-26T15:26:19.182652+00:00",
+        "current_price": 105.77,
+        "current_time": "2026-05-26T15:31:23.440278+00:00",
         "highest_price": 109.19,
         "highest_time": "2026-05-26T14:31:20.753623+00:00"
       },
@@ -1523,8 +1532,8 @@
         "expiry": "2026-12-18",
         "entry_price": 485.88,
         "entry_time": "2026-05-26T14:00:13+00:00",
-        "current_price": 503.71,
-        "current_time": "2026-05-26T15:26:25.683070+00:00",
+        "current_price": 501.01,
+        "current_time": "2026-05-26T15:31:27.466216+00:00",
         "highest_price": 528.26,
         "highest_time": "2026-05-26T14:41:19.969678+00:00"
       },
@@ -1534,8 +1543,8 @@
         "expiry": "2026-12-18",
         "entry_price": 0.52,
         "entry_time": "2026-05-26T14:15:23+00:00",
-        "current_price": 0.49,
-        "current_time": "2026-05-26T15:26:22.921646+00:00",
+        "current_price": 0.53,
+        "current_time": "2026-05-26T15:31:27.275975+00:00",
         "highest_price": 0.55,
         "highest_time": "2026-05-26T15:06:31.257526+00:00"
       },
@@ -1545,10 +1554,21 @@
         "expiry": "2026-12-18",
         "entry_price": 52.0,
         "entry_time": "2026-05-26T15:00:09+00:00",
-        "current_price": 52.51,
-        "current_time": "2026-05-26T15:26:20.153261+00:00",
+        "current_price": 52.88,
+        "current_time": "2026-05-26T15:31:24.626740+00:00",
         "highest_price": 54.28,
         "highest_time": "2026-05-26T15:06:29.534543+00:00"
+      },
+      "FTNT": {
+        "option_symbol": "FTNT261218C00140000",
+        "strike": 140.0,
+        "expiry": "2026-12-18",
+        "entry_price": 17.87,
+        "entry_time": "2026-05-26T15:30:44+00:00",
+        "current_price": 17.87,
+        "current_time": "2026-05-26T15:31:26.614577+00:00",
+        "highest_price": 17.87,
+        "highest_time": "2026-05-26T15:31:26.614595+00:00"
       }
     }
   }
