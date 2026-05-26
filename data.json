@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T11:46:11.024300+00:00",
+  "last_updated": "2026-05-26T12:01:14.309789+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -147,6 +147,42 @@
           "symbol": "DELL",
           "msg_id": "19e640d04513cd4f",
           "received_at": "2026-05-26T11:30:33+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 310.52250000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e64289584b6be6",
+          "received_at": "2026-05-26T12:00:40+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 310.52250000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e6428870a7fb49",
+          "received_at": "2026-05-26T12:00:36+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 309.87750000000005,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e641b50c3443aa",
+          "received_at": "2026-05-26T11:46:08+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 309.87750000000005,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e641b3f2ad76fa",
+          "received_at": "2026-05-26T11:46:06+00:00"
         }
       ],
       "AMD": [
@@ -356,6 +392,15 @@
           "symbol": "AMD",
           "msg_id": "19e641a7c5ae8c99",
           "received_at": "2026-05-26T11:45:16+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 481.29499999999996,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e64283820f8169",
+          "received_at": "2026-05-26T12:00:16+00:00"
         }
       ],
       "QCOM": [
@@ -833,6 +878,15 @@
           "symbol": "WDC",
           "msg_id": "19e640dc2eb06a89",
           "received_at": "2026-05-26T11:31:22+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 500.66249999999997,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e6428bb8a147b0",
+          "received_at": "2026-05-26T12:00:49+00:00"
         }
       ],
       "MU": [
@@ -844,6 +898,37 @@
           "symbol": "MU",
           "msg_id": "19e641aae160cc66",
           "received_at": "2026-05-26T11:45:29+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 802.39,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e642851e1b7014",
+          "received_at": "2026-05-26T12:00:22+00:00"
+        }
+      ],
+      "IBM": [
+        {
+          "alert": 66666,
+          "close": 255.7075,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "IBM",
+          "msg_id": "19e6428392afdd89",
+          "received_at": "2026-05-26T12:00:15+00:00"
+        }
+      ],
+      "SNDK": [
+        {
+          "alert": 66666,
+          "close": 1530.2625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e642816f7bb781",
+          "received_at": "2026-05-26T12:00:06+00:00"
         }
       ]
     },
