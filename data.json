@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T13:01:14.771960+00:00",
+  "last_updated": "2026-05-26T13:16:14.409569+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -437,6 +437,24 @@
           "symbol": "AMD",
           "msg_id": "19e645f84be75807",
           "received_at": "2026-05-26T13:00:40+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 482.8675,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e646cdc822a860",
+          "received_at": "2026-05-26T13:15:14+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 482.8675,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e646cdbdc077ea",
+          "received_at": "2026-05-26T13:15:13+00:00"
         }
       ],
       "QCOM": [
@@ -805,6 +823,15 @@
           "symbol": "FTNT",
           "msg_id": "19e6443c12a40488",
           "received_at": "2026-05-26T12:30:20+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 132.615,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "FTNT",
+          "msg_id": "19e646d731d97184",
+          "received_at": "2026-05-26T13:15:53+00:00"
         }
       ],
       "F": [
@@ -1051,6 +1078,15 @@
           "symbol": "MU",
           "msg_id": "19e645f2f0bd1f5d",
           "received_at": "2026-05-26T13:00:11+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 814.7625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e646cda97742f3",
+          "received_at": "2026-05-26T13:15:11+00:00"
         }
       ],
       "IBM": [
@@ -1109,6 +1145,15 @@
           "symbol": "SNDK",
           "msg_id": "19e645f5f8e5b472",
           "received_at": "2026-05-26T13:00:30+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1539.04,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e646ce90f9ffc8",
+          "received_at": "2026-05-26T13:15:17+00:00"
         }
       ]
     },
