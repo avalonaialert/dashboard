@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T11:16:09.808889+00:00",
+  "last_updated": "2026-05-26T11:31:11.081663+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -129,6 +129,24 @@
           "symbol": "DELL",
           "msg_id": "19e63ff722bc972c",
           "received_at": "2026-05-26T11:15:44+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 309.425,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e640d0772471ff",
+          "received_at": "2026-05-26T11:30:34+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 309.425,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e640d04513cd4f",
+          "received_at": "2026-05-26T11:30:33+00:00"
         }
       ],
       "AMD": [
@@ -320,6 +338,15 @@
           "symbol": "AMD",
           "msg_id": "19e63e3a7aa7b0ef",
           "received_at": "2026-05-26T10:45:22+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 480.6725,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e640d1cea489cf",
+          "received_at": "2026-05-26T11:30:39+00:00"
         }
       ],
       "QCOM": [
@@ -728,6 +755,15 @@
           "symbol": "STX",
           "msg_id": "19e63ff64ec0d687",
           "received_at": "2026-05-26T11:15:40+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 837.7874999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19e640d33a3490da",
+          "received_at": "2026-05-26T11:30:44+00:00"
         }
       ],
       "SPY": [
@@ -748,6 +784,17 @@
           "symbol": "SPY",
           "msg_id": "19e63e3b4b13586f",
           "received_at": "2026-05-26T10:45:26+00:00"
+        }
+      ],
+      "TSLA": [
+        {
+          "alert": 4,
+          "close": 430.54,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19e640d1568554b2",
+          "received_at": "2026-05-26T11:30:37+00:00"
         }
       ]
     },
