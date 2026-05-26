@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T11:01:10.039483+00:00",
+  "last_updated": "2026-05-26T11:16:09.808889+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -120,6 +120,15 @@
           "symbol": "DELL",
           "msg_id": "19e63e39a498e8a2",
           "received_at": "2026-05-26T10:45:18+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 308.475,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e63ff722bc972c",
+          "received_at": "2026-05-26T11:15:44+00:00"
         }
       ],
       "AMD": [
@@ -710,6 +719,15 @@
           "symbol": "STX",
           "msg_id": "19e63d6cb741e113",
           "received_at": "2026-05-26T10:31:18+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 835.0475,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19e63ff64ec0d687",
+          "received_at": "2026-05-26T11:15:40+00:00"
         }
       ],
       "SPY": [
