@@ -1,8 +1,151 @@
 {
-  "last_updated": "2026-05-26T08:16:04.962312+00:00",
+  "last_updated": "2026-05-26T08:31:08.814447+00:00",
   "today": {
-    "date": "2026-05-23",
+    "date": "2026-05-26",
     "alerts": {
+      "DELL": [
+        {
+          "alert": 7,
+          "close": 307.6775,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e63684f26fc150",
+          "received_at": "2026-05-26T08:30:39+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 307.6775,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e6368455b6dc74",
+          "received_at": "2026-05-26T08:30:36+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 305.75,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e635a6e892e037",
+          "received_at": "2026-05-26T08:15:29+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 305.75,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e635a6d3792891",
+          "received_at": "2026-05-26T08:15:29+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 4,
+          "close": 477.04125,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e636845888da08",
+          "received_at": "2026-05-26T08:30:36+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 477.04125,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e63682b0bdb72e",
+          "received_at": "2026-05-26T08:30:30+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 475.565,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e635aae19074cf",
+          "received_at": "2026-05-26T08:15:46+00:00"
+        }
+      ],
+      "QCOM": [
+        {
+          "alert": 4,
+          "close": 243.3675,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e63682fc054d8d",
+          "received_at": "2026-05-26T08:30:29+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 243.3675,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e63682b2b5cd5a",
+          "received_at": "2026-05-26T08:30:29+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 242.21,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e635a155e4604b",
+          "received_at": "2026-05-26T08:15:07+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 242.21,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e635a0f019a8f3",
+          "received_at": "2026-05-26T08:15:05+00:00"
+        }
+      ],
+      "ARM": [
+        {
+          "alert": 7,
+          "close": 315.6275,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e63682a8ee16c9",
+          "received_at": "2026-05-26T08:30:30+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 315.6275,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e6368289e04840",
+          "received_at": "2026-05-26T08:30:29+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 314.92,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e635a6a2686c65",
+          "received_at": "2026-05-26T08:15:27+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 314.92,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e635a6945c4d8a",
+          "received_at": "2026-05-26T08:15:27+00:00"
+        }
+      ],
       "AAPL": [
         {
           "alert": 6666,
@@ -25,37 +168,6 @@
           "received_at": "2026-05-26T08:15:47+00:00"
         }
       ],
-      "AMD": [
-        {
-          "alert": 6666,
-          "close": 475.565,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "AMD",
-          "msg_id": "19e635aae19074cf",
-          "received_at": "2026-05-26T08:15:46+00:00"
-        }
-      ],
-      "DELL": [
-        {
-          "alert": 4,
-          "close": 305.75,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "DELL",
-          "msg_id": "19e635a6e892e037",
-          "received_at": "2026-05-26T08:15:29+00:00"
-        },
-        {
-          "alert": 6666,
-          "close": 305.75,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "DELL",
-          "msg_id": "19e635a6d3792891",
-          "received_at": "2026-05-26T08:15:29+00:00"
-        }
-      ],
       "F": [
         {
           "alert": 4,
@@ -74,46 +186,6 @@
           "symbol": "F",
           "msg_id": "19e635a6584248ef",
           "received_at": "2026-05-26T08:15:27+00:00"
-        }
-      ],
-      "ARM": [
-        {
-          "alert": 4,
-          "close": 314.92,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "ARM",
-          "msg_id": "19e635a6a2686c65",
-          "received_at": "2026-05-26T08:15:27+00:00"
-        },
-        {
-          "alert": 6666,
-          "close": 314.92,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "ARM",
-          "msg_id": "19e635a6945c4d8a",
-          "received_at": "2026-05-26T08:15:27+00:00"
-        }
-      ],
-      "QCOM": [
-        {
-          "alert": 4,
-          "close": 242.21,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "QCOM",
-          "msg_id": "19e635a155e4604b",
-          "received_at": "2026-05-26T08:15:07+00:00"
-        },
-        {
-          "alert": 6666,
-          "close": 242.21,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "QCOM",
-          "msg_id": "19e635a0f019a8f3",
-          "received_at": "2026-05-26T08:15:05+00:00"
         }
       ]
     },
