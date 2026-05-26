@@ -1,11 +1,122 @@
 {
-  "last_updated": "2026-05-23T15:02:46.544500+00:00",
+  "last_updated": "2026-05-26T08:16:04.962312+00:00",
   "today": {
     "date": "2026-05-23",
     "alerts": {
+      "AAPL": [
+        {
+          "alert": 6666,
+          "close": 309.645,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AAPL",
+          "msg_id": "19e635ab8d260d23",
+          "received_at": "2026-05-26T08:15:48+00:00"
+        }
+      ],
+      "FTNT": [
+        {
+          "alert": 7,
+          "close": 133.98999999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "FTNT",
+          "msg_id": "19e635ab192f70c6",
+          "received_at": "2026-05-26T08:15:47+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 6666,
+          "close": 475.565,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e635aae19074cf",
+          "received_at": "2026-05-26T08:15:46+00:00"
+        }
+      ],
+      "DELL": [
+        {
+          "alert": 4,
+          "close": 305.75,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e635a6e892e037",
+          "received_at": "2026-05-26T08:15:29+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 305.75,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e635a6d3792891",
+          "received_at": "2026-05-26T08:15:29+00:00"
+        }
+      ],
+      "F": [
+        {
+          "alert": 4,
+          "close": 15.017499999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "F",
+          "msg_id": "19e635a6a4e86e4b",
+          "received_at": "2026-05-26T08:15:29+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 15.017499999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "F",
+          "msg_id": "19e635a6584248ef",
+          "received_at": "2026-05-26T08:15:27+00:00"
+        }
+      ],
+      "ARM": [
+        {
+          "alert": 4,
+          "close": 314.92,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e635a6a2686c65",
+          "received_at": "2026-05-26T08:15:27+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 314.92,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e635a6945c4d8a",
+          "received_at": "2026-05-26T08:15:27+00:00"
+        }
+      ],
+      "QCOM": [
+        {
+          "alert": 4,
+          "close": 242.21,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e635a155e4604b",
+          "received_at": "2026-05-26T08:15:07+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 242.21,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e635a0f019a8f3",
+          "received_at": "2026-05-26T08:15:05+00:00"
+        }
+      ]
     },
-    "backtest": {
-
-    }
+    "backtest": {}
   }
 }
