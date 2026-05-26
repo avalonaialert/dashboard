@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T13:56:15.998044+00:00",
+  "last_updated": "2026-05-26T14:01:28.393865+00:00",
   "today": {
     "date": "2026-05-26",
     "alerts": {
@@ -473,6 +473,15 @@
           "symbol": "AMD",
           "msg_id": "19e647c0421764d7",
           "received_at": "2026-05-26T13:31:47+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 490.205,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e64966ffb244c4",
+          "received_at": "2026-05-26T14:00:38+00:00"
         }
       ],
       "QCOM": [
@@ -1067,6 +1076,15 @@
           "symbol": "WDC",
           "msg_id": "19e6488949d707e1",
           "received_at": "2026-05-26T13:45:30+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 521.8499999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e64966ec3b0f61",
+          "received_at": "2026-05-26T14:00:39+00:00"
         }
       ],
       "MU": [
@@ -1150,6 +1168,15 @@
           "symbol": "MU",
           "msg_id": "19e648861b762327",
           "received_at": "2026-05-26T13:45:17+00:00"
+        },
+        {
+          "alert": 4,
+          "close": 855.7825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e6496772fcbde3",
+          "received_at": "2026-05-26T14:00:41+00:00"
         }
       ],
       "IBM": [
@@ -1226,6 +1253,15 @@
           "symbol": "SNDK",
           "msg_id": "19e646ce90f9ffc8",
           "received_at": "2026-05-26T13:15:17+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1579.995,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e64960dcab3191",
+          "received_at": "2026-05-26T14:00:13+00:00"
         }
       ],
       "APP": [
@@ -1247,10 +1283,32 @@
         "expiry": "2026-12-18",
         "entry_price": 114.3,
         "entry_time": "2026-05-26T13:45:40+00:00",
-        "current_price": 117.44,
-        "current_time": "2026-05-26T13:56:15.997691+00:00",
+        "current_price": 118.59,
+        "current_time": "2026-05-26T14:01:28.393807+00:00",
         "highest_price": 120.23,
         "highest_time": "2026-05-26T13:51:15.925579+00:00"
+      },
+      "AMD": {
+        "option_symbol": "AMD261218C00500000",
+        "strike": 500.0,
+        "expiry": "2026-12-18",
+        "entry_price": 108.45,
+        "entry_time": "2026-05-26T14:00:38+00:00",
+        "current_price": 108.45,
+        "current_time": "2026-05-26T14:01:22.487225+00:00",
+        "highest_price": 108.45,
+        "highest_time": "2026-05-26T14:01:22.487245+00:00"
+      },
+      "SNDK": {
+        "option_symbol": "SNDK261218C01580000",
+        "strike": 1580.0,
+        "expiry": "2026-12-18",
+        "entry_price": 485.88,
+        "entry_time": "2026-05-26T14:00:13+00:00",
+        "current_price": 485.88,
+        "current_time": "2026-05-26T14:01:24.325166+00:00",
+        "highest_price": 485.88,
+        "highest_time": "2026-05-26T14:01:24.325184+00:00"
       }
     }
   }
