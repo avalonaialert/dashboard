@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T18:59:04.212561+00:00",
+  "last_updated": "2026-05-27T19:01:08.996359+00:00",
   "today": {
     "date": "2026-05-27",
     "alerts": {
@@ -1559,6 +1559,15 @@
           "symbol": "META",
           "msg_id": "19e6acc48577c125",
           "received_at": "2026-05-27T18:57:10+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 631.835,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "META",
+          "msg_id": "19e6acf3b2b28f21",
+          "received_at": "2026-05-27T19:00:23+00:00"
         }
       ]
     },
@@ -1569,8 +1578,8 @@
         "expiry": "2026-12-18",
         "entry_price": 14.45,
         "entry_time": "2026-05-27T13:33:27+00:00",
-        "current_price": 15.54,
-        "current_time": "2026-05-27T18:59:03.377690+00:00",
+        "current_price": 15.39,
+        "current_time": "2026-05-27T19:01:06.686735+00:00",
         "highest_price": 16.46,
         "highest_time": "2026-05-27T16:43:02.591994+00:00"
       },
@@ -1580,8 +1589,8 @@
         "expiry": "2026-12-18",
         "entry_price": 22.62,
         "entry_time": "2026-05-27T14:00:18+00:00",
-        "current_price": 22.2,
-        "current_time": "2026-05-27T18:59:03.673900+00:00",
+        "current_price": 22.21,
+        "current_time": "2026-05-27T19:01:06.971294+00:00",
         "highest_price": 23.59,
         "highest_time": "2026-05-27T14:43:07.032725+00:00"
       },
@@ -1591,8 +1600,8 @@
         "expiry": "2026-12-18",
         "entry_price": 43.32,
         "entry_time": "2026-05-27T14:19:05+00:00",
-        "current_price": 42.89,
-        "current_time": "2026-05-27T18:59:03.933270+00:00",
+        "current_price": 43.19,
+        "current_time": "2026-05-27T19:01:08.625556+00:00",
         "highest_price": 44.86,
         "highest_time": "2026-05-27T16:45:05.585699+00:00"
       },
@@ -1602,8 +1611,8 @@
         "expiry": "2026-12-18",
         "entry_price": 73.5,
         "entry_time": "2026-05-27T14:33:07+00:00",
-        "current_price": 82.01,
-        "current_time": "2026-05-27T18:59:04.212524+00:00",
+        "current_price": 82.57,
+        "current_time": "2026-05-27T19:01:08.996316+00:00",
         "highest_price": 84.65,
         "highest_time": "2026-05-27T18:37:05.489558+00:00"
       }
