@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T16:35:07.594070+00:00",
+  "last_updated": "2026-05-27T16:37:06.621699+00:00",
   "today": {
     "date": "2026-05-27",
     "alerts": {
@@ -1013,6 +1013,15 @@
           "symbol": "UAL",
           "msg_id": "19e6a3d80b2d1b1c",
           "received_at": "2026-05-27T16:21:14+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 113.6225,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "UAL",
+          "msg_id": "19e6a4b2844fc0a5",
+          "received_at": "2026-05-27T16:36:09+00:00"
         }
       ],
       "AAPL": [
@@ -1425,10 +1434,10 @@
         "expiry": "2026-12-18",
         "entry_price": 14.45,
         "entry_time": "2026-05-27T13:33:27+00:00",
-        "current_price": 16.29,
-        "current_time": "2026-05-27T16:35:04.559011+00:00",
-        "highest_price": 16.29,
-        "highest_time": "2026-05-27T16:35:04.559038+00:00"
+        "current_price": 16.34,
+        "current_time": "2026-05-27T16:37:03.263629+00:00",
+        "highest_price": 16.34,
+        "highest_time": "2026-05-27T16:37:03.263658+00:00"
       },
       "AAPL": {
         "option_symbol": "AAPL261218C00320000",
@@ -1436,8 +1445,8 @@
         "expiry": "2026-12-18",
         "entry_price": 22.62,
         "entry_time": "2026-05-27T14:00:18+00:00",
-        "current_price": 22.12,
-        "current_time": "2026-05-27T16:35:05.814209+00:00",
+        "current_price": 22.39,
+        "current_time": "2026-05-27T16:37:06.184653+00:00",
         "highest_price": 23.59,
         "highest_time": "2026-05-27T14:43:07.032725+00:00"
       },
@@ -1447,10 +1456,10 @@
         "expiry": "2026-12-18",
         "entry_price": 43.32,
         "entry_time": "2026-05-27T14:19:05+00:00",
-        "current_price": 43.95,
-        "current_time": "2026-05-27T16:35:06.709738+00:00",
-        "highest_price": 44.47,
-        "highest_time": "2026-05-27T14:41:08.688046+00:00"
+        "current_price": 44.62,
+        "current_time": "2026-05-27T16:37:06.393884+00:00",
+        "highest_price": 44.62,
+        "highest_time": "2026-05-27T16:37:06.393916+00:00"
       },
       "META": {
         "option_symbol": "META261218C00620000",
@@ -1458,8 +1467,8 @@
         "expiry": "2026-12-18",
         "entry_price": 73.5,
         "entry_time": "2026-05-27T14:33:07+00:00",
-        "current_price": 69.75,
-        "current_time": "2026-05-27T16:35:07.594031+00:00",
+        "current_price": 70.39,
+        "current_time": "2026-05-27T16:37:06.621661+00:00",
         "highest_price": 73.5,
         "highest_time": "2026-05-27T14:35:09.365576+00:00"
       }
