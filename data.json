@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T11:31:05.650352+00:00",
+  "last_updated": "2026-05-27T11:46:06.736334+00:00",
   "today": {
     "date": "2026-05-27",
     "alerts": {
@@ -66,6 +66,24 @@
           "symbol": "WDC",
           "msg_id": "19e692570c6b520c",
           "received_at": "2026-05-27T11:15:20+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 551.94,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e6940daedbb4df",
+          "received_at": "2026-05-27T11:45:16+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 548.1624999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e69342603b7d7f",
+          "received_at": "2026-05-27T11:31:24+00:00"
         }
       ],
       "MU": [
@@ -167,6 +185,15 @@
           "symbol": "MU",
           "msg_id": "19e693326da9d8e2",
           "received_at": "2026-05-27T11:30:18+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 970.37,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e6940e594e4540",
+          "received_at": "2026-05-27T11:45:16+00:00"
         }
       ],
       "AMD": [
@@ -178,6 +205,15 @@
           "symbol": "AMD",
           "msg_id": "19e6873c4e421cd1",
           "received_at": "2026-05-27T08:01:14+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 514.7075,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e6940def7dfe4f",
+          "received_at": "2026-05-27T11:45:18+00:00"
         }
       ],
       "STX": [
@@ -440,6 +476,15 @@
           "symbol": "GLW",
           "msg_id": "19e69334e18fb242",
           "received_at": "2026-05-27T11:30:29+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 199.515,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e694136d7b88b7",
+          "received_at": "2026-05-27T11:45:38+00:00"
         }
       ],
       "SNDK": [
@@ -462,6 +507,15 @@
           "symbol": "AVGO",
           "msg_id": "19e6933326f1b174",
           "received_at": "2026-05-27T11:30:21+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 427.72249999999997,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e6940fa2d2b625",
+          "received_at": "2026-05-27T11:45:23+00:00"
         }
       ]
     },
