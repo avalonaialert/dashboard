@@ -1,8 +1,42 @@
 {
-  "last_updated": "2026-05-27T08:01:05.238308+00:00",
+  "last_updated": "2026-05-27T08:16:03.217002+00:00",
   "today": {
     "date": "2026-05-27",
-    "alerts": {},
+    "alerts": {
+      "WDC": [
+        {
+          "alert": 7,
+          "close": 530.38,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e6880cb3aa35e0",
+          "received_at": "2026-05-27T08:15:29+00:00"
+        }
+      ],
+      "MU": [
+        {
+          "alert": 7,
+          "close": 936.6600000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e68809eedabc53",
+          "received_at": "2026-05-27T08:15:18+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 7,
+          "close": 505.575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e6873c4e421cd1",
+          "received_at": "2026-05-27T08:01:14+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
