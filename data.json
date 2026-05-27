@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T13:59:05.597003+00:00",
+  "last_updated": "2026-05-27T14:01:09.978813+00:00",
   "today": {
     "date": "2026-05-27",
     "alerts": {
@@ -905,6 +905,35 @@
           "symbol": "UAL",
           "msg_id": "19e69b9a490c39ba",
           "received_at": "2026-05-27T13:57:10+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 113.76249999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "UAL",
+          "msg_id": "19e69bc9907d742f",
+          "received_at": "2026-05-27T14:00:25+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 113.58,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "UAL",
+          "msg_id": "19e69bb5aad26b81",
+          "received_at": "2026-05-27T13:59:05+00:00"
+        }
+      ],
+      "AAPL": [
+        {
+          "alert": 6,
+          "close": 312.0575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AAPL",
+          "msg_id": "19e69bc7a459715f",
+          "received_at": "2026-05-27T14:00:18+00:00"
         }
       ]
     },
@@ -915,10 +944,21 @@
         "expiry": "2026-12-18",
         "entry_price": 14.45,
         "entry_time": "2026-05-27T13:33:27+00:00",
-        "current_price": 15.43,
-        "current_time": "2026-05-27T13:59:05.596943+00:00",
-        "highest_price": 15.43,
-        "highest_time": "2026-05-27T13:59:05.596963+00:00"
+        "current_price": 15.62,
+        "current_time": "2026-05-27T14:01:06.545107+00:00",
+        "highest_price": 15.62,
+        "highest_time": "2026-05-27T14:01:06.545133+00:00"
+      },
+      "AAPL": {
+        "option_symbol": "AAPL261218C00320000",
+        "strike": 320.0,
+        "expiry": "2026-12-18",
+        "entry_price": 22.62,
+        "entry_time": "2026-05-27T14:00:18+00:00",
+        "current_price": 22.62,
+        "current_time": "2026-05-27T14:01:09.978770+00:00",
+        "highest_price": 22.62,
+        "highest_time": "2026-05-27T14:01:09.978791+00:00"
       }
     }
   }
