@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T12:31:03.973485+00:00",
+  "last_updated": "2026-05-27T13:01:02.883703+00:00",
   "today": {
     "date": "2026-05-27",
     "alerts": {
@@ -111,6 +111,15 @@
           "symbol": "WDC",
           "msg_id": "19e696a23f4099ea",
           "received_at": "2026-05-27T12:30:22+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 552.525,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e6977b04b14371",
+          "received_at": "2026-05-27T12:45:10+00:00"
         }
       ],
       "MU": [
@@ -687,6 +696,24 @@
           "symbol": "AVGO",
           "msg_id": "19e696a1a52b85a3",
           "received_at": "2026-05-27T12:30:20+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 431.2775,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e6985d40e1b5f5",
+          "received_at": "2026-05-27T13:00:35+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 433.27500000000003,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e6977b8b05d378",
+          "received_at": "2026-05-27T12:45:12+00:00"
         }
       ]
     },
