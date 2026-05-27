@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T12:16:07.107151+00:00",
+  "last_updated": "2026-05-27T12:31:03.973485+00:00",
   "today": {
     "date": "2026-05-27",
     "alerts": {
@@ -102,6 +102,15 @@
           "symbol": "WDC",
           "msg_id": "19e695c410e6ac97",
           "received_at": "2026-05-27T12:15:12+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 556.6175000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e696a23f4099ea",
+          "received_at": "2026-05-27T12:30:22+00:00"
         }
       ],
       "MU": [
@@ -360,6 +369,15 @@
           "symbol": "STX",
           "msg_id": "19e695cd1823b007",
           "received_at": "2026-05-27T12:15:47+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 893.1,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19e696a77b5b25b8",
+          "received_at": "2026-05-27T12:30:43+00:00"
         }
       ],
       "TSLA": [
@@ -613,6 +631,15 @@
           "symbol": "SNDK",
           "msg_id": "19e695c3d63556c5",
           "received_at": "2026-05-27T12:15:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1648.375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e696a159e6a11b",
+          "received_at": "2026-05-27T12:30:18+00:00"
         }
       ],
       "AVGO": [
@@ -651,6 +678,15 @@
           "symbol": "AVGO",
           "msg_id": "19e695c3a6a729d2",
           "received_at": "2026-05-27T12:15:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 431.745,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e696a1a52b85a3",
+          "received_at": "2026-05-27T12:30:20+00:00"
         }
       ]
     },
