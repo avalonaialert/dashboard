@@ -726,7 +726,7 @@
         <div class="rsi70-section-title">◆ RSI 70 Pre-Market</div>
         <div class="rsi70-table-wrap">
           <table class="rsi70-table">
-            <thead><tr><th>Symbol</th><th>Close</th><th>Time (EST)</th></tr></thead>
+            <thead><tr><th>Symbol</th><th>Close</th><th>Count</th><th>Latest (EST)</th></tr></thead>
             <tbody id="rsi70-tbody"></tbody>
           </table>
         </div>
@@ -909,7 +909,7 @@
 
       const symbolMap  = {};
       const gainMap    = {};
-      const rsi70Map   = {};   // sym -> latest alert-7 record
+      const rsi70Map   = {};   // sym -> [all alert-7 records]
       const bigMoveMap = {};   // sym -> latest alert-66666 record
       const alert5List = [];   // flat list of {sym, a} for alert code 5
       const seen5      = new Set();
@@ -942,9 +942,7 @@
           } else {
             if (!seenMain.has(key)) { seenMain.add(key); (symbolMap[sym] = symbolMap[sym] || []).push(a); }
             if (code === 7) {
-              if (!rsi70Map[sym] || new Date(a.received_at) > new Date(rsi70Map[sym].received_at)) {
-                rsi70Map[sym] = a;
-              }
+              (rsi70Map[sym] = rsi70Map[sym] || []).push(a);
             }
           }
         }
@@ -1106,12 +1104,14 @@
       const rsi70Tbody  = document.getElementById("rsi70-tbody");
       const rsi70Entries = Object.entries(rsi70Map);
       if (rsi70Entries.length > 0) {
-        rsi70Entries.sort((a, b) => new Date(b[1].received_at) - new Date(a[1].received_at));
-        rsi70Tbody.innerHTML = rsi70Entries.map(([sym, a]) =>
+        rsi70Entries.forEach(([, records]) => records.sort((a, b) => new Date(b.received_at) - new Date(a.received_at)));
+        rsi70Entries.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+        rsi70Tbody.innerHTML = rsi70Entries.map(([sym, records]) =>
           `<tr>
             <td class="rsi70-symbol">${symLink(sym)}</td>
-            <td class="rsi70-close">${fmtClose(a.close)}</td>
-            <td class="rsi70-time">${fmtTime(a.received_at)}</td>
+            <td class="rsi70-close">${fmtClose(records[0].close)}</td>
+            <td class="rsi70-time" style="font-weight:700;color:#06b6d4">${records.length}×</td>
+            <td class="rsi70-time">${fmtTime(records[0].received_at)}</td>
           </tr>`
         ).join("");
         rsi70Sec.style.display = "block";
@@ -1158,7 +1158,7 @@
       const symsCall = new Set(Object.keys(symbolMap));
       const allSyms  = new Set([...symsCall, ...Object.keys(rsi70Map), ...symsCode4, ...symsCode30]);
       _contenderSyms = new Set([...allSyms].filter(s => {
-        const score = (symsCall.has(s) ? 1 : 0) + (rsi70Map[s] ? 1 : 0)
+        const score = (symsCall.has(s) ? 1 : 0) + (rsi70Map[s]?.length > 0 ? 1 : 0)
                     + (symsCode4.has(s) ? 1 : 0) + (symsCode30.has(s) ? 1 : 0);
         return score >= 3;
       }));
