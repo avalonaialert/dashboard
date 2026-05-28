@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-05-28T08:01:06.763542+00:00",
+  "last_updated": "2026-05-28T09:01:04.549203+00:00",
   "today": {
     "date": "2026-05-28",
-    "alerts": {},
+    "alerts": {
+      "MSFT": [
+        {
+          "alert": 7,
+          "close": 416.23,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MSFT",
+          "msg_id": "19e6dd03e5bcaf6e",
+          "received_at": "2026-05-28T09:00:22+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
