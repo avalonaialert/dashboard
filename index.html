@@ -1007,13 +1007,13 @@
         const first  = history[history.length - 1];
         const m = meta(latest.alert);
         const age       = Date.now() - new Date(latest.received_at).getTime();
-        const isRecent  = age <= 20 * 60 * 1000;
-        const isNew     = age <= 15 * 60 * 1000;
+        const isRecent  = age <= 5 * 60 * 1000;
+        const isNew     = age <= 10 * 60 * 1000;
         const hasRsi70  = rsi70Symbols.has(symbol);
         const tile = document.createElement("div");
         tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}${hasRsi70 ? " has-rsi70" : ""}${isNew ? " new-alert" : ""}`;
-        // Auto-remove pulse once the 15-min window expires
-        if (isNew) setTimeout(() => tile.classList.remove("new-alert"), 15 * 60 * 1000 - age);
+        // Auto-remove pulse once the 10-min window expires
+        if (isNew) setTimeout(() => tile.classList.remove("new-alert"), 10 * 60 * 1000 - age);
         tile.dataset.symbol = symbol;
 
         const gain = fmtGain(first.close, latest.close);
@@ -1943,10 +1943,10 @@
         if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
         if (data.last_updated === _data?.last_updated) return; // nothing changed
 
-        // Sound alert: play tone if any alert arrived in the last 5 min
+        // Sound alert: play tone if any alert arrived in the last 3 min
         const now = Date.now();
         const hasFreshAlert = Object.values(data.today?.alerts ?? {}).some(records =>
-          records.some(r => now - new Date(r.received_at).getTime() < 5 * 60 * 1000)
+          records.some(r => now - new Date(r.received_at).getTime() < 3 * 60 * 1000)
         );
         if (hasFreshAlert) playAlertTone();
 
@@ -1969,7 +1969,7 @@
       } catch (_) { /* silent — don't disrupt the UI */ }
     }
 
-    load().then(() => setInterval(silentRefresh, 5 * 60 * 1000));
+    load().then(() => setInterval(silentRefresh, 2 * 60 * 1000));
 
     // ── Top Gainers bar ──────────────────────────────────────────────────
     function renderMoversBar() {
