@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T12:31:03.164889+00:00",
+  "last_updated": "2026-05-28T12:46:04.233958+00:00",
   "today": {
     "date": "2026-05-28",
     "alerts": {
@@ -86,6 +86,15 @@
           "symbol": "META",
           "msg_id": "19e6e906d8932c88",
           "received_at": "2026-05-28T12:30:17+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 640.2075,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "META",
+          "msg_id": "19e6e9e40a0b3aa8",
+          "received_at": "2026-05-28T12:45:24+00:00"
         }
       ]
     },
