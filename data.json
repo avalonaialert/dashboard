@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T14:27:04.675189+00:00",
+  "last_updated": "2026-05-28T14:29:09.076618+00:00",
   "today": {
     "date": "2026-05-28",
     "alerts": {
@@ -623,6 +623,15 @@
           "symbol": "QCOM",
           "msg_id": "19e6ef7bb1445b48",
           "received_at": "2026-05-28T14:23:07+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 238.98250000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19e6efc48a8e077b",
+          "received_at": "2026-05-28T14:28:06+00:00"
         }
       ],
       "STX": [
@@ -771,6 +780,15 @@
           "symbol": "F",
           "msg_id": "19e6ef60987fa03c",
           "received_at": "2026-05-28T14:21:13+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 16.44875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "F",
+          "msg_id": "19e6efc500f273c7",
+          "received_at": "2026-05-28T14:28:08+00:00"
         }
       ],
       "TSLA": [
@@ -791,6 +809,15 @@
           "symbol": "TSLA",
           "msg_id": "19e6ef418ee39779",
           "received_at": "2026-05-28T14:19:09+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 440.65375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19e6efc4302fae3d",
+          "received_at": "2026-05-28T14:28:03+00:00"
         }
       ],
       "SNDK": [
@@ -847,6 +874,15 @@
           "symbol": "SNDK",
           "msg_id": "19e6ef5f1025b3b4",
           "received_at": "2026-05-28T14:21:10+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1651.8,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e6efc46fff2b61",
+          "received_at": "2026-05-28T14:28:05+00:00"
         }
       ]
     },
@@ -857,8 +893,8 @@
         "expiry": "2026-12-18",
         "entry_price": 110.03,
         "entry_time": "2026-05-28T13:32:20+00:00",
-        "current_price": 107.45,
-        "current_time": "2026-05-28T14:27:03.702061+00:00",
+        "current_price": 107.62,
+        "current_time": "2026-05-28T14:29:07.797829+00:00",
         "highest_price": 112.26,
         "highest_time": "2026-05-28T14:21:17.731601+00:00"
       },
@@ -868,8 +904,8 @@
         "expiry": "2026-12-18",
         "entry_price": 82.03,
         "entry_time": "2026-05-28T13:33:12+00:00",
-        "current_price": 90.46,
-        "current_time": "2026-05-28T14:27:03.904942+00:00",
+        "current_price": 91.34,
+        "current_time": "2026-05-28T14:29:08.033149+00:00",
         "highest_price": 93.25,
         "highest_time": "2026-05-28T14:19:21.456338+00:00"
       },
@@ -879,8 +915,8 @@
         "expiry": "2026-12-18",
         "entry_price": 43.73,
         "entry_time": "2026-05-28T14:00:31+00:00",
-        "current_price": 43.02,
-        "current_time": "2026-05-28T14:27:03.493677+00:00",
+        "current_price": 43.03,
+        "current_time": "2026-05-28T14:29:07.567238+00:00",
         "highest_price": 45.61,
         "highest_time": "2026-05-28T14:19:20.876765+00:00"
       },
@@ -890,10 +926,10 @@
         "expiry": "2026-12-18",
         "entry_price": 0.83,
         "entry_time": "2026-05-28T14:02:08+00:00",
-        "current_price": 0.92,
-        "current_time": "2026-05-28T14:27:04.291984+00:00",
-        "highest_price": 0.94,
-        "highest_time": "2026-05-28T14:21:18.156095+00:00"
+        "current_price": 0.96,
+        "current_time": "2026-05-28T14:29:08.503136+00:00",
+        "highest_price": 0.96,
+        "highest_time": "2026-05-28T14:29:08.503167+00:00"
       },
       "TSLA": {
         "option_symbol": "TSLA261218C00450000",
@@ -901,8 +937,8 @@
         "expiry": "2026-12-18",
         "entry_price": 66.0,
         "entry_time": "2026-05-28T14:18:38+00:00",
-        "current_price": 65.12,
-        "current_time": "2026-05-28T14:27:04.472814+00:00",
+        "current_price": 65.24,
+        "current_time": "2026-05-28T14:29:08.870235+00:00",
         "highest_price": 66.0,
         "highest_time": "2026-05-28T14:19:22.375891+00:00"
       },
@@ -912,10 +948,10 @@
         "expiry": "2026-12-18",
         "entry_price": 522.68,
         "entry_time": "2026-05-28T14:17:11+00:00",
-        "current_price": 515.96,
-        "current_time": "2026-05-28T14:27:04.675137+00:00",
-        "highest_price": 522.68,
-        "highest_time": "2026-05-28T14:19:23.318012+00:00"
+        "current_price": 532.88,
+        "current_time": "2026-05-28T14:29:09.076580+00:00",
+        "highest_price": 532.88,
+        "highest_time": "2026-05-28T14:29:09.076602+00:00"
       },
       "QCOM": {
         "option_symbol": "QCOM261218C00240000",
@@ -923,8 +959,8 @@
         "expiry": "2026-12-18",
         "entry_price": 49.01,
         "entry_time": "2026-05-28T14:21:08+00:00",
-        "current_price": 50.03,
-        "current_time": "2026-05-28T14:27:04.074569+00:00",
+        "current_price": 49.98,
+        "current_time": "2026-05-28T14:29:08.261276+00:00",
         "highest_price": 50.03,
         "highest_time": "2026-05-28T14:27:04.074591+00:00"
       }
