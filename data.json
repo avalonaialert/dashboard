@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T13:01:04.024006+00:00",
+  "last_updated": "2026-05-28T13:17:03.459999+00:00",
   "today": {
     "date": "2026-05-28",
     "alerts": {
@@ -104,6 +104,15 @@
           "symbol": "META",
           "msg_id": "19e6eac3e5f29566",
           "received_at": "2026-05-28T13:00:37+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 642.03625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "META",
+          "msg_id": "19e6eb9955af26c1",
+          "received_at": "2026-05-28T13:15:14+00:00"
         }
       ],
       "AMD": [
@@ -115,6 +124,15 @@
           "symbol": "AMD",
           "msg_id": "19e6eabfa4701c28",
           "received_at": "2026-05-28T13:00:23+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 495.8025,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e6eb990b7a0c5c",
+          "received_at": "2026-05-28T13:15:13+00:00"
         }
       ]
     },
