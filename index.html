@@ -168,6 +168,18 @@
     .econ-actual-pos { color: #3fb950; font-weight: 700; }
     .econ-actual-neg { color: #f85149; font-weight: 700; }
 
+    .spy-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      border-radius: 20px; padding: 3px 12px;
+      font-size: 0.78rem; font-weight: 700; white-space: nowrap;
+      margin-right: 6px;
+    }
+    .spy-chip.up   { background: #0d2118; border: 1px solid #238636; color: #3fb950; }
+    .spy-chip.down { background: #2d0f0f; border: 1px solid #da3633; color: #f85149; }
+    .spy-chip.flat { background: #161b22; border: 1px solid #30363d; color: #8b949e; }
+    .spy-label { font-weight: 900; letter-spacing: 0.5px; }
+    .spy-pct   { font-weight: 700; }
+
     .contender-label { color: #f59e0b; margin-left: 16px; }
     .mover-chip.contender {
       background: #1c1400;
@@ -457,6 +469,40 @@
     .bt-gain.pos { color: #3fb950; }
     .bt-gain.neg { color: #f85149; }
     .bt-time    { color: #8b949e; font-size: 0.75rem; }
+
+    /* ── Positions section ── */
+    .pos-section-title {
+      font-size: 0.85rem; font-weight: 600; color: #34d399;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      margin: 32px 0 12px; display: flex; align-items: center; gap: 8px;
+    }
+    .pos-section-title::after { content: ""; flex: 1; height: 1px; background: #0d3a26; }
+
+    .pos-table-wrap { border-radius: 8px; border: 1px solid #0d3a26; overflow-x: auto; }
+    .pos-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .pos-table thead th {
+      background: #071f14; padding: 10px 14px; text-align: left;
+      font-weight: 600; color: #2d9362; text-transform: uppercase;
+      font-size: 0.7rem; letter-spacing: 0.6px;
+      border-bottom: 1px solid #0d3a26; white-space: nowrap;
+    }
+    .pos-table tbody tr { border-bottom: 1px solid #0a1f14; transition: background 0.15s; }
+    .pos-table tbody tr:last-child { border-bottom: none; }
+    .pos-table tbody tr:hover { background: #071f14; }
+    .pos-table td { padding: 9px 14px; white-space: nowrap; }
+
+    .pos-symbol { font-weight: 700; font-size: 0.95rem; color: #34d399; }
+    .pos-option { font-size: 0.78rem; color: #8b949e; }
+    .pos-price  { color: #e6edf3; font-weight: 600; }
+    .pos-qty    { color: #e6edf3; text-align: center; }
+    .pos-pnl    { font-weight: 700; }
+    .pos-pnl.pos { color: #3fb950; }
+    .pos-pnl.neg { color: #f85149; }
+    .pos-time   { color: #8b949e; font-size: 0.75rem; }
+    .pos-reason { color: #8b949e; font-size: 0.78rem; }
+    .pos-status { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; }
+    .pos-open   { background: #0d3a26; color: #34d399; border: 1px solid #34d399; }
+    .pos-closed { background: #1a1a2e; color: #8b949e; border: 1px solid #30363d; }
 
     /* ── 4H Gaining section ── */
     .section-title {
@@ -772,6 +818,31 @@
           </table>
         </div>
       </div>
+
+      <div id="pos-section" style="display:none">
+        <div class="pos-section-title">💼 Today's Positions</div>
+        <div class="pos-table-wrap">
+          <table class="pos-table">
+            <thead><tr>
+              <th>Symbol</th>
+              <th>Option</th>
+              <th>Strike</th>
+              <th>Qty</th>
+              <th>Buy @</th>
+              <th>Total Cost</th>
+              <th>Current</th>
+              <th>Unrealized</th>
+              <th>Sell @</th>
+              <th>Realized P&L</th>
+              <th>Status</th>
+              <th>Close Reason</th>
+              <th>Buy Time</th>
+              <th>Close Time</th>
+            </tr></thead>
+            <tbody id="pos-tbody"></tbody>
+          </table>
+        </div>
+      </div>
     </main>
   </div>
 
@@ -826,6 +897,7 @@
     const REPO          = "avalonaialert/dashboard";
     const DATA_URL      = `https://api.github.com/repos/${REPO}/contents/data.json`;
     const MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/manifest.json`;
+    const POSITIONS_URL = `https://api.github.com/repos/${REPO}/contents/positions.json`;
     const DAY_URL       = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
     const GH_READ_TOKEN = "__GH_READ_TOKEN__"; // injected by CI from GitHub Secret
     const SKIP_ALERTS   = new Set([666, 7777]);
@@ -1180,6 +1252,8 @@
     let _showAllHistory  = false;
     let _earningsSyms    = new Map();  // sym -> label string
     let _quoteCache      = {};         // sym -> Finnhub quote {c, pc, dp}
+    let _spyQuote        = null;       // {c, pc, dp} for SPY
+    let _positions       = [];         // today's positions from positions.json
     const MAX_DAY_CACHE  = 7;
     const SIDEBAR_CAP    = 30;
 
@@ -1845,15 +1919,17 @@
       const statusEl = document.getElementById("status");
       statusEl.innerHTML = "Loading…";
       try {
-        const [data, manifest] = await Promise.all([
+        const [data, manifest, posData] = await Promise.all([
           _ghFetch(DATA_URL),
           _ghFetch(MANIFEST_URL).catch(() => []),
+          _ghFetch(POSITIONS_URL).catch(() => null),
         ]);
         if (data.alerts && !data.today) {
           data.today = { date: "", alerts: data.alerts };
         }
         _data        = data;
         _manifest    = Array.isArray(manifest) ? manifest : [];
+        _positions   = posData?.positions ?? [];
         _dayCache    = {};
         _renderCache = {};
         _quoteCache  = {};
@@ -1882,6 +1958,8 @@
         if (_activeSarTab)   setActiveSarTab(_activeSarTab);
         else if (_active15Tab) setActive15Tab(_active15Tab);
         else setActiveTab(_activeTab);
+
+        renderPositions();
 
         // Load econ calendar + earnings in background
         loadEconCalendar();
@@ -1928,7 +2006,7 @@
       document.querySelectorAll("#grid .tile[data-symbol]").forEach(t => {
         t.style.display = !q || t.dataset.symbol.toUpperCase().includes(q) ? "" : "none";
       });
-      ["rsi70-symbol","gain-symbol","bigmove-symbol","bt-symbol"].forEach(cls => {
+      ["rsi70-symbol","gain-symbol","bigmove-symbol","bt-symbol","pos-symbol"].forEach(cls => {
         document.querySelectorAll(`.${cls}`).forEach(td => {
           const sym = td.querySelector(".sym-link")?.textContent.trim().toUpperCase() ?? "";
           td.closest("tr").style.display = !q || sym.includes(q) ? "" : "none";
@@ -1939,9 +2017,17 @@
     // ── Silent 5-min refresh (preserves active tab + scroll) ────────────
     async function silentRefresh() {
       try {
-        const data = await _ghFetch(DATA_URL);
+        const [data, posData] = await Promise.all([
+          _ghFetch(DATA_URL),
+          _ghFetch(POSITIONS_URL).catch(() => null),
+        ]);
         if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
-        if (data.last_updated === _data?.last_updated) return; // nothing changed
+
+        // Always refresh positions on each tick
+        _positions = posData?.positions ?? [];
+        renderPositions();
+
+        if (data.last_updated === _data?.last_updated) return; // no new alerts
 
         // Sound alert: play tone if any alert arrived in the last 3 min
         const now = Date.now();
@@ -1972,9 +2058,64 @@
     load().then(() => setInterval(silentRefresh, 2 * 60 * 1000));
 
     // ── Top Gainers bar ──────────────────────────────────────────────────
+    function renderPositions() {
+      const sec   = document.getElementById("pos-section");
+      const tbody = document.getElementById("pos-tbody");
+      if (!_positions.length) { sec.style.display = "none"; return; }
+
+      const reasonLabel = { bear_change: "Bear Change", eod: "EOD Close" };
+
+      tbody.innerHTML = _positions.map(pos => {
+        const isOpen = pos.status === "open";
+
+        const unreal = isOpen && pos.unrealized_pnl != null
+          ? `<span class="${pos.unrealized_pnl >= 0 ? "pos" : "neg"}">${pos.unrealized_pnl >= 0 ? "+" : ""}$${pos.unrealized_pnl.toFixed(2)}</span>`
+          : "—";
+
+        const pnl    = pos.pnl;
+        const pnlStr = pnl != null
+          ? `${pnl >= 0 ? "+" : ""}$${pnl.toFixed(2)}`
+          : "—";
+        const pnlCls = pnl == null ? "" : pnl >= 0 ? "pos" : "neg";
+
+        const current = isOpen && pos.current_price != null
+          ? `$${Number(pos.current_price).toFixed(2)}`
+          : "—";
+
+        return `<tr>
+          <td class="pos-symbol">${symLink(pos.symbol)}</td>
+          <td class="pos-option">${pos.option_symbol ?? "—"}</td>
+          <td class="pos-price">$${pos.strike != null ? Number(pos.strike).toFixed(2) : "—"}</td>
+          <td class="pos-qty">${pos.qty}</td>
+          <td class="pos-price">$${pos.buy_price != null ? Number(pos.buy_price).toFixed(2) : "—"}</td>
+          <td class="pos-price">${pos.total_cost != null ? "$" + Number(pos.total_cost).toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2}) : "—"}</td>
+          <td class="pos-price">${current}</td>
+          <td class="pos-pnl">${unreal}</td>
+          <td class="pos-price">${pos.sell_price != null ? "$" + Number(pos.sell_price).toFixed(2) : "—"}</td>
+          <td class="pos-pnl ${pnlCls}">${pnlStr}</td>
+          <td><span class="pos-status ${isOpen ? "pos-open" : "pos-closed"}">${isOpen ? "OPEN" : "CLOSED"}</span></td>
+          <td class="pos-reason">${reasonLabel[pos.close_reason] ?? pos.close_reason ?? "—"}</td>
+          <td class="pos-time">${fmtTime(pos.buy_time)}</td>
+          <td class="pos-time">${pos.sell_time ? fmtTime(pos.sell_time) : "—"}</td>
+        </tr>`;
+      }).join("");
+
+      sec.style.display = "block";
+    }
+
     function renderMoversBar() {
       const bar = document.getElementById("movers-bar");
       let html = "";
+
+      if (_spyQuote) {
+        const dp  = _spyQuote.dp ?? ((_spyQuote.c - _spyQuote.pc) / _spyQuote.pc * 100);
+        const cls = dp > 0 ? "up" : dp < 0 ? "down" : "flat";
+        const sign = dp > 0 ? "+" : "";
+        html += `<span class="spy-chip ${cls}">
+          <span class="spy-label">SPY</span>
+          <span class="spy-pct">${sign}${dp.toFixed(2)}%</span>
+        </span>`;
+      }
 
       if (_topGainers.length > 0) {
         html += '<span class="movers-label">Top Gainers</span>' +
@@ -2000,6 +2141,19 @@
       if (html) bar.innerHTML = html;
     }
 
+    async function loadSpyQuote() {
+      if (!FINNHUB_API_KEY || FINNHUB_API_KEY === "YOUR_FINNHUB_KEY") return;
+      try {
+        const resp = await fetch(
+          `https://finnhub.io/api/v1/quote?symbol=SPY&token=${FINNHUB_API_KEY}`,
+          { cache: "no-store" }
+        );
+        if (!resp.ok) return;
+        _spyQuote = await resp.json();
+        renderMoversBar();
+      } catch (_) {}
+    }
+
     async function loadTopMovers() {
       try {
         const resp = await fetch(
@@ -2018,6 +2172,8 @@
     }
 
     loadTopMovers();
+    loadSpyQuote();
+    setInterval(loadSpyQuote, 60_000);
   </script>
 </body>
 </html>
