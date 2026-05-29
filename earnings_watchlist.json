@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T10:59:38.582919+00:00",
+  "last_updated": "2026-05-29T11:02:34.331318+00:00",
   "watchlist": [
     {
       "symbol": "BLK",
@@ -10,13 +10,13 @@
       "earnings_close": 1150.2465,
       "high_30d": 1113.5607,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 1062.333,
+      "prev_sma": 1068.194,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:15.987823+00:00"
     },
     {
       "symbol": "MS",
@@ -27,13 +27,13 @@
       "earnings_close": 189.165,
       "high_30d": 185.7226,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 202.168,
+      "prev_sma": 201.52,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.111490+00:00"
     },
     {
       "symbol": "CFG",
@@ -44,13 +44,13 @@
       "earnings_close": 63.1589,
       "high_30d": 61.2659,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 62.849,
+      "prev_sma": 63.053,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.243076+00:00"
     },
     {
       "symbol": "TDY",
@@ -61,13 +61,13 @@
       "earnings_close": 621.79,
       "high_30d": 581.72,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 623.28,
+      "prev_sma": 622.812,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.358353+00:00"
     },
     {
       "symbol": "GM",
@@ -78,13 +78,13 @@
       "earnings_close": 86.1759,
       "high_30d": 84.9289,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 83.368,
+      "prev_sma": 82.374,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.474758+00:00"
     },
     {
       "symbol": "HCA",
@@ -95,13 +95,13 @@
       "earnings_close": 505.0887,
       "high_30d": 483.3311,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 389.746,
+      "prev_sma": 391.101,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.589631+00:00"
     },
     {
       "symbol": "SYY",
@@ -112,13 +112,13 @@
       "earnings_close": 83.2921,
       "high_30d": 78.5875,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 75.518,
+      "prev_sma": 75.414,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.707469+00:00"
     },
     {
       "symbol": "MSCI",
@@ -129,13 +129,13 @@
       "earnings_close": 610.2524,
       "high_30d": 598.0547,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 608.51,
+      "prev_sma": 601.135,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.827703+00:00"
     },
     {
       "symbol": "AOS",
@@ -146,13 +146,13 @@
       "earnings_close": 72.3984,
       "high_30d": 72.3192,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 57.988,
+      "prev_sma": 58.084,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:16.950719+00:00"
     },
     {
       "symbol": "RCL",
@@ -163,13 +163,13 @@
       "earnings_close": 344.1466,
       "high_30d": 309.8493,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 276.23,
+      "prev_sma": 273.024,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.124646+00:00"
     },
     {
       "symbol": "TT",
@@ -180,13 +180,13 @@
       "earnings_close": 425.0448,
       "high_30d": 397.0423,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 457.847,
+      "prev_sma": 459.66,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.246407+00:00"
     },
     {
       "symbol": "APD",
@@ -197,13 +197,13 @@
       "earnings_close": 270.8021,
       "high_30d": 265.8631,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 286.074,
+      "prev_sma": 286.89,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.361027+00:00"
     },
     {
       "symbol": "CL",
@@ -214,13 +214,13 @@
       "earnings_close": 89.7323,
       "high_30d": 86.1248,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 91.225,
+      "prev_sma": 90.962,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.488331+00:00"
     },
     {
       "symbol": "VZ",
@@ -231,13 +231,13 @@
       "earnings_close": 43.8603,
       "high_30d": 39.5874,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 48.354,
+      "prev_sma": 48.431,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.725778+00:00"
     },
     {
       "symbol": "BALL",
@@ -248,13 +248,13 @@
       "earnings_close": 61.586,
       "high_30d": 57.1891,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 56.472,
+      "prev_sma": 56.53,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.878924+00:00"
     },
     {
       "symbol": "GWW",
@@ -265,13 +265,13 @@
       "earnings_close": 1150.4937,
       "high_30d": 1091.9033,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 1248.856,
+      "prev_sma": 1248.916,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:17.997966+00:00"
     },
     {
       "symbol": "ITW",
@@ -282,13 +282,13 @@
       "earnings_close": 277.1572,
       "high_30d": 262.5496,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 250.129,
+      "prev_sma": 250.334,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.126993+00:00"
     },
     {
       "symbol": "MPC",
@@ -299,13 +299,13 @@
       "earnings_close": 185.935,
       "high_30d": 179.5019,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 249.46,
+      "prev_sma": 250.192,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.249974+00:00"
     },
     {
       "symbol": "IEX",
@@ -316,13 +316,13 @@
       "earnings_close": 211.4964,
       "high_30d": 200.8942,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 210.846,
+      "prev_sma": 210.952,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.378939+00:00"
     },
     {
       "symbol": "ODFL",
@@ -333,13 +333,13 @@
       "earnings_close": 208.2492,
       "high_30d": 189.5053,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 220.274,
+      "prev_sma": 219.296,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.509227+00:00"
     },
     {
       "symbol": "CAH",
@@ -350,13 +350,13 @@
       "earnings_close": 226.6306,
       "high_30d": 218.4006,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 199.738,
+      "prev_sma": 199.983,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.629152+00:00"
     },
     {
       "symbol": "HSY",
@@ -367,13 +367,13 @@
       "earnings_close": 221.2156,
       "high_30d": 202.8877,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 196.531,
+      "prev_sma": 195.629,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.750587+00:00"
     },
     {
       "symbol": "TPR",
@@ -384,13 +384,13 @@
       "earnings_close": 142.8071,
       "high_30d": 134.0207,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 141.713,
+      "prev_sma": 140.493,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:18.902347+00:00"
     },
     {
       "symbol": "BIIB",
@@ -401,13 +401,13 @@
       "earnings_close": 201.18,
       "high_30d": 187.62,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 196.389,
+      "prev_sma": 195.995,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.026185+00:00"
     },
     {
       "symbol": "DGX",
@@ -418,13 +418,13 @@
       "earnings_close": 204.4582,
       "high_30d": 191.4648,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 194.643,
+      "prev_sma": 194.041,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.173780+00:00"
     },
     {
       "symbol": "HAS",
@@ -435,13 +435,13 @@
       "earnings_close": 103.2879,
       "high_30d": 96.0975,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 87.484,
+      "prev_sma": 88.028,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.292606+00:00"
     },
     {
       "symbol": "MAR",
@@ -452,13 +452,13 @@
       "earnings_close": 357.9505,
       "high_30d": 331.9421,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 383.054,
+      "prev_sma": 380.566,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.413146+00:00"
     },
     {
       "symbol": "GNRC",
@@ -469,13 +469,13 @@
       "earnings_close": 214.99,
       "high_30d": 185.83,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 278.24,
+      "prev_sma": 277.74,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.532434+00:00"
     },
     {
       "symbol": "SW",
@@ -486,13 +486,13 @@
       "earnings_close": 49.2763,
       "high_30d": 44.8367,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 40.121,
+      "prev_sma": 39.645,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.692955+00:00"
     },
     {
       "symbol": "TMUS",
@@ -503,13 +503,13 @@
       "earnings_close": 208.5373,
       "high_30d": 202.8248,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 190.626,
+      "prev_sma": 191.062,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.830468+00:00"
     },
     {
       "symbol": "VRT",
@@ -520,13 +520,13 @@
       "earnings_close": 248.4509,
       "high_30d": 201.9519,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 319.837,
+      "prev_sma": 322.744,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:19.973345+00:00"
     },
     {
       "symbol": "EXC",
@@ -537,13 +537,13 @@
       "earnings_close": 47.1463,
       "high_30d": 44.618,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 45.972,
+      "prev_sma": 46.132,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.090691+00:00"
     },
     {
       "symbol": "HWM",
@@ -554,13 +554,13 @@
       "earnings_close": 244.6822,
       "high_30d": 230.7484,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 259.697,
+      "prev_sma": 259.773,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.210805+00:00"
     },
     {
       "symbol": "IRM",
@@ -571,13 +571,13 @@
       "earnings_close": 105.1428,
       "high_30d": 99.4095,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 127.574,
+      "prev_sma": 127.892,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.399055+00:00"
     },
     {
       "symbol": "ZBRA",
@@ -588,13 +588,13 @@
       "earnings_close": 274.15,
       "high_30d": 264.43,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 250.254,
+      "prev_sma": 251.265,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.524859+00:00"
     },
     {
       "symbol": "GPN",
@@ -605,13 +605,13 @@
       "earnings_close": 80.9941,
       "high_30d": 79.4193,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 73.84,
+      "prev_sma": 73.758,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.649381+00:00"
     },
     {
       "symbol": "GRMN",
@@ -622,13 +622,13 @@
       "earnings_close": 236.5534,
       "high_30d": 216.1516,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 237.914,
+      "prev_sma": 238.433,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.780397+00:00"
     },
     {
       "symbol": "DE",
@@ -639,13 +639,13 @@
       "earnings_close": 660.0694,
       "high_30d": 610.9033,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 532.386,
+      "prev_sma": 530.008,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:20.898323+00:00"
     },
     {
       "symbol": "PWR",
@@ -656,13 +656,13 @@
       "earnings_close": 553.8912,
       "high_30d": 525.0269,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 735.92,
+      "prev_sma": 738.368,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.013117+00:00"
     },
     {
       "symbol": "SJM",
@@ -673,13 +673,13 @@
       "earnings_close": 114.7265,
       "high_30d": 109.7814,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 103.4154,
+      "prev_sma": 103.1514,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.129483+00:00"
     },
     {
       "symbol": "TGT",
@@ -690,13 +690,13 @@
       "earnings_close": 119.6694,
       "high_30d": 115.5978,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 128.256,
+      "prev_sma": 127.461,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.250769+00:00"
     },
     {
       "symbol": "KR",
@@ -707,13 +707,13 @@
       "earnings_close": 71.1949,
       "high_30d": 70.8766,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 64.268,
+      "prev_sma": 64.552,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.380927+00:00"
     },
     {
       "symbol": "DHI",
@@ -724,13 +724,13 @@
       "earnings_close": 161.7107,
       "high_30d": 152.8774,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 146.857,
+      "prev_sma": 146.36,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.533298+00:00"
     },
     {
       "symbol": "UNH",
@@ -741,13 +741,13 @@
       "earnings_close": 346.01,
       "high_30d": 324.63,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 382.318,
+      "prev_sma": 381.494,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.646023+00:00"
     },
     {
       "symbol": "BA",
@@ -758,13 +758,13 @@
       "earnings_close": 231.28,
       "high_30d": 225.08,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 224.564,
+      "prev_sma": 222.77,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.773507+00:00"
     },
     {
       "symbol": "GEV",
@@ -775,13 +775,13 @@
       "earnings_close": 1127.5601,
       "high_30d": 1002.75,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 1031.769,
+      "prev_sma": 1047.701,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:21.891899+00:00"
     },
     {
       "symbol": "CMCSA",
@@ -792,13 +792,13 @@
       "earnings_close": 31.64,
       "high_30d": 30.2186,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 25.1975,
+      "prev_sma": 25.1805,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.020625+00:00"
     },
     {
       "symbol": "DOV",
@@ -809,13 +809,13 @@
       "earnings_close": 228.15,
       "high_30d": 221.9,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 213.3965,
+      "prev_sma": 213.5265,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.173269+00:00"
     },
     {
       "symbol": "KDP",
@@ -826,13 +826,13 @@
       "earnings_close": 28.53,
       "high_30d": 27.4079,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 30.052,
+      "prev_sma": 30.034,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.294051+00:00"
     },
     {
       "symbol": "NEE",
@@ -843,13 +843,13 @@
       "earnings_close": 96.25,
       "high_30d": 94.48,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 87.582,
+      "prev_sma": 87.734,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.403448+00:00"
     },
     {
       "symbol": "UNP",
@@ -860,13 +860,13 @@
       "earnings_close": 271.26,
       "high_30d": 252.18,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 272.33,
+      "prev_sma": 273.14,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.524394+00:00"
     },
     {
       "symbol": "WST",
@@ -877,13 +877,13 @@
       "earnings_close": 309.4668,
       "high_30d": 277.7906,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 316.354,
+      "prev_sma": 315.696,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.648124+00:00"
     },
     {
       "symbol": "BEN",
@@ -894,13 +894,13 @@
       "earnings_close": 29.46,
       "high_30d": 27.73,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 31.494,
+      "prev_sma": 31.55,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.769057+00:00"
     },
     {
       "symbol": "CNC",
@@ -911,13 +911,13 @@
       "earnings_close": 49.57,
       "high_30d": 43.5,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 58.621,
+      "prev_sma": 58.395,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:22.884630+00:00"
     },
     {
       "symbol": "ADP",
@@ -928,13 +928,13 @@
       "earnings_close": 215.06,
       "high_30d": 210.66,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 218.639,
+      "prev_sma": 218.899,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.005924+00:00"
     },
     {
       "symbol": "HUM",
@@ -945,13 +945,13 @@
       "earnings_close": 243.12,
       "high_30d": 229.72,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 306.231,
+      "prev_sma": 305.171,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.137598+00:00"
     },
     {
       "symbol": "CARR",
@@ -962,13 +962,13 @@
       "earnings_close": 66.9316,
       "high_30d": 64.4305,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 64.5454,
+      "prev_sma": 64.7674,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.296003+00:00"
     },
     {
       "symbol": "CAT",
@@ -979,13 +979,13 @@
       "earnings_close": 890.11,
       "high_30d": 835.24,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 903.004,
+      "prev_sma": 906.423,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.424174+00:00"
     },
     {
       "symbol": "MO",
@@ -996,13 +996,13 @@
       "earnings_close": 72.65,
       "high_30d": 68.2,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 72.216,
+      "prev_sma": 72.274,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.547877+00:00"
     },
     {
       "symbol": "TXT",
@@ -1013,13 +1013,13 @@
       "earnings_close": 95.96,
       "high_30d": 93.11,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 92.511,
+      "prev_sma": 92.646,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.673321+00:00"
     },
     {
       "symbol": "WDC",
@@ -1030,13 +1030,13 @@
       "earnings_close": 434.52,
       "high_30d": 412.76,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 533.195,
+      "prev_sma": 532.574,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.791355+00:00"
     },
     {
       "symbol": "XEL",
@@ -1047,13 +1047,13 @@
       "earnings_close": 82.95,
       "high_30d": 82.77,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 80.314,
+      "prev_sma": 80.718,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:23.921904+00:00"
     },
     {
       "symbol": "CBOE",
@@ -1064,13 +1064,13 @@
       "earnings_close": 326.96,
       "high_30d": 309.38,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 348.204,
+      "prev_sma": 350.252,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.039861+00:00"
     },
     {
       "symbol": "TSN",
@@ -1081,13 +1081,13 @@
       "earnings_close": 68.75,
       "high_30d": 65.64,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 64.579,
+      "prev_sma": 65.29,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.188047+00:00"
     },
     {
       "symbol": "DD",
@@ -1098,13 +1098,13 @@
       "earnings_close": 49.0454,
       "high_30d": 47.6609,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 48.059,
+      "prev_sma": 48.365,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.327544+00:00"
     },
     {
       "symbol": "ROK",
@@ -1115,13 +1115,13 @@
       "earnings_close": 434.5894,
       "high_30d": 414.4515,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 456.243,
+      "prev_sma": 456.161,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.452799+00:00"
     },
     {
       "symbol": "SWKS",
@@ -1132,13 +1132,13 @@
       "earnings_close": 71.9349,
       "high_30d": 69.5655,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 81.109,
+      "prev_sma": 81.205,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.574981+00:00"
     },
     {
       "symbol": "WAT",
@@ -1149,13 +1149,13 @@
       "earnings_close": 342.75,
       "high_30d": 335.61,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 350.12,
+      "prev_sma": 345.0,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.827274+00:00"
     },
     {
       "symbol": "CVS",
@@ -1166,13 +1166,13 @@
       "earnings_close": 86.86,
       "high_30d": 83.9,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 92.105,
+      "prev_sma": 91.761,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:24.973864+00:00"
     },
     {
       "symbol": "DIS",
@@ -1183,13 +1183,13 @@
       "earnings_close": 108.06,
       "high_30d": 106.3,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 103.759,
+      "prev_sma": 103.609,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.092960+00:00"
     },
     {
       "symbol": "UBER",
@@ -1200,13 +1200,13 @@
       "earnings_close": 79.17,
       "high_30d": 77.49,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 70.456,
+      "prev_sma": 70.402,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.215074+00:00"
     },
     {
       "symbol": "DDOG",
@@ -1217,13 +1217,13 @@
       "earnings_close": 188.73,
       "high_30d": 146.69,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 224.622,
+      "prev_sma": 224.6471,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.418760+00:00"
     },
     {
       "symbol": "VTRS",
@@ -1234,13 +1234,13 @@
       "earnings_close": 17.2632,
       "high_30d": 15.8337,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 16.216,
+      "prev_sma": 16.276,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.536461+00:00"
     },
     {
       "symbol": "FOX",
@@ -1251,13 +1251,13 @@
       "earnings_close": 61.18,
       "high_30d": 58.57,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 58.717,
+      "prev_sma": 58.4415,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.651434+00:00"
     },
     {
       "symbol": "FOXA",
@@ -1268,13 +1268,13 @@
       "earnings_close": 67.72,
       "high_30d": 65.56,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 65.5244,
+      "prev_sma": 65.3124,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.805019+00:00"
     },
     {
       "symbol": "Q",
@@ -1285,13 +1285,13 @@
       "earnings_close": 168.36,
       "high_30d": 153.24,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 160.434,
+      "prev_sma": 161.052,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:25.923797+00:00"
     },
     {
       "symbol": "BBY",
@@ -1302,13 +1302,13 @@
       "earnings_close": 74.74,
       "high_30d": 66.94,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 68.474,
+      "prev_sma": 66.058,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.038251+00:00"
     },
     {
       "symbol": "DLTR",
@@ -1319,13 +1319,13 @@
       "earnings_close": 113.0,
       "high_30d": 107.25,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 101.92,
+      "prev_sma": 97.844,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.155835+00:00"
     },
     {
       "symbol": "HRL",
@@ -1336,13 +1336,13 @@
       "earnings_close": 23.59,
       "high_30d": 21.76,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 21.9852,
+      "prev_sma": 21.4742,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.288316+00:00"
     },
     {
       "symbol": "IBKR",
@@ -1353,13 +1353,13 @@
       "earnings_close": 75.7187,
       "high_30d": 73.6009,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 81.52,
+      "prev_sma": 81.43,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.404159+00:00"
     },
     {
       "symbol": "FFIV",
@@ -1370,13 +1370,13 @@
       "earnings_close": 292.3,
       "high_30d": 273.99,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 390.858,
+      "prev_sma": 393.8422,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.524105+00:00"
     },
     {
       "symbol": "STX",
@@ -1387,13 +1387,13 @@
       "earnings_close": 442.1587,
       "high_30d": 371.1126,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 873.627,
+      "prev_sma": 866.791,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.663912+00:00"
     },
     {
       "symbol": "TXN",
@@ -1404,13 +1404,13 @@
       "earnings_close": 213.6824,
       "high_30d": 194.3673,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 318.753,
+      "prev_sma": 320.248,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.838853+00:00"
     },
     {
       "symbol": "CHRW",
@@ -1421,13 +1421,13 @@
       "earnings_close": 193.0596,
       "high_30d": 183.6518,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 176.376,
+      "prev_sma": 176.876,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:26.981367+00:00"
     },
     {
       "symbol": "LUV",
@@ -1438,13 +1438,13 @@
       "earnings_close": 48.2914,
       "high_30d": 44.3285,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 43.109,
+      "prev_sma": 42.839,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:27.131633+00:00"
     },
     {
       "symbol": "META",
@@ -1455,13 +1455,13 @@
       "earnings_close": 737.6784,
       "high_30d": 672.3943,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 625.958,
+      "prev_sma": 620.902,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:27.259044+00:00"
     },
     {
       "symbol": "DECK",
@@ -1472,13 +1472,13 @@
       "earnings_close": 119.34,
       "high_30d": 108.1,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 113.77,
+      "prev_sma": 112.764,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:27.377479+00:00"
     },
     {
       "symbol": "SNDK",
@@ -1489,13 +1489,13 @@
       "earnings_close": 576.25,
       "high_30d": 539.3,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 1616.767,
+      "prev_sma": 1607.571,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:27.519134+00:00"
     },
     {
       "symbol": "DVA",
@@ -1506,13 +1506,13 @@
       "earnings_close": 134.73,
       "high_30d": 116.51,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 196.12,
+      "prev_sma": 195.91,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:27.803381+00:00"
     },
     {
       "symbol": "TER",
@@ -1523,13 +1523,13 @@
       "earnings_close": 282.7549,
       "high_30d": 251.6697,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 381.1445,
+      "prev_sma": 381.5285,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.034112+00:00"
     },
     {
       "symbol": "AMCR",
@@ -1540,13 +1540,13 @@
       "earnings_close": 47.1456,
       "high_30d": 43.6116,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 39.327,
+      "prev_sma": 39.24,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.157168+00:00"
     },
     {
       "symbol": "AMGN",
@@ -1557,13 +1557,13 @@
       "earnings_close": 360.9543,
       "high_30d": 346.2874,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 336.645,
+      "prev_sma": 336.875,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.279650+00:00"
     },
     {
       "symbol": "CB",
@@ -1574,13 +1574,13 @@
       "earnings_close": 328.4803,
       "high_30d": 314.2623,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 320.437,
+      "prev_sma": 322.527,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.403663+00:00"
     },
     {
       "symbol": "J",
@@ -1591,13 +1591,13 @@
       "earnings_close": 142.5083,
       "high_30d": 140.6888,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 117.243,
+      "prev_sma": 116.716,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.542206+00:00"
     },
     {
       "symbol": "LITE",
@@ -1608,13 +1608,13 @@
       "earnings_close": 465.54,
       "high_30d": 435.1,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 892.9281,
+      "prev_sma": 902.3441,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.659379+00:00"
     },
     {
       "symbol": "SMCI",
@@ -1625,13 +1625,13 @@
       "earnings_close": 33.76,
       "high_30d": 32.64,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 39.238,
+      "prev_sma": 38.364,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.823292+00:00"
     },
     {
       "symbol": "ALGN",
@@ -1642,13 +1642,13 @@
       "earnings_close": 175.62,
       "high_30d": 172.79,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 166.92,
+      "prev_sma": 165.02,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:28.947468+00:00"
     },
     {
       "symbol": "CPAY",
@@ -1659,13 +1659,13 @@
       "earnings_close": 335.0,
       "high_30d": 331.5,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 352.367,
+      "prev_sma": 350.9995,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.059278+00:00"
     },
     {
       "symbol": "MCK",
@@ -1676,13 +1676,13 @@
       "earnings_close": 957.0046,
       "high_30d": 850.4131,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 756.86,
+      "prev_sma": 756.705,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.185341+00:00"
     },
     {
       "symbol": "MPWR",
@@ -1693,13 +1693,13 @@
       "earnings_close": 1227.3661,
       "high_30d": 1180.7893,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 1637.94,
+      "prev_sma": 1644.214,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.311413+00:00"
     },
     {
       "symbol": "GILD",
@@ -1710,13 +1710,13 @@
       "earnings_close": 154.9202,
       "high_30d": 151.6388,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 134.724,
+      "prev_sma": 134.532,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.437083+00:00"
     },
     {
       "symbol": "EQIX",
@@ -1727,13 +1727,13 @@
       "earnings_close": 947.9889,
       "high_30d": 858.571,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 1073.184,
+      "prev_sma": 1076.384,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.558901+00:00"
     },
     {
       "symbol": "IFF",
@@ -1744,13 +1744,13 @@
       "earnings_close": 81.0215,
       "high_30d": 76.5181,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 77.35,
+      "prev_sma": 76.923,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.672552+00:00"
     },
     {
       "symbol": "MSI",
@@ -1761,13 +1761,13 @@
       "earnings_close": 452.2451,
       "high_30d": 421.4764,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 411.547,
+      "prev_sma": 411.619,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.807425+00:00"
     },
     {
       "symbol": "AMAT",
@@ -1778,13 +1778,13 @@
       "earnings_close": 354.0278,
       "high_30d": 340.4915,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 451.692,
+      "prev_sma": 451.783,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:29.971484+00:00"
     },
     {
       "symbol": "VRTX",
@@ -1795,13 +1795,13 @@
       "earnings_close": 491.47,
       "high_30d": 484.15,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 441.417,
+      "prev_sma": 439.367,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.094712+00:00"
     },
     {
       "symbol": "OMC",
@@ -1812,13 +1812,13 @@
       "earnings_close": 80.1404,
       "high_30d": 80.0414,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 74.425,
+      "prev_sma": 74.537,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.217855+00:00"
     },
     {
       "symbol": "OXY",
@@ -1829,13 +1829,13 @@
       "earnings_close": 51.2865,
       "high_30d": 47.0168,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 57.313,
+      "prev_sma": 57.565,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.371005+00:00"
     },
     {
       "symbol": "TPL",
@@ -1846,13 +1846,13 @@
       "earnings_close": 486.0032,
       "high_30d": 440.2056,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 405.39,
+      "prev_sma": 405.623,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.493732+00:00"
     },
     {
       "symbol": "FIX",
@@ -1863,13 +1863,13 @@
       "earnings_close": 1460.8983,
       "high_30d": 1372.269,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 1876.128,
+      "prev_sma": 1882.526,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.610323+00:00"
     },
     {
       "symbol": "KEYS",
@@ -1880,13 +1880,13 @@
       "earnings_close": 301.48,
       "high_30d": 245.0,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 346.216,
+      "prev_sma": 348.684,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.731720+00:00"
     },
     {
       "symbol": "DELL",
@@ -1897,13 +1897,13 @@
       "earnings_close": 147.6232,
       "high_30d": 125.6213,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 311.591,
+      "prev_sma": 308.837,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.851876+00:00"
     },
     {
       "symbol": "ROST",
@@ -1914,13 +1914,13 @@
       "earnings_close": 213.0672,
       "high_30d": 205.2039,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 231.522,
+      "prev_sma": 232.829,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:30.969419+00:00"
     },
     {
       "symbol": "STZ",
@@ -1931,13 +1931,13 @@
       "earnings_close": 161.9891,
       "high_30d": 156.8136,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 145.094,
+      "prev_sma": 145.416,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.094542+00:00"
     },
     {
       "symbol": "STLD",
@@ -1948,13 +1948,13 @@
       "earnings_close": 220.21,
       "high_30d": 209.35,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 256.667,
+      "prev_sma": 254.277,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.211833+00:00"
     },
     {
       "symbol": "CSX",
@@ -1965,13 +1965,13 @@
       "earnings_close": 46.18,
       "high_30d": 43.71,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 46.538,
+      "prev_sma": 46.646,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.335727+00:00"
     },
     {
       "symbol": "URI",
@@ -1982,13 +1982,13 @@
       "earnings_close": 984.7461,
       "high_30d": 810.5958,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 982.574,
+      "prev_sma": 977.259,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.460538+00:00"
     },
     {
       "symbol": "BKR",
@@ -1999,13 +1999,13 @@
       "earnings_close": 68.7102,
       "high_30d": 64.2751,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 64.476,
+      "prev_sma": 64.948,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.583527+00:00"
     },
     {
       "symbol": "INTC",
@@ -2016,13 +2016,13 @@
       "earnings_close": 82.54,
       "high_30d": 68.5,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 121.115,
+      "prev_sma": 121.292,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.733862+00:00"
     },
     {
       "symbol": "NXPI",
@@ -2033,13 +2033,13 @@
       "earnings_close": 289.25,
       "high_30d": 244.04,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 331.844,
+      "prev_sma": 331.584,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.846300+00:00"
     },
     {
       "symbol": "SBUX",
@@ -2050,13 +2050,13 @@
       "earnings_close": 104.8852,
       "high_30d": 99.4173,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 101.585,
+      "prev_sma": 101.728,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:31.979615+00:00"
     },
     {
       "symbol": "V",
@@ -2067,13 +2067,13 @@
       "earnings_close": 334.1672,
       "high_30d": 316.3641,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 326.051,
+      "prev_sma": 326.275,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.106096+00:00"
     },
     {
       "symbol": "GOOG",
@@ -2084,13 +2084,13 @@
       "earnings_close": 381.94,
       "high_30d": 348.52,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 385.8076,
+      "prev_sma": 385.1556,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.225555+00:00"
     },
     {
       "symbol": "GOOGL",
@@ -2101,13 +2101,13 @@
       "earnings_close": 384.8,
       "high_30d": 350.34,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 389.858,
+      "prev_sma": 389.208,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.345631+00:00"
     },
     {
       "symbol": "ORLY",
@@ -2118,13 +2118,13 @@
       "earnings_close": 99.4,
       "high_30d": 94.4,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 89.081,
+      "prev_sma": 88.938,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.507909+00:00"
     },
     {
       "symbol": "QCOM",
@@ -2135,13 +2135,13 @@
       "earnings_close": 179.58,
       "high_30d": 156.0,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 240.092,
+      "prev_sma": 241.4,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.624973+00:00"
     },
     {
       "symbol": "AIG",
@@ -2152,13 +2152,13 @@
       "earnings_close": 78.77,
       "high_30d": 78.68,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 75.587,
+      "prev_sma": 76.237,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.745749+00:00"
     },
     {
       "symbol": "AMD",
@@ -2169,13 +2169,13 @@
       "earnings_close": 421.39,
       "high_30d": 360.54,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 506.2822,
+      "prev_sma": 501.6732,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:32.892961+00:00"
     },
     {
       "symbol": "DOC",
@@ -2186,13 +2186,13 @@
       "earnings_close": 19.3973,
       "high_30d": 17.2785,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 19.826,
+      "prev_sma": 19.89,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.030817+00:00"
     },
     {
       "symbol": "EMR",
@@ -2203,13 +2203,13 @@
       "earnings_close": 147.3943,
       "high_30d": 146.1792,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 140.993,
+      "prev_sma": 140.465,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.147442+00:00"
     },
     {
       "symbol": "APP",
@@ -2220,13 +2220,13 @@
       "earnings_close": 498.87,
       "high_30d": 490.96,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 571.85,
+      "prev_sma": 554.056,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.270378+00:00"
     },
     {
       "symbol": "FTNT",
@@ -2237,13 +2237,13 @@
       "earnings_close": 107.97,
       "high_30d": 89.95,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 129.888,
+      "prev_sma": 130.913,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.394907+00:00"
     },
     {
       "symbol": "PTC",
@@ -2254,13 +2254,13 @@
       "earnings_close": 147.65,
       "high_30d": 144.36,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 141.695,
+      "prev_sma": 143.051,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.518048+00:00"
     },
     {
       "symbol": "AKAM",
@@ -2271,13 +2271,13 @@
       "earnings_close": 147.71,
       "high_30d": 121.99,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 144.784,
+      "prev_sma": 145.641,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.644935+00:00"
     },
     {
       "symbol": "GEN",
@@ -2288,13 +2288,13 @@
       "earnings_close": 22.5591,
       "high_30d": 20.3112,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "declining",
+      "current_sma": 24.672,
+      "prev_sma": 24.739,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.767724+00:00"
     },
     {
       "symbol": "MNST",
@@ -2305,13 +2305,13 @@
       "earnings_close": 86.29,
       "high_30d": 78.23,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 88.548,
+      "prev_sma": 88.448,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:33.883211+00:00"
     },
     {
       "symbol": "XYZ",
@@ -2322,13 +2322,13 @@
       "earnings_close": 74.85,
       "high_30d": 73.89,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 71.843,
+      "prev_sma": 70.7741,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:34.020364+00:00"
     },
     {
       "symbol": "CSCO",
@@ -2339,13 +2339,13 @@
       "earnings_close": 115.53,
       "high_30d": 101.87,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 119.036,
+      "prev_sma": 118.856,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:34.200584+00:00"
     },
     {
       "symbol": "A",
@@ -2356,13 +2356,13 @@
       "earnings_close": 135.38,
       "high_30d": 122.09,
       "status": "watching",
-      "sma_direction": "unknown",
-      "current_sma": null,
-      "prev_sma": null,
+      "sma_direction": "gaining",
+      "current_sma": 123.488,
+      "prev_sma": 119.392,
       "trigger_date": null,
       "trigger_price": null,
       "trigger_sma": null,
-      "last_checked": null
+      "last_checked": "2026-05-29T11:02:34.331273+00:00"
     }
   ]
 }
