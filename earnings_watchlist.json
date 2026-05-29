@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:37.481Z",
+  "last_updated": "2026-05-29T12:49:40.320Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -391,23 +391,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:44.731838+00:00"
-    },
-    {
-      "symbol": "CMCSA",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-23",
-      "earnings_gain_pct": 7.73,
-      "earnings_close": 31.64,
-      "high_30d": 30.2186,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 25.1975,
-      "prev_sma": 25.1805,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:44.854170+00:00"
     },
     {
       "symbol": "INTC",
