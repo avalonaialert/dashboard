@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:50:00.694Z",
+  "last_updated": "2026-05-29T12:50:04.465Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -34,23 +34,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:41.073829+00:00"
-    },
-    {
-      "symbol": "IEX",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-29",
-      "earnings_gain_pct": 5.83,
-      "earnings_close": 216.5683,
-      "high_30d": 206.6537,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 210.846,
-      "prev_sma": 210.952,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:41.206850+00:00"
     },
     {
       "symbol": "BIIB",
