@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T13:17:03.729821+00:00",
+  "last_updated": "2026-05-29T13:19:03.883289+00:00",
   "today": {
     "date": "2026-05-29",
     "alerts": {
@@ -630,6 +630,17 @@
           "symbol": "PLTR",
           "msg_id": "19e73dfea484f69f",
           "received_at": "2026-05-29T13:15:13+00:00"
+        }
+      ],
+      "ADBE": [
+        {
+          "alert": 7,
+          "close": 245.3,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ADBE",
+          "msg_id": "19e73e19d33ecc46",
+          "received_at": "2026-05-29T13:17:03+00:00"
         }
       ]
     },
