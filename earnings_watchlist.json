@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:40.320Z",
+  "last_updated": "2026-05-29T12:49:44.686Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -442,23 +442,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:45.886474+00:00"
-    },
-    {
-      "symbol": "NXPI",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-28",
-      "earnings_gain_pct": 25.55,
-      "earnings_close": 289.25,
-      "high_30d": 244.04,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 331.844,
-      "prev_sma": 331.584,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:46.014865+00:00"
     },
     {
       "symbol": "SBUX",
