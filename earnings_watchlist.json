@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:24.020Z",
+  "last_updated": "2026-05-29T12:49:28.151Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -493,23 +493,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:45.511566+00:00"
-    },
-    {
-      "symbol": "WST",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-23",
-      "earnings_gain_pct": 12.86,
-      "earnings_close": 309.4668,
-      "high_30d": 277.7906,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 316.354,
-      "prev_sma": 315.696,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:45.640387+00:00"
     },
     {
       "symbol": "BEN",
