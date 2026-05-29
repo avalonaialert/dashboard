@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:46.966Z",
+  "last_updated": "2026-05-29T12:49:48.602Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -408,23 +408,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:45.136659+00:00"
-    },
-    {
-      "symbol": "BEN",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-28",
-      "earnings_gain_pct": 6.86,
-      "earnings_close": 29.46,
-      "high_30d": 27.73,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 31.494,
-      "prev_sma": 31.55,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:45.763938+00:00"
     },
     {
       "symbol": "SBUX",
