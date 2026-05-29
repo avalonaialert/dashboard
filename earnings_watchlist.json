@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:15.040Z",
+  "last_updated": "2026-05-29T12:49:17.151Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -306,23 +306,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:43.492099+00:00"
-    },
-    {
-      "symbol": "STLD",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-20",
-      "earnings_gain_pct": 5.19,
-      "earnings_close": 220.21,
-      "high_30d": 209.35,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 256.667,
-      "prev_sma": 254.277,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:43.756873+00:00"
     },
     {
       "symbol": "DHI",
