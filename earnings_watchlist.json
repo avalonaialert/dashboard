@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:50:40.866Z",
+  "last_updated": "2026-05-29T12:50:44.520Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -544,23 +544,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:49.540760+00:00"
-    },
-    {
-      "symbol": "PTC",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-06",
-      "earnings_gain_pct": 7.95,
-      "earnings_close": 147.65,
-      "high_30d": 144.36,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 141.695,
-      "prev_sma": 143.051,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:49.667707+00:00"
     },
     {
       "symbol": "UBER",
