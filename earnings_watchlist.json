@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:51:08.127Z",
+  "last_updated": "2026-05-29T12:51:09.279Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -170,23 +170,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:43.091581+00:00"
-    },
-    {
-      "symbol": "CPAY",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-07",
-      "earnings_gain_pct": 12.51,
-      "earnings_close": 343.99,
-      "high_30d": 337.34,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 352.367,
-      "prev_sma": 350.9995,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:43.215703+00:00"
     },
     {
       "symbol": "ROST",
