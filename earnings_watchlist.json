@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:50:13.949Z",
+  "last_updated": "2026-05-29T12:50:18.115Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -102,23 +102,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:41.841469+00:00"
-    },
-    {
-      "symbol": "PWR",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-30",
-      "earnings_gain_pct": 15.78,
-      "earnings_close": 727.77,
-      "high_30d": 637.28,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 735.92,
-      "prev_sma": 738.368,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:41.959917+00:00"
     },
     {
       "symbol": "FFIV",
