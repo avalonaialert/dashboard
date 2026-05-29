@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:51:11.987Z",
+  "last_updated": "2026-05-29T12:51:14.364Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -578,23 +578,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:50.829522+00:00"
-    },
-    {
-      "symbol": "FOXA",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-11",
-      "earnings_gain_pct": 7.59,
-      "earnings_close": 67.72,
-      "high_30d": 65.56,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 65.5244,
-      "prev_sma": 65.3124,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:50.948300+00:00"
     },
     {
       "symbol": "Q",
