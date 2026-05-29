@@ -1,8 +1,53 @@
 {
-  "last_updated": "2026-05-29T08:01:07.366009+00:00",
+  "last_updated": "2026-05-29T08:16:03.890840+00:00",
   "today": {
     "date": "2026-05-29",
-    "alerts": {},
+    "alerts": {
+      "AVGO": [
+        {
+          "alert": 7,
+          "close": 431.95500000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e72cd88a27cc17",
+          "received_at": "2026-05-29T08:15:31+00:00"
+        }
+      ],
+      "ARM": [
+        {
+          "alert": 7,
+          "close": 344.14500000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e72cd7d4d95dab",
+          "received_at": "2026-05-29T08:15:28+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 7,
+          "close": 522.8599999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e72cd762b0db45",
+          "received_at": "2026-05-29T08:15:27+00:00"
+        }
+      ],
+      "NVDA": [
+        {
+          "alert": 7,
+          "close": 215.22375000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NVDA",
+          "msg_id": "19e72cd3b7bd25dd",
+          "received_at": "2026-05-29T08:15:09+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
