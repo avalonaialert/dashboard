@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:51:06.471Z",
+  "last_updated": "2026-05-29T12:51:08.127Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -561,23 +561,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:49.792238+00:00"
-    },
-    {
-      "symbol": "AKAM",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-07",
-      "earnings_gain_pct": 26.58,
-      "earnings_close": 147.71,
-      "high_30d": 121.99,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 144.784,
-      "prev_sma": 145.641,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:49.926866+00:00"
     },
     {
       "symbol": "DDOG",
