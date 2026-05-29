@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:17.151Z",
+  "last_updated": "2026-05-29T12:49:21.934Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -391,23 +391,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:44.444564+00:00"
-    },
-    {
-      "symbol": "URI",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-22",
-      "earnings_gain_pct": 22.92,
-      "earnings_close": 984.7461,
-      "high_30d": 810.5958,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 982.574,
-      "prev_sma": 977.259,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:44.606483+00:00"
     },
     {
       "symbol": "BKR",
