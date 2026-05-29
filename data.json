@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T13:47:14.055309+00:00",
+  "last_updated": "2026-05-29T13:49:10.021800+00:00",
   "today": {
     "date": "2026-05-29",
     "alerts": {
@@ -75,6 +75,24 @@
           "symbol": "AVGO",
           "msg_id": "19e73fb7f40589d1",
           "received_at": "2026-05-29T13:45:19+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 446.0575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e73fe08a36b3c8",
+          "received_at": "2026-05-29T13:48:05+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 446.1825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e73fd1488df19a",
+          "received_at": "2026-05-29T13:47:04+00:00"
         }
       ],
       "ARM": [
@@ -521,6 +539,24 @@
           "symbol": "F",
           "msg_id": "19e73fb731ec9554",
           "received_at": "2026-05-29T13:45:17+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 17.72375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "F",
+          "msg_id": "19e73fe47abf3e20",
+          "received_at": "2026-05-29T13:48:03+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 17.677500000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "F",
+          "msg_id": "19e73fd1cae68382",
+          "received_at": "2026-05-29T13:47:05+00:00"
         }
       ],
       "QCOM": [
@@ -813,8 +849,8 @@
         "expiry": "2026-12-18",
         "entry_price": 26.02,
         "entry_time": "2026-05-29T13:35:06+00:00",
-        "current_price": 28.34,
-        "current_time": "2026-05-29T13:47:14.055263+00:00",
+        "current_price": 28.13,
+        "current_time": "2026-05-29T13:49:10.021591+00:00",
         "highest_price": 28.87,
         "highest_time": "2026-05-29T13:43:06.355756+00:00"
       },
@@ -824,10 +860,10 @@
         "expiry": "2026-12-18",
         "entry_price": 71.63,
         "entry_time": "2026-05-29T13:45:19+00:00",
-        "current_price": 71.63,
-        "current_time": "2026-05-29T13:47:12.824717+00:00",
-        "highest_price": 71.63,
-        "highest_time": "2026-05-29T13:47:12.824734+00:00"
+        "current_price": 72.22,
+        "current_time": "2026-05-29T13:49:09.436720+00:00",
+        "highest_price": 72.22,
+        "highest_time": "2026-05-29T13:49:09.436740+00:00"
       },
       "MSFT": {
         "option_symbol": "MSFT261218C00450000",
@@ -835,8 +871,8 @@
         "expiry": "2026-12-18",
         "entry_price": 41.77,
         "entry_time": "2026-05-29T13:45:14+00:00",
-        "current_price": 41.77,
-        "current_time": "2026-05-29T13:47:13.460385+00:00",
+        "current_price": 41.54,
+        "current_time": "2026-05-29T13:49:09.608703+00:00",
         "highest_price": 41.77,
         "highest_time": "2026-05-29T13:47:13.460403+00:00"
       },
@@ -846,10 +882,10 @@
         "expiry": "2026-12-18",
         "entry_price": 1.68,
         "entry_time": "2026-05-29T13:45:17+00:00",
-        "current_price": 1.68,
-        "current_time": "2026-05-29T13:47:13.828676+00:00",
-        "highest_price": 1.68,
-        "highest_time": "2026-05-29T13:47:13.828694+00:00"
+        "current_price": 1.72,
+        "current_time": "2026-05-29T13:49:09.818725+00:00",
+        "highest_price": 1.72,
+        "highest_time": "2026-05-29T13:49:09.818746+00:00"
       }
     }
   }
