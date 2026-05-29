@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:58.399Z",
+  "last_updated": "2026-05-29T12:50:00.694Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -68,23 +68,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:41.328099+00:00"
-    },
-    {
-      "symbol": "GNRC",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-29",
-      "earnings_gain_pct": 16.49,
-      "earnings_close": 252.92,
-      "high_30d": 220.93,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 278.24,
-      "prev_sma": 277.74,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:41.451208+00:00"
     },
     {
       "symbol": "HWM",
