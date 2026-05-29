@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T13:19:03.883289+00:00",
+  "last_updated": "2026-05-29T13:33:03.230824+00:00",
   "today": {
     "date": "2026-05-29",
     "alerts": {
@@ -619,6 +619,15 @@
           "symbol": "NOW",
           "msg_id": "19e73dff01ce0c43",
           "received_at": "2026-05-29T13:15:15+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 118.3725,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NOW",
+          "msg_id": "19e73ef61c7f9f10",
+          "received_at": "2026-05-29T13:32:06+00:00"
         }
       ],
       "PLTR": [
