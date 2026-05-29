@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:50:04.465Z",
+  "last_updated": "2026-05-29T12:50:06.805Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -527,23 +527,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:47.816211+00:00"
-    },
-    {
-      "symbol": "XEL",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-30",
-      "earnings_gain_pct": 5.24,
-      "earnings_close": 82.95,
-      "high_30d": 82.77,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 80.314,
-      "prev_sma": 80.718,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:47.934133+00:00"
     },
     {
       "symbol": "CBOE",
