@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:50:44.520Z",
+  "last_updated": "2026-05-29T12:50:52.555Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -646,23 +646,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:50.540303+00:00"
-    },
-    {
-      "symbol": "XYZ",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-07",
-      "earnings_gain_pct": 6.72,
-      "earnings_close": 74.85,
-      "high_30d": 73.89,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 71.843,
-      "prev_sma": 70.7741,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:50.698725+00:00"
     },
     {
       "symbol": "FOX",
