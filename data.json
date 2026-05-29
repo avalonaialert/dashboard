@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T13:37:05.467203+00:00",
+  "last_updated": "2026-05-29T13:39:05.587706+00:00",
   "today": {
     "date": "2026-05-29",
     "alerts": {
@@ -657,6 +657,24 @@
           "symbol": "PLTR",
           "msg_id": "19e73f222d6e4305",
           "received_at": "2026-05-29T13:35:06+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 149.78750000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PLTR",
+          "msg_id": "19e73f4e96b675ae",
+          "received_at": "2026-05-29T13:38:06+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 149.385,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PLTR",
+          "msg_id": "19e73f41010654e8",
+          "received_at": "2026-05-29T13:37:07+00:00"
         }
       ],
       "ADBE": [
@@ -678,10 +696,10 @@
         "expiry": "2026-12-18",
         "entry_price": 26.02,
         "entry_time": "2026-05-29T13:35:06+00:00",
-        "current_price": 26.02,
-        "current_time": "2026-05-29T13:37:05.467155+00:00",
-        "highest_price": 26.02,
-        "highest_time": "2026-05-29T13:37:05.467174+00:00"
+        "current_price": 26.56,
+        "current_time": "2026-05-29T13:39:05.587659+00:00",
+        "highest_price": 26.56,
+        "highest_time": "2026-05-29T13:39:05.587682+00:00"
       }
     }
   }
