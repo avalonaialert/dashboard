@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T11:31:04.586791+00:00",
+  "last_updated": "2026-05-29T11:46:03.922096+00:00",
   "today": {
     "date": "2026-05-29",
     "alerts": {
@@ -95,6 +95,15 @@
           "symbol": "ARM",
           "msg_id": "19e737fd5dc7e43c",
           "received_at": "2026-05-29T11:30:15+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 348.95,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e738da2d42e7e4",
+          "received_at": "2026-05-29T11:45:21+00:00"
         }
       ],
       "AMD": [
@@ -386,6 +395,15 @@
           "symbol": "F",
           "msg_id": "19e73645f9b9e922",
           "received_at": "2026-05-29T11:00:15+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 16.86,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "F",
+          "msg_id": "19e73809c83a3c0c",
+          "received_at": "2026-05-29T11:31:05+00:00"
         }
       ],
       "QCOM": [
