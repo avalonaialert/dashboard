@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:50:09.048Z",
+  "last_updated": "2026-05-29T12:50:11.202Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -493,23 +493,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:47.558614+00:00"
-    },
-    {
-      "symbol": "MO",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-30",
-      "earnings_gain_pct": 6.52,
-      "earnings_close": 72.65,
-      "high_30d": 68.2,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 72.216,
-      "prev_sma": 72.274,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:47.688795+00:00"
     },
     {
       "symbol": "CBOE",
