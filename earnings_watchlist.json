@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:49:44.686Z",
+  "last_updated": "2026-05-29T12:49:46.966Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -425,23 +425,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:45.763938+00:00"
-    },
-    {
-      "symbol": "CNC",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-28",
-      "earnings_gain_pct": 13.95,
-      "earnings_close": 49.57,
-      "high_30d": 43.5,
-      "status": "watching",
-      "sma_direction": "gaining",
-      "current_sma": 58.621,
-      "prev_sma": 58.395,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:45.886474+00:00"
     },
     {
       "symbol": "SBUX",
