@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:51:09.279Z",
+  "last_updated": "2026-05-29T12:51:11.987Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -51,23 +51,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-29T11:34:41.328099+00:00"
-    },
-    {
-      "symbol": "HWM",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-07",
-      "earnings_gain_pct": 6.28,
-      "earnings_close": 272.42,
-      "high_30d": 257.9164,
-      "status": "watching",
-      "sma_direction": "declining",
-      "current_sma": 259.697,
-      "prev_sma": 259.773,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma": null,
-      "last_checked": "2026-05-29T11:34:41.579680+00:00"
     },
     {
       "symbol": "ZBRA",
