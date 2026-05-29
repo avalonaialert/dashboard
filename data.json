@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T09:16:05.662573+00:00",
+  "last_updated": "2026-05-29T09:31:14.366069+00:00",
   "today": {
     "date": "2026-05-29",
     "alerts": {
@@ -59,6 +59,15 @@
           "symbol": "ARM",
           "msg_id": "19e73048a021a969",
           "received_at": "2026-05-29T09:15:36+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 346.41999999999996,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e73123f4df0b3e",
+          "received_at": "2026-05-29T09:30:34+00:00"
         }
       ],
       "AMD": [
@@ -97,6 +106,15 @@
           "symbol": "AMD",
           "msg_id": "19e7304667968c3b",
           "received_at": "2026-05-29T09:15:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 525.0350000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19e731237e368fe8",
+          "received_at": "2026-05-29T09:30:32+00:00"
         }
       ],
       "NVDA": [
@@ -146,6 +164,15 @@
           "symbol": "SNDK",
           "msg_id": "19e730451b6c5903",
           "received_at": "2026-05-29T09:15:21+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1684.065,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e7312768f5550b",
+          "received_at": "2026-05-29T09:30:49+00:00"
         }
       ],
       "MSFT": [
@@ -213,6 +240,15 @@
           "symbol": "MU",
           "msg_id": "19e730452e19ec9e",
           "received_at": "2026-05-29T09:15:22+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 960.5175,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e73123af1dbc6a",
+          "received_at": "2026-05-29T09:30:33+00:00"
         }
       ],
       "F": [
