@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:25:55.051Z",
+  "last_updated": "2026-05-30T20:26:38.345Z",
   "watchlist": [
     {
       "symbol": "FFIV",
@@ -1620,33 +1620,6 @@
       "proj_sma9": null,
       "proj_pct_diff": null,
       "last_checked": "2026-05-30T20:24:37.308190+00:00"
-    },
-    {
-      "symbol": "WAT",
-      "added_date": "2026-05-30",
-      "source": "earnings",
-      "earnings_date": "2026-05-05",
-      "earnings_gain_pct": 13.54,
-      "earnings_close": 342.75,
-      "high_30d": 335.61,
-      "status": "triggered",
-      "sma3": 377.3816,
-      "prev_sma3": 370.2049,
-      "sma9": 355.5027,
-      "prev_sma9": 350.7105,
-      "pct_diff": 6.1543,
-      "prev_pct_diff": 5.5585,
-      "trigger_date": "2026-05-30",
-      "trigger_price": 383.57,
-      "trigger_sma3": 377.3816,
-      "trigger_sma9": 355.5027,
-      "trigger_pct_diff": 6.1543,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T20:24:37.512260+00:00"
     },
     {
       "symbol": "APP",
