@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:26:38.345Z",
+  "last_updated": "2026-05-30T20:26:52.012Z",
   "watchlist": [
     {
       "symbol": "FFIV",
@@ -1836,33 +1836,6 @@
       "proj_sma9": null,
       "proj_pct_diff": null,
       "last_checked": "2026-05-30T20:24:38.774161+00:00"
-    },
-    {
-      "symbol": "GEN",
-      "added_date": "2026-05-30",
-      "source": "earnings",
-      "earnings_date": "2026-05-07",
-      "earnings_gain_pct": 12.33,
-      "earnings_close": 22.5591,
-      "high_30d": 20.3112,
-      "status": "triggered",
-      "sma3": 25.1833,
-      "prev_sma3": 24.825,
-      "sma9": 24.8961,
-      "prev_sma9": 24.7972,
-      "pct_diff": 1.1537,
-      "prev_pct_diff": 0.112,
-      "trigger_date": "2026-05-30",
-      "trigger_price": 25.79,
-      "trigger_sma3": 25.1833,
-      "trigger_sma9": 24.8961,
-      "trigger_pct_diff": 1.1537,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T20:24:39.022173+00:00"
     },
     {
       "symbol": "MNST",
