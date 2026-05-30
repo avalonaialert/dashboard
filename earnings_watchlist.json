@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T19:20:56.177Z",
+  "last_updated": "2026-05-30T19:22:28.225Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -493,23 +493,6 @@
       "trigger_price": 134.095,
       "trigger_sma": 129.917,
       "last_checked": "2026-05-30T19:19:17.474801+00:00"
-    },
-    {
-      "symbol": "UBER",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-06",
-      "earnings_gain_pct": 8.53,
-      "earnings_close": 79.17,
-      "high_30d": 77.49,
-      "status": "triggered",
-      "sma_direction": "gaining",
-      "current_sma": 70.758,
-      "prev_sma": 70.743,
-      "trigger_date": "2026-05-29",
-      "trigger_price": 70.4,
-      "trigger_sma": 70.758,
-      "last_checked": "2026-05-30T19:19:17.618203+00:00"
     },
     {
       "symbol": "DDOG",
