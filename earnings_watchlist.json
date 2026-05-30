@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T19:58:10.273Z",
+  "last_updated": "2026-05-30T19:58:24.086Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -1244,6 +1244,33 @@
     },
     {
       "symbol": "F",
+      "added_date": "2026-05-30",
+      "source": "manual",
+      "earnings_date": null,
+      "earnings_gain_pct": null,
+      "earnings_close": null,
+      "high_30d": null,
+      "status": "watching",
+      "sma3": null,
+      "prev_sma3": null,
+      "sma9": null,
+      "prev_sma9": null,
+      "pct_diff": null,
+      "prev_pct_diff": null,
+      "trigger_date": null,
+      "trigger_price": null,
+      "trigger_sma3": null,
+      "trigger_sma9": null,
+      "trigger_pct_diff": null,
+      "potential_trigger": false,
+      "potential_price": null,
+      "proj_sma3": null,
+      "proj_sma9": null,
+      "proj_pct_diff": null,
+      "last_checked": null
+    },
+    {
+      "symbol": "ADBE",
       "added_date": "2026-05-30",
       "source": "manual",
       "earnings_date": null,
