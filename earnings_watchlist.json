@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T19:19:18.814688+00:00",
+  "last_updated": "2026-05-30T19:20:56.177Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -238,23 +238,6 @@
       "trigger_price": null,
       "trigger_sma": null,
       "last_checked": "2026-05-30T19:19:14.773611+00:00"
-    },
-    {
-      "symbol": "BKR",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-23",
-      "earnings_gain_pct": 6.9,
-      "earnings_close": 68.7102,
-      "high_30d": 64.2751,
-      "status": "triggered",
-      "sma_direction": "gaining",
-      "current_sma": 64.225,
-      "prev_sma": 64.083,
-      "trigger_date": "2026-05-29",
-      "trigger_price": 64.77,
-      "trigger_sma": 64.403,
-      "last_checked": "2026-05-30T19:19:14.935844+00:00"
     },
     {
       "symbol": "INTC",
