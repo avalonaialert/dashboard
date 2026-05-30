@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:03:34.796Z",
+  "last_updated": "2026-05-30T20:04:12.437Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -890,33 +890,6 @@
       "proj_sma9": null,
       "proj_pct_diff": null,
       "last_checked": "2026-05-30T19:58:49.854056+00:00"
-    },
-    {
-      "symbol": "MSFT",
-      "added_date": "2026-05-30",
-      "source": "manual",
-      "earnings_date": null,
-      "earnings_gain_pct": null,
-      "earnings_close": null,
-      "high_30d": null,
-      "status": "triggered",
-      "sma3": 439.4367,
-      "prev_sma3": 431.8383,
-      "sma9": 424.4817,
-      "prev_sma9": 421.2561,
-      "pct_diff": 3.5231,
-      "prev_pct_diff": 2.5121,
-      "trigger_date": "2026-05-30",
-      "trigger_price": 450.24,
-      "trigger_sma3": 439.4367,
-      "trigger_sma9": 424.4817,
-      "trigger_pct_diff": 3.5231,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T19:58:50.129086+00:00"
     },
     {
       "symbol": "AAPL",
