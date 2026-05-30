@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:04:18.750Z",
+  "last_updated": "2026-05-30T20:06:29.495Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -742,29 +742,6 @@
       "prev_sma9": 58.2397,
       "pct_diff": -0.1198,
       "prev_pct_diff": 0.6243
-    },
-    {
-      "symbol": "CSCO",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-13",
-      "earnings_gain_pct": 13.41,
-      "earnings_close": 115.53,
-      "high_30d": 101.87,
-      "status": "triggered",
-      "sma_direction": "gaining",
-      "current_sma": 119.576,
-      "prev_sma": 119.352,
-      "trigger_date": "2026-05-29",
-      "trigger_price": 119.385,
-      "trigger_sma": 119.249,
-      "last_checked": "2026-05-30T19:58:48.405793+00:00",
-      "sma3": 119.6633,
-      "prev_sma3": 119.25,
-      "sma9": 119.2967,
-      "prev_sma9": 119.3011,
-      "pct_diff": 0.3074,
-      "prev_pct_diff": -0.0428
     },
     {
       "symbol": "BBY",
