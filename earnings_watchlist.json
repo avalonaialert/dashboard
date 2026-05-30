@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:06:35.477Z",
+  "last_updated": "2026-05-30T20:06:43.016Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -650,29 +650,6 @@
       "prev_sma9": 103.4192,
       "pct_diff": -0.5048,
       "prev_pct_diff": -0.0194
-    },
-    {
-      "symbol": "FTNT",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-06",
-      "earnings_gain_pct": 20.03,
-      "earnings_close": 107.97,
-      "high_30d": 89.95,
-      "status": "triggered",
-      "sma_direction": "gaining",
-      "current_sma": 132.032,
-      "prev_sma": 130.128,
-      "trigger_date": "2026-05-29",
-      "trigger_price": 134.095,
-      "trigger_sma": 129.917,
-      "last_checked": "2026-05-30T19:58:47.921014+00:00",
-      "sma3": 134.2633,
-      "prev_sma3": 131.4367,
-      "sma9": 132.3683,
-      "prev_sma9": 131.8156,
-      "pct_diff": 1.4316,
-      "prev_pct_diff": -0.2874
     },
     {
       "symbol": "VTRS",
