@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T19:58:51.902708+00:00",
+  "last_updated": "2026-05-30T20:02:59.782Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -110,7 +110,7 @@
       "trigger_sma": null,
       "last_checked": "2026-05-30T19:58:44.826369+00:00",
       "sma3": 382.61,
-      "prev_sma3": 386.0,
+      "prev_sma3": 386,
       "sma9": 390.079,
       "prev_sma9": 391.0281,
       "pct_diff": -1.9147,
@@ -863,33 +863,6 @@
       "prev_sma9": 144.8056,
       "pct_diff": 11.159,
       "prev_pct_diff": 6.7455
-    },
-    {
-      "symbol": "WDC",
-      "added_date": "2026-05-30",
-      "source": "manual",
-      "earnings_date": null,
-      "earnings_gain_pct": null,
-      "earnings_close": null,
-      "high_30d": null,
-      "status": "watching",
-      "sma3": 531.12,
-      "prev_sma3": 536.2316,
-      "sma9": 526.73,
-      "prev_sma9": 521.4622,
-      "pct_diff": 0.8334,
-      "prev_pct_diff": 2.8323,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma3": null,
-      "trigger_sma9": null,
-      "trigger_pct_diff": null,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T19:58:48.972282+00:00"
     },
     {
       "symbol": "NVDA",
