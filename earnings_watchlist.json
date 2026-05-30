@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:06:43.016Z",
+  "last_updated": "2026-05-30T20:06:49.030Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -420,29 +420,6 @@
       "prev_sma9": 383.6937,
       "pct_diff": -0.6004,
       "prev_pct_diff": 0.0445
-    },
-    {
-      "symbol": "QCOM",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-04-29",
-      "earnings_gain_pct": 15.12,
-      "earnings_close": 179.58,
-      "high_30d": 156,
-      "status": "triggered",
-      "sma_direction": "gaining",
-      "current_sma": 244.998,
-      "prev_sma": 240.912,
-      "trigger_date": "2026-05-29",
-      "trigger_price": 257.81,
-      "trigger_sma": 241.864,
-      "last_checked": "2026-05-30T19:58:46.529081+00:00",
-      "sma3": 249.0733,
-      "prev_sma3": 246.83,
-      "sma9": 243.5967,
-      "prev_sma9": 242.3778,
-      "pct_diff": 2.2483,
-      "prev_pct_diff": 1.8369
     },
     {
       "symbol": "AIG",
