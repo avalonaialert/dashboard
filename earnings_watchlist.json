@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:06:49.030Z",
+  "last_updated": "2026-05-30T20:07:10.376Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -852,33 +852,6 @@
       "proj_sma9": null,
       "proj_pct_diff": null,
       "last_checked": "2026-05-30T19:58:51.702510+00:00"
-    },
-    {
-      "symbol": "PLTR",
-      "added_date": "2026-05-30",
-      "source": "manual",
-      "earnings_date": null,
-      "earnings_gain_pct": null,
-      "earnings_close": null,
-      "high_30d": null,
-      "status": "triggered",
-      "sma3": 151.9233,
-      "prev_sma3": 146.4367,
-      "sma9": 141.4039,
-      "prev_sma9": 139.16,
-      "pct_diff": 7.4393,
-      "prev_pct_diff": 5.229,
-      "trigger_date": "2026-05-30",
-      "trigger_price": 156.54,
-      "trigger_sma3": 151.9233,
-      "trigger_sma9": 141.4039,
-      "trigger_pct_diff": 7.4393,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T19:58:51.902638+00:00"
     }
   ]
 }
