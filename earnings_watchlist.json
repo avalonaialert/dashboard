@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:06:29.495Z",
+  "last_updated": "2026-05-30T20:06:35.477Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -673,29 +673,6 @@
       "prev_sma9": 131.8156,
       "pct_diff": 1.4316,
       "prev_pct_diff": -0.2874
-    },
-    {
-      "symbol": "DDOG",
-      "added_date": "2026-05-29",
-      "source": "earnings",
-      "earnings_date": "2026-05-07",
-      "earnings_gain_pct": 31.33,
-      "earnings_close": 188.73,
-      "high_30d": 146.69,
-      "status": "triggered",
-      "sma_direction": "gaining",
-      "current_sma": 232.736,
-      "prev_sma": 227.786,
-      "trigger_date": "2026-05-29",
-      "trigger_price": 236.63,
-      "trigger_sma": 227.222,
-      "last_checked": "2026-05-30T19:58:48.067323+00:00",
-      "sma3": 237.4067,
-      "prev_sma3": 231.47,
-      "sma9": 228.6495,
-      "prev_sma9": 225.7962,
-      "pct_diff": 3.8299,
-      "prev_pct_diff": 2.5128
     },
     {
       "symbol": "VTRS",
