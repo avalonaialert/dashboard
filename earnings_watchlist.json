@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:03:08.317Z",
+  "last_updated": "2026-05-30T20:03:11.783Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -863,33 +863,6 @@
       "prev_sma9": 144.8056,
       "pct_diff": 11.159,
       "prev_pct_diff": 6.7455
-    },
-    {
-      "symbol": "MSTR",
-      "added_date": "2026-05-30",
-      "source": "manual",
-      "earnings_date": null,
-      "earnings_gain_pct": null,
-      "earnings_close": null,
-      "high_30d": null,
-      "status": "watching",
-      "sma3": 156.5499,
-      "prev_sma3": 152.7332,
-      "sma9": 156.7211,
-      "prev_sma9": 157.0966,
-      "pct_diff": -0.1092,
-      "prev_pct_diff": -2.7775,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma3": null,
-      "trigger_sma9": null,
-      "trigger_pct_diff": null,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T19:58:49.377425+00:00"
     },
     {
       "symbol": "MU",
