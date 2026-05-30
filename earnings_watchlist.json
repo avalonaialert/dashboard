@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T20:02:59.782Z",
+  "last_updated": "2026-05-30T20:03:04.461Z",
   "watchlist": [
     {
       "symbol": "MSCI",
@@ -863,33 +863,6 @@
       "prev_sma9": 144.8056,
       "pct_diff": 11.159,
       "prev_pct_diff": 6.7455
-    },
-    {
-      "symbol": "NVDA",
-      "added_date": "2026-05-30",
-      "source": "manual",
-      "earnings_date": null,
-      "earnings_gain_pct": null,
-      "earnings_close": null,
-      "high_30d": null,
-      "status": "watching",
-      "sma3": 213.8133,
-      "prev_sma3": 214.4283,
-      "sma9": 213.4316,
-      "prev_sma9": 214.0928,
-      "pct_diff": 0.1788,
-      "prev_pct_diff": 0.1567,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma3": null,
-      "trigger_sma9": null,
-      "trigger_pct_diff": null,
-      "potential_trigger": false,
-      "potential_price": null,
-      "proj_sma3": null,
-      "proj_sma9": null,
-      "proj_pct_diff": null,
-      "last_checked": "2026-05-30T19:58:49.087215+00:00"
     },
     {
       "symbol": "GLW",
