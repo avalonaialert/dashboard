@@ -2148,7 +2148,14 @@
       } catch (_) { /* silent — don't disrupt the UI */ }
     }
 
-    load().then(() => setInterval(silentRefresh, 2 * 60 * 1000));
+    function scheduleRefresh() {
+      const { cls } = getMarketStatus();
+      const interval = (cls === "market-open" || cls === "market-pre" || cls === "market-after")
+        ? 60_000        // 1 min during market / extended hours
+        : 5 * 60_000;  // 5 min when closed
+      setTimeout(async () => { await silentRefresh(); scheduleRefresh(); }, interval);
+    }
+    load().then(() => scheduleRefresh());
 
     // ── Top Gainers bar ──────────────────────────────────────────────────
     function renderPositions() {
