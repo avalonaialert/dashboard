@@ -916,6 +916,7 @@
     const DATA_URL      = `https://api.github.com/repos/${REPO}/contents/data.json`;
     const MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/manifest.json`;
     const POSITIONS_URL = `https://api.github.com/repos/${REPO}/contents/positions.json`;
+    const MODEL_URL     = `https://api.github.com/repos/${REPO}/contents/model.json`;
     const DAY_URL       = d => `https://api.github.com/repos/${REPO}/contents/${d}.json`;
     const GH_READ_TOKEN = "__GH_READ_TOKEN__"; // injected by CI from GitHub Secret
     const SKIP_ALERTS   = new Set([666, 7777]);
@@ -969,6 +970,20 @@
       const bears  = history.filter(a => Number(a.alert) === -6);
       if (!calls.length) return null;
 
+      // Read thresholds from live model.json (fallback to known defaults if not yet loaded)
+      const c  = _model?.criteria ?? {};
+      const C1_MIN  = c.C1?.threshold  ?? 8;
+      const C2_MIN  = c.C2?.threshold  ?? 30;
+      const C3_MIN  = c.C3?.threshold  ?? -1.0;
+      const C5_TIME = c.C5?.threshold  ?? "15:30";
+      const C7_MIN  = c.C7?.threshold  ?? 20;
+      const [c5h, c5m] = C5_TIME.split(":").map(Number);
+
+      const accuracy = _model?.overall_stats?.with_C5_C7_applied?.accuracy
+        ? `${Math.round(_model.overall_stats.with_C5_C7_applied.accuracy * 100)}%`
+        : "91%";
+      const accuracyNote = `Model: ${accuracy} accuracy`;
+
       const latest     = history[0];                          // newest alert
       const latestCode = Number(latest.alert);
       const firstCall  = calls[calls.length - 1];             // oldest call = entry
@@ -981,22 +996,37 @@
         const elapsed    = (bearTime - firstTime) / 60_000;
         const bearPrice  = Number(latest.close) || 0;
 
-        const c1Pass = calls.length >= 8;
-        const c2Pass = elapsed >= 30;
+        const c1Pass = calls.length >= C1_MIN;
+        const c2Pass = elapsed >= C2_MIN;
         const c3Pct  = entryPrice > 0 ? (bearPrice - entryPrice) / entryPrice * 100 : null;
-        const c3Pass = c3Pct === null || c3Pct >= -1.0;
+        const c3Pass = c3Pct === null || c3Pct >= C3_MIN;
         const bearEST = new Date(new Date(latest.received_at).toLocaleString("en-US", { timeZone: "America/New_York" }));
-        const c5Pass  = bearEST.getHours() < 15 || (bearEST.getHours() === 15 && bearEST.getMinutes() < 30);
+        const c5Pass  = bearEST.getHours() < c5h || (bearEST.getHours() === c5h && bearEST.getMinutes() < c5m);
 
-        const c1s = c1Pass ? `C1✅${calls.length}` : `C1❌${calls.length}<8`;
-        const c2s = c2Pass ? `C2✅${Math.round(elapsed)}min` : `C2❌${Math.round(elapsed)}<30min`;
+        const c1s = c1Pass ? `C1✅${calls.length}` : `C1❌${calls.length}<${C1_MIN}`;
+        const c2s = c2Pass ? `C2✅${Math.round(elapsed)}min` : `C2❌${Math.round(elapsed)}<${C2_MIN}min`;
         const c3s = c3Pct != null ? (c3Pass ? `C3✅${c3Pct.toFixed(1)}%` : `C3❌${c3Pct.toFixed(1)}%`) : "";
         const c5s = c5Pass ? `C5✅` : `C5❌`;
+
+        // C7: second bear within C7_MIN of first recovery call → EXIT override
+        if (bears.length > 1) {
+          const priorBear = bears[1];  // bears[0]=current, bears[1]=prior (newest first)
+          const callsAfterPrior = calls.filter(c => c.received_at > priorBear.received_at);
+          if (callsAfterPrior.length > 0) {
+            const firstRec   = callsAfterPrior[callsAfterPrior.length - 1];  // oldest recovery call
+            const recElapsed = (bearTime - new Date(firstRec.received_at)) / 60_000;
+            if (recElapsed < C7_MIN) {
+              const c7s = `C7❌ ${Math.round(recElapsed)}<${C7_MIN}min`;
+              return { action: `🔴 Sell Position — C7: 2nd bear ${Math.round(recElapsed)}min after recovery`, detail: `${c1s}  ${c2s}  ${c3s}  ${c5s}  ${c7s}  ·  ${accuracyNote}`, cls: "rec-sell" };
+            }
+          }
+        }
+
         const fails = [!c1Pass && "C1", !c2Pass && "C2", !c3Pass && "C3", !c5Pass && "C5"].filter(Boolean);
 
         if (!fails.length)
-          return { action: "🟢 Hold for Recovery", detail: `${c1s}  ${c2s}  ${c3s}  ${c5s}  ·  Model: 87% accuracy`, cls: "rec-hold" };
-        return { action: `🔴 Sell Position — ${fails.join(", ")} failed`, detail: `${c1s}  ${c2s}  ${c3s}  ${c5s}  ·  Model: 87% accuracy`, cls: "rec-sell" };
+          return { action: "🟢 Hold for Recovery", detail: `${c1s}  ${c2s}  ${c3s}  ${c5s}  ·  ${accuracyNote}`, cls: "rec-hold" };
+        return { action: `🔴 Sell Position — ${fails.join(", ")} failed`, detail: `${c1s}  ${c2s}  ${c3s}  ${c5s}  ·  ${accuracyNote}`, cls: "rec-sell" };
       }
 
       // ── Recovery call after a bear ─────────────────────────────────────
@@ -1334,6 +1364,7 @@
     // ── State ────────────────────────────────────────────────────────────
     let _data         = null;
     let _manifest     = [];
+    let _model        = null;  // loaded from model.json; used by modelRec for live thresholds
     let _dayCache     = {};
     let _activeTab    = "today";
     let _active15Tab  = null;       // active 15 Mins - Simple tab key
@@ -2012,10 +2043,11 @@
       const statusEl = document.getElementById("status");
       statusEl.innerHTML = "Loading…";
       try {
-        const [data, manifest, posData] = await Promise.all([
+        const [data, manifest, posData, modelData] = await Promise.all([
           _ghFetch(DATA_URL),
           _ghFetch(MANIFEST_URL).catch(() => []),
           _ghFetch(POSITIONS_URL).catch(() => null),
+          _ghFetch(MODEL_URL).catch(() => null),
         ]);
         if (data.alerts && !data.today) {
           data.today = { date: "", alerts: data.alerts };
@@ -2023,6 +2055,7 @@
         _data        = data;
         _manifest    = Array.isArray(manifest) ? manifest : [];
         _positions   = posData?.positions ?? [];
+        if (modelData?.criteria) _model = modelData;
         _dayCache    = {};
         _renderCache = {};
         _quoteCache  = {};
@@ -2110,10 +2143,12 @@
     // ── Silent 5-min refresh (preserves active tab + scroll) ────────────
     async function silentRefresh() {
       try {
-        const [data, posData] = await Promise.all([
+        const [data, posData, modelData] = await Promise.all([
           _ghFetch(DATA_URL),
           _ghFetch(POSITIONS_URL).catch(() => null),
+          _ghFetch(MODEL_URL).catch(() => null),
         ]);
+        if (modelData?.criteria) _model = modelData;
         if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
 
         // Always refresh positions on each tick
