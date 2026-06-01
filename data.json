@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T10:16:07.035320+00:00",
+  "last_updated": "2026-06-01T10:31:09.730244+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -104,6 +104,24 @@
           "symbol": "WDC",
           "msg_id": "19e8295567082a1c",
           "received_at": "2026-06-01T09:48:04+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 538.4425000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e82bc1d20852e0",
+          "received_at": "2026-06-01T10:30:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 538.42,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e82aeff9e1c81d",
+          "received_at": "2026-06-01T10:16:05+00:00"
         }
       ],
       "ARM": [
@@ -187,6 +205,15 @@
           "symbol": "ARM",
           "msg_id": "19e82ae4c1c47ac0",
           "received_at": "2026-06-01T10:15:20+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 403.615,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e82bc38c94a425",
+          "received_at": "2026-06-01T10:30:30+00:00"
         }
       ],
       "HPE": [
@@ -373,6 +400,15 @@
           "symbol": "PLTR",
           "msg_id": "19e82ae43afa7226",
           "received_at": "2026-06-01T10:15:17+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 160.445,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PLTR",
+          "msg_id": "19e82bc1b302f948",
+          "received_at": "2026-06-01T10:30:24+00:00"
         }
       ],
       "AVGO": [
@@ -456,6 +492,15 @@
           "symbol": "AVGO",
           "msg_id": "19e82ae5f60cd3f7",
           "received_at": "2026-06-01T10:15:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 460.24249999999995,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e82bc08de02508",
+          "received_at": "2026-06-01T10:30:20+00:00"
         }
       ],
       "IBM": [
@@ -539,6 +584,15 @@
           "symbol": "IBM",
           "msg_id": "19e82ae47c45a3c5",
           "received_at": "2026-06-01T10:15:18+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 326.0475,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "IBM",
+          "msg_id": "19e82bc0aa8d6d0e",
+          "received_at": "2026-06-01T10:30:20+00:00"
         }
       ],
       "MSFT": [
@@ -622,6 +676,15 @@
           "symbol": "MSFT",
           "msg_id": "19e82ae600f55df4",
           "received_at": "2026-06-01T10:15:25+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 465.1,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MSFT",
+          "msg_id": "19e82bc05424df45",
+          "received_at": "2026-06-01T10:30:19+00:00"
         }
       ],
       "DELL": [
@@ -779,6 +842,15 @@
           "symbol": "MU",
           "msg_id": "19e82ae1ac6a72b1",
           "received_at": "2026-06-01T10:15:07+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1023.2625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e82bbd95671ed7",
+          "received_at": "2026-06-01T10:30:08+00:00"
         }
       ],
       "SNDK": [
@@ -862,6 +934,15 @@
           "symbol": "SNDK",
           "msg_id": "19e82ae513440ece",
           "received_at": "2026-06-01T10:15:21+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1764.835,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e82bc101e97072",
+          "received_at": "2026-06-01T10:30:19+00:00"
         }
       ],
       "META": [
@@ -947,6 +1028,24 @@
           "symbol": "APP",
           "msg_id": "19e82a40f77fe7cb",
           "received_at": "2026-06-01T10:04:08+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 621.45,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e82bc1cb6a3e78",
+          "received_at": "2026-06-01T10:30:25+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 620.6,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e82aff1c73ead7",
+          "received_at": "2026-06-01T10:17:06+00:00"
         }
       ]
     },
