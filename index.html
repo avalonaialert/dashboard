@@ -1365,6 +1365,7 @@
     let _data         = null;
     let _manifest     = [];
     let _model        = null;  // loaded from model.json; used by modelRec for live thresholds
+    let _modelDate    = null;  // date string (YYYY-MM-DD) when _model was last fetched
     let _dayCache     = {};
     let _activeTab    = "today";
     let _active15Tab  = null;       // active 15 Mins - Simple tab key
@@ -2055,7 +2056,7 @@
         _data        = data;
         _manifest    = Array.isArray(manifest) ? manifest : [];
         _positions   = posData?.positions ?? [];
-        if (modelData?.criteria) _model = modelData;
+        if (modelData?.criteria) { _model = modelData; _modelDate = new Date().toISOString().slice(0, 10); }
         _dayCache    = {};
         _renderCache = {};
         _quoteCache  = {};
@@ -2143,12 +2144,13 @@
     // ── Silent 5-min refresh (preserves active tab + scroll) ────────────
     async function silentRefresh() {
       try {
+        const today = new Date().toISOString().slice(0, 10);
         const [data, posData, modelData] = await Promise.all([
           _ghFetch(DATA_URL),
           _ghFetch(POSITIONS_URL).catch(() => null),
-          _ghFetch(MODEL_URL).catch(() => null),
+          _modelDate !== today ? _ghFetch(MODEL_URL).catch(() => null) : Promise.resolve(null),
         ]);
-        if (modelData?.criteria) _model = modelData;
+        if (modelData?.criteria) { _model = modelData; _modelDate = today; }
         if (data.alerts && !data.today) data.today = { date: "", alerts: data.alerts };
 
         // Always refresh positions on each tick
