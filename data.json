@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T11:01:08.791457+00:00",
+  "last_updated": "2026-06-01T11:16:05.308466+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -57,6 +57,15 @@
           "symbol": "NOW",
           "msg_id": "19e82d77d22181ad",
           "received_at": "2026-06-01T11:00:18+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 138.3975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NOW",
+          "msg_id": "19e82e55dd87626f",
+          "received_at": "2026-06-01T11:15:28+00:00"
         }
       ],
       "WDC": [
@@ -472,6 +481,15 @@
           "symbol": "PLTR",
           "msg_id": "19e82d75a7afab99",
           "received_at": "2026-06-01T11:00:08+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 162.14624999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PLTR",
+          "msg_id": "19e82e5325afa13c",
+          "received_at": "2026-06-01T11:15:16+00:00"
         }
       ],
       "AVGO": [
@@ -683,6 +701,15 @@
           "symbol": "IBM",
           "msg_id": "19e82d75ee5e3b41",
           "received_at": "2026-06-01T11:00:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 331.6125,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "IBM",
+          "msg_id": "19e82e52bd08baaf",
+          "received_at": "2026-06-01T11:15:13+00:00"
         }
       ],
       "MSFT": [
@@ -793,6 +820,15 @@
           "symbol": "MSFT",
           "msg_id": "19e82d791aac98a0",
           "received_at": "2026-06-01T11:00:23+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 467.9375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MSFT",
+          "msg_id": "19e82e52ed92e3ae",
+          "received_at": "2026-06-01T11:15:16+00:00"
         }
       ],
       "DELL": [
@@ -1199,6 +1235,15 @@
           "symbol": "APP",
           "msg_id": "19e82cc4041424ae",
           "received_at": "2026-06-01T10:48:02+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 619.9975000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e82d8de699368f",
+          "received_at": "2026-06-01T11:01:49+00:00"
         }
       ],
       "STX": [
