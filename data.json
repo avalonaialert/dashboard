@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T18:40:07.524982+00:00",
+  "last_updated": "2026-06-01T18:44:07.681298+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -1839,6 +1839,15 @@
           "symbol": "DELL",
           "msg_id": "19e84534fceda5cc",
           "received_at": "2026-06-01T17:55:11+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 461.26500000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e847f6ec7d5e2b",
+          "received_at": "2026-06-01T18:43:22+00:00"
         }
       ],
       "MU": [
@@ -3784,8 +3793,8 @@
         "expiry": "2026-12-18",
         "entry_price": 46.43,
         "entry_time": "2026-06-01T13:43:19+00:00",
-        "current_price": 45.95,
-        "current_time": "2026-06-01T18:40:06.957480+00:00",
+        "current_price": 46.19,
+        "current_time": "2026-06-01T18:44:07.233083+00:00",
         "highest_price": 50.9,
         "highest_time": "2026-06-01T14:19:09.560144+00:00"
       },
@@ -3795,8 +3804,8 @@
         "expiry": "2026-12-18",
         "entry_price": 143.0,
         "entry_time": "2026-06-01T13:49:52+00:00",
-        "current_price": 142.47,
-        "current_time": "2026-06-01T18:40:05.465028+00:00",
+        "current_price": 139.77,
+        "current_time": "2026-06-01T18:44:05.961023+00:00",
         "highest_price": 150.24,
         "highest_time": "2026-06-01T17:42:37.681954+00:00"
       },
@@ -3806,10 +3815,10 @@
         "expiry": "2026-12-18",
         "entry_price": 31.88,
         "entry_time": "2026-06-01T13:50:59+00:00",
-        "current_price": 34.25,
-        "current_time": "2026-06-01T18:40:07.238424+00:00",
-        "highest_price": 34.25,
-        "highest_time": "2026-06-01T18:40:07.238446+00:00"
+        "current_price": 34.33,
+        "current_time": "2026-06-01T18:44:07.444606+00:00",
+        "highest_price": 34.33,
+        "highest_time": "2026-06-01T18:44:07.444630+00:00"
       },
       "DELL": {
         "option_symbol": "DELL261218C00460000",
@@ -3817,8 +3826,8 @@
         "expiry": "2026-12-18",
         "entry_price": 107.81,
         "entry_time": "2026-06-01T14:08:12+00:00",
-        "current_price": 111.25,
-        "current_time": "2026-06-01T18:40:05.964904+00:00",
+        "current_price": 110.21,
+        "current_time": "2026-06-01T18:44:06.459512+00:00",
         "highest_price": 115.59,
         "highest_time": "2026-06-01T14:35:14.845233+00:00"
       },
@@ -3828,8 +3837,8 @@
         "expiry": "2026-12-18",
         "entry_price": 120.9,
         "entry_time": "2026-06-01T15:00:50+00:00",
-        "current_price": 122.31,
-        "current_time": "2026-06-01T18:40:05.742399+00:00",
+        "current_price": 121.72,
+        "current_time": "2026-06-01T18:44:06.209438+00:00",
         "highest_price": 133.88,
         "highest_time": "2026-06-01T16:12:05.646991+00:00"
       },
@@ -3839,8 +3848,8 @@
         "expiry": "2026-12-18",
         "entry_price": 231.75,
         "entry_time": "2026-06-01T16:30:46+00:00",
-        "current_price": 240.78,
-        "current_time": "2026-06-01T18:40:06.646965+00:00",
+        "current_price": 239.81,
+        "current_time": "2026-06-01T18:44:06.989699+00:00",
         "highest_price": 254.86,
         "highest_time": "2026-06-01T18:04:27.605909+00:00"
       },
@@ -3850,8 +3859,8 @@
         "expiry": "2026-12-18",
         "entry_price": 290.13,
         "entry_time": "2026-06-01T16:50:16+00:00",
-        "current_price": 284.29,
-        "current_time": "2026-06-01T18:40:06.309579+00:00",
+        "current_price": 285.31,
+        "current_time": "2026-06-01T18:44:06.732730+00:00",
         "highest_price": 297.75,
         "highest_time": "2026-06-01T17:18:09.248717+00:00"
       },
@@ -3861,10 +3870,10 @@
         "expiry": "2026-12-18",
         "entry_price": 22.38,
         "entry_time": "2026-06-01T18:02:12+00:00",
-        "current_price": 22.3,
-        "current_time": "2026-06-01T18:40:07.524934+00:00",
-        "highest_price": 22.75,
-        "highest_time": "2026-06-01T18:21:08.270243+00:00"
+        "current_price": 23.11,
+        "current_time": "2026-06-01T18:44:07.681231+00:00",
+        "highest_price": 23.11,
+        "highest_time": "2026-06-01T18:44:07.681269+00:00"
       }
     }
   }
