@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T12:01:05.168399+00:00",
+  "last_updated": "2026-06-01T12:16:04.300676+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -398,6 +398,24 @@
           "symbol": "ADBE",
           "msg_id": "19e8300b72044c03",
           "received_at": "2026-06-01T11:45:21+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 276.865,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ADBE",
+          "msg_id": "19e831c5576a21f3",
+          "received_at": "2026-06-01T12:15:30+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 277.66999999999996,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ADBE",
+          "msg_id": "19e830f2d10823b2",
+          "received_at": "2026-06-01T12:01:08+00:00"
         }
       ],
       "PLTR": [
@@ -535,6 +553,15 @@
           "symbol": "PLTR",
           "msg_id": "19e82f3bd50c82c4",
           "received_at": "2026-06-01T11:31:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 162.305,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PLTR",
+          "msg_id": "19e830f0c70d1e40",
+          "received_at": "2026-06-01T12:00:59+00:00"
         }
       ],
       "AVGO": [
@@ -1242,6 +1269,24 @@
           "symbol": "META",
           "msg_id": "19e8300e7867f6ca",
           "received_at": "2026-06-01T11:45:33+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 635.3975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "META",
+          "msg_id": "19e831c4ff1acee9",
+          "received_at": "2026-06-01T12:15:28+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 636.5975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "META",
+          "msg_id": "19e830f2896f6045",
+          "received_at": "2026-06-01T12:01:07+00:00"
         }
       ],
       "APP": [
