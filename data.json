@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T14:09:12.355815+00:00",
+  "last_updated": "2026-06-01T14:10:37.792850+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -1047,6 +1047,15 @@
           "symbol": "DELL",
           "msg_id": "19e8383839c3c1b6",
           "received_at": "2026-06-01T14:08:12+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 455.395,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e838453382f79a",
+          "received_at": "2026-06-01T14:09:06+00:00"
         }
       ],
       "MU": [
@@ -1644,6 +1653,24 @@
           "symbol": "HUM",
           "msg_id": "19e837f14345e7f3",
           "received_at": "2026-06-01T14:03:21+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 331.96,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HUM",
+          "msg_id": "19e83846e4e9892a",
+          "received_at": "2026-06-01T14:09:13+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 331.44374999999997,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HUM",
+          "msg_id": "19e83844b06f07bf",
+          "received_at": "2026-06-01T14:09:04+00:00"
         }
       ],
       "NVDA": [
@@ -1682,6 +1709,15 @@
           "symbol": "NVDA",
           "msg_id": "19e837612fac2914",
           "received_at": "2026-06-01T13:53:32+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 219.66,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NVDA",
+          "msg_id": "19e83845e7bd90db",
+          "received_at": "2026-06-01T14:09:09+00:00"
         }
       ]
     },
@@ -1692,10 +1728,10 @@
         "expiry": "2026-12-18",
         "entry_price": 46.43,
         "entry_time": "2026-06-01T13:43:19+00:00",
-        "current_price": 49.15,
-        "current_time": "2026-06-01T14:09:11.871557+00:00",
-        "highest_price": 50.37,
-        "highest_time": "2026-06-01T13:52:27.953439+00:00"
+        "current_price": 50.44,
+        "current_time": "2026-06-01T14:10:36.990908+00:00",
+        "highest_price": 50.44,
+        "highest_time": "2026-06-01T14:10:36.990943+00:00"
       },
       "WDC": {
         "option_symbol": "WDC261218C00560000",
@@ -1703,8 +1739,8 @@
         "expiry": "2026-12-18",
         "entry_price": 143.0,
         "entry_time": "2026-06-01T13:49:52+00:00",
-        "current_price": 135.1,
-        "current_time": "2026-06-01T14:09:10.304697+00:00",
+        "current_price": 133.33,
+        "current_time": "2026-06-01T14:10:34.187613+00:00",
         "highest_price": 143.0,
         "highest_time": "2026-06-01T13:50:10.508130+00:00"
       },
@@ -1714,8 +1750,8 @@
         "expiry": "2026-12-18",
         "entry_price": 31.88,
         "entry_time": "2026-06-01T13:50:59+00:00",
-        "current_price": 31.53,
-        "current_time": "2026-06-01T14:09:12.355762+00:00",
+        "current_price": 31.8,
+        "current_time": "2026-06-01T14:10:37.792793+00:00",
         "highest_price": 31.88,
         "highest_time": "2026-06-01T13:51:32.575459+00:00"
       },
@@ -1725,8 +1761,8 @@
         "expiry": "2026-12-18",
         "entry_price": 107.81,
         "entry_time": "2026-06-01T14:08:12+00:00",
-        "current_price": 107.81,
-        "current_time": "2026-06-01T14:09:11.421154+00:00",
+        "current_price": 105.97,
+        "current_time": "2026-06-01T14:10:35.674182+00:00",
         "highest_price": 107.81,
         "highest_time": "2026-06-01T14:09:11.421178+00:00"
       }
