@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T13:49:05.363632+00:00",
+  "last_updated": "2026-06-01T13:50:10.703983+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -176,6 +176,15 @@
           "symbol": "WDC",
           "msg_id": "19e82d7cd5da683a",
           "received_at": "2026-06-01T11:00:38+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 554.135,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e8372b95abc54d",
+          "received_at": "2026-06-01T13:49:52+00:00"
         }
       ],
       "ARM": [
@@ -1491,6 +1500,33 @@
           "symbol": "HUM",
           "msg_id": "19e837050f12b69a",
           "received_at": "2026-06-01T13:47:12+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 327.9425,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HUM",
+          "msg_id": "19e8372ab99e7971",
+          "received_at": "2026-06-01T13:49:49+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 327.4725,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HUM",
+          "msg_id": "19e837248fdff19c",
+          "received_at": "2026-06-01T13:49:24+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 327.805,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HUM",
+          "msg_id": "19e83720f12b5ade",
+          "received_at": "2026-06-01T13:49:06+00:00"
         }
       ]
     },
@@ -1501,10 +1537,21 @@
         "expiry": "2026-12-18",
         "entry_price": 46.43,
         "entry_time": "2026-06-01T13:43:19+00:00",
-        "current_price": 48.39,
-        "current_time": "2026-06-01T13:49:05.363562+00:00",
-        "highest_price": 48.47,
-        "highest_time": "2026-06-01T13:48:10.241147+00:00"
+        "current_price": 49.65,
+        "current_time": "2026-06-01T13:50:10.703941+00:00",
+        "highest_price": 49.65,
+        "highest_time": "2026-06-01T13:50:10.703964+00:00"
+      },
+      "WDC": {
+        "option_symbol": "WDC261218C00560000",
+        "strike": 560.0,
+        "expiry": "2026-12-18",
+        "entry_price": 143.0,
+        "entry_time": "2026-06-01T13:49:52+00:00",
+        "current_price": 143.0,
+        "current_time": "2026-06-01T13:50:10.506924+00:00",
+        "highest_price": 143.0,
+        "highest_time": "2026-06-01T13:50:10.508130+00:00"
       }
     }
   }
