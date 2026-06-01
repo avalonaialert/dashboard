@@ -1154,12 +1154,18 @@
       for (const [, history] of symbols) {
         history.sort((a, b) => new Date(b.received_at) - new Date(a.received_at));
       }
-      // RSI-70 symbols first, then by latest alert time
+      // Sort: (RSI + Call) > (Call only) > (RSI only) > (neither), then by latest call/alert time
       symbols.sort((a, b) => {
-        const ar = rsi70Symbols.has(a[0]) ? 1 : 0;
-        const br = rsi70Symbols.has(b[0]) ? 1 : 0;
-        if (br !== ar) return br - ar;
-        return new Date(b[1][0].received_at) - new Date(a[1][0].received_at);
+        const latestCall = h => {
+          const c = h.filter(x => Number(x.alert) === 6);
+          return c.length ? new Date(c[0].received_at) : null;
+        };
+        const ac = latestCall(a[1]), bc = latestCall(b[1]);
+        const scoreA = (ac ? 2 : 0) + (rsi70Symbols.has(a[0]) ? 1 : 0);
+        const scoreB = (bc ? 2 : 0) + (rsi70Symbols.has(b[0]) ? 1 : 0);
+        if (scoreB !== scoreA) return scoreB - scoreA;
+        if (ac && bc) return bc - ac;  // same score, both have calls — most recent first
+        return new Date(b[1][0].received_at) - new Date(a[1][0].received_at); // fallback: latest alert
       });
 
       statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
