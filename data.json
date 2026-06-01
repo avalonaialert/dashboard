@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T09:01:10.563458+00:00",
+  "last_updated": "2026-06-01T09:16:10.003834+00:00",
   "today": {
     "date": "2026-06-01",
     "alerts": {
@@ -115,6 +115,15 @@
           "symbol": "ARM",
           "msg_id": "19e826a323b2605c",
           "received_at": "2026-06-01T09:00:54+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 397.28000000000003,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ARM",
+          "msg_id": "19e827762bca7155",
+          "received_at": "2026-06-01T09:15:20+00:00"
         }
       ],
       "HPE": [
@@ -153,6 +162,15 @@
           "symbol": "HPE",
           "msg_id": "19e826981206e1ed",
           "received_at": "2026-06-01T09:00:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 45.895,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HPE",
+          "msg_id": "19e82773a9a86d63",
+          "received_at": "2026-06-01T09:15:09+00:00"
         }
       ],
       "ADBE": [
@@ -220,6 +238,15 @@
           "symbol": "PLTR",
           "msg_id": "19e8269f1c0ae0dc",
           "received_at": "2026-06-01T09:00:40+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 159.5,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PLTR",
+          "msg_id": "19e82776a7c3c1c9",
+          "received_at": "2026-06-01T09:15:22+00:00"
         }
       ],
       "AVGO": [
@@ -249,6 +276,24 @@
           "symbol": "AVGO",
           "msg_id": "19e825c07e351b54",
           "received_at": "2026-06-01T08:45:27+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 456.0375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e8277360ebc3aa",
+          "received_at": "2026-06-01T09:15:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 457.9875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e826a459211a78",
+          "received_at": "2026-06-01T09:01:01+00:00"
         }
       ],
       "IBM": [
@@ -287,6 +332,15 @@
           "symbol": "IBM",
           "msg_id": "19e8269ee0d0ea98",
           "received_at": "2026-06-01T09:00:39+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 320.195,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "IBM",
+          "msg_id": "19e8277566401179",
+          "received_at": "2026-06-01T09:15:16+00:00"
         }
       ],
       "MSFT": [
@@ -325,6 +379,15 @@
           "symbol": "MSFT",
           "msg_id": "19e8269ec54f1ce5",
           "received_at": "2026-06-01T09:00:39+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 463.65250000000003,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MSFT",
+          "msg_id": "19e8277708042f3d",
+          "received_at": "2026-06-01T09:15:24+00:00"
         }
       ],
       "DELL": [
@@ -363,6 +426,15 @@
           "symbol": "DELL",
           "msg_id": "19e826a01be04c9d",
           "received_at": "2026-06-01T09:00:44+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 433.655,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19e82775f01d1bf0",
+          "received_at": "2026-06-01T09:15:19+00:00"
         }
       ],
       "MU": [
@@ -401,6 +473,15 @@
           "symbol": "MU",
           "msg_id": "19e8269fb5c4de77",
           "received_at": "2026-06-01T09:00:42+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1017.06,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e82774f3412fc5",
+          "received_at": "2026-06-01T09:15:15+00:00"
         }
       ],
       "SNDK": [
@@ -430,6 +511,24 @@
           "symbol": "SNDK",
           "msg_id": "19e825c0f25742a9",
           "received_at": "2026-06-01T08:45:29+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1747.6325,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e8277683361634",
+          "received_at": "2026-06-01T09:15:23+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1741.4299999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19e826a7076b0e7e",
+          "received_at": "2026-06-01T09:01:11+00:00"
         }
       ],
       "META": [
@@ -470,6 +569,24 @@
           "symbol": "APP",
           "msg_id": "19e825c968e42fb7",
           "received_at": "2026-06-01T08:46:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 618.3,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e82776f9b81d84",
+          "received_at": "2026-06-01T09:15:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 618.0450000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e826b34fed5e14",
+          "received_at": "2026-06-01T09:02:02+00:00"
         }
       ]
     },
