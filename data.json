@@ -1,8 +1,53 @@
 {
-  "last_updated": "2026-06-02T08:01:06.304789+00:00",
+  "last_updated": "2026-06-02T08:16:03.095764+00:00",
   "today": {
     "date": "2026-06-02",
-    "alerts": {},
+    "alerts": {
+      "NVDA": [
+        {
+          "alert": 7,
+          "close": 226.865,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NVDA",
+          "msg_id": "19e8766d138c06b2",
+          "received_at": "2026-06-02T08:15:21+00:00"
+        }
+      ],
+      "GLW": [
+        {
+          "alert": 7,
+          "close": 183.395,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e8766b06720d4b",
+          "received_at": "2026-06-02T08:15:12+00:00"
+        }
+      ],
+      "AVGO": [
+        {
+          "alert": 7,
+          "close": 486.875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e87669a09b4434",
+          "received_at": "2026-06-02T08:15:07+00:00"
+        }
+      ],
+      "NTAP": [
+        {
+          "alert": 7,
+          "close": 180.5,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NTAP",
+          "msg_id": "19e8763ea660b5ac",
+          "received_at": "2026-06-02T08:12:11+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
