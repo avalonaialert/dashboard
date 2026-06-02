@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T18:30:26.867268+00:00",
+  "last_updated": "2026-06-02T19:00:26.304104+00:00",
   "watchlist": [
     {
       "symbol": "FFIV",
@@ -10,11 +10,11 @@
       "earnings_close": 328.15,
       "high_30d": 315.56,
       "status": "triggered",
-      "sma3": 403.1367,
+      "sma3": 402.72,
       "prev_sma3": 396.8967,
-      "sma9": 392.0133,
+      "sma9": 391.8744,
       "prev_sma9": 390.2794,
-      "pct_diff": 2.8375,
+      "pct_diff": 2.7676,
       "prev_pct_diff": 1.6955,
       "trigger_date": "2026-06-02",
       "trigger_price": 398.55,
@@ -26,7 +26,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:06.644967+00:00"
+      "last_checked": "2026-06-02T19:00:06.381623+00:00"
     },
     {
       "symbol": "STX",
@@ -37,11 +37,11 @@
       "earnings_close": 643.3,
       "high_30d": 595.86,
       "status": "triggered",
-      "sma3": 925.38,
+      "sma3": 925.0233,
       "prev_sma3": 922.2583,
-      "sma9": 901.6544,
+      "sma9": 901.5356,
       "prev_sma9": 895.2744,
-      "pct_diff": 2.6313,
+      "pct_diff": 2.6053,
       "prev_pct_diff": 3.014,
       "trigger_date": "2026-06-01",
       "trigger_price": 918.9999,
@@ -53,7 +53,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:07.024595+00:00"
+      "last_checked": "2026-06-02T19:00:06.498742+00:00"
     },
     {
       "symbol": "TXN",
@@ -64,11 +64,11 @@
       "earnings_close": 280.8032,
       "high_30d": 235.1154,
       "status": "watching",
-      "sma3": 299.715,
+      "sma3": 300.24,
       "prev_sma3": 296.165,
-      "sma9": 306.5717,
+      "sma9": 306.7467,
       "prev_sma9": 308.0289,
-      "pct_diff": -2.2366,
+      "pct_diff": -2.1212,
       "prev_pct_diff": -3.8515,
       "trigger_date": null,
       "trigger_price": null,
@@ -80,7 +80,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:07.182477+00:00"
+      "last_checked": "2026-06-02T19:00:06.906185+00:00"
     },
     {
       "symbol": "MSCI",
@@ -91,11 +91,11 @@
       "earnings_close": 595.2404,
       "high_30d": 566.5041,
       "status": "watching",
-      "sma3": 636.5933,
+      "sma3": 636.075,
       "prev_sma3": 636.415,
-      "sma9": 629.3956,
+      "sma9": 629.2228,
       "prev_sma9": 625.9372,
-      "pct_diff": 1.1436,
+      "pct_diff": 1.089,
       "prev_pct_diff": 1.6739,
       "trigger_date": null,
       "trigger_price": null,
@@ -107,7 +107,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:07.567726+00:00"
+      "last_checked": "2026-06-02T19:00:07.072323+00:00"
     },
     {
       "symbol": "SNDK",
@@ -118,11 +118,11 @@
       "earnings_close": 1187,
       "high_30d": 1096.51,
       "status": "watching",
-      "sma3": 1745.4816,
+      "sma3": 1742.6066,
       "prev_sma3": 1755.43,
-      "sma9": 1699.4394,
+      "sma9": 1698.4811,
       "prev_sma9": 1681.5233,
-      "pct_diff": 2.7093,
+      "pct_diff": 2.5979,
       "prev_pct_diff": 4.3952,
       "trigger_date": null,
       "trigger_price": null,
@@ -134,7 +134,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:07.992132+00:00"
+      "last_checked": "2026-06-02T19:00:07.426481+00:00"
     },
     {
       "symbol": "DVA",
@@ -145,11 +145,11 @@
       "earnings_close": 193.88,
       "high_30d": 157.04,
       "status": "watching",
-      "sma3": 189.1967,
+      "sma3": 188.96,
       "prev_sma3": 189.31,
-      "sma9": 192.7956,
+      "sma9": 192.7167,
       "prev_sma9": 193.5833,
-      "pct_diff": -1.8667,
+      "pct_diff": -1.9493,
       "prev_pct_diff": -2.2075,
       "trigger_date": null,
       "trigger_price": null,
@@ -161,7 +161,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:08.106475+00:00"
+      "last_checked": "2026-06-02T19:00:07.541848+00:00"
     },
     {
       "symbol": "GWW",
@@ -172,11 +172,11 @@
       "earnings_close": 1231.6091,
       "high_30d": 1169.844,
       "status": "triggered",
-      "sma3": 1254.04,
+      "sma3": 1255.3267,
       "prev_sma3": 1246.0067,
-      "sma9": 1246.9055,
+      "sma9": 1247.3344,
       "prev_sma9": 1244.9222,
-      "pct_diff": 0.5722,
+      "pct_diff": 0.6407,
       "prev_pct_diff": 0.0871,
       "trigger_date": "2026-06-02",
       "trigger_price": 1257.9275,
@@ -188,7 +188,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:08.518133+00:00"
+      "last_checked": "2026-06-02T19:00:07.957306+00:00"
     },
     {
       "symbol": "SMCI",
@@ -199,11 +199,11 @@
       "earnings_close": 34.66,
       "high_30d": 29.18,
       "status": "triggered",
-      "sma3": 48.8834,
+      "sma3": 48.825,
       "prev_sma3": 47.94,
-      "sma9": 45.1911,
+      "sma9": 45.1717,
       "prev_sma9": 43.8328,
-      "pct_diff": 8.1703,
+      "pct_diff": 8.0877,
       "prev_pct_diff": 9.3703,
       "trigger_date": "2026-05-30",
       "trigger_price": 46.09,
@@ -215,7 +215,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:08.681721+00:00"
+      "last_checked": "2026-06-02T19:00:08.085868+00:00"
     },
     {
       "symbol": "IEX",
@@ -226,11 +226,11 @@
       "earnings_close": 216.5683,
       "high_30d": 206.6537,
       "status": "triggered",
-      "sma3": 211.2283,
+      "sma3": 211.2467,
       "prev_sma3": 209.37,
-      "sma9": 210.6628,
+      "sma9": 210.6689,
       "prev_sma9": 210.4656,
-      "pct_diff": 0.2685,
+      "pct_diff": 0.2743,
       "prev_pct_diff": -0.5205,
       "trigger_date": "2026-06-02",
       "trigger_price": 212.16,
@@ -242,7 +242,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:09.045137+00:00"
+      "last_checked": "2026-06-02T19:00:08.479806+00:00"
     },
     {
       "symbol": "BIIB",
@@ -253,11 +253,11 @@
       "earnings_close": 194.38,
       "high_30d": 191.06,
       "status": "watching",
-      "sma3": 189.1167,
+      "sma3": 189.3517,
       "prev_sma3": 190.4933,
-      "sma9": 193.7261,
+      "sma9": 193.8044,
       "prev_sma9": 194.8472,
-      "pct_diff": -2.3793,
+      "pct_diff": -2.2976,
       "prev_pct_diff": -2.2345,
       "trigger_date": null,
       "trigger_price": null,
@@ -269,7 +269,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:09.197832+00:00"
+      "last_checked": "2026-06-02T19:00:08.595972+00:00"
     },
     {
       "symbol": "GNRC",
@@ -280,11 +280,11 @@
       "earnings_close": 252.92,
       "high_30d": 220.93,
       "status": "triggered",
-      "sma3": 279.515,
+      "sma3": 278.845,
       "prev_sma3": 273.2783,
-      "sma9": 278.2706,
+      "sma9": 278.0472,
       "prev_sma9": 277.1533,
-      "pct_diff": 0.4472,
+      "pct_diff": 0.2869,
       "prev_pct_diff": -1.3981,
       "trigger_date": "2026-06-02",
       "trigger_price": 284.27,
@@ -296,7 +296,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:09.564887+00:00"
+      "last_checked": "2026-06-02T19:00:09.000515+00:00"
     },
     {
       "symbol": "IFF",
@@ -307,11 +307,11 @@
       "earnings_close": 82.93,
       "high_30d": 75.88,
       "status": "watching",
-      "sma3": 73.55,
+      "sma3": 73.6633,
       "prev_sma3": 73.8867,
-      "sma9": 75.7628,
+      "sma9": 75.8006,
       "prev_sma9": 76.3044,
-      "pct_diff": -2.9207,
+      "pct_diff": -2.8195,
       "prev_pct_diff": -3.1686,
       "trigger_date": null,
       "trigger_price": null,
@@ -323,7 +323,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:09.694748+00:00"
+      "last_checked": "2026-06-02T19:00:09.119928+00:00"
     },
     {
       "symbol": "HWM",
@@ -334,11 +334,11 @@
       "earnings_close": 272.42,
       "high_30d": 257.9164,
       "status": "watching",
-      "sma3": 252.9983,
+      "sma3": 252.8133,
       "prev_sma3": 254.5067,
-      "sma9": 256.6994,
+      "sma9": 256.6378,
       "prev_sma9": 257.3333,
-      "pct_diff": -1.4418,
+      "pct_diff": -1.4902,
       "prev_pct_diff": -1.0984,
       "trigger_date": null,
       "trigger_price": null,
@@ -350,7 +350,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:10.092320+00:00"
+      "last_checked": "2026-06-02T19:00:09.239216+00:00"
     },
     {
       "symbol": "IRM",
@@ -361,11 +361,11 @@
       "earnings_close": 125.99,
       "high_30d": 120.53,
       "status": "watching",
-      "sma3": 127.5583,
+      "sma3": 127.5267,
       "prev_sma3": 127.9,
-      "sma9": 127.6472,
+      "sma9": 127.6367,
       "prev_sma9": 127.5644,
-      "pct_diff": -0.0696,
+      "pct_diff": -0.0862,
       "prev_pct_diff": 0.263,
       "trigger_date": null,
       "trigger_price": null,
@@ -377,7 +377,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:10.242693+00:00"
+      "last_checked": "2026-06-02T19:00:09.596293+00:00"
     },
     {
       "symbol": "ZBRA",
@@ -388,11 +388,11 @@
       "earnings_close": 241.79,
       "high_30d": 237.3,
       "status": "triggered",
-      "sma3": 251.105,
+      "sma3": 251.3933,
       "prev_sma3": 249.165,
-      "sma9": 248.8583,
+      "sma9": 248.9544,
       "prev_sma9": 248.5461,
-      "pct_diff": 0.9028,
+      "pct_diff": 0.9797,
       "prev_pct_diff": 0.249,
       "trigger_date": "2026-06-02",
       "trigger_price": 252.405,
@@ -404,7 +404,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:10.613965+00:00"
+      "last_checked": "2026-06-02T19:00:09.759533+00:00"
     },
     {
       "symbol": "PWR",
@@ -415,11 +415,11 @@
       "earnings_close": 727.77,
       "high_30d": 637.28,
       "status": "watching",
-      "sma3": 695.36,
+      "sma3": 695.96,
       "prev_sma3": 690.6737,
-      "sma9": 711.304,
+      "sma9": 711.504,
       "prev_sma9": 715.1962,
-      "pct_diff": -2.2415,
+      "pct_diff": -2.1847,
       "prev_pct_diff": -3.4288,
       "trigger_date": null,
       "trigger_price": null,
@@ -431,7 +431,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:10.732812+00:00"
+      "last_checked": "2026-06-02T19:00:10.177579+00:00"
     },
     {
       "symbol": "DELL",
@@ -442,11 +442,11 @@
       "earnings_close": 420.91,
       "high_30d": 317.05,
       "status": "watching",
-      "sma3": 449.6252,
+      "sma3": 449.1735,
       "prev_sma3": 454.9018,
-      "sma9": 397.2667,
+      "sma9": 397.1162,
       "prev_sma9": 382.7062,
-      "pct_diff": 13.1797,
+      "pct_diff": 13.1088,
       "prev_pct_diff": 18.8645,
       "trigger_date": null,
       "trigger_price": null,
@@ -458,7 +458,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:11.141305+00:00"
+      "last_checked": "2026-06-02T19:00:10.576515+00:00"
     },
     {
       "symbol": "SJM",
@@ -469,11 +469,11 @@
       "earnings_close": 114.7265,
       "high_30d": 109.7814,
       "status": "watching",
-      "sma3": 100.1508,
+      "sma3": 100.115,
       "prev_sma3": 100.445,
-      "sma9": 102.1755,
+      "sma9": 102.1635,
       "prev_sma9": 102.6219,
-      "pct_diff": -1.9815,
+      "pct_diff": -2.0052,
       "prev_pct_diff": -2.1213,
       "trigger_date": null,
       "trigger_price": null,
@@ -485,7 +485,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:11.264909+00:00"
+      "last_checked": "2026-06-02T19:00:10.695358+00:00"
     },
     {
       "symbol": "ROST",
@@ -496,11 +496,11 @@
       "earnings_close": 234.81,
       "high_30d": 228.91,
       "status": "watching",
-      "sma3": 223.8317,
+      "sma3": 223.8133,
       "prev_sma3": 223.7033,
-      "sma9": 227.4794,
+      "sma9": 227.4733,
       "prev_sma9": 228.61,
-      "pct_diff": -1.6036,
+      "pct_diff": -1.609,
       "prev_pct_diff": -2.1463,
       "trigger_date": null,
       "trigger_price": null,
@@ -512,7 +512,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:11.665236+00:00"
+      "last_checked": "2026-06-02T19:00:11.098338+00:00"
     },
     {
       "symbol": "KR",
@@ -523,11 +523,11 @@
       "earnings_close": 71.1949,
       "high_30d": 70.8766,
       "status": "watching",
-      "sma3": 61.665,
+      "sma3": 61.575,
       "prev_sma3": 61.7717,
-      "sma9": 62.5694,
+      "sma9": 62.5394,
       "prev_sma9": 62.9006,
-      "pct_diff": -1.4455,
+      "pct_diff": -1.5421,
       "prev_pct_diff": -1.7947,
       "trigger_date": null,
       "trigger_price": null,
@@ -539,7 +539,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:11.792004+00:00"
+      "last_checked": "2026-06-02T19:00:11.217273+00:00"
     },
     {
       "symbol": "STZ",
@@ -550,11 +550,11 @@
       "earnings_close": 161.9891,
       "high_30d": 156.8136,
       "status": "watching",
-      "sma3": 136.0667,
+      "sma3": 136.1033,
       "prev_sma3": 136.05,
-      "sma9": 139.09,
+      "sma9": 139.1022,
       "prev_sma9": 140.52,
-      "pct_diff": -2.1736,
+      "pct_diff": -2.1559,
       "prev_pct_diff": -3.181,
       "trigger_date": null,
       "trigger_price": null,
@@ -566,7 +566,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:12.188824+00:00"
+      "last_checked": "2026-06-02T19:00:11.332658+00:00"
     },
     {
       "symbol": "STLD",
@@ -577,11 +577,11 @@
       "earnings_close": 220.21,
       "high_30d": 209.35,
       "status": "triggered",
-      "sma3": 266.8667,
+      "sma3": 267.0767,
       "prev_sma3": 264.0483,
-      "sma9": 262.2389,
+      "sma9": 262.3089,
       "prev_sma9": 260.6833,
-      "pct_diff": 1.7647,
+      "pct_diff": 1.8176,
       "prev_pct_diff": 1.2908,
       "trigger_date": "2026-06-02",
       "trigger_price": 265.505,
@@ -593,7 +593,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:12.345203+00:00"
+      "last_checked": "2026-06-02T19:00:11.700320+00:00"
     },
     {
       "symbol": "DHI",
@@ -604,11 +604,11 @@
       "earnings_close": 161.7107,
       "high_30d": 152.8774,
       "status": "watching",
-      "sma3": 147.265,
+      "sma3": 147.215,
       "prev_sma3": 146.9,
-      "sma9": 147.2683,
+      "sma9": 147.2517,
       "prev_sma9": 147.2222,
-      "pct_diff": -0.0023,
+      "pct_diff": -0.0249,
       "prev_pct_diff": -0.2189,
       "trigger_date": null,
       "trigger_price": null,
@@ -620,7 +620,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:12.712836+00:00"
+      "last_checked": "2026-06-02T19:00:11.831802+00:00"
     },
     {
       "symbol": "UNH",
@@ -631,11 +631,11 @@
       "earnings_close": 346.01,
       "high_30d": 324.63,
       "status": "watching",
-      "sma3": 377.33,
+      "sma3": 377.1583,
       "prev_sma3": 377.8317,
-      "sma9": 379.7106,
+      "sma9": 379.6533,
       "prev_sma9": 380.4561,
-      "pct_diff": -0.6269,
+      "pct_diff": -0.6572,
       "prev_pct_diff": -0.6898,
       "trigger_date": null,
       "trigger_price": null,
@@ -647,7 +647,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:12.843963+00:00"
+      "last_checked": "2026-06-02T19:00:12.247554+00:00"
     },
     {
       "symbol": "BA",
@@ -658,11 +658,11 @@
       "earnings_close": 231.28,
       "high_30d": 225.08,
       "status": "watching",
-      "sma3": 218.8633,
+      "sma3": 218.795,
       "prev_sma3": 221.425,
-      "sma9": 225.0361,
+      "sma9": 225.0133,
       "prev_sma9": 225.6339,
-      "pct_diff": -2.743,
+      "pct_diff": -2.7635,
       "prev_pct_diff": -1.8654,
       "trigger_date": null,
       "trigger_price": null,
@@ -674,7 +674,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:13.235832+00:00"
+      "last_checked": "2026-06-02T19:00:12.670471+00:00"
     },
     {
       "symbol": "CSX",
@@ -685,11 +685,11 @@
       "earnings_close": 46.0389,
       "high_30d": 43.5764,
       "status": "watching",
-      "sma3": 45.8517,
+      "sma3": 45.885,
       "prev_sma3": 45.705,
-      "sma9": 45.8106,
+      "sma9": 45.8217,
       "prev_sma9": 45.9489,
-      "pct_diff": 0.0897,
+      "pct_diff": 0.1382,
       "prev_pct_diff": -0.5308,
       "trigger_date": null,
       "trigger_price": null,
@@ -701,7 +701,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:13.411318+00:00"
+      "last_checked": "2026-06-02T19:00:12.793254+00:00"
     },
     {
       "symbol": "GEV",
@@ -712,11 +712,11 @@
       "earnings_close": 1127.5601,
       "high_30d": 1002.75,
       "status": "watching",
-      "sma3": 960.7995,
+      "sma3": 961.5345,
       "prev_sma3": 957.1512,
-      "sma9": 979.2265,
+      "sma9": 979.4715,
       "prev_sma9": 987.9815,
-      "pct_diff": -1.8818,
+      "pct_diff": -1.8313,
       "prev_pct_diff": -3.1205,
       "trigger_date": null,
       "trigger_price": null,
@@ -728,7 +728,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:13.757551+00:00"
+      "last_checked": "2026-06-02T19:00:13.194692+00:00"
     },
     {
       "symbol": "URI",
@@ -739,11 +739,11 @@
       "earnings_close": 984.7461,
       "high_30d": 810.5958,
       "status": "triggered",
-      "sma3": 999.17,
+      "sma3": 999.11,
       "prev_sma3": 995.41,
-      "sma9": 994.4978,
+      "sma9": 994.4778,
       "prev_sma9": 992.7356,
-      "pct_diff": 0.4698,
+      "pct_diff": 0.4658,
       "prev_pct_diff": 0.2694,
       "trigger_date": "2026-06-02",
       "trigger_price": 1001.12,
@@ -755,7 +755,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:13.886791+00:00"
+      "last_checked": "2026-06-02T19:00:13.321362+00:00"
     },
     {
       "symbol": "BKR",
@@ -766,11 +766,11 @@
       "earnings_close": 68.7102,
       "high_30d": 64.2751,
       "status": "watching",
-      "sma3": 63.7533,
+      "sma3": 63.7767,
       "prev_sma3": 63.2733,
-      "sma9": 63.9061,
+      "sma9": 63.9139,
       "prev_sma9": 63.7906,
-      "pct_diff": -0.2391,
+      "pct_diff": -0.2147,
       "prev_pct_diff": -0.8108,
       "trigger_date": null,
       "trigger_price": null,
@@ -782,7 +782,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:14.292870+00:00"
+      "last_checked": "2026-06-02T19:00:13.723231+00:00"
     },
     {
       "symbol": "CMCSA",
@@ -793,11 +793,11 @@
       "earnings_close": 31.64,
       "high_30d": 30.2186,
       "status": "watching",
-      "sma3": 24.975,
+      "sma3": 24.9767,
       "prev_sma3": 24.8767,
-      "sma9": 24.9656,
+      "sma9": 24.9661,
       "prev_sma9": 25.0175,
-      "pct_diff": 0.0378,
+      "pct_diff": 0.0422,
       "prev_pct_diff": -0.5629,
       "trigger_date": null,
       "trigger_price": null,
@@ -809,7 +809,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:14.413663+00:00"
+      "last_checked": "2026-06-02T19:00:13.839948+00:00"
     },
     {
       "symbol": "DOV",
@@ -820,11 +820,11 @@
       "earnings_close": 227.5917,
       "high_30d": 221.357,
       "status": "watching",
-      "sma3": 210.1083,
+      "sma3": 210.255,
       "prev_sma3": 208.4583,
-      "sma9": 210.9631,
+      "sma9": 211.0119,
       "prev_sma9": 211.1792,
-      "pct_diff": -0.4052,
+      "pct_diff": -0.3587,
       "prev_pct_diff": -1.2884,
       "trigger_date": null,
       "trigger_price": null,
@@ -836,7 +836,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:14.809903+00:00"
+      "last_checked": "2026-06-02T19:00:13.955873+00:00"
     },
     {
       "symbol": "INTC",
@@ -847,11 +847,11 @@
       "earnings_close": 82.54,
       "high_30d": 68.5,
       "status": "watching",
-      "sma3": 108.22,
+      "sma3": 108.0433,
       "prev_sma3": 109.0833,
-      "sma9": 114.6067,
+      "sma9": 114.5478,
       "prev_sma9": 115.8483,
-      "pct_diff": -5.5727,
+      "pct_diff": -5.6784,
       "prev_pct_diff": -5.8395,
       "trigger_date": null,
       "trigger_price": null,
@@ -863,7 +863,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:14.928212+00:00"
+      "last_checked": "2026-06-02T19:00:14.313045+00:00"
     },
     {
       "symbol": "KDP",
@@ -874,11 +874,11 @@
       "earnings_close": 28.53,
       "high_30d": 27.4079,
       "status": "triggered",
-      "sma3": 30.35,
+      "sma3": 30.37,
       "prev_sma3": 30.1667,
-      "sma9": 30.1317,
+      "sma9": 30.1383,
       "prev_sma9": 30.1283,
-      "pct_diff": 0.7246,
+      "pct_diff": 0.7687,
       "prev_pct_diff": 0.1272,
       "trigger_date": "2026-06-02",
       "trigger_price": 30.375,
@@ -890,7 +890,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:15.151972+00:00"
+      "last_checked": "2026-06-02T19:00:14.426249+00:00"
     },
     {
       "symbol": "NEE",
@@ -901,11 +901,11 @@
       "earnings_close": 96.25,
       "high_30d": 94.48,
       "status": "watching",
-      "sma3": 84.905,
+      "sma3": 84.9167,
       "prev_sma3": 84.53,
-      "sma9": 86.1322,
+      "sma9": 86.1361,
       "prev_sma9": 86.3117,
-      "pct_diff": -1.4248,
+      "pct_diff": -1.4157,
       "prev_pct_diff": -2.0642,
       "trigger_date": null,
       "trigger_price": null,
@@ -917,7 +917,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:15.271019+00:00"
+      "last_checked": "2026-06-02T19:00:14.767814+00:00"
     },
     {
       "symbol": "UNP",
@@ -928,11 +928,11 @@
       "earnings_close": 269.858,
       "high_30d": 250.8766,
       "status": "watching",
-      "sma3": 264.0433,
+      "sma3": 264.2633,
       "prev_sma3": 262.47,
-      "sma9": 265.325,
+      "sma9": 265.3983,
       "prev_sma9": 266.8472,
-      "pct_diff": -0.4831,
+      "pct_diff": -0.4277,
       "prev_pct_diff": -1.6403,
       "trigger_date": null,
       "trigger_price": null,
@@ -944,7 +944,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:15.427875+00:00"
+      "last_checked": "2026-06-02T19:00:14.879101+00:00"
     },
     {
       "symbol": "WST",
@@ -955,11 +955,11 @@
       "earnings_close": 309.4668,
       "high_30d": 277.7906,
       "status": "watching",
-      "sma3": 314.7183,
+      "sma3": 314.85,
       "prev_sma3": 313.57,
-      "sma9": 317.2533,
+      "sma9": 317.2972,
       "prev_sma9": 316.6261,
-      "pct_diff": -0.799,
+      "pct_diff": -0.7713,
       "prev_pct_diff": -0.9652,
       "trigger_date": null,
       "trigger_price": null,
@@ -971,7 +971,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:15.552753+00:00"
+      "last_checked": "2026-06-02T19:00:15.003988+00:00"
     },
     {
       "symbol": "BEN",
@@ -982,11 +982,11 @@
       "earnings_close": 29.46,
       "high_30d": 27.73,
       "status": "watching",
-      "sma3": 31.1467,
+      "sma3": 31.15,
       "prev_sma3": 31.035,
-      "sma9": 31.21,
+      "sma9": 31.2111,
       "prev_sma9": 31.2422,
-      "pct_diff": -0.2029,
+      "pct_diff": -0.1958,
       "prev_pct_diff": -0.6633,
       "trigger_date": null,
       "trigger_price": null,
@@ -998,7 +998,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:15.787801+00:00"
+      "last_checked": "2026-06-02T19:00:15.366593+00:00"
     },
     {
       "symbol": "CNC",
@@ -1009,11 +1009,11 @@
       "earnings_close": 49.57,
       "high_30d": 43.5,
       "status": "watching",
-      "sma3": 60.8634,
+      "sma3": 60.875,
       "prev_sma3": 61.2017,
-      "sma9": 59.9745,
+      "sma9": 59.9783,
       "prev_sma9": 59.7717,
-      "pct_diff": 1.4821,
+      "pct_diff": 1.495,
       "prev_pct_diff": 2.3925,
       "trigger_date": null,
       "trigger_price": null,
@@ -1025,7 +1025,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:15.904307+00:00"
+      "last_checked": "2026-06-02T19:00:15.491848+00:00"
     },
     {
       "symbol": "NXPI",
@@ -1036,11 +1036,11 @@
       "earnings_close": 289.25,
       "high_30d": 244.04,
       "status": "watching",
-      "sma3": 318.7303,
+      "sma3": 319.0003,
       "prev_sma3": 315.3137,
-      "sma9": 323.2712,
+      "sma9": 323.3612,
       "prev_sma9": 324.2668,
-      "pct_diff": -1.4047,
+      "pct_diff": -1.3486,
       "prev_pct_diff": -2.761,
       "trigger_date": null,
       "trigger_price": null,
@@ -1052,7 +1052,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.024289+00:00"
+      "last_checked": "2026-06-02T19:00:15.732733+00:00"
     },
     {
       "symbol": "SBUX",
@@ -1063,11 +1063,11 @@
       "earnings_close": 104.8852,
       "high_30d": 99.4173,
       "status": "watching",
-      "sma3": 96.52,
+      "sma3": 96.5233,
       "prev_sma3": 96.5233,
-      "sma9": 98.6394,
+      "sma9": 98.6406,
       "prev_sma9": 99.3328,
-      "pct_diff": -2.1487,
+      "pct_diff": -2.1464,
       "prev_pct_diff": -2.8283,
       "trigger_date": null,
       "trigger_price": null,
@@ -1079,7 +1079,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.188958+00:00"
+      "last_checked": "2026-06-02T19:00:15.859812+00:00"
     },
     {
       "symbol": "V",
@@ -1090,11 +1090,11 @@
       "earnings_close": 334.1672,
       "high_30d": 316.3641,
       "status": "watching",
-      "sma3": 318.715,
+      "sma3": 318.76,
       "prev_sma3": 319.4733,
-      "sma9": 322.8861,
+      "sma9": 322.9011,
       "prev_sma9": 324.2817,
-      "pct_diff": -1.2918,
+      "pct_diff": -1.2825,
       "prev_pct_diff": -1.4828,
       "trigger_date": null,
       "trigger_price": null,
@@ -1106,7 +1106,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.322706+00:00"
+      "last_checked": "2026-06-02T19:00:16.004989+00:00"
     },
     {
       "symbol": "ADP",
@@ -1117,11 +1117,11 @@
       "earnings_close": 215.06,
       "high_30d": 210.66,
       "status": "watching",
-      "sma3": 231.24,
+      "sma3": 231.3316,
       "prev_sma3": 231.475,
-      "sma9": 225.1433,
+      "sma9": 225.1739,
       "prev_sma9": 223.705,
-      "pct_diff": 2.7079,
+      "pct_diff": 2.7347,
       "prev_pct_diff": 3.4733,
       "trigger_date": null,
       "trigger_price": null,
@@ -1133,7 +1133,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.466238+00:00"
+      "last_checked": "2026-06-02T19:00:16.149118+00:00"
     },
     {
       "symbol": "GOOG",
@@ -1144,11 +1144,11 @@
       "earnings_close": 381.94,
       "high_30d": 348.52,
       "status": "watching",
-      "sma3": 365.9033,
+      "sma3": 365.7367,
       "prev_sma3": 369.1707,
-      "sma9": 375.7372,
+      "sma9": 375.6817,
       "prev_sma9": 378.635,
-      "pct_diff": -2.6172,
+      "pct_diff": -2.6472,
       "prev_pct_diff": -2.4996,
       "trigger_date": null,
       "trigger_price": null,
@@ -1160,7 +1160,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.603244+00:00"
+      "last_checked": "2026-06-02T19:00:16.369032+00:00"
     },
     {
       "symbol": "GOOGL",
@@ -1171,11 +1171,11 @@
       "earnings_close": 384.8,
       "high_30d": 350.34,
       "status": "watching",
-      "sma3": 369.3498,
+      "sma3": 369.1681,
       "prev_sma3": 372.8798,
-      "sma9": 379.5144,
+      "sma9": 379.4538,
       "prev_sma9": 382.5222,
-      "pct_diff": -2.6783,
+      "pct_diff": -2.7107,
       "prev_pct_diff": -2.5207,
       "trigger_date": null,
       "trigger_price": null,
@@ -1187,7 +1187,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.840286+00:00"
+      "last_checked": "2026-06-02T19:00:16.492663+00:00"
     },
     {
       "symbol": "HUM",
@@ -1198,11 +1198,11 @@
       "earnings_close": 243.12,
       "high_30d": 229.72,
       "status": "watching",
-      "sma3": 325.1083,
+      "sma3": 324.715,
       "prev_sma3": 326.155,
-      "sma9": 314.7886,
+      "sma9": 314.6575,
       "prev_sma9": 312.9919,
-      "pct_diff": 3.2783,
+      "pct_diff": 3.1963,
       "prev_pct_diff": 4.2056,
       "trigger_date": null,
       "trigger_price": null,
@@ -1214,7 +1214,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:16.951993+00:00"
+      "last_checked": "2026-06-02T19:00:16.828796+00:00"
     },
     {
       "symbol": "ORLY",
@@ -1225,11 +1225,11 @@
       "earnings_close": 99.4,
       "high_30d": 94.4,
       "status": "watching",
-      "sma3": 86.2917,
+      "sma3": 86.295,
       "prev_sma3": 86.1467,
-      "sma9": 87.3344,
+      "sma9": 87.3356,
       "prev_sma9": 87.5806,
-      "pct_diff": -1.194,
+      "pct_diff": -1.1914,
       "prev_pct_diff": -1.6372,
       "trigger_date": null,
       "trigger_price": null,
@@ -1241,7 +1241,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:17.072784+00:00"
+      "last_checked": "2026-06-02T19:00:16.938155+00:00"
     },
     {
       "symbol": "QCOM",
@@ -1252,11 +1252,11 @@
       "earnings_close": 179.58,
       "high_30d": 156,
       "status": "watching",
-      "sma3": 237.3246,
+      "sma3": 237.8113,
       "prev_sma3": 233.7846,
-      "sma9": 240.9127,
+      "sma9": 241.0749,
       "prev_sma9": 239.6671,
-      "pct_diff": -1.4893,
+      "pct_diff": -1.3538,
       "prev_pct_diff": -2.4544,
       "trigger_date": null,
       "trigger_price": null,
@@ -1268,7 +1268,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:17.429771+00:00"
+      "last_checked": "2026-06-02T19:00:17.052014+00:00"
     },
     {
       "symbol": "AIG",
@@ -1279,11 +1279,11 @@
       "earnings_close": 78.77,
       "high_30d": 78.68,
       "status": "watching",
-      "sma3": 73.79,
+      "sma3": 73.8217,
       "prev_sma3": 73.605,
-      "sma9": 74.3456,
+      "sma9": 74.3561,
       "prev_sma9": 74.5156,
-      "pct_diff": -0.7473,
+      "pct_diff": -0.7188,
       "prev_pct_diff": -1.222,
       "trigger_date": null,
       "trigger_price": null,
@@ -1295,7 +1295,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:17.564088+00:00"
+      "last_checked": "2026-06-02T19:00:17.194910+00:00"
     },
     {
       "symbol": "CARR",
@@ -1306,11 +1306,11 @@
       "earnings_close": 66.9316,
       "high_30d": 64.4305,
       "status": "triggered",
-      "sma3": 66.6467,
+      "sma3": 66.6033,
       "prev_sma3": 65.4367,
-      "sma9": 64.8567,
+      "sma9": 64.8422,
       "prev_sma9": 64.6636,
-      "pct_diff": 2.7599,
+      "pct_diff": 2.716,
       "prev_pct_diff": 1.1956,
       "trigger_date": "2026-06-02",
       "trigger_price": 67.29,
@@ -1322,7 +1322,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:17.956901+00:00"
+      "last_checked": "2026-06-02T19:00:17.401642+00:00"
     },
     {
       "symbol": "CAT",
@@ -1332,24 +1332,24 @@
       "earnings_gain_pct": 9.88,
       "earnings_close": 890.11,
       "high_30d": 835.24,
-      "status": "watching",
-      "sma3": 891.5067,
+      "status": "triggered",
+      "sma3": 892.1117,
       "prev_sma3": 875.4117,
-      "sma9": 886.9144,
+      "sma9": 887.1161,
       "prev_sma9": 887.0506,
-      "pct_diff": 0.5178,
+      "pct_diff": 0.5631,
       "prev_pct_diff": -1.3121,
-      "trigger_date": null,
-      "trigger_price": null,
-      "trigger_sma3": null,
-      "trigger_sma9": null,
-      "trigger_pct_diff": null,
+      "trigger_date": "2026-06-02",
+      "trigger_price": 908.34,
+      "trigger_sma3": 892.1117,
+      "trigger_sma9": 887.1161,
+      "trigger_pct_diff": 0.5631,
       "potential_trigger": false,
       "potential_price": null,
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:18.080726+00:00"
+      "last_checked": "2026-06-02T19:00:18.272682+00:00"
     },
     {
       "symbol": "MO",
@@ -1360,11 +1360,11 @@
       "earnings_close": 72.65,
       "high_30d": 68.2,
       "status": "watching",
-      "sma3": 68.9867,
+      "sma3": 69.03,
       "prev_sma3": 68.8533,
-      "sma9": 70.1608,
+      "sma9": 70.1753,
       "prev_sma9": 70.5208,
-      "pct_diff": -1.6735,
+      "pct_diff": -1.632,
       "prev_pct_diff": -2.3645,
       "trigger_date": null,
       "trigger_price": null,
@@ -1376,7 +1376,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:18.550607+00:00"
+      "last_checked": "2026-06-02T19:00:18.553436+00:00"
     },
     {
       "symbol": "TXT",
@@ -1387,11 +1387,11 @@
       "earnings_close": 95.96,
       "high_30d": 93.11,
       "status": "watching",
-      "sma3": 90.7633,
+      "sma3": 90.81,
       "prev_sma3": 90.1,
-      "sma9": 91.4478,
+      "sma9": 91.4633,
       "prev_sma9": 91.5461,
-      "pct_diff": -0.7485,
+      "pct_diff": -0.7143,
       "prev_pct_diff": -1.5797,
       "trigger_date": null,
       "trigger_price": null,
@@ -1403,7 +1403,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:18.670201+00:00"
+      "last_checked": "2026-06-02T19:00:18.962366+00:00"
     },
     {
       "symbol": "XEL",
@@ -1414,11 +1414,11 @@
       "earnings_close": 82.95,
       "high_30d": 82.77,
       "status": "watching",
-      "sma3": 77.1,
+      "sma3": 77.0816,
       "prev_sma3": 76.8133,
-      "sma9": 78.545,
+      "sma9": 78.5389,
       "prev_sma9": 78.8761,
-      "pct_diff": -1.8397,
+      "pct_diff": -1.8554,
       "prev_pct_diff": -2.6152,
       "trigger_date": null,
       "trigger_price": null,
@@ -1430,7 +1430,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:18.998534+00:00"
+      "last_checked": "2026-06-02T19:00:19.079145+00:00"
     },
     {
       "symbol": "CBOE",
@@ -1441,11 +1441,11 @@
       "earnings_close": 326.2761,
       "high_30d": 308.7329,
       "status": "watching",
-      "sma3": 285.1238,
+      "sma3": 284.4255,
       "prev_sma3": 296.1755,
-      "sma9": 319.6552,
+      "sma9": 319.4224,
       "prev_sma9": 327.5529,
-      "pct_diff": -10.8027,
+      "pct_diff": -10.9563,
       "prev_pct_diff": -9.5793,
       "trigger_date": null,
       "trigger_price": null,
@@ -1457,7 +1457,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:19.151384+00:00"
+      "last_checked": "2026-06-02T19:00:19.198749+00:00"
     },
     {
       "symbol": "TSN",
@@ -1468,11 +1468,11 @@
       "earnings_close": 68.75,
       "high_30d": 65.64,
       "status": "watching",
-      "sma3": 60.0383,
+      "sma3": 60.0367,
       "prev_sma3": 60.0783,
-      "sma9": 61.5511,
+      "sma9": 61.5506,
       "prev_sma9": 62.2656,
-      "pct_diff": -2.4578,
+      "pct_diff": -2.4596,
       "prev_pct_diff": -3.5127,
       "trigger_date": null,
       "trigger_price": null,
@@ -1484,7 +1484,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:19.532800+00:00"
+      "last_checked": "2026-06-02T19:00:19.566436+00:00"
     },
     {
       "symbol": "AMD",
@@ -1495,11 +1495,11 @@
       "earnings_close": 421.39,
       "high_30d": 360.54,
       "status": "triggered",
-      "sma3": 512.94,
+      "sma3": 512.6434,
       "prev_sma3": 509.9333,
-      "sma9": 511.8473,
+      "sma9": 511.7485,
       "prev_sma9": 509.5001,
-      "pct_diff": 0.2135,
+      "pct_diff": 0.1749,
       "prev_pct_diff": 0.085,
       "trigger_date": "2026-06-02",
       "trigger_price": 514.215,
@@ -1511,7 +1511,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:19.650328+00:00"
+      "last_checked": "2026-06-02T19:00:19.683103+00:00"
     },
     {
       "symbol": "DD",
@@ -1522,11 +1522,11 @@
       "earnings_close": 49.0454,
       "high_30d": 47.6609,
       "status": "triggered",
-      "sma3": 48.365,
+      "sma3": 48.4117,
       "prev_sma3": 47.9483,
-      "sma9": 47.9933,
+      "sma9": 48.0089,
       "prev_sma9": 47.8744,
-      "pct_diff": 0.7744,
+      "pct_diff": 0.839,
       "prev_pct_diff": 0.1543,
       "trigger_date": "2026-06-02",
       "trigger_price": 48.815,
@@ -1538,7 +1538,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:20.058690+00:00"
+      "last_checked": "2026-06-02T19:00:20.090828+00:00"
     },
     {
       "symbol": "DOC",
@@ -1549,11 +1549,11 @@
       "earnings_close": 19.3973,
       "high_30d": 17.2785,
       "status": "watching",
-      "sma3": 19.1967,
+      "sma3": 19.21,
       "prev_sma3": 19.1,
-      "sma9": 19.3544,
+      "sma9": 19.3589,
       "prev_sma9": 19.4217,
-      "pct_diff": -0.8152,
+      "pct_diff": -0.7691,
       "prev_pct_diff": -1.6562,
       "trigger_date": null,
       "trigger_price": null,
@@ -1565,7 +1565,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:20.236528+00:00"
+      "last_checked": "2026-06-02T19:00:20.209906+00:00"
     },
     {
       "symbol": "EMR",
@@ -1576,11 +1576,11 @@
       "earnings_close": 147.3943,
       "high_30d": 146.1792,
       "status": "watching",
-      "sma3": 141.185,
+      "sma3": 141.2617,
       "prev_sma3": 141.1617,
-      "sma9": 141.7606,
+      "sma9": 141.7861,
       "prev_sma9": 141.7017,
-      "pct_diff": -0.406,
+      "pct_diff": -0.3699,
       "prev_pct_diff": -0.3811,
       "trigger_date": null,
       "trigger_price": null,
@@ -1592,7 +1592,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:20.579204+00:00"
+      "last_checked": "2026-06-02T19:00:20.610787+00:00"
     },
     {
       "symbol": "ROK",
@@ -1603,11 +1603,11 @@
       "earnings_close": 434.5894,
       "high_30d": 414.4515,
       "status": "triggered",
-      "sma3": 459.3533,
+      "sma3": 459.5033,
       "prev_sma3": 456.07,
-      "sma9": 455.6905,
+      "sma9": 455.7406,
       "prev_sma9": 455.3411,
-      "pct_diff": 0.8038,
+      "pct_diff": 0.8256,
       "prev_pct_diff": 0.1601,
       "trigger_date": "2026-06-02",
       "trigger_price": 458.055,
@@ -1619,7 +1619,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:20.738938+00:00"
+      "last_checked": "2026-06-02T19:00:20.726859+00:00"
     },
     {
       "symbol": "APP",
@@ -1630,11 +1630,11 @@
       "earnings_close": 498.87,
       "high_30d": 490.96,
       "status": "watching",
-      "sma3": 605.6858,
+      "sma3": 605.1,
       "prev_sma3": 607.9916,
-      "sma9": 601.7464,
+      "sma9": 601.5511,
       "prev_sma9": 598.8389,
-      "pct_diff": 0.6547,
+      "pct_diff": 0.59,
       "prev_pct_diff": 1.5284,
       "trigger_date": null,
       "trigger_price": null,
@@ -1646,7 +1646,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:21.098304+00:00"
+      "last_checked": "2026-06-02T19:00:21.059260+00:00"
     },
     {
       "symbol": "CVS",
@@ -1657,11 +1657,11 @@
       "earnings_close": 86.86,
       "high_30d": 83.9,
       "status": "watching",
-      "sma3": 90.2383,
+      "sma3": 90.22,
       "prev_sma3": 90.4033,
-      "sma9": 91.1994,
+      "sma9": 91.1933,
       "prev_sma9": 91.4139,
-      "pct_diff": -1.0539,
+      "pct_diff": -1.0673,
       "prev_pct_diff": -1.1055,
       "trigger_date": null,
       "trigger_price": null,
@@ -1673,7 +1673,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:21.233531+00:00"
+      "last_checked": "2026-06-02T19:00:21.222634+00:00"
     },
     {
       "symbol": "DIS",
@@ -1700,7 +1700,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:21.623225+00:00"
+      "last_checked": "2026-06-02T19:00:21.585880+00:00"
     },
     {
       "symbol": "FTNT",
@@ -1711,11 +1711,11 @@
       "earnings_close": 107.97,
       "high_30d": 89.95,
       "status": "triggered",
-      "sma3": 146.2583,
+      "sma3": 146.3317,
       "prev_sma3": 145.4467,
-      "sma9": 138.1172,
+      "sma9": 138.1417,
       "prev_sma9": 136.1,
-      "pct_diff": 5.8943,
+      "pct_diff": 5.9287,
       "prev_pct_diff": 6.8675,
       "trigger_date": "2026-05-30",
       "trigger_price": 137.97,
@@ -1727,7 +1727,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:21.749731+00:00"
+      "last_checked": "2026-06-02T19:00:21.708134+00:00"
     },
     {
       "symbol": "PTC",
@@ -1738,11 +1738,11 @@
       "earnings_close": 147.65,
       "high_30d": 144.36,
       "status": "watching",
-      "sma3": 142.5033,
+      "sma3": 142.5767,
       "prev_sma3": 143.925,
-      "sma9": 141.2028,
+      "sma9": 141.2272,
       "prev_sma9": 141.2961,
-      "pct_diff": 0.9211,
+      "pct_diff": 0.9555,
       "prev_pct_diff": 1.8606,
       "trigger_date": null,
       "trigger_price": null,
@@ -1754,7 +1754,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:22.149882+00:00"
+      "last_checked": "2026-06-02T19:00:22.108400+00:00"
     },
     {
       "symbol": "UBER",
@@ -1765,11 +1765,11 @@
       "earnings_close": 79.17,
       "high_30d": 77.49,
       "status": "watching",
-      "sma3": 72.5247,
+      "sma3": 72.5133,
       "prev_sma3": 73.3016,
-      "sma9": 71.6832,
+      "sma9": 71.6794,
       "prev_sma9": 71.5655,
-      "pct_diff": 1.1738,
+      "pct_diff": 1.1633,
       "prev_pct_diff": 2.4259,
       "trigger_date": null,
       "trigger_price": null,
@@ -1781,7 +1781,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:22.280501+00:00"
+      "last_checked": "2026-06-02T19:00:22.273697+00:00"
     },
     {
       "symbol": "AKAM",
@@ -1792,11 +1792,11 @@
       "earnings_close": 147.71,
       "high_30d": 121.99,
       "status": "triggered",
-      "sma3": 159.1717,
+      "sma3": 159.0317,
       "prev_sma3": 156.4133,
-      "sma9": 151.1911,
+      "sma9": 151.1444,
       "prev_sma9": 149.1756,
-      "pct_diff": 5.2785,
+      "pct_diff": 5.2183,
       "prev_pct_diff": 4.8519,
       "trigger_date": "2026-05-30",
       "trigger_price": 149.54,
@@ -1808,7 +1808,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:22.673495+00:00"
+      "last_checked": "2026-06-02T19:00:22.633133+00:00"
     },
     {
       "symbol": "DDOG",
@@ -1819,11 +1819,11 @@
       "earnings_close": 188.73,
       "high_30d": 146.69,
       "status": "watching",
-      "sma3": 271.4033,
+      "sma3": 271.285,
       "prev_sma3": 273.76,
-      "sma9": 250.3478,
+      "sma9": 250.3083,
       "prev_sma9": 245.29,
-      "pct_diff": 8.4105,
+      "pct_diff": 8.3803,
       "prev_pct_diff": 11.6067,
       "trigger_date": null,
       "trigger_price": null,
@@ -1835,7 +1835,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:22.793284+00:00"
+      "last_checked": "2026-06-02T19:00:22.776988+00:00"
     },
     {
       "symbol": "MNST",
@@ -1846,11 +1846,11 @@
       "earnings_close": 86.29,
       "high_30d": 78.23,
       "status": "watching",
-      "sma3": 88.4767,
+      "sma3": 88.51,
       "prev_sma3": 88.6367,
-      "sma9": 88.5189,
+      "sma9": 88.53,
       "prev_sma9": 88.6111,
-      "pct_diff": -0.0477,
+      "pct_diff": -0.0226,
       "prev_pct_diff": 0.0288,
       "trigger_date": null,
       "trigger_price": null,
@@ -1862,7 +1862,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:23.198287+00:00"
+      "last_checked": "2026-06-02T19:00:23.155861+00:00"
     },
     {
       "symbol": "VTRS",
@@ -1873,11 +1873,11 @@
       "earnings_close": 17.2632,
       "high_30d": 15.8337,
       "status": "watching",
-      "sma3": 15.7183,
+      "sma3": 15.7533,
       "prev_sma3": 15.735,
-      "sma9": 15.98,
+      "sma9": 15.9917,
       "prev_sma9": 16.0456,
-      "pct_diff": -1.6375,
+      "pct_diff": -1.4904,
       "prev_pct_diff": -1.9355,
       "trigger_date": null,
       "trigger_price": null,
@@ -1889,7 +1889,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:23.316514+00:00"
+      "last_checked": "2026-06-02T19:00:23.325355+00:00"
     },
     {
       "symbol": "XYZ",
@@ -1900,11 +1900,11 @@
       "earnings_close": 74.85,
       "high_30d": 73.89,
       "status": "watching",
-      "sma3": 74.905,
+      "sma3": 74.86,
       "prev_sma3": 75.7317,
-      "sma9": 74.6717,
+      "sma9": 74.6567,
       "prev_sma9": 74.3367,
-      "pct_diff": 0.3125,
+      "pct_diff": 0.2724,
       "prev_pct_diff": 1.8766,
       "trigger_date": null,
       "trigger_price": null,
@@ -1916,7 +1916,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:23.434017+00:00"
+      "last_checked": "2026-06-02T19:00:23.681672+00:00"
     },
     {
       "symbol": "FOX",
@@ -1927,11 +1927,11 @@
       "earnings_close": 61.18,
       "high_30d": 58.57,
       "status": "watching",
-      "sma3": 59.1483,
+      "sma3": 59.0733,
       "prev_sma3": 59.255,
-      "sma9": 58.6672,
+      "sma9": 58.6422,
       "prev_sma9": 58.7161,
-      "pct_diff": 0.8201,
+      "pct_diff": 0.7352,
       "prev_pct_diff": 0.9178,
       "trigger_date": null,
       "trigger_price": null,
@@ -1943,7 +1943,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:23.803188+00:00"
+      "last_checked": "2026-06-02T19:00:23.809945+00:00"
     },
     {
       "symbol": "FOXA",
@@ -1954,11 +1954,11 @@
       "earnings_close": 67.72,
       "high_30d": 65.56,
       "status": "watching",
-      "sma3": 66.0967,
+      "sma3": 66.015,
       "prev_sma3": 66.15,
-      "sma9": 65.4678,
+      "sma9": 65.4406,
       "prev_sma9": 65.5058,
-      "pct_diff": 0.9606,
+      "pct_diff": 0.8778,
       "prev_pct_diff": 0.9834,
       "trigger_date": null,
       "trigger_price": null,
@@ -1970,7 +1970,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:23.922392+00:00"
+      "last_checked": "2026-06-02T19:00:24.207320+00:00"
     },
     {
       "symbol": "Q",
@@ -1981,11 +1981,11 @@
       "earnings_close": 168.2753,
       "high_30d": 153.1629,
       "status": "watching",
-      "sma3": 153.6159,
+      "sma3": 153.6575,
       "prev_sma3": 151.8092,
-      "sma9": 155.617,
+      "sma9": 155.6309,
       "prev_sma9": 156.1103,
-      "pct_diff": -1.2859,
+      "pct_diff": -1.2679,
       "prev_pct_diff": -2.7552,
       "trigger_date": null,
       "trigger_price": null,
@@ -1997,7 +1997,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:24.383807+00:00"
+      "last_checked": "2026-06-02T19:00:24.343318+00:00"
     },
     {
       "symbol": "CSCO",
@@ -2008,11 +2008,11 @@
       "earnings_close": 115.53,
       "high_30d": 101.87,
       "status": "triggered",
-      "sma3": 125.3883,
+      "sma3": 125.3237,
       "prev_sma3": 122.8283,
-      "sma9": 121.5539,
+      "sma9": 121.5323,
       "prev_sma9": 120.6328,
-      "pct_diff": 3.1545,
+      "pct_diff": 3.1196,
       "prev_pct_diff": 1.82,
       "trigger_date": "2026-06-01",
       "trigger_price": 120.64,
@@ -2024,7 +2024,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:25.295029+00:00"
+      "last_checked": "2026-06-02T19:00:24.729155+00:00"
     },
     {
       "symbol": "A",
@@ -2035,11 +2035,11 @@
       "earnings_close": 135.38,
       "high_30d": 122.09,
       "status": "watching",
-      "sma3": 134.9883,
+      "sma3": 134.9233,
       "prev_sma3": 135.11,
-      "sma9": 133.21,
+      "sma9": 133.1883,
       "prev_sma9": 131.0783,
-      "pct_diff": 1.335,
+      "pct_diff": 1.3027,
       "prev_pct_diff": 3.0758,
       "trigger_date": null,
       "trigger_price": null,
@@ -2051,7 +2051,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:25.516209+00:00"
+      "last_checked": "2026-06-02T19:00:24.857692+00:00"
     },
     {
       "symbol": "BBY",
@@ -2062,11 +2062,11 @@
       "earnings_close": 74.74,
       "high_30d": 66.94,
       "status": "watching",
-      "sma3": 74.0813,
+      "sma3": 74.1046,
       "prev_sma3": 74.8356,
-      "sma9": 74.3196,
+      "sma9": 74.3274,
       "prev_sma9": 73.2296,
-      "pct_diff": -0.3207,
+      "pct_diff": -0.2997,
       "prev_pct_diff": 2.193,
       "trigger_date": null,
       "trigger_price": null,
@@ -2078,7 +2078,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:25.901060+00:00"
+      "last_checked": "2026-06-02T19:00:25.254041+00:00"
     },
     {
       "symbol": "DLTR",
@@ -2089,11 +2089,11 @@
       "earnings_close": 113,
       "high_30d": 107.25,
       "status": "watching",
-      "sma3": 110.81,
+      "sma3": 110.6067,
       "prev_sma3": 111.7333,
-      "sma9": 111.0934,
+      "sma9": 111.0256,
       "prev_sma9": 109.2445,
-      "pct_diff": -0.2551,
+      "pct_diff": -0.3774,
       "prev_pct_diff": 2.2782,
       "trigger_date": null,
       "trigger_price": null,
@@ -2105,7 +2105,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:26.013946+00:00"
+      "last_checked": "2026-06-02T19:00:25.412691+00:00"
     },
     {
       "symbol": "HRL",
@@ -2116,11 +2116,11 @@
       "earnings_close": 23.59,
       "high_30d": 21.76,
       "status": "watching",
-      "sma3": 23.3383,
+      "sma3": 23.3583,
       "prev_sma3": 23.2933,
-      "sma9": 23.1156,
+      "sma9": 23.1222,
       "prev_sma9": 22.8668,
-      "pct_diff": 0.9638,
+      "pct_diff": 1.0211,
       "prev_pct_diff": 1.8655,
       "trigger_date": null,
       "trigger_price": null,
@@ -2132,7 +2132,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:26.419214+00:00"
+      "last_checked": "2026-06-02T19:00:25.777809+00:00"
     },
     {
       "symbol": "NTAP",
@@ -2143,11 +2143,11 @@
       "earnings_close": 174.29,
       "high_30d": 142.74,
       "status": "watching",
-      "sma3": 176.8083,
+      "sma3": 176.885,
       "prev_sma3": 177.05,
-      "sma9": 165.06,
+      "sma9": 165.0856,
       "prev_sma9": 161.53,
-      "pct_diff": 7.1176,
+      "pct_diff": 7.1475,
       "prev_pct_diff": 9.6081,
       "trigger_date": null,
       "trigger_price": null,
@@ -2159,22 +2159,22 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:26.528675+00:00"
+      "last_checked": "2026-06-02T19:00:25.883710+00:00"
     },
     {
       "symbol": "HPE",
       "added_date": "2026-06-02",
       "source": "earnings",
       "earnings_date": "2026-06-01",
-      "earnings_gain_pct": 16.43,
-      "earnings_close": 54.72,
+      "earnings_gain_pct": 17.14,
+      "earnings_close": 55.0549,
       "high_30d": 47.0,
       "status": "triggered",
-      "sma3": 52.0483,
+      "sma3": 52.145,
       "prev_sma3": 48.845,
-      "sma9": 44.5194,
+      "sma9": 44.5517,
       "prev_sma9": 42.5478,
-      "pct_diff": 16.9115,
+      "pct_diff": 17.0439,
       "prev_pct_diff": 14.8004,
       "trigger_date": "2026-06-02",
       "trigger_price": 47.0,
@@ -2186,7 +2186,7 @@
       "proj_sma3": null,
       "proj_sma9": null,
       "proj_pct_diff": null,
-      "last_checked": "2026-06-02T18:30:26.867216+00:00"
+      "last_checked": "2026-06-02T19:00:26.304044+00:00"
     }
   ]
 }
