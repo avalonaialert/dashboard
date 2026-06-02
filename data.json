@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T08:46:04.702352+00:00",
+  "last_updated": "2026-06-02T09:01:05.107543+00:00",
   "today": {
     "date": "2026-06-02",
     "alerts": {
@@ -30,6 +30,15 @@
           "symbol": "NVDA",
           "msg_id": "19e87822f0f3038a",
           "received_at": "2026-06-02T08:45:14+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 226.9275,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NVDA",
+          "msg_id": "19e878fec90bd936",
+          "received_at": "2026-06-02T09:00:14+00:00"
         }
       ],
       "GLW": [
@@ -59,6 +68,15 @@
           "symbol": "GLW",
           "msg_id": "19e87824360bded1",
           "received_at": "2026-06-02T08:45:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 184.98000000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e87901ac05f390",
+          "received_at": "2026-06-02T09:00:26+00:00"
         }
       ],
       "AVGO": [
@@ -88,6 +106,15 @@
           "symbol": "AVGO",
           "msg_id": "19e87824dcdc01c2",
           "received_at": "2026-06-02T08:45:22+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 488.6,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e87900221a7137",
+          "received_at": "2026-06-02T09:00:19+00:00"
         }
       ],
       "NTAP": [
@@ -119,6 +146,24 @@
           "symbol": "SLV",
           "msg_id": "19e876865e62b125",
           "received_at": "2026-06-02T08:17:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 69.14,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SLV",
+          "msg_id": "19e879063f9ba269",
+          "received_at": "2026-06-02T09:00:44+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 69.3075,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SLV",
+          "msg_id": "19e8782f8e6d2976",
+          "received_at": "2026-06-02T08:46:06+00:00"
         }
       ],
       "ARM": [
