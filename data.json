@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T16:51:05.999249+00:00",
+  "last_updated": "2026-06-02T16:52:05.674465+00:00",
   "today": {
     "date": "2026-06-02",
     "alerts": {
@@ -2055,6 +2055,15 @@
           "symbol": "AAPL",
           "msg_id": "19e891b63e8052ff",
           "received_at": "2026-06-02T16:12:12+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 312.89,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AAPL",
+          "msg_id": "19e893f1b9f5626c",
+          "received_at": "2026-06-02T16:51:13+00:00"
         }
       ],
       "LRCX": [
@@ -3059,7 +3068,7 @@
         "entry_price": 54.92,
         "entry_time": "2026-06-02T13:35:08+00:00",
         "current_price": 59.86,
-        "current_time": "2026-06-02T16:51:04.800899+00:00",
+        "current_time": "2026-06-02T16:52:04.458947+00:00",
         "highest_price": 61.26,
         "highest_time": "2026-06-02T15:53:05.096937+00:00"
       },
@@ -3070,7 +3079,7 @@
         "entry_price": 26.07,
         "entry_time": "2026-06-02T13:46:37+00:00",
         "current_price": 28.8,
-        "current_time": "2026-06-02T16:51:04.967399+00:00",
+        "current_time": "2026-06-02T16:52:04.623046+00:00",
         "highest_price": 28.94,
         "highest_time": "2026-06-02T16:05:05.285382+00:00"
       },
@@ -3081,7 +3090,7 @@
         "entry_price": 66.24,
         "entry_time": "2026-06-02T13:49:11+00:00",
         "current_price": 69.33,
-        "current_time": "2026-06-02T16:51:05.157683+00:00",
+        "current_time": "2026-06-02T16:52:04.804870+00:00",
         "highest_price": 71.78,
         "highest_time": "2026-06-02T15:25:08.922638+00:00"
       },
@@ -3091,8 +3100,8 @@
         "expiry": "2026-12-18",
         "entry_price": 39.53,
         "entry_time": "2026-06-02T13:58:09+00:00",
-        "current_price": 44.54,
-        "current_time": "2026-06-02T16:51:04.438510+00:00",
+        "current_price": 45.24,
+        "current_time": "2026-06-02T16:52:04.088235+00:00",
         "highest_price": 47.11,
         "highest_time": "2026-06-02T15:14:09.126453+00:00"
       },
@@ -3102,8 +3111,8 @@
         "expiry": "2026-12-18",
         "entry_price": 59.97,
         "entry_time": "2026-06-02T13:59:10+00:00",
-        "current_price": 61.55,
-        "current_time": "2026-06-02T16:51:04.624129+00:00",
+        "current_price": 61.78,
+        "current_time": "2026-06-02T16:52:04.299284+00:00",
         "highest_price": 64.03,
         "highest_time": "2026-06-02T15:15:07.052037+00:00"
       },
@@ -3113,8 +3122,8 @@
         "expiry": "2026-12-18",
         "entry_price": 149.79,
         "entry_time": "2026-06-02T14:00:23+00:00",
-        "current_price": 142.72,
-        "current_time": "2026-06-02T16:51:05.321070+00:00",
+        "current_price": 145.25,
+        "current_time": "2026-06-02T16:52:04.973334+00:00",
         "highest_price": 151.01,
         "highest_time": "2026-06-02T14:16:07.671644+00:00"
       },
@@ -3124,8 +3133,8 @@
         "expiry": "2026-12-18",
         "entry_price": 116.08,
         "entry_time": "2026-06-02T14:00:22+00:00",
-        "current_price": 112.67,
-        "current_time": "2026-06-02T16:51:05.495564+00:00",
+        "current_price": 110.8,
+        "current_time": "2026-06-02T16:52:05.162734+00:00",
         "highest_price": 116.08,
         "highest_time": "2026-06-02T14:01:08.751599+00:00"
       },
@@ -3135,8 +3144,8 @@
         "expiry": "2026-12-18",
         "entry_price": 28.47,
         "entry_time": "2026-06-02T14:03:45+00:00",
-        "current_price": 26.16,
-        "current_time": "2026-06-02T16:51:04.259391+00:00",
+        "current_price": 26.2,
+        "current_time": "2026-06-02T16:52:03.911926+00:00",
         "highest_price": 29.16,
         "highest_time": "2026-06-02T14:06:08.082737+00:00"
       },
@@ -3146,8 +3155,8 @@
         "expiry": "2026-12-18",
         "entry_price": 47.49,
         "entry_time": "2026-06-02T14:05:11+00:00",
-        "current_price": 47.72,
-        "current_time": "2026-06-02T16:51:05.662893+00:00",
+        "current_price": 47.8,
+        "current_time": "2026-06-02T16:52:05.339041+00:00",
         "highest_price": 51.01,
         "highest_time": "2026-06-02T14:13:07.417465+00:00"
       },
@@ -3157,8 +3166,8 @@
         "expiry": "2026-12-18",
         "entry_price": 48.19,
         "entry_time": "2026-06-02T14:39:08+00:00",
-        "current_price": 52.77,
-        "current_time": "2026-06-02T16:51:05.836820+00:00",
+        "current_price": 52.71,
+        "current_time": "2026-06-02T16:52:05.518584+00:00",
         "highest_price": 53.53,
         "highest_time": "2026-06-02T16:25:06.129441+00:00"
       },
@@ -3168,8 +3177,8 @@
         "expiry": "2026-12-18",
         "entry_price": 62.95,
         "entry_time": "2026-06-02T15:03:08+00:00",
-        "current_price": 62.2,
-        "current_time": "2026-06-02T16:51:05.999218+00:00",
+        "current_price": 62.13,
+        "current_time": "2026-06-02T16:52:05.674417+00:00",
         "highest_price": 63.34,
         "highest_time": "2026-06-02T15:07:08.548846+00:00"
       }
