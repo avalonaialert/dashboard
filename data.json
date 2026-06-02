@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T13:00:04.556622+00:00",
+  "last_updated": "2026-06-02T13:02:03.571785+00:00",
   "today": {
     "date": "2026-06-02",
     "alerts": {
@@ -357,6 +357,15 @@
           "symbol": "ADI",
           "msg_id": "19e882a82c5c61ca",
           "received_at": "2026-06-02T11:49:06+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 410.6,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ADI",
+          "msg_id": "19e886ca15aa76b8",
+          "received_at": "2026-06-02T13:01:19+00:00"
         }
       ],
       "STX": [
@@ -404,6 +413,15 @@
           "symbol": "STX",
           "msg_id": "19e8863482d89b1a",
           "received_at": "2026-06-02T12:51:07+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 935.71,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19e886c6da9ed0be",
+          "received_at": "2026-06-02T13:01:06+00:00"
         }
       ]
     },
