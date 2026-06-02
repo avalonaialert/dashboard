@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T09:16:03.791179+00:00",
+  "last_updated": "2026-06-02T09:31:03.811244+00:00",
   "today": {
     "date": "2026-06-02",
     "alerts": {
@@ -48,6 +48,15 @@
           "symbol": "NVDA",
           "msg_id": "19e879dc72c0ad07",
           "received_at": "2026-06-02T09:15:20+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 227.6975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NVDA",
+          "msg_id": "19e87ab8555ff993",
+          "received_at": "2026-06-02T09:30:22+00:00"
         }
       ],
       "GLW": [
@@ -95,6 +104,15 @@
           "symbol": "GLW",
           "msg_id": "19e879dcffbafe67",
           "received_at": "2026-06-02T09:15:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 184.975,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e87ab94f5f6f74",
+          "received_at": "2026-06-02T09:30:27+00:00"
         }
       ],
       "AVGO": [
@@ -142,6 +160,15 @@
           "symbol": "AVGO",
           "msg_id": "19e879de59f304ba",
           "received_at": "2026-06-02T09:15:27+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 488.78249999999997,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e87ab5588b954e",
+          "received_at": "2026-06-02T09:30:09+00:00"
         }
       ],
       "NTAP": [
