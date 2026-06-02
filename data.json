@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T08:16:03.095764+00:00",
+  "last_updated": "2026-06-02T08:31:04.567992+00:00",
   "today": {
     "date": "2026-06-02",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "NVDA",
           "msg_id": "19e8766d138c06b2",
           "received_at": "2026-06-02T08:15:21+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 227.175,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "NVDA",
+          "msg_id": "19e87748a30fd9de",
+          "received_at": "2026-06-02T08:30:21+00:00"
         }
       ],
       "GLW": [
@@ -23,6 +32,15 @@
           "symbol": "GLW",
           "msg_id": "19e8766b06720d4b",
           "received_at": "2026-06-02T08:15:12+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 183.6825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e87748ead9827a",
+          "received_at": "2026-06-02T08:30:22+00:00"
         }
       ],
       "AVGO": [
@@ -34,6 +52,15 @@
           "symbol": "AVGO",
           "msg_id": "19e87669a09b4434",
           "received_at": "2026-06-02T08:15:07+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 488.485,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e8774844953f83",
+          "received_at": "2026-06-02T08:30:18+00:00"
         }
       ],
       "NTAP": [
@@ -45,6 +72,26 @@
           "symbol": "NTAP",
           "msg_id": "19e8763ea660b5ac",
           "received_at": "2026-06-02T08:12:11+00:00"
+        }
+      ],
+      "SLV": [
+        {
+          "alert": 7,
+          "close": 69.44,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SLV",
+          "msg_id": "19e8774c00e87293",
+          "received_at": "2026-06-02T08:30:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 69.5375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SLV",
+          "msg_id": "19e876865e62b125",
+          "received_at": "2026-06-02T08:17:05+00:00"
         }
       ]
     },
