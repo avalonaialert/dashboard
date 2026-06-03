@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T08:31:03.612817+00:00",
+  "last_updated": "2026-06-03T08:46:04.479433+00:00",
   "today": {
     "date": "2026-06-03",
     "alerts": {
@@ -21,6 +21,15 @@
           "symbol": "AVGO",
           "msg_id": "19e8c9afc78e1a0d",
           "received_at": "2026-06-03T08:30:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 496.875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e8ca8b21e80a53",
+          "received_at": "2026-06-03T08:45:24+00:00"
         }
       ],
       "GLW": [
@@ -41,6 +50,15 @@
           "symbol": "GLW",
           "msg_id": "19e8c9b0a53f3ae7",
           "received_at": "2026-06-03T08:30:29+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 203.9,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e8ca8b9874cf40",
+          "received_at": "2026-06-03T08:45:26+00:00"
         }
       ],
       "LRCX": [
