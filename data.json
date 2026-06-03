@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T10:46:03.228321+00:00",
+  "last_updated": "2026-06-03T11:01:02.677863+00:00",
   "today": {
     "date": "2026-06-03",
     "alerts": {
@@ -198,6 +198,15 @@
           "symbol": "MU",
           "msg_id": "19e8d168e47cd16d",
           "received_at": "2026-06-03T10:45:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1081.75,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19e8d241c0b9b5fe",
+          "received_at": "2026-06-03T11:00:12+00:00"
         }
       ],
       "AMD": [
