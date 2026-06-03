@@ -1,8 +1,31 @@
 {
-  "last_updated": "2026-06-03T08:01:07.545518+00:00",
+  "last_updated": "2026-06-03T08:16:02.526161+00:00",
   "today": {
     "date": "2026-06-03",
-    "alerts": {},
+    "alerts": {
+      "AVGO": [
+        {
+          "alert": 7,
+          "close": 498.14,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e8c8d4eb1ffb9c",
+          "received_at": "2026-06-03T08:15:30+00:00"
+        }
+      ],
+      "GLW": [
+        {
+          "alert": 7,
+          "close": 205.45,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e8c8d4a91e51eb",
+          "received_at": "2026-06-03T08:15:29+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
