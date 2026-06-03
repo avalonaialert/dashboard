@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T08:16:02.526161+00:00",
+  "last_updated": "2026-06-03T08:31:03.612817+00:00",
   "today": {
     "date": "2026-06-03",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "AVGO",
           "msg_id": "19e8c8d4eb1ffb9c",
           "received_at": "2026-06-03T08:15:30+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 498.03499999999997,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AVGO",
+          "msg_id": "19e8c9afc78e1a0d",
+          "received_at": "2026-06-03T08:30:26+00:00"
         }
       ],
       "GLW": [
@@ -23,6 +32,35 @@
           "symbol": "GLW",
           "msg_id": "19e8c8d4a91e51eb",
           "received_at": "2026-06-03T08:15:29+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 205.275,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e8c9b0a53f3ae7",
+          "received_at": "2026-06-03T08:30:29+00:00"
+        }
+      ],
+      "LRCX": [
+        {
+          "alert": 7,
+          "close": 336.44,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19e8c9b17de8d513",
+          "received_at": "2026-06-03T08:30:33+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 335.99,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19e8c8dd02c7ee60",
+          "received_at": "2026-06-03T08:16:03+00:00"
         }
       ]
     },
