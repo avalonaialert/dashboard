@@ -1,0 +1,4592 @@
+{
+  "date": "2026-06-02",
+  "alerts": {
+    "NVDA": [
+      {
+        "alert": 7,
+        "close": 226.865,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e8766d138c06b2",
+        "received_at": "2026-06-02T08:15:21+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 227.175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87748a30fd9de",
+        "received_at": "2026-06-02T08:30:21+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 227.32375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87822f0f3038a",
+        "received_at": "2026-06-02T08:45:14+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 226.9275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e878fec90bd936",
+        "received_at": "2026-06-02T09:00:14+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 227.48749999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e879dc72c0ad07",
+        "received_at": "2026-06-02T09:15:20+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 227.6975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87ab8555ff993",
+        "received_at": "2026-06-02T09:30:22+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 228.4225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87b92d886faa9",
+        "received_at": "2026-06-02T09:45:18+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 228.595,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87c708cf0f861",
+        "received_at": "2026-06-02T10:00:26+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 229.02,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87d49b00363f5",
+        "received_at": "2026-06-02T10:15:15+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 228.5575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e87e251800e2b7",
+        "received_at": "2026-06-02T10:30:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 231.78,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e88a5d51a3e353",
+        "received_at": "2026-06-02T14:03:45+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 228.6375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e88bc596c3c3c5",
+        "received_at": "2026-06-02T14:28:23+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 224.64,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e8957c26485206",
+        "received_at": "2026-06-02T17:18:08+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 222.47500000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NVDA",
+        "msg_id": "19e89d34b0c79347",
+        "received_at": "2026-06-02T19:33:03+00:00"
+      }
+    ],
+    "GLW": [
+      {
+        "alert": 7,
+        "close": 183.395,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8766b06720d4b",
+        "received_at": "2026-06-02T08:15:12+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 183.6825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87748ead9827a",
+        "received_at": "2026-06-02T08:30:22+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 185.1775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87824360bded1",
+        "received_at": "2026-06-02T08:45:19+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 184.98000000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87901ac05f390",
+        "received_at": "2026-06-02T09:00:26+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 185.2,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e879dcffbafe67",
+        "received_at": "2026-06-02T09:15:24+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 184.975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87ab94f5f6f74",
+        "received_at": "2026-06-02T09:30:27+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 185.95,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87b941c83691a",
+        "received_at": "2026-06-02T09:45:24+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 186.95999999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87c731f719882",
+        "received_at": "2026-06-02T10:00:36+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 187.73000000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87d4baec03541",
+        "received_at": "2026-06-02T10:15:22+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 187.16250000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87e268659de75",
+        "received_at": "2026-06-02T10:30:21+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 186.55,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e87f0ffe0f1373",
+        "received_at": "2026-06-02T10:46:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 191.8275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a0b96aec1bf",
+        "received_at": "2026-06-02T13:58:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 191.9125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a19059d0060",
+        "received_at": "2026-06-02T13:59:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 191.8375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a56af449779",
+        "received_at": "2026-06-02T14:03:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 192.10000000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a66e8999363",
+        "received_at": "2026-06-02T14:04:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 192.78500000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a6665ac4f45",
+        "received_at": "2026-06-02T14:04:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 191.8675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a64b219ddb0",
+        "received_at": "2026-06-02T14:04:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 193.48000000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a73ee3a04e3",
+        "received_at": "2026-06-02T14:05:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 193.725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88a81cd7c3668",
+        "received_at": "2026-06-02T14:06:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 195.22,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88b519fb16aef",
+        "received_at": "2026-06-02T14:20:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 195.9225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88b5b0d8c3ef0",
+        "received_at": "2026-06-02T14:21:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 195.905,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88b6afe7e2632",
+        "received_at": "2026-06-02T14:22:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 195.62,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88b7ac77479e6",
+        "received_at": "2026-06-02T14:23:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 196.68,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c1d968abeb9",
+        "received_at": "2026-06-02T14:34:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 196.17249999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c17f8697ccd",
+        "received_at": "2026-06-02T14:33:59+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 197.46500000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c298c90820f",
+        "received_at": "2026-06-02T14:35:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 198.075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c385b3b35a4",
+        "received_at": "2026-06-02T14:36:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 198.53750000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c47df34f1d1",
+        "received_at": "2026-06-02T14:37:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.0625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c547008dbc1",
+        "received_at": "2026-06-02T14:38:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.4,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c63206b9c8f",
+        "received_at": "2026-06-02T14:39:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.6875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88c906848a940",
+        "received_at": "2026-06-02T14:42:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.0275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88cc8bdddb07f",
+        "received_at": "2026-06-02T14:46:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.1475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88cf53b5a8386",
+        "received_at": "2026-06-02T14:49:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.365,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88d048bf133f5",
+        "received_at": "2026-06-02T14:50:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.48874999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88d13463c2ae5",
+        "received_at": "2026-06-02T14:51:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.3175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88d3047419967",
+        "received_at": "2026-06-02T14:53:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.0475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88d5b7a6850c5",
+        "received_at": "2026-06-02T14:56:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.25,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88d6ac5445b34",
+        "received_at": "2026-06-02T14:57:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.0025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88db577488fc4",
+        "received_at": "2026-06-02T15:02:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 201.01875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88dc34fb253dc",
+        "received_at": "2026-06-02T15:03:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.6625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88e0b72ff9904",
+        "received_at": "2026-06-02T15:08:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.92249999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88e1b22007ae9",
+        "received_at": "2026-06-02T15:09:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.72125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88e4577048314",
+        "received_at": "2026-06-02T15:12:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.70250000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88e55696fde49",
+        "received_at": "2026-06-02T15:13:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.4025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88fb412b162ba",
+        "received_at": "2026-06-02T15:37:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.385,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88fc487e11d2b",
+        "received_at": "2026-06-02T15:38:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.595,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e88fd53bba161b",
+        "received_at": "2026-06-02T15:39:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 199.9325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e890ea31a182c4",
+        "received_at": "2026-06-02T15:58:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.10500000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e890f90e668964",
+        "received_at": "2026-06-02T15:59:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.22250000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e89107e6e56aa4",
+        "received_at": "2026-06-02T16:00:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.1925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8911e10e3e04d",
+        "received_at": "2026-06-02T16:01:45+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.3125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e89275feee90b8",
+        "received_at": "2026-06-02T16:25:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 200.18,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e892ce6a899e7d",
+        "received_at": "2026-06-02T16:31:20+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 199.0925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8933320904670",
+        "received_at": "2026-06-02T16:38:12+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 200.275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e89810d4030154",
+        "received_at": "2026-06-02T18:03:13+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 199.155,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e89877df6d7128",
+        "received_at": "2026-06-02T18:10:15+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 200.925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e89e3d285416b4",
+        "received_at": "2026-06-02T19:51:08+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e89fa1d6e31641",
+        "received_at": "2026-06-02T20:15:29+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a08ac7724850",
+        "received_at": "2026-06-02T20:31:23+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.305,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a3eaf20cf91e",
+        "received_at": "2026-06-02T21:30:22+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.3,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a4c58be0de43",
+        "received_at": "2026-06-02T21:45:17+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.82,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a5c92117a44a",
+        "received_at": "2026-06-02T22:03:01+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.52499999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a692a0e1619e",
+        "received_at": "2026-06-02T22:16:46+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a77e3a6f53c2",
+        "received_at": "2026-06-02T22:32:45+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 201.79999999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19e8a83f919f6084",
+        "received_at": "2026-06-02T22:46:03+00:00"
+      }
+    ],
+    "AVGO": [
+      {
+        "alert": 7,
+        "close": 486.875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87669a09b4434",
+        "received_at": "2026-06-02T08:15:07+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 488.485,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8774844953f83",
+        "received_at": "2026-06-02T08:30:18+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 490.80499999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87824dcdc01c2",
+        "received_at": "2026-06-02T08:45:22+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 488.6,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87900221a7137",
+        "received_at": "2026-06-02T09:00:19+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 488.46000000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e879de59f304ba",
+        "received_at": "2026-06-02T09:15:27+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 488.78249999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87ab5588b954e",
+        "received_at": "2026-06-02T09:30:09+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 489.65250000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87b955db5a13d",
+        "received_at": "2026-06-02T09:45:29+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 491.85749999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87c71db147a73",
+        "received_at": "2026-06-02T10:00:28+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 494.085,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87d4a4f0c16b0",
+        "received_at": "2026-06-02T10:15:18+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 492.79499999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e87e278f6bafd3",
+        "received_at": "2026-06-02T10:30:21+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 494.02,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8a8317a1acdb5",
+        "received_at": "2026-06-02T22:45:06+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 495.0275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8a9edecf47732",
+        "received_at": "2026-06-02T23:15:25+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 494.53999999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8a91ccea61670",
+        "received_at": "2026-06-02T23:01:09+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 491.65999999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8aac56b95e190",
+        "received_at": "2026-06-02T23:30:08+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 494.23249999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8aba1fa871f00",
+        "received_at": "2026-06-02T23:45:12+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 494.875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AVGO",
+        "msg_id": "19e8ac9c25843009",
+        "received_at": "2026-06-03T00:02:16+00:00"
+      }
+    ],
+    "NTAP": [
+      {
+        "alert": 7,
+        "close": 180.5,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NTAP",
+        "msg_id": "19e8763ea660b5ac",
+        "received_at": "2026-06-02T08:12:11+00:00"
+      }
+    ],
+    "SLV": [
+      {
+        "alert": 7,
+        "close": 69.44,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SLV",
+        "msg_id": "19e8774c00e87293",
+        "received_at": "2026-06-02T08:30:34+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 69.5375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SLV",
+        "msg_id": "19e876865e62b125",
+        "received_at": "2026-06-02T08:17:05+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 69.14,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SLV",
+        "msg_id": "19e879063f9ba269",
+        "received_at": "2026-06-02T09:00:44+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 69.3075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SLV",
+        "msg_id": "19e8782f8e6d2976",
+        "received_at": "2026-06-02T08:46:06+00:00"
+      }
+    ],
+    "ARM": [
+      {
+        "alert": 7,
+        "close": 418.7425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ARM",
+        "msg_id": "19e87820c66bb177",
+        "received_at": "2026-06-02T08:45:05+00:00"
+      }
+    ],
+    "ADI": [
+      {
+        "alert": 7,
+        "close": 407.47,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e882a82c5c61ca",
+        "received_at": "2026-06-02T11:49:06+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 410.6,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e886ca15aa76b8",
+        "received_at": "2026-06-02T13:01:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 416.15749999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88a194c9ea183",
+        "received_at": "2026-06-02T13:59:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 416.105,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88a2f9fce7225",
+        "received_at": "2026-06-02T14:00:41+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 415.73499999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88a67cf754184",
+        "received_at": "2026-06-02T14:04:31+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 416.445,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88a7381caa6c8",
+        "received_at": "2026-06-02T14:05:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 416.2675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88a8209439658",
+        "received_at": "2026-06-02T14:06:14+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 413.3075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88af4d5bc89a5",
+        "received_at": "2026-06-02T14:14:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 415.165,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88b7da96abc20",
+        "received_at": "2026-06-02T14:23:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 415.08750000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88ba550c464e4",
+        "received_at": "2026-06-02T14:26:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 414.88,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88bb262a5bab8",
+        "received_at": "2026-06-02T14:27:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 414.845,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88bd7bcd6dd67",
+        "received_at": "2026-06-02T14:29:37+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 416.685,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88c1690df802d",
+        "received_at": "2026-06-02T14:33:55+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.015,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88cc042ca7620",
+        "received_at": "2026-06-02T14:45:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.2675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88cd3890cc4b5",
+        "received_at": "2026-06-02T14:46:49+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.1025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88ce57a02b7c1",
+        "received_at": "2026-06-02T14:48:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.48249999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88cf7db6ccdc0",
+        "received_at": "2026-06-02T14:49:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.865,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d081e1624af",
+        "received_at": "2026-06-02T14:50:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.69875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d143ce3cb06",
+        "received_at": "2026-06-02T14:51:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.9275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d20ef53472e",
+        "received_at": "2026-06-02T14:52:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.8775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d333196592f",
+        "received_at": "2026-06-02T14:53:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.9475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d404a934f4d",
+        "received_at": "2026-06-02T14:54:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.985,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d6804a65291",
+        "received_at": "2026-06-02T14:56:57+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 418.89,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d6a874e09d0",
+        "received_at": "2026-06-02T14:57:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.0825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d7deebf9b87",
+        "received_at": "2026-06-02T14:58:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.5174999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88d87792aa9a1",
+        "received_at": "2026-06-02T14:59:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.66499999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88da711ecf0ea",
+        "received_at": "2026-06-02T15:01:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.88750000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88db5d5594b98",
+        "received_at": "2026-06-02T15:02:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.94,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88dc28e16a250",
+        "received_at": "2026-06-02T15:03:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.10249999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e1db301cee1",
+        "received_at": "2026-06-02T15:09:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.3175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e28d5cc1848",
+        "received_at": "2026-06-02T15:10:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.6225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e3bab018b72",
+        "received_at": "2026-06-02T15:11:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.645,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e57275594b5",
+        "received_at": "2026-06-02T15:13:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.64500000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e56a3d459e1",
+        "received_at": "2026-06-02T15:13:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.99750000000006,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e64e6437809",
+        "received_at": "2026-06-02T15:14:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 421.19249999999994,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88e78f5987079",
+        "received_at": "2026-06-02T15:15:35+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 419.4475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e88ead94e5b07d",
+        "received_at": "2026-06-02T15:19:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.34250000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e890ce09fcb2bf",
+        "received_at": "2026-06-02T15:56:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.39500000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e890e802b77398",
+        "received_at": "2026-06-02T15:58:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.70250000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e890f7afbbce44",
+        "received_at": "2026-06-02T15:59:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.71000000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8916d4850717a",
+        "received_at": "2026-06-02T16:07:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.31125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8917e2f453d5e",
+        "received_at": "2026-06-02T16:08:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.4425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8918b3d2e459c",
+        "received_at": "2026-06-02T16:09:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 419.905,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e891d84eb50f4c",
+        "received_at": "2026-06-02T16:14:30+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 420.03,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e891e661c51a5a",
+        "received_at": "2026-06-02T16:15:30+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 418.6,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8921d8155699a",
+        "received_at": "2026-06-02T16:19:15+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 418.35,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e895431efbc5a1",
+        "received_at": "2026-06-02T17:14:15+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 419.1975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e899a93c4646a8",
+        "received_at": "2026-06-02T18:31:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 421.24749999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e89c5c386d6cda",
+        "received_at": "2026-06-02T19:18:11+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 420.27250000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e89cf0b97bbfdf",
+        "received_at": "2026-06-02T19:28:26+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 422.90749999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e89e8591658592",
+        "received_at": "2026-06-02T19:56:04+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 422.82,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8a12732ff055b",
+        "received_at": "2026-06-02T20:42:03+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 422.93,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8a1f4c4934465",
+        "received_at": "2026-06-02T20:56:05+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 422.025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ADI",
+        "msg_id": "19e8a25ba8652781",
+        "received_at": "2026-06-02T21:03:05+00:00"
+      }
+    ],
+    "STX": [
+      {
+        "alert": 7,
+        "close": 933.01,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "msg_id": "19e8827cb297421d",
+        "received_at": "2026-06-02T11:46:08+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 933.07,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "msg_id": "19e8839045105fb2",
+        "received_at": "2026-06-02T12:04:57+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 935.995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "msg_id": "19e88443b4de7f26",
+        "received_at": "2026-06-02T12:17:11+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 937.5,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "msg_id": "19e88510f6135971",
+        "received_at": "2026-06-02T12:31:12+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 937,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "msg_id": "19e8863482d89b1a",
+        "received_at": "2026-06-02T12:51:07+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 935.71,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "STX",
+        "msg_id": "19e886c6da9ed0be",
+        "received_at": "2026-06-02T13:01:06+00:00"
+      }
+    ],
+    "DE": [
+      {
+        "alert": 7,
+        "close": 560.0799999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e887b0a5f4d757",
+        "received_at": "2026-06-02T13:17:03+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 561.31,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e888ae0b42e3d7",
+        "received_at": "2026-06-02T13:34:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 563.9437499999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e888b9ab35cd49",
+        "received_at": "2026-06-02T13:35:08+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 558.05,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8896f17bf3257",
+        "received_at": "2026-06-02T13:47:31+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 563.2850000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88cd9675ea980",
+        "received_at": "2026-06-02T14:47:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 568.9525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88e80540bbbf0",
+        "received_at": "2026-06-02T15:16:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.2349999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88e8f9d7148e6",
+        "received_at": "2026-06-02T15:17:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.66,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88ea20653101a",
+        "received_at": "2026-06-02T15:18:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.4549999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88ec12b133a9f",
+        "received_at": "2026-06-02T15:20:31+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.795,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88ede03966794",
+        "received_at": "2026-06-02T15:22:29+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.84625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88ee93d36a6aa",
+        "received_at": "2026-06-02T15:23:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 570.0250000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f04a1f73888",
+        "received_at": "2026-06-02T15:25:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 570.3375000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f13cf7d38b9",
+        "received_at": "2026-06-02T15:26:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 570.8975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f29476417cb",
+        "received_at": "2026-06-02T15:27:37+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.24,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f41b22003cc",
+        "received_at": "2026-06-02T15:29:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 570.8774999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f3d96755331",
+        "received_at": "2026-06-02T15:29:00+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.3675000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f570fc9d4fa",
+        "received_at": "2026-06-02T15:30:43+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.7625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f749f7a4370",
+        "received_at": "2026-06-02T15:32:44+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.4549999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f697a36f9e1",
+        "received_at": "2026-06-02T15:32:00+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.2475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f7b955a2cb8",
+        "received_at": "2026-06-02T15:33:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.58,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e88f95e874f8f6",
+        "received_at": "2026-06-02T15:35:02+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.505,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8906f9a0401e5",
+        "received_at": "2026-06-02T15:49:54+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.63,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8917ef249d3ed",
+        "received_at": "2026-06-02T16:08:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.5550000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89178cd3e4b5e",
+        "received_at": "2026-06-02T16:08:00+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.78,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8918b841a2de4",
+        "received_at": "2026-06-02T16:09:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.6674999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e891a65a1e182b",
+        "received_at": "2026-06-02T16:11:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.645,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89249df82279e",
+        "received_at": "2026-06-02T16:22:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 571.91,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89264e8701a80",
+        "received_at": "2026-06-02T16:24:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.345,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8931989f356a9",
+        "received_at": "2026-06-02T16:36:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.4825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89324ba031482",
+        "received_at": "2026-06-02T16:37:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.4525000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89346525ac811",
+        "received_at": "2026-06-02T16:39:31+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.66,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e893529f0a9d6d",
+        "received_at": "2026-06-02T16:40:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.585,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e893630eab266a",
+        "received_at": "2026-06-02T16:41:28+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.4799999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8938984581d7a",
+        "received_at": "2026-06-02T16:44:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.65,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e893e63e0a1700",
+        "received_at": "2026-06-02T16:50:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 572.77,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e893fed1650492",
+        "received_at": "2026-06-02T16:52:06+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 570.8824999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e894ced3a7c636",
+        "received_at": "2026-06-02T17:06:19+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 573,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8978c27750697",
+        "received_at": "2026-06-02T17:54:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 575.99,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89a7aa8417dff",
+        "received_at": "2026-06-02T18:45:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 575.985,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89a888d3463ce",
+        "received_at": "2026-06-02T18:46:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.4075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89a95fe94b8c6",
+        "received_at": "2026-06-02T18:47:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.4000000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89aa504526172",
+        "received_at": "2026-06-02T18:48:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.29125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89ab59d57cf16",
+        "received_at": "2026-06-02T18:49:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.3275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89ac0194bf2d4",
+        "received_at": "2026-06-02T18:50:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.3862499999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89acddbebe1f0",
+        "received_at": "2026-06-02T18:51:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.4725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89adfa33d29ab",
+        "received_at": "2026-06-02T18:52:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.835,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89aece415ad68",
+        "received_at": "2026-06-02T18:53:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89afaf75e4406",
+        "received_at": "2026-06-02T18:54:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.035,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b1244d6cd14",
+        "received_at": "2026-06-02T18:55:46+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.98,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b1a3e7007f1",
+        "received_at": "2026-06-02T18:56:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.085,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b35d3b9116c",
+        "received_at": "2026-06-02T18:58:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.89,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b281b52500b",
+        "received_at": "2026-06-02T18:57:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.15,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b445ef4352d",
+        "received_at": "2026-06-02T18:59:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.06,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b5dbde286e2",
+        "received_at": "2026-06-02T19:00:53+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 576.955,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b64e8ff425d",
+        "received_at": "2026-06-02T19:01:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.1925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b75dd1554e0",
+        "received_at": "2026-06-02T19:02:32+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.455,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b81efce7aaa",
+        "received_at": "2026-06-02T19:03:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.5575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b8e5b5e574f",
+        "received_at": "2026-06-02T19:04:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.79,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89b9d9cd301c5",
+        "received_at": "2026-06-02T19:05:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 577.9725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89badb3b48751",
+        "received_at": "2026-06-02T19:06:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 578.2475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89bba6d544592",
+        "received_at": "2026-06-02T19:07:07+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 576.6949999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89c1462ad6dd3",
+        "received_at": "2026-06-02T19:13:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 579.485,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89cfb5a08e4e5",
+        "received_at": "2026-06-02T19:29:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 579.9875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d10edb5a8ae",
+        "received_at": "2026-06-02T19:30:37+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 580.105,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d1ab6d4c5fe",
+        "received_at": "2026-06-02T19:31:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 580.17625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d2748cb1f9a",
+        "received_at": "2026-06-02T19:32:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 580.0037500000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d3788292ed2",
+        "received_at": "2026-06-02T19:33:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 580.35375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d46687e1f45",
+        "received_at": "2026-06-02T19:34:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 580.4200000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d55cebe0b00",
+        "received_at": "2026-06-02T19:35:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 580.4225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e89d71dcdd0551",
+        "received_at": "2026-06-02T19:37:07+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 580.38,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8a0fc7bb58fa7",
+        "received_at": "2026-06-02T20:39:02+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 580.4,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8a3479eb957aa",
+        "received_at": "2026-06-02T21:19:10+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 580.4,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19e8a46a0d35e2d5",
+        "received_at": "2026-06-02T21:39:03+00:00"
+      }
+    ],
+    "AAPL": [
+      {
+        "alert": 6,
+        "close": 309.0625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8896236b00a8d",
+        "received_at": "2026-06-02T13:46:37+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.065,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88995fb20d227",
+        "received_at": "2026-06-02T13:50:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.03625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e889ee6e203d8b",
+        "received_at": "2026-06-02T13:56:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.11749999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e889fbbb76ba79",
+        "received_at": "2026-06-02T13:57:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.17375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88a0a7899008e",
+        "received_at": "2026-06-02T13:58:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.18749999999994,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88a19be246adf",
+        "received_at": "2026-06-02T13:59:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.15749999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88a661b32137c",
+        "received_at": "2026-06-02T14:04:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.015,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ac91c700ea7",
+        "received_at": "2026-06-02T14:11:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.2025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88adea1556442",
+        "received_at": "2026-06-02T14:12:27+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.21999999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88b4fafc30018",
+        "received_at": "2026-06-02T14:20:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.46999999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88b5a2cec89ee",
+        "received_at": "2026-06-02T14:21:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.6325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88b69df4296b0",
+        "received_at": "2026-06-02T14:22:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.75375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88b7a7be99d39",
+        "received_at": "2026-06-02T14:23:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.89875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88b8b20325d40",
+        "received_at": "2026-06-02T14:24:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 309.8875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88bc657512c83",
+        "received_at": "2026-06-02T14:28:27+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.05499999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88bd0f2ccce7e",
+        "received_at": "2026-06-02T14:29:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.27250000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88be30adae717",
+        "received_at": "2026-06-02T14:30:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.27,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88bf71b827c1f",
+        "received_at": "2026-06-02T14:31:44+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.2075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88c1e4ee63d7e",
+        "received_at": "2026-06-02T14:34:27+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.26250000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88c2c8f68077c",
+        "received_at": "2026-06-02T14:35:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.195,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88c36a2725462",
+        "received_at": "2026-06-02T14:36:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.1975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88c4568b93a17",
+        "received_at": "2026-06-02T14:37:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.22,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88c551088c4d5",
+        "received_at": "2026-06-02T14:38:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.2525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88c7ff4f42e3b",
+        "received_at": "2026-06-02T14:41:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.55625000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88d9bcd31fdbe",
+        "received_at": "2026-06-02T15:00:27+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.52875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88dad7fab028d",
+        "received_at": "2026-06-02T15:01:38+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.58500000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88db4e71fd85d",
+        "received_at": "2026-06-02T15:02:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.62749999999994,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88dc2e59e084c",
+        "received_at": "2026-06-02T15:03:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.68,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88dd0c9b22f10",
+        "received_at": "2026-06-02T15:04:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.79375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ddebccde30c",
+        "received_at": "2026-06-02T15:05:04+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 310.9425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88def18a3e27e",
+        "received_at": "2026-06-02T15:06:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 311.2525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88dfc14b91d7e",
+        "received_at": "2026-06-02T15:07:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 311.59499999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e0e0606a6f1",
+        "received_at": "2026-06-02T15:08:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 311.88625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e1a8f72137a",
+        "received_at": "2026-06-02T15:09:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 311.90500000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e297f34758d",
+        "received_at": "2026-06-02T15:10:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.0450000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e3921d3ffa8",
+        "received_at": "2026-06-02T15:11:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.0575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e651b9e6951",
+        "received_at": "2026-06-02T15:14:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.115,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e73dc05d22b",
+        "received_at": "2026-06-02T15:15:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.08000000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88e9dfac0317e",
+        "received_at": "2026-06-02T15:18:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88eacd5a85db8",
+        "received_at": "2026-06-02T15:19:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.17125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ebf735a177a",
+        "received_at": "2026-06-02T15:20:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ecafbf36cab",
+        "received_at": "2026-06-02T15:21:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.53,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ed874e1057a",
+        "received_at": "2026-06-02T15:22:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.69875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ee72bc671e3",
+        "received_at": "2026-06-02T15:23:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.645,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ef709944dd8",
+        "received_at": "2026-06-02T15:24:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.76625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88f04e88e057a",
+        "received_at": "2026-06-02T15:25:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.695,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88f53b00613af",
+        "received_at": "2026-06-02T15:30:31+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.7025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88f70c56ea550",
+        "received_at": "2026-06-02T15:32:31+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.665,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88fb495223fa9",
+        "received_at": "2026-06-02T15:37:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88fc3945eea3b",
+        "received_at": "2026-06-02T15:38:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.70500000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88fe0f1586027",
+        "received_at": "2026-06-02T15:40:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.88,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88fedf384ab43",
+        "received_at": "2026-06-02T15:41:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e88ffd2b014d25",
+        "received_at": "2026-06-02T15:42:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.9275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8908298517731",
+        "received_at": "2026-06-02T15:51:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.07,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e89090b50384f8",
+        "received_at": "2026-06-02T15:52:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.07375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8909ff571d336",
+        "received_at": "2026-06-02T15:53:11+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 312.285,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e891b63e8052ff",
+        "received_at": "2026-06-02T16:12:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 312.89,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e893f1b9f5626c",
+        "received_at": "2026-06-02T16:51:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.23749999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e893ff1d41ce50",
+        "received_at": "2026-06-02T16:52:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.3325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8940dff82931a",
+        "received_at": "2026-06-02T16:53:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.32875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8941ca3daecb8",
+        "received_at": "2026-06-02T16:54:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.45,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8942ce751c15d",
+        "received_at": "2026-06-02T16:55:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.6875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e894394c6c3bb1",
+        "received_at": "2026-06-02T16:56:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 313.985,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8944788ce096d",
+        "received_at": "2026-06-02T16:57:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.16625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e89456d663aa38",
+        "received_at": "2026-06-02T16:58:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.2575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8946557291e25",
+        "received_at": "2026-06-02T16:59:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.3075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8947b84ccaf3f",
+        "received_at": "2026-06-02T17:00:27+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.4225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8948527429ec5",
+        "received_at": "2026-06-02T17:01:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.6325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e89492d35ec6b1",
+        "received_at": "2026-06-02T17:02:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.7,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e894a01b925504",
+        "received_at": "2026-06-02T17:03:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.7725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e894bf50df240d",
+        "received_at": "2026-06-02T17:05:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.85625000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e895069ee0c424",
+        "received_at": "2026-06-02T17:10:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.985,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8956006965fc2",
+        "received_at": "2026-06-02T17:16:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.65999999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896424206346f",
+        "received_at": "2026-06-02T17:31:38+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.695,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896a0ecda1403",
+        "received_at": "2026-06-02T17:38:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.7075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896aefa94ab55",
+        "received_at": "2026-06-02T17:39:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.7575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896c0e90b7f6c",
+        "received_at": "2026-06-02T17:40:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.87750000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896cc8955bc93",
+        "received_at": "2026-06-02T17:41:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 314.995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896dc68dedc1d",
+        "received_at": "2026-06-02T17:42:04+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 315.11249999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e896e9737b85d8",
+        "received_at": "2026-06-02T17:43:04+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 315.26250000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8973243f8df21",
+        "received_at": "2026-06-02T17:48:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 315.0325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e8979a7fee1234",
+        "received_at": "2026-06-02T17:55:06+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 314.22749999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e898ccbcfeddd7",
+        "received_at": "2026-06-02T18:16:04+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 314.9275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e89b7e12605fd6",
+        "received_at": "2026-06-02T19:03:07+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 314.64,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AAPL",
+        "msg_id": "19e89e3cae9eddf6",
+        "received_at": "2026-06-02T19:51:06+00:00"
+      }
+    ],
+    "LRCX": [
+      {
+        "alert": 6,
+        "close": 328.2325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e8898725c316a0",
+        "received_at": "2026-06-02T13:49:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 328.5825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889961636f6d3",
+        "received_at": "2026-06-02T13:50:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 328.96,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889a4955fa376",
+        "received_at": "2026-06-02T13:51:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 329.74,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889b2b5cca4c1",
+        "received_at": "2026-06-02T13:52:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 330.845,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889c1152a4d57",
+        "received_at": "2026-06-02T13:53:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.26250000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889d156d8a22b",
+        "received_at": "2026-06-02T13:54:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.45,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889e2d3a652b9",
+        "received_at": "2026-06-02T13:55:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.1625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e889ef8f5b1bce",
+        "received_at": "2026-06-02T13:56:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 330.83,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88a18e137c4b7",
+        "received_at": "2026-06-02T13:59:08+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 326.75750000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88ae7b921c88c",
+        "received_at": "2026-06-02T14:13:13+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 331.5,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88c2b6ec33bde",
+        "received_at": "2026-06-02T14:35:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.43,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88cc68f14f841",
+        "received_at": "2026-06-02T14:45:54+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.5875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88cc93e788e19",
+        "received_at": "2026-06-02T14:46:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.5625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88ce15e501f55",
+        "received_at": "2026-06-02T14:47:40+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 331.72,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88cf4fde34703",
+        "received_at": "2026-06-02T14:49:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.155,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d06f0911263",
+        "received_at": "2026-06-02T14:50:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.395,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d19704c5a0d",
+        "received_at": "2026-06-02T14:51:33+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.4325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d2220e554df",
+        "received_at": "2026-06-02T14:52:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d301007e6f5",
+        "received_at": "2026-06-02T14:53:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d5051d6ca56",
+        "received_at": "2026-06-02T14:55:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.54,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d5eaed275b3",
+        "received_at": "2026-06-02T14:56:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.6225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88d6b9307f60e",
+        "received_at": "2026-06-02T14:57:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.505,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88da01b8fd9db",
+        "received_at": "2026-06-02T15:00:42+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.7525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88dc221cc5ff7",
+        "received_at": "2026-06-02T15:03:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.90250000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88dd6fe8b99df",
+        "received_at": "2026-06-02T15:04:32+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 332.9975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88de05b86e4c0",
+        "received_at": "2026-06-02T15:05:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 333.2175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88df273537d1d",
+        "received_at": "2026-06-02T15:06:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 333.24749999999995,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e0c22c18443",
+        "received_at": "2026-06-02T15:08:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 333.425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e1acbaf5dea",
+        "received_at": "2026-06-02T15:09:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 333.97249999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e2d108be6d8",
+        "received_at": "2026-06-02T15:10:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.26750000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e3a9575674b",
+        "received_at": "2026-06-02T15:11:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.34499999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e472396931c",
+        "received_at": "2026-06-02T15:12:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.33500000000004,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e54f7147404",
+        "received_at": "2026-06-02T15:13:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.6875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e76ab5add22",
+        "received_at": "2026-06-02T15:15:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.815,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e817b0a8ebf",
+        "received_at": "2026-06-02T15:16:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.62625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88e9462494f6f",
+        "received_at": "2026-06-02T15:17:28+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.77875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88eae5ba7efb3",
+        "received_at": "2026-06-02T15:19:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 334.875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88ebcf371cf83",
+        "received_at": "2026-06-02T15:20:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 335.205,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88ecafebba079",
+        "received_at": "2026-06-02T15:21:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 335.34875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88edb11457c8f",
+        "received_at": "2026-06-02T15:22:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 335.2375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88ef6db130f39",
+        "received_at": "2026-06-02T15:24:09+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 333.395,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e88f7f892fa378",
+        "received_at": "2026-06-02T15:33:29+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 330.2775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e8956e8f1a82ab",
+        "received_at": "2026-06-02T17:17:12+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 331.595,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e898971f309dd6",
+        "received_at": "2026-06-02T18:12:24+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 332.075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LRCX",
+        "msg_id": "19e89ade2c1bcebe",
+        "received_at": "2026-06-02T18:52:12+00:00"
+      }
+    ],
+    "WDC": [
+      {
+        "alert": 6,
+        "close": 567.9575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88a2be92eedc5",
+        "received_at": "2026-06-02T14:00:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 568.4675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88a642cbcd51a",
+        "received_at": "2026-06-02T14:04:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 568.005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88a9cc864f694",
+        "received_at": "2026-06-02T14:08:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 567.355,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88aacd0beaa24",
+        "received_at": "2026-06-02T14:09:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 567.4275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88abec1ed190c",
+        "received_at": "2026-06-02T14:10:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 568.3125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88af54453d28c",
+        "received_at": "2026-06-02T14:14:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.3850000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88b0a3724a370",
+        "received_at": "2026-06-02T14:15:35+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 569.47,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88b12b88413f9",
+        "received_at": "2026-06-02T14:16:11+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 560.5649999999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e88b96ad051632",
+        "received_at": "2026-06-02T14:25:08+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 560.915,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e8903b916ff75d",
+        "received_at": "2026-06-02T15:46:19+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 564.37,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e894cc06f0cd7f",
+        "received_at": "2026-06-02T17:06:08+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 563.115,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e8959cebf525f7",
+        "received_at": "2026-06-02T17:20:21+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 568.005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e898a3c2e422c8",
+        "received_at": "2026-06-02T18:13:15+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 564.025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e89a2e411154c5",
+        "received_at": "2026-06-02T18:40:12+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 567.245,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e89bab664a832e",
+        "received_at": "2026-06-02T19:06:11+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 566.5175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19e89e8639d10677",
+        "received_at": "2026-06-02T19:56:05+00:00"
+      }
+    ],
+    "AMD": [
+      {
+        "alert": 6,
+        "close": 519.31,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e88a2ba3c85993",
+        "received_at": "2026-06-02T14:00:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 519.0025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e88a553d87aaa6",
+        "received_at": "2026-06-02T14:03:14+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 508.59000000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e88b205a1842cf",
+        "received_at": "2026-06-02T14:17:06+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 513.4275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e88f8ae4a2e420",
+        "received_at": "2026-06-02T15:34:09+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 514.03,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e8924838d9255d",
+        "received_at": "2026-06-02T16:22:06+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 513.39,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e8956ca34a1dc3",
+        "received_at": "2026-06-02T17:17:05+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 515.30125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e8993460f100c0",
+        "received_at": "2026-06-02T18:23:09+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 514.605,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e89a2cd491a320",
+        "received_at": "2026-06-02T18:40:06+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 517.5475000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e89c0fbd3b245d",
+        "received_at": "2026-06-02T19:13:04+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 516.135,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e89d524e6c0b0f",
+        "received_at": "2026-06-02T19:35:05+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 519.0725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e89e1152b8b18a",
+        "received_at": "2026-06-02T19:48:08+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 520.91,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19e89fa135dd6b1c",
+        "received_at": "2026-06-02T20:15:26+00:00"
+      }
+    ],
+    "ORCL": [
+      {
+        "alert": 6,
+        "close": 244.06875000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88a72c8bdf3d5",
+        "received_at": "2026-06-02T14:05:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 244.69,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88a7ffc41d5aa",
+        "received_at": "2026-06-02T14:06:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 245.17499999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88a8f454efa9d",
+        "received_at": "2026-06-02T14:07:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 245.71525000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88a9ea22025dc",
+        "received_at": "2026-06-02T14:08:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 245.90750000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88aad3a0abd91",
+        "received_at": "2026-06-02T14:09:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 246.0625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88aba6b0547c0",
+        "received_at": "2026-06-02T14:10:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 246.16250000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88ac8b7b7f4bb",
+        "received_at": "2026-06-02T14:11:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 248.13500000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88ae56f69c89f",
+        "received_at": "2026-06-02T14:13:04+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 248.14,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88af44de8b57d",
+        "received_at": "2026-06-02T14:14:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 248.1,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88b063d3fb31a",
+        "received_at": "2026-06-02T14:15:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 248.13375000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88b11ae121645",
+        "received_at": "2026-06-02T14:16:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 246.9275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88b6da640efff",
+        "received_at": "2026-06-02T14:22:20+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 243.4025,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e88b6aaa420bbf",
+        "received_at": "2026-06-02T14:22:11+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 243.755,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e8955fdf290466",
+        "received_at": "2026-06-02T17:16:11+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 245.02249999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e8979b1052bfb0",
+        "received_at": "2026-06-02T17:55:12+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 243.675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e897f2e4502bb7",
+        "received_at": "2026-06-02T18:01:07+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 243.74875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e89df3158a568a",
+        "received_at": "2026-06-02T19:46:05+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 245.365,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ORCL",
+        "msg_id": "19e89e940d5ea8d0",
+        "received_at": "2026-06-02T19:57:03+00:00"
+      }
+    ],
+    "QCOM": [
+      {
+        "alert": 6,
+        "close": 237.0075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88c62d50ac5b2",
+        "received_at": "2026-06-02T14:39:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 237.33875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88c70eb30ebd9",
+        "received_at": "2026-06-02T14:40:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 237.3575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88c81e3714572",
+        "received_at": "2026-06-02T14:41:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 238.4375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88c9046e30f09",
+        "received_at": "2026-06-02T14:42:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 239.305,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88c9d74f19a41",
+        "received_at": "2026-06-02T14:43:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 239.65750000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88cad02207e34",
+        "received_at": "2026-06-02T14:44:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.15,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88cbbbe3fca1b",
+        "received_at": "2026-06-02T14:45:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.3675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88ccb3c169233",
+        "received_at": "2026-06-02T14:46:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.43625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88cdaf556b955",
+        "received_at": "2026-06-02T14:47:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 239.53249999999997,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88e2ac73b64de",
+        "received_at": "2026-06-02T15:10:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 239.60750000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88e3b65988e26",
+        "received_at": "2026-06-02T15:11:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 239.9875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88e46f0e4c85f",
+        "received_at": "2026-06-02T15:12:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.33249999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88e77104d06e4",
+        "received_at": "2026-06-02T15:15:26+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.2525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88e8124c38c2c",
+        "received_at": "2026-06-02T15:16:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.79,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88e9f12e98c69",
+        "received_at": "2026-06-02T15:18:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.655,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88eac86b773f4",
+        "received_at": "2026-06-02T15:19:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.13,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88fe17128fc3e",
+        "received_at": "2026-06-02T15:40:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 240.27,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e88fef781ec61b",
+        "received_at": "2026-06-02T15:41:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.14499999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e8909f173deec3",
+        "received_at": "2026-06-02T15:53:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.2775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e890ae3fa0f6d9",
+        "received_at": "2026-06-02T15:54:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.4825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e890bd90be358c",
+        "received_at": "2026-06-02T15:55:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.68375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e890f6c0858dcb",
+        "received_at": "2026-06-02T15:59:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.5625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e8911d49352690",
+        "received_at": "2026-06-02T16:01:46+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.955,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e891264085809d",
+        "received_at": "2026-06-02T16:02:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.8675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e89135c850d827",
+        "received_at": "2026-06-02T16:03:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 241.8875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e891433669f588",
+        "received_at": "2026-06-02T16:04:21+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 242.2225,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e89151568dfb89",
+        "received_at": "2026-06-02T16:05:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 242.38,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e8915e58b6df92",
+        "received_at": "2026-06-02T16:06:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 242.57999999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e8916c41ad5f62",
+        "received_at": "2026-06-02T16:07:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 242.7775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e8917c08718cf7",
+        "received_at": "2026-06-02T16:08:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 243.1075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e89189274f4dc4",
+        "received_at": "2026-06-02T16:09:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 243.1525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e89199dcf528a8",
+        "received_at": "2026-06-02T16:10:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 243.14000000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e891a7292fbeb3",
+        "received_at": "2026-06-02T16:11:10+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 241.1675,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e89256b7454c8d",
+        "received_at": "2026-06-02T16:23:09+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 240.8075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e895e44bdc9dd0",
+        "received_at": "2026-06-02T17:25:10+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 242.825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e899e59b65efa3",
+        "received_at": "2026-06-02T18:35:12+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 242.36375,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "QCOM",
+        "msg_id": "19e89c7b1a96a9e8",
+        "received_at": "2026-06-02T19:20:24+00:00"
+      }
+    ],
+    "TSLA": [
+      {
+        "alert": 6,
+        "close": 423.10749999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e88dc2b5d2dbce",
+        "received_at": "2026-06-02T15:03:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 422.91999999999996,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e88de12f7b4d39",
+        "received_at": "2026-06-02T15:05:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 422.9825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e88dfe9384e4dc",
+        "received_at": "2026-06-02T15:07:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 423.1075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e88e0b13bff8ca",
+        "received_at": "2026-06-02T15:08:06+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 420.70000000000005,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e88e9e054822a4",
+        "received_at": "2026-06-02T15:18:07+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 422.6175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e8950832629bb8",
+        "received_at": "2026-06-02T17:10:13+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 421.265,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e896832ee216c5",
+        "received_at": "2026-06-02T17:36:06+00:00"
+      },
+      {
+        "alert": 66,
+        "close": 422.8775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e8980f52b574db",
+        "received_at": "2026-06-02T18:03:08+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 421.4975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TSLA",
+        "msg_id": "19e89b71102bb228",
+        "received_at": "2026-06-02T19:02:07+00:00"
+      }
+    ],
+    "FTNT": [
+      {
+        "alert": 6,
+        "close": 146.7625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89b71389bd36e",
+        "received_at": "2026-06-02T19:02:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 146.845,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89b7e5cd742a7",
+        "received_at": "2026-06-02T19:03:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 146.85625,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89b8edb61fa18",
+        "received_at": "2026-06-02T19:04:16+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 146.865,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89b9f21000b0a",
+        "received_at": "2026-06-02T19:05:24+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.05124999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89bd5b89a1164",
+        "received_at": "2026-06-02T19:09:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.135,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89be6e341214d",
+        "received_at": "2026-06-02T19:10:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.15250000000003,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89bf37ebd669b",
+        "received_at": "2026-06-02T19:11:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.17624999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89c09b87a31c2",
+        "received_at": "2026-06-02T19:12:40+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.2,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89c107365f0ac",
+        "received_at": "2026-06-02T19:13:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.20125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89c234b2beb9f",
+        "received_at": "2026-06-02T19:14:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.22875000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89c2ed2e5c7ca",
+        "received_at": "2026-06-02T19:15:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.22,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89ca2ec2797fd",
+        "received_at": "2026-06-02T19:23:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.27,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89cb29319b267",
+        "received_at": "2026-06-02T19:24:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.24,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89cc0a759770e",
+        "received_at": "2026-06-02T19:25:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.2425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89cd0057eb82c",
+        "received_at": "2026-06-02T19:26:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.22,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89cde535d1de0",
+        "received_at": "2026-06-02T19:27:10+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.5075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89cfa051c5031",
+        "received_at": "2026-06-02T19:29:03+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.805,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89d100bde8ac8",
+        "received_at": "2026-06-02T19:30:32+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.01,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89d1d2eb6a91d",
+        "received_at": "2026-06-02T19:31:25+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.01,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89d280da758ef",
+        "received_at": "2026-06-02T19:32:13+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 147.9325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89d37710ccd33",
+        "received_at": "2026-06-02T19:33:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.275,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89d8e7febdbfa",
+        "received_at": "2026-06-02T19:39:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.1975,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89d9f0c47383b",
+        "received_at": "2026-06-02T19:40:17+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.2125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89da9ccba4310",
+        "received_at": "2026-06-02T19:41:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.13125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89dd992ba4f9f",
+        "received_at": "2026-06-02T19:44:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.1175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89de6bc65ef2f",
+        "received_at": "2026-06-02T19:45:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.1175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89df3515b0ef6",
+        "received_at": "2026-06-02T19:46:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.16500000000002,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89e3e23a4fd84",
+        "received_at": "2026-06-02T19:51:12+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.7125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89e956dd97f6a",
+        "received_at": "2026-06-02T19:57:09+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.88,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89ea523f62650",
+        "received_at": "2026-06-02T19:58:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.9475,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89eb2032ce40d",
+        "received_at": "2026-06-02T19:59:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 148.92874999999998,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89ed6bb69e5eb",
+        "received_at": "2026-06-02T20:01:30+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 150.47,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e89faae083629b",
+        "received_at": "2026-06-02T20:16:05+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 152.155,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e8a09497a01db6",
+        "received_at": "2026-06-02T20:32:03+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 152.1,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "FTNT",
+        "msg_id": "19e8a19c99603b4a",
+        "received_at": "2026-06-02T20:50:04+00:00"
+      }
+    ]
+  },
+  "backtest": {
+    "DE": {
+      "option_symbol": "DE261218C00570000",
+      "strike": 570.0,
+      "expiry": "2026-12-18",
+      "entry_price": 54.92,
+      "entry_time": "2026-06-02T13:35:08+00:00",
+      "current_price": 65.45,
+      "current_time": "2026-06-03T00:31:04.302135+00:00",
+      "highest_price": 66.05,
+      "highest_time": "2026-06-02T19:40:04.907331+00:00"
+    },
+    "AAPL": {
+      "option_symbol": "AAPL261218C00310000",
+      "strike": 310.0,
+      "expiry": "2026-12-18",
+      "entry_price": 26.07,
+      "entry_time": "2026-06-02T13:46:37+00:00",
+      "current_price": 29.73,
+      "current_time": "2026-06-03T00:31:04.558518+00:00",
+      "highest_price": 30.66,
+      "highest_time": "2026-06-02T17:50:03.444086+00:00"
+    },
+    "LRCX": {
+      "option_symbol": "LRCX261218C00330000",
+      "strike": 330.0,
+      "expiry": "2026-12-18",
+      "entry_price": 66.24,
+      "entry_time": "2026-06-02T13:49:11+00:00",
+      "current_price": 71.48,
+      "current_time": "2026-06-03T00:31:04.722892+00:00",
+      "highest_price": 71.78,
+      "highest_time": "2026-06-02T15:25:08.922638+00:00"
+    },
+    "GLW": {
+      "option_symbol": "GLW261218C00200000",
+      "strike": 200.0,
+      "expiry": "2026-12-18",
+      "entry_price": 39.53,
+      "entry_time": "2026-06-02T13:58:09+00:00",
+      "current_price": 46.15,
+      "current_time": "2026-06-03T00:31:03.939884+00:00",
+      "highest_price": 47.11,
+      "highest_time": "2026-06-02T15:14:09.126453+00:00"
+    },
+    "ADI": {
+      "option_symbol": "ADI261218C00420000",
+      "strike": 420.0,
+      "expiry": "2026-12-18",
+      "entry_price": 59.97,
+      "entry_time": "2026-06-02T13:59:10+00:00",
+      "current_price": 64.42,
+      "current_time": "2026-06-03T00:31:04.131475+00:00",
+      "highest_price": 65.09,
+      "highest_time": "2026-06-02T19:59:05.054314+00:00"
+    },
+    "WDC": {
+      "option_symbol": "WDC261218C00570000",
+      "strike": 570.0,
+      "expiry": "2026-12-18",
+      "entry_price": 149.79,
+      "entry_time": "2026-06-02T14:00:23+00:00",
+      "current_price": 144.19,
+      "current_time": "2026-06-03T00:31:04.901407+00:00",
+      "highest_price": 151.01,
+      "highest_time": "2026-06-02T14:16:07.671644+00:00"
+    },
+    "AMD": {
+      "option_symbol": "AMD261218C00520000",
+      "strike": 520.0,
+      "expiry": "2026-12-18",
+      "entry_price": 116.08,
+      "entry_time": "2026-06-02T14:00:22+00:00",
+      "current_price": 115.02,
+      "current_time": "2026-06-03T00:31:05.077336+00:00",
+      "highest_price": 116.91,
+      "highest_time": "2026-06-02T19:59:05.914101+00:00"
+    },
+    "NVDA": {
+      "option_symbol": "NVDA261218C00240000",
+      "strike": 240.0,
+      "expiry": "2026-12-18",
+      "entry_price": 28.47,
+      "entry_time": "2026-06-02T14:03:45+00:00",
+      "current_price": 24.01,
+      "current_time": "2026-06-03T00:31:03.770829+00:00",
+      "highest_price": 29.16,
+      "highest_time": "2026-06-02T14:06:08.082737+00:00"
+    },
+    "ORCL": {
+      "option_symbol": "ORCL261218C00250000",
+      "strike": 250.0,
+      "expiry": "2026-12-18",
+      "entry_price": 47.49,
+      "entry_time": "2026-06-02T14:05:11+00:00",
+      "current_price": 47.14,
+      "current_time": "2026-06-03T00:31:05.271772+00:00",
+      "highest_price": 51.01,
+      "highest_time": "2026-06-02T14:13:07.417465+00:00"
+    },
+    "QCOM": {
+      "option_symbol": "QCOM261218C00240000",
+      "strike": 240.0,
+      "expiry": "2026-12-18",
+      "entry_price": 48.19,
+      "entry_time": "2026-06-02T14:39:08+00:00",
+      "current_price": 51.08,
+      "current_time": "2026-06-03T00:31:05.452944+00:00",
+      "highest_price": 54.16,
+      "highest_time": "2026-06-02T17:17:06.548883+00:00"
+    },
+    "TSLA": {
+      "option_symbol": "TSLA261218C00430000",
+      "strike": 430.0,
+      "expiry": "2026-12-18",
+      "entry_price": 62.95,
+      "entry_time": "2026-06-02T15:03:08+00:00",
+      "current_price": 62.77,
+      "current_time": "2026-06-03T00:31:05.617672+00:00",
+      "highest_price": 63.37,
+      "highest_time": "2026-06-02T19:57:05.768938+00:00"
+    },
+    "FTNT": {
+      "option_symbol": "FTNT261218C00150000",
+      "strike": 150.0,
+      "expiry": "2026-12-18",
+      "entry_price": 23.52,
+      "entry_time": "2026-06-02T19:02:15+00:00",
+      "current_price": 24.43,
+      "current_time": "2026-06-03T00:31:05.785374+00:00",
+      "highest_price": 25.0,
+      "highest_time": "2026-06-02T19:57:05.925954+00:00"
+    }
+  }
+}
