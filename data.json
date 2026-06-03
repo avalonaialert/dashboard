@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T11:01:02.677863+00:00",
+  "last_updated": "2026-06-03T12:01:03.241561+00:00",
   "today": {
     "date": "2026-06-03",
     "alerts": {
@@ -312,6 +312,17 @@
           "symbol": "SNDK",
           "msg_id": "19e8cd26ad418cba",
           "received_at": "2026-06-03T09:30:58+00:00"
+        }
+      ],
+      "ORCL": [
+        {
+          "alert": 7,
+          "close": 245.2875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ORCL",
+          "msg_id": "19e8d5b04ab203d5",
+          "received_at": "2026-06-03T12:00:11+00:00"
         }
       ]
     },
