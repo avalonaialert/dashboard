@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T08:46:04.479433+00:00",
+  "last_updated": "2026-06-03T09:01:03.100440+00:00",
   "today": {
     "date": "2026-06-03",
     "alerts": {
@@ -59,6 +59,15 @@
           "symbol": "GLW",
           "msg_id": "19e8ca8b9874cf40",
           "received_at": "2026-06-03T08:45:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 204.9025,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19e8cb6e952bc2c4",
+          "received_at": "2026-06-03T09:00:56+00:00"
         }
       ],
       "LRCX": [
@@ -79,6 +88,15 @@
           "symbol": "LRCX",
           "msg_id": "19e8c8dd02c7ee60",
           "received_at": "2026-06-03T08:16:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 335.995,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19e8ca949cb6adc9",
+          "received_at": "2026-06-03T08:46:03+00:00"
         }
       ]
     },
