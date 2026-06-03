@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T14:26:02.612430+00:00",
+  "last_updated": "2026-06-03T14:30:03.928338+00:00",
   "today": {
     "date": "2026-06-03",
     "alerts": {
@@ -472,6 +472,17 @@
           "msg_id": "19e8ddedcde91f29",
           "received_at": "2026-06-03T14:24:11+00:00"
         }
+      ],
+      "WDC": [
+        {
+          "alert": 6,
+          "close": 591.2049999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19e8de3942435b7b",
+          "received_at": "2026-06-03T14:29:11+00:00"
+        }
       ]
     },
     "backtest": {
@@ -481,8 +492,8 @@
         "expiry": "2026-12-18",
         "entry_price": 72.69,
         "entry_time": "2026-06-03T13:59:42+00:00",
-        "current_price": 75.38,
-        "current_time": "2026-06-03T14:26:02.435970+00:00",
+        "current_price": 74.61,
+        "current_time": "2026-06-03T14:30:02.702296+00:00",
         "highest_price": 77.56,
         "highest_time": "2026-06-03T14:06:03.521450+00:00"
       },
@@ -492,10 +503,21 @@
         "expiry": "2026-12-18",
         "entry_price": 62.28,
         "entry_time": "2026-06-03T14:18:05+00:00",
-        "current_price": 61.48,
-        "current_time": "2026-06-03T14:26:02.612379+00:00",
+        "current_price": 61.84,
+        "current_time": "2026-06-03T14:30:02.953824+00:00",
         "highest_price": 64.06,
         "highest_time": "2026-06-03T14:23:03.953812+00:00"
+      },
+      "WDC": {
+        "option_symbol": "WDC261218C00600000",
+        "strike": 600.0,
+        "expiry": "2026-12-18",
+        "entry_price": 153.68,
+        "entry_time": "2026-06-03T14:29:11+00:00",
+        "current_price": 153.68,
+        "current_time": "2026-06-03T14:30:03.928283+00:00",
+        "highest_price": 153.68,
+        "highest_time": "2026-06-03T14:30:03.928308+00:00"
       }
     }
   }
