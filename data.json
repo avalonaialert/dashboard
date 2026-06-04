@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T12:16:04.695646+00:00",
+  "last_updated": "2026-06-04T12:31:04.841485+00:00",
   "today": {
     "date": "2026-06-04",
     "alerts": {
@@ -95,6 +95,15 @@
           "symbol": "SLV",
           "msg_id": "19e928f3c21e213a",
           "received_at": "2026-06-04T12:15:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 67.3325,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SLV",
+          "msg_id": "19e929d3afa48336",
+          "received_at": "2026-06-04T12:30:34+00:00"
         }
       ],
       "PLTR": [
@@ -126,6 +135,15 @@
           "symbol": "MSFT",
           "msg_id": "19e928f3b1914ba9",
           "received_at": "2026-06-04T12:15:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 433.15,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MSFT",
+          "msg_id": "19e929d0ae750cc7",
+          "received_at": "2026-06-04T12:30:23+00:00"
         }
       ]
     },
