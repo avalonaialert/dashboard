@@ -784,7 +784,13 @@
 
     <main class="content">
       <p id="status">Loading…</p>
-      <input id="sym-search" type="text" placeholder="Filter symbols…" autocomplete="off" />
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">
+        <input id="sym-search" type="text" placeholder="Filter symbols…" autocomplete="off" style="margin-bottom:0" />
+        <label style="display:flex;align-items:center;gap:6px;font-size:0.8rem;color:#8b949e;cursor:pointer;white-space:nowrap">
+          <input type="checkbox" id="show-all-chk" style="cursor:pointer;accent-color:#58a6ff" />
+          Show all
+        </label>
+      </div>
       <div class="grid" id="grid"></div>
       <div id="rsi70-section" style="display:none">
         <div class="rsi70-section-title">◆ RSI 70 Pre-Market</div>
@@ -1169,7 +1175,15 @@
         return new Date(b[1][0].received_at) - new Date(a[1][0].received_at); // fallback: latest alert
       });
 
-      statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
+      // Filter to past 15 min unless "Show all" is checked
+      const _showAll15 = document.getElementById("show-all-chk")?.checked;
+      const _cutoff15  = Date.now() - 15 * 60 * 1000;
+      const visibleSymbols = _showAll15
+        ? symbols
+        : symbols.filter(([, h]) => new Date(h[0].received_at).getTime() >= _cutoff15);
+
+      const hiddenCount = symbols.length - visibleSymbols.length;
+      statusEl.textContent = `${visibleSymbols.length} symbol${visibleSymbols.length !== 1 ? "s" : ""}${hiddenCount > 0 ? ` · ${hiddenCount} older hidden` : ""}`;
 
       // ── 5 Min Alerts tile — rendered first ────────────────────────────
       if (alert5List.length > 0) {
@@ -1197,7 +1211,7 @@
         grid.appendChild(tile5);
       }
 
-      symbols.forEach(([symbol, history]) => {
+      visibleSymbols.forEach(([symbol, history]) => {
         const latest = history[0];
         const first  = history[history.length - 1];
         const m = meta(latest.alert);
@@ -1210,6 +1224,7 @@
         // Auto-remove pulse once the 10-min window expires
         if (isNew) setTimeout(() => tile.classList.remove("new-alert"), 10 * 60 * 1000 - age);
         tile.dataset.symbol = symbol;
+        tile.dataset.latest = new Date(latest.received_at).getTime();
 
         const gain = fmtGain(first.close, latest.close);
         const gainHtml = gain
@@ -1599,9 +1614,8 @@
       _rsi70Syms     = cached.rsi70Syms;
       _contenderSyms = cached.contenderSyms;
       renderMoversBar();
-      // Re-apply any active search filter
-      const q = document.getElementById("sym-search")?.value.trim().toUpperCase();
-      if (q) document.getElementById("sym-search").dispatchEvent(new Event("input"));
+      // Re-apply filters (search + 15-min window)
+      applyFilters();
     }
 
     async function setActiveSarTab(key) {
@@ -2135,8 +2149,8 @@
     setInterval(updateMarketClock, 60 * 1000);
 
     // ── Symbol search filter ─────────────────────────────────────────────
-    document.getElementById("sym-search").addEventListener("input", function () {
-      const q = this.value.trim().toUpperCase();
+    function applyFilters() {
+      const q = document.getElementById("sym-search").value.trim().toUpperCase();
       document.querySelectorAll("#grid .tile[data-symbol]").forEach(t => {
         t.style.display = !q || t.dataset.symbol.toUpperCase().includes(q) ? "" : "none";
       });
@@ -2146,6 +2160,14 @@
           td.closest("tr").style.display = !q || sym.includes(q) ? "" : "none";
         });
       });
+    }
+    document.getElementById("sym-search").addEventListener("input", applyFilters);
+    // "Show all" checkbox re-renders the current tab so the 15-min filter is re-applied at source
+    document.getElementById("show-all-chk").addEventListener("change", () => {
+      _renderCache = {};
+      if (_activeSarTab)        setActiveSarTab(_activeSarTab);
+      else if (_active15Tab)    setActive15Tab(_active15Tab);
+      else                      setActiveTab(_activeTab);
     });
 
     // ── Silent 5-min refresh (preserves active tab + scroll) ────────────
