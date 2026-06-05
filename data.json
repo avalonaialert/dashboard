@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-05T08:01:05.153141+00:00",
+  "last_updated": "2026-06-05T08:16:02.623473+00:00",
   "today": {
     "date": "2026-06-05",
-    "alerts": {},
+    "alerts": {
+      "CVS": [
+        {
+          "alert": 7,
+          "close": 95.49,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CVS",
+          "msg_id": "19e96cde4f2d018e",
+          "received_at": "2026-06-05T08:02:08+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
