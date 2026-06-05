@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T11:01:03.282319+00:00",
+  "last_updated": "2026-06-05T11:31:02.152991+00:00",
   "today": {
     "date": "2026-06-05",
     "alerts": {
@@ -77,6 +77,15 @@
           "symbol": "LLY",
           "msg_id": "19e974c19eef8f47",
           "received_at": "2026-06-05T10:20:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1140.08,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LLY",
+          "msg_id": "19e978c7cc01c493",
+          "received_at": "2026-06-05T11:30:25+00:00"
         }
       ],
       "APP": [
