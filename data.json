@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T14:24:03.687602+00:00",
+  "last_updated": "2026-06-05T14:28:07.153787+00:00",
   "today": {
     "date": "2026-06-05",
     "alerts": {
@@ -403,6 +403,17 @@
           "msg_id": "19e9829c9634b49e",
           "received_at": "2026-06-05T14:22:12+00:00"
         }
+      ],
+      "ODFL": [
+        {
+          "alert": 6,
+          "close": 248.745,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ODFL",
+          "msg_id": "19e982e824df0c3e",
+          "received_at": "2026-06-05T14:27:23+00:00"
+        }
       ]
     },
     "backtest": {
@@ -412,8 +423,8 @@
         "expiry": "2026-12-18",
         "entry_price": 1.19,
         "entry_time": "2026-06-05T13:38:19+00:00",
-        "current_price": 1.19,
-        "current_time": "2026-06-05T14:24:03.687566+00:00",
+        "current_price": 1.17,
+        "current_time": "2026-06-05T14:28:06.123175+00:00",
         "highest_price": 1.21,
         "highest_time": "2026-06-05T13:40:02.785097+00:00"
       },
@@ -423,10 +434,21 @@
         "expiry": "2026-12-18",
         "entry_price": 77.38,
         "entry_time": "2026-06-05T13:50:17+00:00",
-        "current_price": 75.97,
-        "current_time": "2026-06-05T14:24:03.515895+00:00",
+        "current_price": 76.54,
+        "current_time": "2026-06-05T14:28:05.818839+00:00",
         "highest_price": 79.27,
         "highest_time": "2026-06-05T14:00:04.230402+00:00"
+      },
+      "ODFL": {
+        "option_symbol": "ODFL261218C00250000",
+        "strike": 250.0,
+        "expiry": "2026-12-18",
+        "entry_price": 29.97,
+        "entry_time": "2026-06-05T14:27:23+00:00",
+        "current_price": 29.97,
+        "current_time": "2026-06-05T14:28:07.153729+00:00",
+        "highest_price": 29.97,
+        "highest_time": "2026-06-05T14:28:07.153755+00:00"
       }
     }
   }
