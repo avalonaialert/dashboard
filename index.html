@@ -1145,9 +1145,9 @@
         }
       }
 
-      // Drop symbols with only SMA Gaining — keep only if they have a Call Alert too
+      // Drop symbols with only SMA Gaining (6666) — keep if they have a Call, Index Call, or Index Put
       for (const sym of Object.keys(symbolMap)) {
-        if (!symbolMap[sym].some(a => Number(a.alert) === 6)) delete symbolMap[sym];
+        if (!symbolMap[sym].some(a => [6, 8, -8].includes(Number(a.alert)))) delete symbolMap[sym];
       }
 
       const symbols = Object.entries(symbolMap);
