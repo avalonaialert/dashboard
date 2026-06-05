@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T09:31:02.481476+00:00",
+  "last_updated": "2026-06-05T10:16:02.392606+00:00",
   "today": {
     "date": "2026-06-05",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "CVS",
           "msg_id": "19e96cde4f2d018e",
           "received_at": "2026-06-05T08:02:08+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 94.92,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CVS",
+          "msg_id": "19e97403ce3767f1",
+          "received_at": "2026-06-05T10:07:02+00:00"
         }
       ],
       "LLY": [
@@ -41,6 +50,15 @@
           "symbol": "LLY",
           "msg_id": "19e97123a4af7e19",
           "received_at": "2026-06-05T09:16:47+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1136,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LLY",
+          "msg_id": "19e973abef4f8409",
+          "received_at": "2026-06-05T10:01:08+00:00"
         }
       ]
     },
