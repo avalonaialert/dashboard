@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T11:31:02.152991+00:00",
+  "last_updated": "2026-06-05T11:46:02.582465+00:00",
   "today": {
     "date": "2026-06-05",
     "alerts": {
@@ -86,6 +86,15 @@
           "symbol": "LLY",
           "msg_id": "19e978c7cc01c493",
           "received_at": "2026-06-05T11:30:25+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1136.99,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LLY",
+          "msg_id": "19e979a6989ebd56",
+          "received_at": "2026-06-05T11:45:36+00:00"
         }
       ],
       "APP": [
@@ -106,6 +115,15 @@
           "symbol": "APP",
           "msg_id": "19e9763d9addb74b",
           "received_at": "2026-06-05T10:46:02+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 578.81,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "APP",
+          "msg_id": "19e979a809046bce",
+          "received_at": "2026-06-05T11:45:44+00:00"
         }
       ]
     },
