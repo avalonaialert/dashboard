@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T12:16:04.559611+00:00",
+  "last_updated": "2026-06-08T12:31:04.673522+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -171,6 +171,15 @@
           "symbol": "MU",
           "msg_id": "19ea728ab7464d91",
           "received_at": "2026-06-08T12:15:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 926.1075,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19ea736398a8f9f1",
+          "received_at": "2026-06-08T12:30:07+00:00"
         }
       ],
       "PANW": [
@@ -202,6 +211,28 @@
           "symbol": "FSLR",
           "msg_id": "19ea7290724393da",
           "received_at": "2026-06-08T12:15:42+00:00"
+        }
+      ],
+      "ORCL": [
+        {
+          "alert": 7,
+          "close": 218.78,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ORCL",
+          "msg_id": "19ea7366d247907c",
+          "received_at": "2026-06-08T12:30:20+00:00"
+        }
+      ],
+      "TSLA": [
+        {
+          "alert": 7,
+          "close": 399.7525,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19ea7365bd7bd31e",
+          "received_at": "2026-06-08T12:30:16+00:00"
         }
       ]
     },
