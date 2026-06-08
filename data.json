@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T11:31:03.908740+00:00",
+  "last_updated": "2026-06-08T11:46:05.149738+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -113,6 +113,48 @@
           "symbol": "SNDK",
           "msg_id": "19ea6ff70ebad220",
           "received_at": "2026-06-08T11:30:16+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1634.505,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19ea70d10a87b6e6",
+          "received_at": "2026-06-08T11:45:10+00:00"
+        }
+      ],
+      "LRCX": [
+        {
+          "alert": 7,
+          "close": 316.015,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19ea70d554626221",
+          "received_at": "2026-06-08T11:45:28+00:00"
+        }
+      ],
+      "MU": [
+        {
+          "alert": 7,
+          "close": 924.0725,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19ea70d2d01ee664",
+          "received_at": "2026-06-08T11:45:17+00:00"
+        }
+      ],
+      "PANW": [
+        {
+          "alert": 7,
+          "close": 274.48,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PANW",
+          "msg_id": "19ea7002f852ab6b",
+          "received_at": "2026-06-08T11:31:05+00:00"
         }
       ]
     },
