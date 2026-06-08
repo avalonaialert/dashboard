@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T11:46:05.149738+00:00",
+  "last_updated": "2026-06-08T12:01:06.948898+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -122,6 +122,15 @@
           "symbol": "SNDK",
           "msg_id": "19ea70d10a87b6e6",
           "received_at": "2026-06-08T11:45:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1628.3274999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19ea71b4e41b471b",
+          "received_at": "2026-06-08T12:00:33+00:00"
         }
       ],
       "LRCX": [
@@ -144,6 +153,15 @@
           "symbol": "MU",
           "msg_id": "19ea70d2d01ee664",
           "received_at": "2026-06-08T11:45:17+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 923.8625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19ea71b38eec86ee",
+          "received_at": "2026-06-08T12:00:27+00:00"
         }
       ],
       "PANW": [
@@ -155,6 +173,15 @@
           "symbol": "PANW",
           "msg_id": "19ea7002f852ab6b",
           "received_at": "2026-06-08T11:31:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 273.62,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "PANW",
+          "msg_id": "19ea70fff90b44ed",
+          "received_at": "2026-06-08T11:48:22+00:00"
         }
       ]
     },
