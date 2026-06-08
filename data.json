@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T13:31:05.326705+00:00",
+  "last_updated": "2026-06-08T13:32:05.359516+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -205,6 +205,15 @@
           "symbol": "LRCX",
           "msg_id": "19ea75ff0da12f62",
           "received_at": "2026-06-08T13:15:41+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 317.1925,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19ea76ea6f4ee3ff",
+          "received_at": "2026-06-08T13:31:44+00:00"
         }
       ],
       "MU": [
@@ -482,6 +491,15 @@
           "symbol": "GLW",
           "msg_id": "19ea75f7c133d01a",
           "received_at": "2026-06-08T13:15:11+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 193.29999999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19ea76dfb67cde1f",
+          "received_at": "2026-06-08T13:31:01+00:00"
         }
       ],
       "STX": [
@@ -551,6 +569,15 @@
           "symbol": "WDC",
           "msg_id": "19ea75f8d82621ef",
           "received_at": "2026-06-08T13:15:14+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 539.0825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19ea76ec3f94b8c5",
+          "received_at": "2026-06-08T13:31:52+00:00"
         }
       ],
       "IBM": [
