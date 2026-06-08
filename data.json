@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T14:58:03.583041+00:00",
+  "last_updated": "2026-06-08T14:59:06.406195+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -449,6 +449,15 @@
           "symbol": "TSLA",
           "msg_id": "19ea7bbde127f2ea",
           "received_at": "2026-06-08T14:56:05+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 403.97499999999997,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19ea7bdafb98187a",
+          "received_at": "2026-06-08T14:58:04+00:00"
         }
       ],
       "QCOM": [
@@ -793,6 +802,15 @@
           "symbol": "CSCO",
           "msg_id": "19ea7bb0c8fe97cb",
           "received_at": "2026-06-08T14:55:12+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 125.97,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CSCO",
+          "msg_id": "19ea7bdbdaa4d223",
+          "received_at": "2026-06-08T14:58:07+00:00"
         }
       ],
       "APP": [
@@ -932,6 +950,15 @@
           "symbol": "AAPL",
           "msg_id": "19ea7bafbd54fdfd",
           "received_at": "2026-06-08T14:55:07+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 314.6825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AAPL",
+          "msg_id": "19ea7bdb9c949176",
+          "received_at": "2026-06-08T14:58:07+00:00"
         }
       ]
     },
@@ -942,8 +969,8 @@
         "expiry": "2026-12-18",
         "entry_price": 31.53,
         "entry_time": "2026-06-08T14:35:46+00:00",
-        "current_price": 31.72,
-        "current_time": "2026-06-08T14:58:02.977039+00:00",
+        "current_price": 31.53,
+        "current_time": "2026-06-08T14:59:05.789581+00:00",
         "highest_price": 32.03,
         "highest_time": "2026-06-08T14:56:07.686708+00:00"
       },
@@ -953,10 +980,10 @@
         "expiry": "2026-12-18",
         "entry_price": 14.72,
         "entry_time": "2026-06-08T14:37:49+00:00",
-        "current_price": 14.62,
-        "current_time": "2026-06-08T14:58:03.200198+00:00",
-        "highest_price": 14.88,
-        "highest_time": "2026-06-08T14:53:06.408266+00:00"
+        "current_price": 14.91,
+        "current_time": "2026-06-08T14:59:05.961442+00:00",
+        "highest_price": 14.91,
+        "highest_time": "2026-06-08T14:59:05.961474+00:00"
       },
       "APP": {
         "option_symbol": "APP261218C00570000",
@@ -965,7 +992,7 @@
         "entry_price": 124.61,
         "entry_time": "2026-06-08T14:39:07+00:00",
         "current_price": 125.02,
-        "current_time": "2026-06-08T14:58:03.407084+00:00",
+        "current_time": "2026-06-08T14:59:06.206559+00:00",
         "highest_price": 126.1,
         "highest_time": "2026-06-08T14:54:07.846405+00:00"
       },
@@ -975,8 +1002,8 @@
         "expiry": "2026-12-18",
         "entry_price": 58.27,
         "entry_time": "2026-06-08T14:41:05+00:00",
-        "current_price": 60.45,
-        "current_time": "2026-06-08T14:58:02.791873+00:00",
+        "current_price": 58.84,
+        "current_time": "2026-06-08T14:59:05.607261+00:00",
         "highest_price": 60.45,
         "highest_time": "2026-06-08T14:58:02.791892+00:00"
       },
@@ -986,8 +1013,8 @@
         "expiry": "2026-12-18",
         "entry_price": 24.36,
         "entry_time": "2026-06-08T14:49:08+00:00",
-        "current_price": 25.09,
-        "current_time": "2026-06-08T14:58:03.583003+00:00",
+        "current_price": 24.97,
+        "current_time": "2026-06-08T14:59:06.406160+00:00",
         "highest_price": 25.23,
         "highest_time": "2026-06-08T14:54:08.029096+00:00"
       }
