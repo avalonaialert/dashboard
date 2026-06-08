@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T14:37:02.516792+00:00",
+  "last_updated": "2026-06-08T14:38:04.782714+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -629,6 +629,26 @@
           "symbol": "ODFL",
           "msg_id": "19ea7a942f1c7717",
           "received_at": "2026-06-08T14:35:46+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 250.0125,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ODFL",
+          "msg_id": "19ea7aa8ce90ada9",
+          "received_at": "2026-06-08T14:37:10+00:00"
+        }
+      ],
+      "CSCO": [
+        {
+          "alert": 6,
+          "close": 125.1575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CSCO",
+          "msg_id": "19ea7ab224773085",
+          "received_at": "2026-06-08T14:37:49+00:00"
         }
       ]
     },
@@ -639,10 +659,21 @@
         "expiry": "2026-12-18",
         "entry_price": 31.53,
         "entry_time": "2026-06-08T14:35:46+00:00",
-        "current_price": 31.77,
-        "current_time": "2026-06-08T14:37:02.516731+00:00",
+        "current_price": 31.59,
+        "current_time": "2026-06-08T14:38:04.391730+00:00",
         "highest_price": 31.77,
         "highest_time": "2026-06-08T14:37:02.516760+00:00"
+      },
+      "CSCO": {
+        "option_symbol": "CSCO261218C00130000",
+        "strike": 130.0,
+        "expiry": "2026-12-18",
+        "entry_price": 14.72,
+        "entry_time": "2026-06-08T14:37:49+00:00",
+        "current_price": 14.72,
+        "current_time": "2026-06-08T14:38:04.782677+00:00",
+        "highest_price": 14.72,
+        "highest_time": "2026-06-08T14:38:04.782696+00:00"
       }
     }
   }
