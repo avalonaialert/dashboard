@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T12:46:07.475017+00:00",
+  "last_updated": "2026-06-08T13:00:08.868157+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -247,6 +247,15 @@
           "symbol": "FSLR",
           "msg_id": "19ea737286383738",
           "received_at": "2026-06-08T12:31:06+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 290.88,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "FSLR",
+          "msg_id": "19ea74d1c397733e",
+          "received_at": "2026-06-08T12:55:07+00:00"
         }
       ],
       "ORCL": [
@@ -320,6 +329,17 @@
           "symbol": "GLW",
           "msg_id": "19ea743fe02d4eaf",
           "received_at": "2026-06-08T12:45:10+00:00"
+        }
+      ],
+      "STX": [
+        {
+          "alert": 7,
+          "close": 885,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19ea746a8173901e",
+          "received_at": "2026-06-08T12:48:04+00:00"
         }
       ]
     },
