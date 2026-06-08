@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-08T08:01:07.616728+00:00",
+  "last_updated": "2026-06-08T08:31:04.048906+00:00",
   "today": {
     "date": "2026-06-08",
-    "alerts": {},
+    "alerts": {
+      "LLY": [
+        {
+          "alert": 7,
+          "close": 1178.6,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LLY",
+          "msg_id": "19ea64da7d5b67f8",
+          "received_at": "2026-06-08T08:16:04+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
