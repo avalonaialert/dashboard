@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T13:33:05.914934+00:00",
+  "last_updated": "2026-06-08T14:36:03.651224+00:00",
   "today": {
     "date": "2026-06-08",
     "alerts": {
@@ -619,8 +619,31 @@
           "msg_id": "19ea76f7e16e83e0",
           "received_at": "2026-06-08T13:32:40+00:00"
         }
+      ],
+      "ODFL": [
+        {
+          "alert": 6,
+          "close": 249.67999999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ODFL",
+          "msg_id": "19ea7a942f1c7717",
+          "received_at": "2026-06-08T14:35:46+00:00"
+        }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "ODFL": {
+        "option_symbol": "ODFL261218C00250000",
+        "strike": 250.0,
+        "expiry": "2026-12-18",
+        "entry_price": 31.53,
+        "entry_time": "2026-06-08T14:35:46+00:00",
+        "current_price": 31.53,
+        "current_time": "2026-06-08T14:36:03.651171+00:00",
+        "highest_price": 31.53,
+        "highest_time": "2026-06-08T14:36:03.651196+00:00"
+      }
+    }
   }
 }
