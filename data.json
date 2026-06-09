@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T14:01:03.856130+00:00",
+  "last_updated": "2026-06-09T14:03:03.862063+00:00",
   "today": {
     "date": "2026-06-09",
     "alerts": {
@@ -434,6 +434,15 @@
           "symbol": "LRCX",
           "msg_id": "19eabd4445e5a896",
           "received_at": "2026-06-09T10:01:13+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 347.2525,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eacb0dfe7df55b",
+          "received_at": "2026-06-09T14:02:09+00:00"
         }
       ],
       "AMD": [
@@ -1195,10 +1204,21 @@
         "expiry": "2026-12-18",
         "entry_price": 99.63,
         "entry_time": "2026-06-09T13:58:03+00:00",
-        "current_price": 97.81,
-        "current_time": "2026-06-09T14:01:03.856078+00:00",
+        "current_price": 98.66,
+        "current_time": "2026-06-09T14:03:03.862026+00:00",
         "highest_price": 99.63,
         "highest_time": "2026-06-09T13:59:03.803221+00:00"
+      },
+      "LRCX": {
+        "option_symbol": "LRCX261218C00350000",
+        "strike": 350.0,
+        "expiry": "2026-12-18",
+        "entry_price": 73.05,
+        "entry_time": "2026-06-09T14:02:09+00:00",
+        "current_price": 73.05,
+        "current_time": "2026-06-09T14:03:03.604055+00:00",
+        "highest_price": 73.05,
+        "highest_time": "2026-06-09T14:03:03.604081+00:00"
       }
     }
   }
