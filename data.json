@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T11:31:03.481225+00:00",
+  "last_updated": "2026-06-09T11:46:06.232991+00:00",
   "today": {
     "date": "2026-06-09",
     "alerts": {
@@ -93,6 +93,15 @@
           "symbol": "SNDK",
           "msg_id": "19eabeed5605154e",
           "received_at": "2026-06-09T10:30:14+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1711.2625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eac3389bc27dd0",
+          "received_at": "2026-06-09T11:45:17+00:00"
         }
       ],
       "WDC": [
@@ -481,6 +490,15 @@
           "symbol": "AMD",
           "msg_id": "19eac25c666b18b4",
           "received_at": "2026-06-09T11:30:16+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 503.9325,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19eac33834391780",
+          "received_at": "2026-06-09T11:45:15+00:00"
         }
       ],
       "GLW": [
@@ -656,6 +674,15 @@
           "symbol": "MU",
           "msg_id": "19eac25c5aaa21b4",
           "received_at": "2026-06-09T11:30:15+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 998.0475000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19eac33705a83c4f",
+          "received_at": "2026-06-09T11:45:10+00:00"
         }
       ],
       "MRVL": [
@@ -804,6 +831,15 @@
           "symbol": "STX",
           "msg_id": "19eabe24e17bd562",
           "received_at": "2026-06-09T10:16:32+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 906.28,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19eac2802841bf6c",
+          "received_at": "2026-06-09T11:32:42+00:00"
         }
       ],
       "DELL": [
