@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T13:50:02.667565+00:00",
+  "last_updated": "2026-06-09T13:51:03.838795+00:00",
   "today": {
     "date": "2026-06-09",
     "alerts": {
@@ -1156,6 +1156,15 @@
           "symbol": "SPY",
           "msg_id": "19eaca56b45ee82e",
           "received_at": "2026-06-09T13:49:40+00:00"
+        },
+        {
+          "alert": 8,
+          "close": 746.7225,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SPY",
+          "msg_id": "19eaca6385e369de",
+          "received_at": "2026-06-09T13:50:33+00:00"
         }
       ]
     },
