@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T09:01:14.020473+00:00",
+  "last_updated": "2026-06-09T09:16:12.451657+00:00",
   "today": {
     "date": "2026-06-09",
     "alerts": {
@@ -39,6 +39,15 @@
           "symbol": "SNDK",
           "msg_id": "19eab9c99ab90056",
           "received_at": "2026-06-09T09:00:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1696.64,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eabaa5c7563c7c",
+          "received_at": "2026-06-09T09:15:27+00:00"
         }
       ],
       "WDC": [
@@ -68,6 +77,15 @@
           "symbol": "WDC",
           "msg_id": "19eab938edfa5c82",
           "received_at": "2026-06-09T08:50:33+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 541.1850000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19eab9d3ae0fdace",
+          "received_at": "2026-06-09T09:01:06+00:00"
         }
       ],
       "AMAT": [
@@ -97,6 +115,15 @@
           "symbol": "AMAT",
           "msg_id": "19eab8f75c55b6e6",
           "received_at": "2026-06-09T08:46:04+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 501.13,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eab9fd6fa543c9",
+          "received_at": "2026-06-09T09:03:57+00:00"
         }
       ],
       "TSLA": [
@@ -164,6 +191,15 @@
           "symbol": "LRCX",
           "msg_id": "19eab923dc732351",
           "received_at": "2026-06-09T08:49:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 330.45,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eab9df3bafec86",
+          "received_at": "2026-06-09T09:01:53+00:00"
         }
       ],
       "AMD": [
@@ -231,6 +267,24 @@
           "symbol": "GLW",
           "msg_id": "19eab8ee28109247",
           "received_at": "2026-06-09T08:45:27+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 194.6,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eabaa54fe22f15",
+          "received_at": "2026-06-09T09:15:25+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 194.48000000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eab9d9eb84bd79",
+          "received_at": "2026-06-09T09:01:32+00:00"
         }
       ],
       "MU": [
@@ -269,6 +323,15 @@
           "symbol": "MU",
           "msg_id": "19eab9c9a9d3e91b",
           "received_at": "2026-06-09T09:00:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 990.3399999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19eabaa5253379e2",
+          "received_at": "2026-06-09T09:15:24+00:00"
         }
       ],
       "MRVL": [
@@ -298,6 +361,15 @@
           "symbol": "MRVL",
           "msg_id": "19eab9c8e1eb9535",
           "received_at": "2026-06-09T09:00:21+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 301.8325,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MRVL",
+          "msg_id": "19eabaa498c874ed",
+          "received_at": "2026-06-09T09:15:22+00:00"
         }
       ],
       "STX": [
@@ -327,6 +399,15 @@
           "symbol": "STX",
           "msg_id": "19eab93e5d9b5d59",
           "received_at": "2026-06-09T08:50:56+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 897.1,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19eab9d693def52b",
+          "received_at": "2026-06-09T09:01:18+00:00"
         }
       ],
       "DELL": [
@@ -358,6 +439,24 @@
           "symbol": "HPE",
           "msg_id": "19eab8f70b26e467",
           "received_at": "2026-06-09T08:46:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 50.44,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HPE",
+          "msg_id": "19eabaa78d573487",
+          "received_at": "2026-06-09T09:15:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 50.355,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HPE",
+          "msg_id": "19eab9d37c477c4e",
+          "received_at": "2026-06-09T09:01:06+00:00"
         }
       ]
     },
