@@ -1,8 +1,97 @@
 {
-  "last_updated": "2026-06-09T08:01:07.667711+00:00",
+  "last_updated": "2026-06-09T08:16:06.737286+00:00",
   "today": {
     "date": "2026-06-09",
-    "alerts": {},
+    "alerts": {
+      "SNDK": [
+        {
+          "alert": 7,
+          "close": 1694.5575,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eab7393ec5b128",
+          "received_at": "2026-06-09T08:15:37+00:00"
+        }
+      ],
+      "WDC": [
+        {
+          "alert": 7,
+          "close": 541.905,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19eab738fcda14b0",
+          "received_at": "2026-06-09T08:15:36+00:00"
+        }
+      ],
+      "AMAT": [
+        {
+          "alert": 7,
+          "close": 501.495,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eab738ca1937a1",
+          "received_at": "2026-06-09T08:15:35+00:00"
+        }
+      ],
+      "TSLA": [
+        {
+          "alert": 7,
+          "close": 411.505,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19eab7384d65bd10",
+          "received_at": "2026-06-09T08:15:32+00:00"
+        }
+      ],
+      "LRCX": [
+        {
+          "alert": 7,
+          "close": 330.62,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eab7382df270e3",
+          "received_at": "2026-06-09T08:15:32+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 7,
+          "close": 498.67,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19eab7381ab163c4",
+          "received_at": "2026-06-09T08:15:31+00:00"
+        }
+      ],
+      "GLW": [
+        {
+          "alert": 7,
+          "close": 193.8025,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eab7377430389e",
+          "received_at": "2026-06-09T08:15:30+00:00"
+        }
+      ],
+      "MU": [
+        {
+          "alert": 7,
+          "close": 988.5375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19eab735c38dca68",
+          "received_at": "2026-06-09T08:15:23+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
