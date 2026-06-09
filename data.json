@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T10:01:14.445249+00:00",
+  "last_updated": "2026-06-09T10:16:12.429928+00:00",
   "today": {
     "date": "2026-06-09",
     "alerts": {
@@ -75,6 +75,15 @@
           "symbol": "SNDK",
           "msg_id": "19eabd3938fde9ed",
           "received_at": "2026-06-09T10:00:29+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1696.0349999999999,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eabe157b82a435",
+          "received_at": "2026-06-09T10:15:30+00:00"
         }
       ],
       "WDC": [
@@ -140,6 +149,24 @@
           "symbol": "WDC",
           "msg_id": "19eabc671b185cae",
           "received_at": "2026-06-09T09:46:07+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 541,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19eabe1af0c5c114",
+          "received_at": "2026-06-09T10:15:53+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 543.0825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19eabd42404aeccd",
+          "received_at": "2026-06-09T10:01:04+00:00"
         }
       ],
       "AMAT": [
@@ -205,6 +232,15 @@
           "symbol": "AMAT",
           "msg_id": "19eabc66297fc271",
           "received_at": "2026-06-09T09:46:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 503,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eabd5f3c00e0ef",
+          "received_at": "2026-06-09T10:03:04+00:00"
         }
       ],
       "TSLA": [
@@ -317,6 +353,15 @@
           "symbol": "LRCX",
           "msg_id": "19eabc8c27073987",
           "received_at": "2026-06-09T09:48:39+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 331.97,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eabd4445e5a896",
+          "received_at": "2026-06-09T10:01:13+00:00"
         }
       ],
       "AMD": [
@@ -465,6 +510,15 @@
           "symbol": "GLW",
           "msg_id": "19eabc66106e27df",
           "received_at": "2026-06-09T09:46:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 194,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eabe149c1c7aa5",
+          "received_at": "2026-06-09T10:15:27+00:00"
         }
       ],
       "MU": [
@@ -539,6 +593,15 @@
           "symbol": "MU",
           "msg_id": "19eabd3702061676",
           "received_at": "2026-06-09T10:00:20+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 986.685,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19eabe148c8de768",
+          "received_at": "2026-06-09T10:15:27+00:00"
         }
       ],
       "MRVL": [
@@ -669,6 +732,15 @@
           "symbol": "STX",
           "msg_id": "19eabcf86be96b77",
           "received_at": "2026-06-09T09:53:50+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 900.24,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19eabd441478ffa7",
+          "received_at": "2026-06-09T10:01:12+00:00"
         }
       ],
       "DELL": [
@@ -772,6 +844,15 @@
           "symbol": "HPE",
           "msg_id": "19eabc750cf75c66",
           "received_at": "2026-06-09T09:47:04+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 50.41,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HPE",
+          "msg_id": "19eabd417fa520b2",
+          "received_at": "2026-06-09T10:01:02+00:00"
         }
       ],
       "ORCL": [
@@ -783,6 +864,15 @@
           "symbol": "ORCL",
           "msg_id": "19eabd37925006b6",
           "received_at": "2026-06-09T10:00:22+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 216.38,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ORCL",
+          "msg_id": "19eabe1460562fba",
+          "received_at": "2026-06-09T10:15:26+00:00"
         }
       ]
     },
