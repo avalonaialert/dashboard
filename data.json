@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T08:16:06.737286+00:00",
+  "last_updated": "2026-06-09T08:31:09.058018+00:00",
   "today": {
     "date": "2026-06-09",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "SNDK",
           "msg_id": "19eab7393ec5b128",
           "received_at": "2026-06-09T08:15:37+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1698.3825,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eab8105b4d3be0",
+          "received_at": "2026-06-09T08:30:18+00:00"
         }
       ],
       "WDC": [
@@ -45,6 +54,15 @@
           "symbol": "TSLA",
           "msg_id": "19eab7384d65bd10",
           "received_at": "2026-06-09T08:15:32+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 412.115,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19eab813ef9a3248",
+          "received_at": "2026-06-09T08:30:33+00:00"
         }
       ],
       "LRCX": [
@@ -78,6 +96,15 @@
           "symbol": "GLW",
           "msg_id": "19eab7377430389e",
           "received_at": "2026-06-09T08:15:30+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 195.2225,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eab813981f9e90",
+          "received_at": "2026-06-09T08:30:32+00:00"
         }
       ],
       "MU": [
@@ -89,6 +116,37 @@
           "symbol": "MU",
           "msg_id": "19eab735c38dca68",
           "received_at": "2026-06-09T08:15:23+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 990.685,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19eab80f73b0f078",
+          "received_at": "2026-06-09T08:30:14+00:00"
+        }
+      ],
+      "MRVL": [
+        {
+          "alert": 7,
+          "close": 302.14750000000004,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MRVL",
+          "msg_id": "19eab80f6bc5ae4a",
+          "received_at": "2026-06-09T08:30:14+00:00"
+        }
+      ],
+      "STX": [
+        {
+          "alert": 7,
+          "close": 896.93,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19eab745542228cd",
+          "received_at": "2026-06-09T08:16:27+00:00"
         }
       ]
     },
