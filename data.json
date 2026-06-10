@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-10T08:01:06.289401+00:00",
+  "last_updated": "2026-06-10T08:16:03.697116+00:00",
   "today": {
     "date": "2026-06-10",
-    "alerts": {},
+    "alerts": {
+      "HWM": [
+        {
+          "alert": 7,
+          "close": 257.48,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HWM",
+          "msg_id": "19eb08d822a7e832",
+          "received_at": "2026-06-10T08:02:03+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
