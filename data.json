@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10T10:01:04.122301+00:00",
+  "last_updated": "2026-06-10T13:00:04.418560+00:00",
   "today": {
     "date": "2026-06-10",
     "alerts": {
@@ -59,6 +59,17 @@
           "symbol": "COST",
           "msg_id": "19eb0f3da7bb8e0c",
           "received_at": "2026-06-10T09:53:49+00:00"
+        }
+      ],
+      "GWW": [
+        {
+          "alert": 7,
+          "close": 1335.86,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GWW",
+          "msg_id": "19eb195330130d8a",
+          "received_at": "2026-06-10T12:50:03+00:00"
         }
       ]
     },
