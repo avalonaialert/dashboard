@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10T14:11:13.192152+00:00",
+  "last_updated": "2026-06-10T14:12:14.641446+00:00",
   "today": {
     "date": "2026-06-10",
     "alerts": {
@@ -294,6 +294,15 @@
           "symbol": "LRCX",
           "msg_id": "19eb1deadef88d2b",
           "received_at": "2026-06-10T14:10:19+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 345.39,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eb1df7946abcc5",
+          "received_at": "2026-06-10T14:11:09+00:00"
         }
       ],
       "CMG": [
@@ -334,6 +343,15 @@
           "symbol": "CRWD",
           "msg_id": "19eb1de9671b9e45",
           "received_at": "2026-06-10T14:10:13+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 660.23625,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CRWD",
+          "msg_id": "19eb1df75da8a614",
+          "received_at": "2026-06-10T14:11:10+00:00"
         }
       ],
       "DELL": [
@@ -354,6 +372,15 @@
           "symbol": "DELL",
           "msg_id": "19eb1de783856c8e",
           "received_at": "2026-06-10T14:10:06+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 397.865,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19eb1df7486c48c1",
+          "received_at": "2026-06-10T14:11:10+00:00"
         }
       ],
       "SNDK": [
@@ -374,6 +401,15 @@
           "symbol": "SNDK",
           "msg_id": "19eb1de846a49c64",
           "received_at": "2026-06-10T14:10:07+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1709.6074999999998,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb1df628ff6e4a",
+          "received_at": "2026-06-10T14:11:04+00:00"
         }
       ],
       "GLW": [
@@ -385,6 +421,26 @@
           "symbol": "GLW",
           "msg_id": "19eb1de79fe48e97",
           "received_at": "2026-06-10T14:10:06+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 177.52,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eb1df754e315b0",
+          "received_at": "2026-06-10T14:11:09+00:00"
+        }
+      ],
+      "HPQ": [
+        {
+          "alert": 6,
+          "close": 25.135,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "HPQ",
+          "msg_id": "19eb1df740dee524",
+          "received_at": "2026-06-10T14:11:09+00:00"
         }
       ]
     },
@@ -395,8 +451,8 @@
         "expiry": "2026-12-18",
         "entry_price": 97.45,
         "entry_time": "2026-06-10T13:58:07+00:00",
-        "current_price": 100.25,
-        "current_time": "2026-06-10T14:11:11.848770+00:00",
+        "current_price": 101.02,
+        "current_time": "2026-06-10T14:12:13.136630+00:00",
         "highest_price": 103.12,
         "highest_time": "2026-06-10T14:10:09.203725+00:00"
       },
@@ -406,10 +462,10 @@
         "expiry": "2026-12-18",
         "entry_price": 69.88,
         "entry_time": "2026-06-10T14:04:06+00:00",
-        "current_price": 73.81,
-        "current_time": "2026-06-10T14:11:12.081874+00:00",
-        "highest_price": 73.81,
-        "highest_time": "2026-06-10T14:11:12.081897+00:00"
+        "current_price": 74.57,
+        "current_time": "2026-06-10T14:12:13.326450+00:00",
+        "highest_price": 74.57,
+        "highest_time": "2026-06-10T14:12:13.326474+00:00"
       },
       "CMG": {
         "option_symbol": "CMG261218C00040000",
@@ -418,7 +474,7 @@
         "entry_price": 1.27,
         "entry_time": "2026-06-10T14:08:15+00:00",
         "current_price": 1.27,
-        "current_time": "2026-06-10T14:11:12.267419+00:00",
+        "current_time": "2026-06-10T14:12:13.522184+00:00",
         "highest_price": 1.27,
         "highest_time": "2026-06-10T14:09:09.509441+00:00"
       },
@@ -428,8 +484,8 @@
         "expiry": "2026-12-18",
         "entry_price": 112.88,
         "entry_time": "2026-06-10T14:08:05+00:00",
-        "current_price": 113.09,
-        "current_time": "2026-06-10T14:11:12.475516+00:00",
+        "current_price": 111.46,
+        "current_time": "2026-06-10T14:12:13.750958+00:00",
         "highest_price": 113.09,
         "highest_time": "2026-06-10T14:11:12.475537+00:00"
       },
@@ -439,8 +495,8 @@
         "expiry": "2026-12-18",
         "entry_price": 92.77,
         "entry_time": "2026-06-10T14:09:10+00:00",
-        "current_price": 90.55,
-        "current_time": "2026-06-10T14:11:12.663843+00:00",
+        "current_price": 90.95,
+        "current_time": "2026-06-10T14:12:13.921377+00:00",
         "highest_price": 92.77,
         "highest_time": "2026-06-10T14:10:10.118097+00:00"
       },
@@ -450,8 +506,8 @@
         "expiry": "2026-12-18",
         "entry_price": 567.19,
         "entry_time": "2026-06-10T14:09:10+00:00",
-        "current_price": 562.85,
-        "current_time": "2026-06-10T14:11:12.837148+00:00",
+        "current_price": 566.45,
+        "current_time": "2026-06-10T14:12:14.088025+00:00",
         "highest_price": 567.19,
         "highest_time": "2026-06-10T14:10:10.986798+00:00"
       },
@@ -461,10 +517,21 @@
         "expiry": "2026-12-18",
         "entry_price": 40.11,
         "entry_time": "2026-06-10T14:10:06+00:00",
-        "current_price": 40.11,
-        "current_time": "2026-06-10T14:11:13.192095+00:00",
-        "highest_price": 40.11,
-        "highest_time": "2026-06-10T14:11:13.192122+00:00"
+        "current_price": 40.49,
+        "current_time": "2026-06-10T14:12:14.276844+00:00",
+        "highest_price": 40.49,
+        "highest_time": "2026-06-10T14:12:14.276866+00:00"
+      },
+      "HPQ": {
+        "option_symbol": "HPQ261218C00030000",
+        "strike": 30.0,
+        "expiry": "2026-12-18",
+        "entry_price": 2.25,
+        "entry_time": "2026-06-10T14:11:09+00:00",
+        "current_price": 2.25,
+        "current_time": "2026-06-10T14:12:14.641387+00:00",
+        "highest_price": 2.25,
+        "highest_time": "2026-06-10T14:12:14.641414+00:00"
       }
     }
   }
