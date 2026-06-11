@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T08:16:04.573008+00:00",
+  "last_updated": "2026-06-11T08:31:06.826275+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "LRCX",
           "msg_id": "19eb5c04334f1b17",
           "received_at": "2026-06-11T08:15:35+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 337.6725,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eb5ce589551cdd",
+          "received_at": "2026-06-11T08:30:57+00:00"
         }
       ],
       "TSLA": [
@@ -23,6 +32,15 @@
           "symbol": "TSLA",
           "msg_id": "19eb5c01f1475485",
           "received_at": "2026-06-11T08:15:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 387.915,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "TSLA",
+          "msg_id": "19eb5ce20419a565",
+          "received_at": "2026-06-11T08:30:43+00:00"
         }
       ],
       "MU": [
@@ -34,6 +52,15 @@
           "symbol": "MU",
           "msg_id": "19eb5c01d3f01f1b",
           "received_at": "2026-06-11T08:15:25+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 928.9525,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19eb5cd89ed62c88",
+          "received_at": "2026-06-11T08:30:04+00:00"
         }
       ],
       "SNDK": [
@@ -45,6 +72,35 @@
           "symbol": "SNDK",
           "msg_id": "19eb5bfdd1c2fc55",
           "received_at": "2026-06-11T08:15:09+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1729.7025,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb5cdc5b3cd03f",
+          "received_at": "2026-06-11T08:30:20+00:00"
+        }
+      ],
+      "AMAT": [
+        {
+          "alert": 7,
+          "close": 519.5775,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eb5ce09dc3e1f5",
+          "received_at": "2026-06-11T08:30:37+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 519.05,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eb5c113e82bece",
+          "received_at": "2026-06-11T08:16:28+00:00"
         }
       ]
     },
