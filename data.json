@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T13:32:02.567301+00:00",
+  "last_updated": "2026-06-11T13:56:04.169665+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -603,6 +603,17 @@
           "symbol": "COST",
           "msg_id": "19eb6e1c161d4454",
           "received_at": "2026-06-11T13:31:45+00:00"
+        }
+      ],
+      "SOXL": [
+        {
+          "alert": 8,
+          "close": 205.945,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SOXL",
+          "msg_id": "19eb6f73f20afe04",
+          "received_at": "2026-06-11T13:55:15+00:00"
         }
       ]
     },
