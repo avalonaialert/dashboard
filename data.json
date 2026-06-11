@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T15:30:06.430068+00:00",
+  "last_updated": "2026-06-11T15:31:05.012009+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -1122,6 +1122,15 @@
           "symbol": "LLY",
           "msg_id": "19eb74087e957bac",
           "received_at": "2026-06-11T15:15:16+00:00"
+        },
+        {
+          "alert": -66,
+          "close": 1163.3775,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LLY",
+          "msg_id": "19eb74eab8b90e24",
+          "received_at": "2026-06-11T15:30:43+00:00"
         }
       ],
       "HWM": [
@@ -1206,8 +1215,8 @@
         "expiry": "2026-12-18",
         "entry_price": 113.84,
         "entry_time": "2026-06-11T14:02:13+00:00",
-        "current_price": 108.72,
-        "current_time": "2026-06-11T15:30:05.136127+00:00",
+        "current_price": 107.96,
+        "current_time": "2026-06-11T15:31:04.227540+00:00",
         "highest_price": 113.84,
         "highest_time": "2026-06-11T14:03:05.701793+00:00"
       },
@@ -1217,8 +1226,8 @@
         "expiry": "2026-12-18",
         "entry_price": 104.13,
         "entry_time": "2026-06-11T14:02:05+00:00",
-        "current_price": 95.83,
-        "current_time": "2026-06-11T15:30:05.417316+00:00",
+        "current_price": 95.31,
+        "current_time": "2026-06-11T15:31:04.420591+00:00",
         "highest_price": 105.22,
         "highest_time": "2026-06-11T14:07:03.766072+00:00"
       },
@@ -1228,10 +1237,10 @@
         "expiry": "2026-12-18",
         "entry_price": 113.34,
         "entry_time": "2026-06-11T14:02:07+00:00",
-        "current_price": 115.37,
-        "current_time": "2026-06-11T15:30:05.873973+00:00",
-        "highest_price": 116.4,
-        "highest_time": "2026-06-11T15:20:04.983710+00:00"
+        "current_price": 116.5,
+        "current_time": "2026-06-11T15:31:04.628569+00:00",
+        "highest_price": 116.5,
+        "highest_time": "2026-06-11T15:31:04.628600+00:00"
       },
       "LLY": {
         "option_symbol": "LLY261218C01160000",
@@ -1239,8 +1248,8 @@
         "expiry": "2026-12-18",
         "entry_price": 134.64,
         "entry_time": "2026-06-11T14:25:12+00:00",
-        "current_price": 143.93,
-        "current_time": "2026-06-11T15:30:06.154012+00:00",
+        "current_price": 144.56,
+        "current_time": "2026-06-11T15:31:04.819822+00:00",
         "highest_price": 147.05,
         "highest_time": "2026-06-11T15:09:06.823227+00:00"
       },
@@ -1250,8 +1259,8 @@
         "expiry": "2026-12-18",
         "entry_price": 77.29,
         "entry_time": "2026-06-11T14:37:06+00:00",
-        "current_price": 75.94,
-        "current_time": "2026-06-11T15:30:04.639327+00:00",
+        "current_price": 76.23,
+        "current_time": "2026-06-11T15:31:04.064094+00:00",
         "highest_price": 77.3,
         "highest_time": "2026-06-11T14:43:04.191280+00:00"
       },
@@ -1261,8 +1270,8 @@
         "expiry": "2026-12-18",
         "entry_price": 33.06,
         "entry_time": "2026-06-11T14:53:04+00:00",
-        "current_price": 32.77,
-        "current_time": "2026-06-11T15:30:06.430029+00:00",
+        "current_price": 33.41,
+        "current_time": "2026-06-11T15:31:05.011970+00:00",
         "highest_price": 33.55,
         "highest_time": "2026-06-11T15:07:06.376370+00:00"
       }
