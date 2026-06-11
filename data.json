@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T09:46:05.183722+00:00",
+  "last_updated": "2026-06-11T10:01:07.545051+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -57,6 +57,15 @@
           "symbol": "LRCX",
           "msg_id": "19eb60da2ca81220",
           "received_at": "2026-06-11T09:40:06+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 337.28,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eb6140bc40ab96",
+          "received_at": "2026-06-11T09:47:05+00:00"
         }
       ],
       "TSLA": [
@@ -198,6 +207,15 @@
           "symbol": "SNDK",
           "msg_id": "19eb6129c515835c",
           "received_at": "2026-06-11T09:45:31+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1733.1100000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb6202512adf3a",
+          "received_at": "2026-06-11T10:00:18+00:00"
         }
       ],
       "AMAT": [
@@ -254,6 +272,15 @@
           "symbol": "AMAT",
           "msg_id": "19eb605615143e39",
           "received_at": "2026-06-11T09:31:04+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 518.64,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eb6142be09fdfa",
+          "received_at": "2026-06-11T09:47:11+00:00"
         }
       ],
       "STX": [
@@ -390,6 +417,17 @@
           "symbol": "AMD",
           "msg_id": "19eb5ea2b06e7839",
           "received_at": "2026-06-11T09:01:21+00:00"
+        }
+      ],
+      "GS": [
+        {
+          "alert": 7,
+          "close": 1015.97,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GS",
+          "msg_id": "19eb61d33d1c982c",
+          "received_at": "2026-06-11T09:57:04+00:00"
         }
       ]
     },
