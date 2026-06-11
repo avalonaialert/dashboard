@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T10:01:07.545051+00:00",
+  "last_updated": "2026-06-11T10:16:06.543714+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -66,6 +66,24 @@
           "symbol": "LRCX",
           "msg_id": "19eb6140bc40ab96",
           "received_at": "2026-06-11T09:47:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 336.96,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eb62e706649dd5",
+          "received_at": "2026-06-11T10:15:56+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 336.8,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eb62391634f248",
+          "received_at": "2026-06-11T10:04:02+00:00"
         }
       ],
       "TSLA": [
@@ -216,6 +234,15 @@
           "symbol": "SNDK",
           "msg_id": "19eb6202512adf3a",
           "received_at": "2026-06-11T10:00:18+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1741.26,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb62dd0d903f9d",
+          "received_at": "2026-06-11T10:15:14+00:00"
         }
       ],
       "AMAT": [
@@ -281,6 +308,24 @@
           "symbol": "AMAT",
           "msg_id": "19eb6142be09fdfa",
           "received_at": "2026-06-11T09:47:11+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 518.01,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eb62e6e8e46e74",
+          "received_at": "2026-06-11T10:15:55+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 518.585,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eb620f9a32e402",
+          "received_at": "2026-06-11T10:01:13+00:00"
         }
       ],
       "STX": [
@@ -357,6 +402,15 @@
           "symbol": "GLW",
           "msg_id": "19eb5f7ad782294c",
           "received_at": "2026-06-11T09:16:06+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 173.2,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eb62e6d0c70e7f",
+          "received_at": "2026-06-11T10:15:54+00:00"
         }
       ],
       "HPE": [
