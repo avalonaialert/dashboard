@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T09:01:10.408933+00:00",
+  "last_updated": "2026-06-11T09:16:09.587210+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -39,6 +39,15 @@
           "symbol": "LRCX",
           "msg_id": "19eb5dc277d797c9",
           "received_at": "2026-06-11T08:46:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 337.13,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "LRCX",
+          "msg_id": "19eb5f7003aeccca",
+          "received_at": "2026-06-11T09:15:22+00:00"
         }
       ],
       "TSLA": [
@@ -153,6 +162,15 @@
           "symbol": "SNDK",
           "msg_id": "19eb5e95ac9c2af5",
           "received_at": "2026-06-11T09:00:27+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1727.9175,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb5f71dbf71c2b",
+          "received_at": "2026-06-11T09:15:30+00:00"
         }
       ],
       "AMAT": [
@@ -191,6 +209,15 @@
           "symbol": "AMAT",
           "msg_id": "19eb5dc2ba2bf078",
           "received_at": "2026-06-11T08:46:04+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 518.64,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMAT",
+          "msg_id": "19eb5f72658f5d89",
+          "received_at": "2026-06-11T09:15:33+00:00"
         }
       ],
       "STX": [
@@ -211,6 +238,15 @@
           "symbol": "STX",
           "msg_id": "19eb5ce78c8ad820",
           "received_at": "2026-06-11T08:31:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 841.4650000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19eb5ecadf23c582",
+          "received_at": "2026-06-11T09:04:05+00:00"
         }
       ],
       "GLW": [
@@ -280,6 +316,26 @@
           "symbol": "WDC",
           "msg_id": "19eb5dc383272b38",
           "received_at": "2026-06-11T08:46:07+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 503.375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "WDC",
+          "msg_id": "19eb5ea0ed8d9dcf",
+          "received_at": "2026-06-11T09:01:14+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 7,
+          "close": 464.3025,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AMD",
+          "msg_id": "19eb5ea2b06e7839",
+          "received_at": "2026-06-11T09:01:21+00:00"
         }
       ]
     },
