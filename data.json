@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T11:01:06.704637+00:00",
+  "last_updated": "2026-06-11T12:16:02.520496+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -581,6 +581,17 @@
           "symbol": "GS",
           "msg_id": "19eb61d33d1c982c",
           "received_at": "2026-06-11T09:57:04+00:00"
+        }
+      ],
+      "MRVL": [
+        {
+          "alert": 7,
+          "close": 264.7425,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MRVL",
+          "msg_id": "19eb69be0a77f3de",
+          "received_at": "2026-06-11T12:15:26+00:00"
         }
       ]
     },
