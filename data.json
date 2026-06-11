@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T09:16:09.587210+00:00",
+  "last_updated": "2026-06-11T09:31:06.781179+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -171,6 +171,15 @@
           "symbol": "SNDK",
           "msg_id": "19eb5f71dbf71c2b",
           "received_at": "2026-06-11T09:15:30+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1725.6525000000001,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb6048669b211a",
+          "received_at": "2026-06-11T09:30:08+00:00"
         }
       ],
       "AMAT": [
@@ -247,6 +256,15 @@
           "symbol": "STX",
           "msg_id": "19eb5ecadf23c582",
           "received_at": "2026-06-11T09:04:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 837.16,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19eb5f7abbe2de75",
+          "received_at": "2026-06-11T09:16:06+00:00"
         }
       ],
       "GLW": [
@@ -276,6 +294,15 @@
           "symbol": "GLW",
           "msg_id": "19eb5e9d2dc31e04",
           "received_at": "2026-06-11T09:00:59+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 172.54000000000002,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eb5f7ad782294c",
+          "received_at": "2026-06-11T09:16:06+00:00"
         }
       ],
       "HPE": [
