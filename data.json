@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T10:16:06.543714+00:00",
+  "last_updated": "2026-06-11T10:31:05.723540+00:00",
   "today": {
     "date": "2026-06-11",
     "alerts": {
@@ -243,6 +243,15 @@
           "symbol": "SNDK",
           "msg_id": "19eb62dd0d903f9d",
           "received_at": "2026-06-11T10:15:14+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1737.4875,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SNDK",
+          "msg_id": "19eb63bb41e15a25",
+          "received_at": "2026-06-11T10:30:24+00:00"
         }
       ],
       "AMAT": [
@@ -411,6 +420,15 @@
           "symbol": "GLW",
           "msg_id": "19eb62e6d0c70e7f",
           "received_at": "2026-06-11T10:15:54+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 173.1,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19eb63bcdbd91b8c",
+          "received_at": "2026-06-11T10:30:30+00:00"
         }
       ],
       "HPE": [
