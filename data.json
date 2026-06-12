@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T09:46:03.984136+00:00",
+  "last_updated": "2026-06-12T10:01:05.212242+00:00",
   "today": {
     "date": "2026-06-12",
     "alerts": {
@@ -59,6 +59,17 @@
           "symbol": "CMG",
           "msg_id": "19ebb2cdcbabed22",
           "received_at": "2026-06-12T09:32:17+00:00"
+        }
+      ],
+      "QCOM": [
+        {
+          "alert": 7,
+          "close": 205.425,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "QCOM",
+          "msg_id": "19ebb46fbf936e78",
+          "received_at": "2026-06-12T10:00:50+00:00"
         }
       ]
     },
