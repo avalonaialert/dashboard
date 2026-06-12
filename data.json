@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T11:46:03.203310+00:00",
+  "last_updated": "2026-06-12T13:56:03.516184+00:00",
   "today": {
     "date": "2026-06-12",
     "alerts": {
@@ -68,6 +68,15 @@
           "symbol": "CMG",
           "msg_id": "19ebb7f11cbf79b6",
           "received_at": "2026-06-12T11:02:04+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 31.97375,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CMG",
+          "msg_id": "19ebc1d834d27d90",
+          "received_at": "2026-06-12T13:55:09+00:00"
         }
       ],
       "QCOM": [
@@ -115,6 +124,18 @@
         }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "CMG": {
+        "option_symbol": "CMG261218C00040000",
+        "strike": 40.0,
+        "expiry": "2026-12-18",
+        "entry_price": 1.63,
+        "entry_time": "2026-06-12T13:55:09+00:00",
+        "current_price": 1.63,
+        "current_time": "2026-06-12T13:56:03.516138+00:00",
+        "highest_price": 1.63,
+        "highest_time": "2026-06-12T13:56:03.516155+00:00"
+      }
+    }
   }
 }
