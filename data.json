@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T14:39:04.023729+00:00",
+  "last_updated": "2026-06-12T14:41:05.499974+00:00",
   "today": {
     "date": "2026-06-12",
     "alerts": {
@@ -157,6 +157,15 @@
           "symbol": "STX",
           "msg_id": "19ebc3e8878470a3",
           "received_at": "2026-06-12T14:31:13+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 922.675,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "STX",
+          "msg_id": "19ebc46bc643ba5f",
+          "received_at": "2026-06-12T14:40:11+00:00"
         }
       ],
       "ALB": [
@@ -186,6 +195,15 @@
           "symbol": "ALB",
           "msg_id": "19ebc449b70cd4fc",
           "received_at": "2026-06-12T14:37:51+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 169.15,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "ALB",
+          "msg_id": "19ebc46fdc19a2a9",
+          "received_at": "2026-06-12T14:40:27+00:00"
         }
       ],
       "ANET": [
@@ -207,8 +225,8 @@
         "expiry": "2026-12-18",
         "entry_price": 1.63,
         "entry_time": "2026-06-12T13:55:09+00:00",
-        "current_price": 1.79,
-        "current_time": "2026-06-12T14:39:03.377569+00:00",
+        "current_price": 1.77,
+        "current_time": "2026-06-12T14:41:04.849166+00:00",
         "highest_price": 1.84,
         "highest_time": "2026-06-12T14:30:04.123040+00:00"
       },
@@ -218,10 +236,10 @@
         "expiry": "2026-12-18",
         "entry_price": 111.91,
         "entry_time": "2026-06-12T14:03:12+00:00",
-        "current_price": 114.59,
-        "current_time": "2026-06-12T14:39:03.145749+00:00",
-        "highest_price": 115.4,
-        "highest_time": "2026-06-12T14:33:04.384739+00:00"
+        "current_price": 116.02,
+        "current_time": "2026-06-12T14:41:04.516463+00:00",
+        "highest_price": 116.02,
+        "highest_time": "2026-06-12T14:41:04.516492+00:00"
       },
       "ALB": {
         "option_symbol": "ALB261218C00170000",
@@ -229,10 +247,10 @@
         "expiry": "2026-12-18",
         "entry_price": 29.74,
         "entry_time": "2026-06-12T14:09:25+00:00",
-        "current_price": 29.75,
-        "current_time": "2026-06-12T14:39:03.816735+00:00",
-        "highest_price": 30.25,
-        "highest_time": "2026-06-12T14:30:04.620262+00:00"
+        "current_price": 30.52,
+        "current_time": "2026-06-12T14:41:05.323999+00:00",
+        "highest_price": 30.52,
+        "highest_time": "2026-06-12T14:41:05.324022+00:00"
       },
       "ANET": {
         "option_symbol": "ANET261218C00170000",
@@ -240,8 +258,8 @@
         "expiry": "2026-12-18",
         "entry_price": 26.73,
         "entry_time": "2026-06-12T14:16:09+00:00",
-        "current_price": 27.34,
-        "current_time": "2026-06-12T14:39:04.023689+00:00",
+        "current_price": 27.47,
+        "current_time": "2026-06-12T14:41:05.499934+00:00",
         "highest_price": 28.0,
         "highest_time": "2026-06-12T14:19:04.744247+00:00"
       },
@@ -251,8 +269,8 @@
         "expiry": "2026-12-18",
         "entry_price": 230.03,
         "entry_time": "2026-06-12T14:19:13+00:00",
-        "current_price": 226.93,
-        "current_time": "2026-06-12T14:39:03.571300+00:00",
+        "current_price": 220.72,
+        "current_time": "2026-06-12T14:41:05.144246+00:00",
         "highest_price": 230.62,
         "highest_time": "2026-06-12T14:21:05.425464+00:00"
       }
