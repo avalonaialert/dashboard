@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T10:01:05.212242+00:00",
+  "last_updated": "2026-06-12T10:16:03.833850+00:00",
   "today": {
     "date": "2026-06-12",
     "alerts": {
@@ -70,6 +70,17 @@
           "symbol": "QCOM",
           "msg_id": "19ebb46fbf936e78",
           "received_at": "2026-06-12T10:00:50+00:00"
+        }
+      ],
+      "AAPL": [
+        {
+          "alert": 7,
+          "close": 296.7075,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "AAPL",
+          "msg_id": "19ebb4790ad0a9f6",
+          "received_at": "2026-06-12T10:01:28+00:00"
         }
       ]
     },
