@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T13:57:03.301051+00:00",
+  "last_updated": "2026-06-12T14:04:04.546539+00:00",
   "today": {
     "date": "2026-06-12",
     "alerts": {
@@ -39,6 +39,15 @@
           "symbol": "GS",
           "msg_id": "19ebb2e7b0ed8d63",
           "received_at": "2026-06-12T09:34:04+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1057.36,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GS",
+          "msg_id": "19ebc25014f99db0",
+          "received_at": "2026-06-12T14:03:12+00:00"
         }
       ],
       "CMG": [
@@ -131,10 +140,21 @@
         "expiry": "2026-12-18",
         "entry_price": 1.63,
         "entry_time": "2026-06-12T13:55:09+00:00",
-        "current_price": 1.67,
-        "current_time": "2026-06-12T13:57:03.301002+00:00",
+        "current_price": 1.6,
+        "current_time": "2026-06-12T14:04:04.546493+00:00",
         "highest_price": 1.67,
         "highest_time": "2026-06-12T13:57:03.301020+00:00"
+      },
+      "GS": {
+        "option_symbol": "GS261218C01060000",
+        "strike": 1060.0,
+        "expiry": "2026-12-18",
+        "entry_price": 111.91,
+        "entry_time": "2026-06-12T14:03:12+00:00",
+        "current_price": 111.91,
+        "current_time": "2026-06-12T14:04:04.200434+00:00",
+        "highest_price": 111.91,
+        "highest_time": "2026-06-12T14:04:04.200461+00:00"
       }
     }
   }
