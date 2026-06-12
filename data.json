@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-12T08:01:07.139647+00:00",
+  "last_updated": "2026-06-12T08:31:04.189174+00:00",
   "today": {
     "date": "2026-06-12",
-    "alerts": {},
+    "alerts": {
+      "GS": [
+        {
+          "alert": 7,
+          "close": 1044.25,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "GS",
+          "msg_id": "19ebaea490ec8e3d",
+          "received_at": "2026-06-12T08:19:35+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
