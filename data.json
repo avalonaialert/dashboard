@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T10:16:03.833850+00:00",
+  "last_updated": "2026-06-12T10:46:02.923853+00:00",
   "today": {
     "date": "2026-06-12",
     "alerts": {
@@ -81,6 +81,17 @@
           "symbol": "AAPL",
           "msg_id": "19ebb4790ad0a9f6",
           "received_at": "2026-06-12T10:01:28+00:00"
+        }
+      ],
+      "CSCO": [
+        {
+          "alert": 7,
+          "close": 122.57,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CSCO",
+          "msg_id": "19ebb647d16177e5",
+          "received_at": "2026-06-12T10:33:04+00:00"
         }
       ]
     },
