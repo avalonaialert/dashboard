@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T10:31:02.224250+00:00",
+  "last_updated": "2026-06-16T11:01:02.576993+00:00",
   "today": {
     "date": "2026-06-16",
     "alerts": {
@@ -54,6 +54,17 @@
           "symbol": "WDC",
           "msg_id": "19ecffb6789f0b87",
           "received_at": "2026-06-16T10:30:18+00:00"
+        }
+      ],
+      "MU": [
+        {
+          "alert": 7,
+          "close": 1123.035,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19ed016ad46a6aef",
+          "received_at": "2026-06-16T11:00:06+00:00"
         }
       ]
     },
