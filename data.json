@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T16:47:02.671488+00:00",
+  "last_updated": "2026-06-16T20:06:02.410889+00:00",
   "today": {
     "date": "2026-06-16",
     "alerts": {
@@ -96,6 +96,15 @@
           "symbol": "JPM",
           "msg_id": "19ed152a1d75d25b",
           "received_at": "2026-06-16T16:45:07+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 330.7925,
+          "peak": 16,
+          "cross": 0,
+          "symbol": "JPM",
+          "msg_id": "19ed205f0f482baa",
+          "received_at": "2026-06-16T20:01:02+00:00"
         }
       ]
     },
@@ -106,8 +115,8 @@
         "expiry": "2026-12-18",
         "entry_price": 20.66,
         "entry_time": "2026-06-16T16:45:07+00:00",
-        "current_price": 20.62,
-        "current_time": "2026-06-16T16:47:02.671437+00:00",
+        "current_price": 20.59,
+        "current_time": "2026-06-16T20:06:02.410849+00:00",
         "highest_price": 20.66,
         "highest_time": "2026-06-16T16:46:03.741248+00:00"
       }
