@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-16T08:01:05.093822+00:00",
+  "last_updated": "2026-06-16T08:16:02.622286+00:00",
   "today": {
     "date": "2026-06-16",
-    "alerts": {},
+    "alerts": {
+      "SATS": [
+        {
+          "alert": 7,
+          "close": 122.2,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "SATS",
+          "msg_id": "19ecf7fda8963dc7",
+          "received_at": "2026-06-16T08:15:21+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
