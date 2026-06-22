@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-19T08:01:05.369302+00:00",
+  "last_updated": "2026-06-22T16:16:03.334992+00:00",
   "today": {
     "date": "2026-06-19",
-    "alerts": {},
+    "alerts": {
+      "MU": [
+        {
+          "alert": 66,
+          "close": 1186.33,
+          "peak": 15,
+          "cross": 0,
+          "symbol": "MU",
+          "msg_id": "19ef01d49dbdb66e",
+          "received_at": "2026-06-22T16:15:08+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
