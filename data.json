@@ -1,8 +1,32 @@
 {
-  "last_updated": "2026-06-23T08:01:05.839580+00:00",
+  "last_updated": "2026-06-23T16:01:03.151735+00:00",
   "today": {
     "date": "2026-06-23",
-    "alerts": {},
-    "backtest": {}
+    "alerts": {
+      "DELL": [
+        {
+          "alert": 6,
+          "close": 424.0175,
+          "peak": 1,
+          "cross": 0,
+          "symbol": "DELL",
+          "msg_id": "19ef5363c697449b",
+          "received_at": "2026-06-23T16:00:31+00:00"
+        }
+      ]
+    },
+    "backtest": {
+      "DELL": {
+        "option_symbol": "DELL261218C00430000",
+        "strike": 430.0,
+        "expiry": "2026-12-18",
+        "entry_price": 93.97,
+        "entry_time": "2026-06-23T16:00:31+00:00",
+        "current_price": 93.97,
+        "current_time": "2026-06-23T16:01:03.151680+00:00",
+        "highest_price": 93.97,
+        "highest_time": "2026-06-23T16:01:03.151706+00:00"
+      }
+    }
   }
 }
