@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T13:31:03.116406+00:00",
+  "last_updated": "2026-06-24T16:02:02.597343+00:00",
   "today": {
     "date": "2026-06-24",
     "alerts": {
@@ -12,6 +12,17 @@
           "symbol": "DELL",
           "msg_id": "19ef9d34cb8f0564",
           "received_at": "2026-06-24T13:30:32+00:00"
+        }
+      ],
+      "ALL": [
+        {
+          "alert": 66,
+          "close": 235.9575,
+          "peak": 30,
+          "cross": 0,
+          "symbol": "ALL",
+          "msg_id": "19efa5d0a8202df4",
+          "received_at": "2026-06-24T16:01:00+00:00"
         }
       ]
     },
