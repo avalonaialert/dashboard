@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T16:17:02.710821+00:00",
+  "last_updated": "2026-06-24T18:46:04.380292+00:00",
   "today": {
     "date": "2026-06-24",
     "alerts": {
@@ -33,6 +33,17 @@
           "msg_id": "19efa6a1de8db21b",
           "received_at": "2026-06-24T16:15:15+00:00"
         }
+      ],
+      "DASH": [
+        {
+          "alert": 6,
+          "close": 180.6725,
+          "peak": 2,
+          "cross": 0,
+          "symbol": "DASH",
+          "msg_id": "19efaf412c3229d4",
+          "received_at": "2026-06-24T18:45:55+00:00"
+        }
       ]
     },
     "backtest": {
@@ -42,10 +53,21 @@
         "expiry": "2026-12-18",
         "entry_price": 15.88,
         "entry_time": "2026-06-24T16:15:15+00:00",
-        "current_price": 16.34,
-        "current_time": "2026-06-24T16:17:02.710775+00:00",
+        "current_price": 16.16,
+        "current_time": "2026-06-24T18:46:03.797359+00:00",
         "highest_price": 16.34,
         "highest_time": "2026-06-24T16:17:02.710795+00:00"
+      },
+      "DASH": {
+        "option_symbol": "DASH261218C00190000",
+        "strike": 190.0,
+        "expiry": "2026-12-18",
+        "entry_price": 25.56,
+        "entry_time": "2026-06-24T18:45:55+00:00",
+        "current_price": 25.56,
+        "current_time": "2026-06-24T18:46:04.380209+00:00",
+        "highest_price": 25.56,
+        "highest_time": "2026-06-24T18:46:04.380236+00:00"
       }
     }
   }
