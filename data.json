@@ -1,8 +1,32 @@
 {
-  "last_updated": "2026-06-25T08:01:05.310155+00:00",
+  "last_updated": "2026-06-25T08:46:03.459815+00:00",
   "today": {
     "date": "2026-06-25",
-    "alerts": {},
-    "backtest": {}
+    "alerts": {
+      "DAL": [
+        {
+          "alert": 6,
+          "close": 91.14,
+          "peak": 36,
+          "cross": 0,
+          "symbol": "DAL",
+          "msg_id": "19efde78df1ff31b",
+          "received_at": "2026-06-25T08:31:09+00:00"
+        }
+      ]
+    },
+    "backtest": {
+      "DAL": {
+        "option_symbol": "DAL261218C00100000",
+        "strike": 100.0,
+        "expiry": "2026-12-18",
+        "entry_price": 7.55,
+        "entry_time": "2026-06-25T08:31:09+00:00",
+        "current_price": 7.55,
+        "current_time": "2026-06-25T08:46:03.459756+00:00",
+        "highest_price": 7.55,
+        "highest_time": "2026-06-25T08:46:03.459784+00:00"
+      }
+    }
   }
 }
