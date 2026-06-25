@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T08:46:03.459815+00:00",
+  "last_updated": "2026-06-25T09:01:03.694858+00:00",
   "today": {
     "date": "2026-06-25",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "DAL",
           "msg_id": "19efde78df1ff31b",
           "received_at": "2026-06-25T08:31:09+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 91.17,
+          "peak": 37,
+          "cross": 0,
+          "symbol": "DAL",
+          "msg_id": "19efdf5401010c5b",
+          "received_at": "2026-06-25T08:46:07+00:00"
         }
       ]
     },
@@ -23,7 +32,7 @@
         "entry_price": 7.55,
         "entry_time": "2026-06-25T08:31:09+00:00",
         "current_price": 7.55,
-        "current_time": "2026-06-25T08:46:03.459756+00:00",
+        "current_time": "2026-06-25T09:01:03.694823+00:00",
         "highest_price": 7.55,
         "highest_time": "2026-06-25T08:46:03.459784+00:00"
       }
