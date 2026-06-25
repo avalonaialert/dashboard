@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T09:16:02.280719+00:00",
+  "last_updated": "2026-06-25T13:01:03.327356+00:00",
   "today": {
     "date": "2026-06-25",
     "alerts": {
@@ -22,6 +22,17 @@
           "msg_id": "19efdf5401010c5b",
           "received_at": "2026-06-25T08:46:07+00:00"
         }
+      ],
+      "DHI": [
+        {
+          "alert": 6,
+          "close": 165.985,
+          "peak": 4,
+          "cross": 0,
+          "symbol": "DHI",
+          "msg_id": "19efed0e9bf1c1ee",
+          "received_at": "2026-06-25T12:46:02+00:00"
+        }
       ]
     },
     "backtest": {
@@ -32,9 +43,20 @@
         "entry_price": 7.55,
         "entry_time": "2026-06-25T08:31:09+00:00",
         "current_price": 7.55,
-        "current_time": "2026-06-25T09:16:02.280617+00:00",
+        "current_time": "2026-06-25T13:01:02.894715+00:00",
         "highest_price": 7.55,
         "highest_time": "2026-06-25T08:46:03.459784+00:00"
+      },
+      "DHI": {
+        "option_symbol": "DHI261218C00170000",
+        "strike": 170.0,
+        "expiry": "2026-12-18",
+        "entry_price": 16.7,
+        "entry_time": "2026-06-25T12:46:02+00:00",
+        "current_price": 16.7,
+        "current_time": "2026-06-25T13:01:03.327311+00:00",
+        "highest_price": 16.7,
+        "highest_time": "2026-06-25T13:01:03.327331+00:00"
       }
     }
   }
