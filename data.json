@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-06-26T08:01:04.885043+00:00",
+  "last_updated": "2026-06-26T08:16:02.283220+00:00",
   "today": {
     "date": "2026-06-26",
-    "alerts": {},
+    "alerts": {
+      "GLW": [
+        {
+          "alert": -6,
+          "close": 221.63,
+          "peak": 7,
+          "cross": 0,
+          "symbol": "GLW",
+          "msg_id": "19f02ff67e7a2523",
+          "received_at": "2026-06-26T08:15:18+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
