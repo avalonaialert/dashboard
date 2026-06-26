@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T08:16:02.283220+00:00",
+  "last_updated": "2026-06-26T09:16:02.971401+00:00",
   "today": {
     "date": "2026-06-26",
     "alerts": {
@@ -13,8 +13,31 @@
           "msg_id": "19f02ff67e7a2523",
           "received_at": "2026-06-26T08:15:18+00:00"
         }
+      ],
+      "DE": [
+        {
+          "alert": 6,
+          "close": 630.9,
+          "peak": 12,
+          "cross": 0,
+          "symbol": "DE",
+          "msg_id": "19f03294d5611972",
+          "received_at": "2026-06-26T09:01:04+00:00"
+        }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "DE": {
+        "option_symbol": "DE261218C00640000",
+        "strike": 640.0,
+        "expiry": "2026-12-18",
+        "entry_price": 59.66,
+        "entry_time": "2026-06-26T09:01:04+00:00",
+        "current_price": 59.66,
+        "current_time": "2026-06-26T09:16:02.971342+00:00",
+        "highest_price": 59.66,
+        "highest_time": "2026-06-26T09:16:02.971369+00:00"
+      }
+    }
   }
 }
