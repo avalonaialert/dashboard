@@ -1,8 +1,31 @@
 {
-  "last_updated": "2026-06-29T08:01:06.291743+00:00",
+  "last_updated": "2026-06-29T08:31:03.565558+00:00",
   "today": {
     "date": "2026-06-29",
-    "alerts": {},
+    "alerts": {
+      "MAA": [
+        {
+          "alert": 7,
+          "close": 140.72,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "MAA",
+          "msg_id": "19f12808f8b66ded",
+          "received_at": "2026-06-29T08:30:41+00:00"
+        }
+      ],
+      "IQV": [
+        {
+          "alert": 7,
+          "close": 192,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "IQV",
+          "msg_id": "19f1277bdc06153c",
+          "received_at": "2026-06-29T08:21:02+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
