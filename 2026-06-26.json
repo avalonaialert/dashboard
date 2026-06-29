@@ -1,0 +1,728 @@
+{
+  "date": "2026-06-26",
+  "alerts": {
+    "GLW": [
+      {
+        "alert": -6,
+        "close": 221.63,
+        "peak": 7,
+        "cross": 0,
+        "symbol": "GLW",
+        "msg_id": "19f02ff67e7a2523",
+        "received_at": "2026-06-26T08:15:18+00:00"
+      }
+    ],
+    "DE": [
+      {
+        "alert": 6,
+        "close": 630.9,
+        "peak": 12,
+        "cross": 0,
+        "symbol": "DE",
+        "msg_id": "19f03294d5611972",
+        "received_at": "2026-06-26T09:01:04+00:00"
+      }
+    ],
+    "WM": [
+      {
+        "alert": 66,
+        "close": 223.08,
+        "peak": 4,
+        "cross": 0,
+        "symbol": "WM",
+        "msg_id": "19f035289939cbee",
+        "received_at": "2026-06-26T09:46:05+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 224,
+        "peak": 8,
+        "cross": 0,
+        "symbol": "WM",
+        "msg_id": "19f0405177a50fa9",
+        "received_at": "2026-06-26T13:01:08+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 224.6225,
+        "peak": 10,
+        "cross": 0,
+        "symbol": "WM",
+        "msg_id": "19f042183c2f854c",
+        "received_at": "2026-06-26T13:32:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 226.32,
+        "peak": 12,
+        "cross": 0,
+        "symbol": "WM",
+        "msg_id": "19f04724e19cfc9a",
+        "received_at": "2026-06-26T15:00:26+00:00"
+      }
+    ],
+    "TGT": [
+      {
+        "alert": 6,
+        "close": 140.4925,
+        "peak": 5,
+        "cross": 0,
+        "symbol": "TGT",
+        "msg_id": "19f040504d98a010",
+        "received_at": "2026-06-26T13:01:03+00:00"
+      }
+    ],
+    "DG": [
+      {
+        "alert": 6,
+        "close": 120.5325,
+        "peak": 6,
+        "cross": 0,
+        "symbol": "DG",
+        "msg_id": "19f0472808749476",
+        "received_at": "2026-06-26T15:00:37+00:00"
+      }
+    ],
+    "ALL": [
+      {
+        "alert": 6,
+        "close": 237.305,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ALL",
+        "msg_id": "19f04b40a936508d",
+        "received_at": "2026-06-26T16:12:14+00:00"
+      }
+    ],
+    "PGR": [
+      {
+        "alert": 6,
+        "close": 222.2525,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PGR",
+        "msg_id": "19f04b6d3bc1c44b",
+        "received_at": "2026-06-26T16:15:14+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 222.5425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PGR",
+        "msg_id": "19f04b9ac628f732",
+        "received_at": "2026-06-26T16:18:23+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 224.125,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PGR",
+        "msg_id": "19f057f9232618bf",
+        "received_at": "2026-06-26T19:54:33+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 224.05,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PGR",
+        "msg_id": "19f057f376c410c6",
+        "received_at": "2026-06-26T19:54:08+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 221.26,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "PGR",
+        "msg_id": "19f05c28a29266aa",
+        "received_at": "2026-06-26T21:07:42+00:00"
+      }
+    ],
+    "CNP": [
+      {
+        "alert": 6,
+        "close": 44.7325,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CNP",
+        "msg_id": "19f04b8409c9fb0e",
+        "received_at": "2026-06-26T16:16:50+00:00"
+      },
+      {
+        "alert": -666,
+        "close": 44.73,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CNP",
+        "msg_id": "19f04ba1d5814f1c",
+        "received_at": "2026-06-26T16:18:50+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 44.91,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CNP",
+        "msg_id": "19f05461f12711c9",
+        "received_at": "2026-06-26T18:51:44+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 44.91,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CNP",
+        "msg_id": "19f05472901d12a7",
+        "received_at": "2026-06-26T18:52:54+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 44.9425,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CNP",
+        "msg_id": "19f0548b7955f9fd",
+        "received_at": "2026-06-26T18:54:37+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 44.9825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CNP",
+        "msg_id": "19f054cfbd80c7ec",
+        "received_at": "2026-06-26T18:59:16+00:00"
+      }
+    ],
+    "BAX": [
+      {
+        "alert": -6,
+        "close": 22.11,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "BAX",
+        "msg_id": "19f04bbd1cc72c38",
+        "received_at": "2026-06-26T16:20:42+00:00"
+      }
+    ],
+    "EXPE": [
+      {
+        "alert": 6,
+        "close": 264.6,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "EXPE",
+        "msg_id": "19f04e5632ebd84c",
+        "received_at": "2026-06-26T17:06:08+00:00"
+      }
+    ],
+    "TRV": [
+      {
+        "alert": 6,
+        "close": 325.16,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TRV",
+        "msg_id": "19f04fa20ef69d85",
+        "received_at": "2026-06-26T17:28:46+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 325.165,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TRV",
+        "msg_id": "19f04fad1527099c",
+        "received_at": "2026-06-26T17:29:25+00:00"
+      },
+      {
+        "alert": -666,
+        "close": 325.2,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TRV",
+        "msg_id": "19f04ffff822aa76",
+        "received_at": "2026-06-26T17:35:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 325.4075,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TRV",
+        "msg_id": "19f0501fa6eb7fc4",
+        "received_at": "2026-06-26T17:37:19+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 325.4825,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "TRV",
+        "msg_id": "19f0503e7f1b85aa",
+        "received_at": "2026-06-26T17:39:28+00:00"
+      }
+    ],
+    "LNT": [
+      {
+        "alert": 6,
+        "close": 76.9175,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f051068d0e0fc1",
+        "received_at": "2026-06-26T17:53:06+00:00"
+      },
+      {
+        "alert": -666,
+        "close": 76.875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f051214c884c2a",
+        "received_at": "2026-06-26T17:54:55+00:00"
+      },
+      {
+        "alert": -66,
+        "close": 76.84,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f051484732ec32",
+        "received_at": "2026-06-26T17:57:36+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 76.9725,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f0534fed393d37",
+        "received_at": "2026-06-26T18:33:05+00:00"
+      },
+      {
+        "alert": -666,
+        "close": 76.93,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f0535ee2f4ea22",
+        "received_at": "2026-06-26T18:34:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.03,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f054034fc51f01",
+        "received_at": "2026-06-26T18:45:18+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.04,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f053fe4edbd1c2",
+        "received_at": "2026-06-26T18:44:59+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.035,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f0541a512a9abe",
+        "received_at": "2026-06-26T18:46:50+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.06,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f05481ca14ce5a",
+        "received_at": "2026-06-26T18:53:57+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.08,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f05487ff1935b4",
+        "received_at": "2026-06-26T18:54:22+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.12,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f054ba2847201e",
+        "received_at": "2026-06-26T18:57:49+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.15,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f054c6f031dd08",
+        "received_at": "2026-06-26T18:58:38+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.14,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f054bf320b49b6",
+        "received_at": "2026-06-26T18:58:07+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.14,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f054cd9ec82856",
+        "received_at": "2026-06-26T18:59:06+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 77.155,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LNT",
+        "msg_id": "19f054e2ab7d8751",
+        "received_at": "2026-06-26T19:00:32+00:00"
+      }
+    ],
+    "DTE": [
+      {
+        "alert": 6,
+        "close": 154.6925,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DTE",
+        "msg_id": "19f0540483df09a9",
+        "received_at": "2026-06-26T18:45:24+00:00"
+      },
+      {
+        "alert": -6,
+        "close": 154.465,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "DTE",
+        "msg_id": "19f05450003e0d25",
+        "received_at": "2026-06-26T18:50:34+00:00"
+      }
+    ],
+    "CPT": [
+      {
+        "alert": 6,
+        "close": 115.775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f056553edf76c9",
+        "received_at": "2026-06-26T19:25:51+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 115.74,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f0564dccf40bde",
+        "received_at": "2026-06-26T19:25:20+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 115.87,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f056701ab1fdb0",
+        "received_at": "2026-06-26T19:27:42+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 115.82,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f05666dcc035d1",
+        "received_at": "2026-06-26T19:27:01+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 115.835,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f0567ebdde7834",
+        "received_at": "2026-06-26T19:28:42+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 115.88,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f056913df3cab5",
+        "received_at": "2026-06-26T19:29:56+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 116.24,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f058034bc117f0",
+        "received_at": "2026-06-26T19:55:15+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 116.265,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f05819ed02ae53",
+        "received_at": "2026-06-26T19:56:47+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 116.26,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "CPT",
+        "msg_id": "19f0581ff28528a9",
+        "received_at": "2026-06-26T19:57:11+00:00"
+      }
+    ],
+    "KDP": [
+      {
+        "alert": -666,
+        "close": 33.5875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "KDP",
+        "msg_id": "19f057dce16fd100",
+        "received_at": "2026-06-26T19:52:37+00:00"
+      }
+    ],
+    "ESS": [
+      {
+        "alert": 6,
+        "close": 294.7575,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ESS",
+        "msg_id": "19f058113f240877",
+        "received_at": "2026-06-26T19:56:11+00:00"
+      },
+      {
+        "alert": 6,
+        "close": 294.9775,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "ESS",
+        "msg_id": "19f0582d74f2ccd9",
+        "received_at": "2026-06-26T19:58:06+00:00"
+      }
+    ],
+    "LLY": [
+      {
+        "alert": 7,
+        "close": 1218.4,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "LLY",
+        "msg_id": "19f0592e01c0a0c4",
+        "received_at": "2026-06-26T20:15:37+00:00"
+      }
+    ],
+    "BIIB": [
+      {
+        "alert": 7,
+        "close": 216,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "BIIB",
+        "msg_id": "19f059bfea0d50bd",
+        "received_at": "2026-06-26T20:25:35+00:00"
+      },
+      {
+        "alert": 7,
+        "close": 215.7,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "BIIB",
+        "msg_id": "19f061668270ccce",
+        "received_at": "2026-06-26T22:39:18+00:00"
+      }
+    ],
+    "AEE": [
+      {
+        "alert": 7,
+        "close": 117.75,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "AEE",
+        "msg_id": "19f062d8931a033e",
+        "received_at": "2026-06-26T23:04:33+00:00"
+      }
+    ]
+  },
+  "backtest": {
+    "DE": {
+      "option_symbol": "DE261218C00640000",
+      "strike": 640.0,
+      "expiry": "2026-12-18",
+      "entry_price": 59.66,
+      "entry_time": "2026-06-26T09:01:04+00:00",
+      "current_price": 49.66,
+      "current_time": "2026-06-26T23:31:03.420252+00:00",
+      "highest_price": 59.66,
+      "highest_time": "2026-06-26T09:16:02.971369+00:00"
+    },
+    "WM": {
+      "option_symbol": "WM261218C00230000",
+      "strike": 230.0,
+      "expiry": "2026-12-18",
+      "entry_price": 11.67,
+      "entry_time": "2026-06-26T13:01:08+00:00",
+      "current_price": 13.02,
+      "current_time": "2026-06-26T23:31:03.714240+00:00",
+      "highest_price": 13.96,
+      "highest_time": "2026-06-26T17:41:02.994800+00:00"
+    },
+    "TGT": {
+      "option_symbol": "TGT261218C00150000",
+      "strike": 150.0,
+      "expiry": "2026-12-18",
+      "entry_price": 9.39,
+      "entry_time": "2026-06-26T13:01:03+00:00",
+      "current_price": 9.35,
+      "current_time": "2026-06-26T23:31:04.007925+00:00",
+      "highest_price": 9.98,
+      "highest_time": "2026-06-26T13:34:03.462436+00:00"
+    },
+    "DG": {
+      "option_symbol": "DG261218C00130000",
+      "strike": 130.0,
+      "expiry": "2026-12-18",
+      "entry_price": 9.96,
+      "entry_time": "2026-06-26T15:00:37+00:00",
+      "current_price": 9.82,
+      "current_time": "2026-06-26T23:31:04.236701+00:00",
+      "highest_price": 10.39,
+      "highest_time": "2026-06-26T16:22:03.059951+00:00"
+    },
+    "ALL": {
+      "option_symbol": "ALL261218C00240000",
+      "strike": 240.0,
+      "expiry": "2026-12-18",
+      "entry_price": 16.23,
+      "entry_time": "2026-06-26T16:12:14+00:00",
+      "current_price": 18.32,
+      "current_time": "2026-06-26T23:31:04.409633+00:00",
+      "highest_price": 18.32,
+      "highest_time": "2026-06-26T20:01:10.390250+00:00"
+    },
+    "PGR": {
+      "option_symbol": "PGR261218C00230000",
+      "strike": 230.0,
+      "expiry": "2026-12-18",
+      "entry_price": 14.16,
+      "entry_time": "2026-06-26T16:15:14+00:00",
+      "current_price": 14.44,
+      "current_time": "2026-06-26T23:31:04.591977+00:00",
+      "highest_price": 14.7,
+      "highest_time": "2026-06-26T19:58:10.439875+00:00"
+    },
+    "CNP": {
+      "option_symbol": "CNP261218C00050000",
+      "strike": 50.0,
+      "expiry": "2026-12-18",
+      "entry_price": 0.85,
+      "entry_time": "2026-06-26T16:16:50+00:00",
+      "current_price": 0.92,
+      "current_time": "2026-06-26T23:31:04.788748+00:00",
+      "highest_price": 1.02,
+      "highest_time": "2026-06-26T19:31:10.399811+00:00"
+    },
+    "EXPE": {
+      "option_symbol": "EXPE261218C00270000",
+      "strike": 270.0,
+      "expiry": "2026-12-18",
+      "entry_price": 37.0,
+      "entry_time": "2026-06-26T17:06:08+00:00",
+      "current_price": 36.05,
+      "current_time": "2026-06-26T23:31:05.007302+00:00",
+      "highest_price": 37.0,
+      "highest_time": "2026-06-26T17:07:04.278276+00:00"
+    },
+    "TRV": {
+      "option_symbol": "TRV270115C00330000",
+      "strike": 330.0,
+      "expiry": "2026-12-18",
+      "entry_price": 21.34,
+      "entry_time": "2026-06-26T17:28:46+00:00",
+      "current_price": 22.34,
+      "current_time": "2026-06-26T23:31:05.205765+00:00",
+      "highest_price": 22.34,
+      "highest_time": "2026-06-26T20:01:12.255765+00:00"
+    },
+    "LNT": {
+      "option_symbol": "LNT270115C00080000",
+      "strike": 80.0,
+      "expiry": "2026-12-18",
+      "entry_price": 3.44,
+      "entry_time": "2026-06-26T17:53:06+00:00",
+      "current_price": 3.54,
+      "current_time": "2026-06-26T23:31:05.408730+00:00",
+      "highest_price": 3.54,
+      "highest_time": "2026-06-26T19:59:10.952749+00:00"
+    },
+    "DTE": {
+      "option_symbol": "DTE270115C00160000",
+      "strike": 160.0,
+      "expiry": "2026-12-18",
+      "entry_price": 7.26,
+      "entry_time": "2026-06-26T18:45:24+00:00",
+      "current_price": 7.09,
+      "current_time": "2026-06-26T23:31:05.615804+00:00",
+      "highest_price": 7.31,
+      "highest_time": "2026-06-26T19:53:06.959884+00:00"
+    },
+    "CPT": {
+      "option_symbol": "CPT270219C00120000",
+      "strike": 120.0,
+      "expiry": "2026-12-18",
+      "entry_price": 6.37,
+      "entry_time": "2026-06-26T19:25:20+00:00",
+      "current_price": 6.42,
+      "current_time": "2026-06-26T23:31:05.804740+00:00",
+      "highest_price": 6.42,
+      "highest_time": "2026-06-26T20:01:13.506244+00:00"
+    },
+    "ESS": {
+      "option_symbol": "ESS270115C00300000",
+      "strike": 300.0,
+      "expiry": "2026-12-18",
+      "entry_price": 17.07,
+      "entry_time": "2026-06-26T19:56:11+00:00",
+      "current_price": 16.95,
+      "current_time": "2026-06-26T23:31:06.008408+00:00",
+      "highest_price": 17.2,
+      "highest_time": "2026-06-26T19:58:13.382378+00:00"
+    }
+  }
+}
