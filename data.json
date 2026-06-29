@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T13:12:02.314881+00:00",
+  "last_updated": "2026-06-29T14:08:03.137900+00:00",
   "today": {
     "date": "2026-06-29",
     "alerts": {
@@ -55,8 +55,31 @@
           "msg_id": "19f1381dbc90d733",
           "received_at": "2026-06-29T13:11:42+00:00"
         }
+      ],
+      "CRL": [
+        {
+          "alert": 6,
+          "close": 220.955,
+          "peak": 0,
+          "cross": 0,
+          "symbol": "CRL",
+          "msg_id": "19f13b4b0de0379c",
+          "received_at": "2026-06-29T14:07:14+00:00"
+        }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "CRL": {
+        "option_symbol": "CRL261218C00230000",
+        "strike": 230.0,
+        "expiry": "2026-12-18",
+        "entry_price": 28.96,
+        "entry_time": "2026-06-29T14:07:14+00:00",
+        "current_price": 28.96,
+        "current_time": "2026-06-29T14:08:03.137857+00:00",
+        "highest_price": 28.96,
+        "highest_time": "2026-06-29T14:08:03.137879+00:00"
+      }
+    }
   }
 }
