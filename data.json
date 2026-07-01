@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T12:16:05.115804+00:00",
+  "last_updated": "2026-07-01T12:31:06.306586+00:00",
   "today": {
     "date": "2026-07-01",
     "alerts": {
@@ -34,6 +34,15 @@
           "symbol": "INCY",
           "msg_id": "19f1cb299e6f5468",
           "received_at": "2026-07-01T08:01:33+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 113.575,
+          "peak": 0,
+          "cross": 56.108762240610865,
+          "symbol": "INCY",
+          "msg_id": "19f1da5afce939db",
+          "received_at": "2026-07-01T12:27:03+00:00"
         }
       ],
       "KLAC": [
@@ -189,6 +198,39 @@
           "symbol": "V",
           "msg_id": "19f1d8fbbbb54901",
           "received_at": "2026-07-01T12:03:03+00:00"
+        }
+      ],
+      "DGX": [
+        {
+          "alert": 66,
+          "close": 213,
+          "peak": 0,
+          "cross": -0.681336784481565,
+          "symbol": "DGX",
+          "msg_id": "19f1da70dd4ecdc8",
+          "received_at": "2026-07-01T12:28:34+00:00"
+        }
+      ],
+      "CINF": [
+        {
+          "alert": 66,
+          "close": 184.14,
+          "peak": 0,
+          "cross": 0.9574829468748363,
+          "symbol": "CINF",
+          "msg_id": "19f1da18eedaacc7",
+          "received_at": "2026-07-01T12:22:33+00:00"
+        }
+      ],
+      "LYV": [
+        {
+          "alert": 66,
+          "close": 183.1,
+          "peak": 0,
+          "cross": -1.995968748042587,
+          "symbol": "LYV",
+          "msg_id": "19f1da0ad667ed4e",
+          "received_at": "2026-07-01T12:21:34+00:00"
         }
       ]
     },
