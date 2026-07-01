@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T12:46:05.630312+00:00",
+  "last_updated": "2026-07-01T13:00:07.143035+00:00",
   "today": {
     "date": "2026-07-01",
     "alerts": {
@@ -243,8 +243,40 @@
           "msg_id": "19f1db0ba7f5a923",
           "received_at": "2026-07-01T12:39:06+00:00"
         }
+      ],
+      "VRTX": [
+        {
+          "alert": 6,
+          "close": 499.94,
+          "peak": 2,
+          "cross": 7.6909758218654405,
+          "symbol": "VRTX",
+          "msg_id": "19f1dc220c69c25b",
+          "received_at": "2026-07-01T12:58:05+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 499.5,
+          "peak": 1,
+          "cross": 7.6909758218654405,
+          "symbol": "VRTX",
+          "msg_id": "19f1dc0ddd08353c",
+          "received_at": "2026-07-01T12:56:44+00:00"
+        }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "VRTX": {
+        "option_symbol": "VRTX261218C00500000",
+        "strike": 500.0,
+        "expiry": "2026-12-18",
+        "entry_price": 47.22,
+        "entry_time": "2026-07-01T12:56:44+00:00",
+        "current_price": 47.22,
+        "current_time": "2026-07-01T13:00:07.142814+00:00",
+        "highest_price": 47.22,
+        "highest_time": "2026-07-01T13:00:07.142945+00:00"
+      }
+    }
   }
 }
