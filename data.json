@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T12:01:04.817816+00:00",
+  "last_updated": "2026-07-01T12:16:05.115804+00:00",
   "today": {
     "date": "2026-07-01",
     "alerts": {
@@ -96,6 +96,15 @@
           "symbol": "APH",
           "msg_id": "19f1cb239c7cf05b",
           "received_at": "2026-07-01T08:01:08+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 176.34,
+          "peak": 0,
+          "cross": -12.677224661745148,
+          "symbol": "APH",
+          "msg_id": "19f1d8fb57c5dee4",
+          "received_at": "2026-07-01T12:03:03+00:00"
         }
       ],
       "AMAT": [
@@ -129,6 +138,15 @@
           "symbol": "DAL",
           "msg_id": "19f1cc14703735df",
           "received_at": "2026-07-01T08:17:35+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 93.68,
+          "peak": 0,
+          "cross": 0.5608383112272536,
+          "symbol": "DAL",
+          "msg_id": "19f1d8f2e356d1b8",
+          "received_at": "2026-07-01T12:02:29+00:00"
         }
       ],
       "GE": [
@@ -151,6 +169,26 @@
           "symbol": "PNC",
           "msg_id": "19f1d59f8ba57902",
           "received_at": "2026-07-01T11:04:21+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 246.22,
+          "peak": 0,
+          "cross": 3.2755831818821592,
+          "symbol": "PNC",
+          "msg_id": "19f1d8e0e049efad",
+          "received_at": "2026-07-01T12:01:15+00:00"
+        }
+      ],
+      "V": [
+        {
+          "alert": 66,
+          "close": 342.925,
+          "peak": 0,
+          "cross": 15.723241227572842,
+          "symbol": "V",
+          "msg_id": "19f1d8fbbbb54901",
+          "received_at": "2026-07-01T12:03:03+00:00"
         }
       ]
     },
