@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T11:16:04.300603+00:00",
+  "last_updated": "2026-07-01T12:01:04.817816+00:00",
   "today": {
     "date": "2026-07-01",
     "alerts": {
@@ -45,6 +45,15 @@
           "symbol": "KLAC",
           "msg_id": "19f1cb28f372aaac",
           "received_at": "2026-07-01T08:01:29+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 296.125,
+          "peak": 0,
+          "cross": -8.186309000037575,
+          "symbol": "KLAC",
+          "msg_id": "19f1d8d60747d371",
+          "received_at": "2026-07-01T12:00:28+00:00"
         }
       ],
       "ALAB": [
@@ -56,6 +65,15 @@
           "symbol": "ALAB",
           "msg_id": "19f1cb25302da492",
           "received_at": "2026-07-01T08:01:14+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 476.4,
+          "peak": 0,
+          "cross": -11.806014168581978,
+          "symbol": "ALAB",
+          "msg_id": "19f1d8d54a71d496",
+          "received_at": "2026-07-01T12:00:27+00:00"
         }
       ],
       "CAT": [
