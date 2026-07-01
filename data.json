@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T13:00:34.136034+00:00",
+  "last_updated": "2026-07-01T13:12:35.589651+00:00",
   "today": {
     "date": "2026-07-01",
     "alerts": {
@@ -263,6 +263,26 @@
           "msg_id": "19f1dc0ddd08353c",
           "received_at": "2026-07-01T12:56:44+00:00"
         }
+      ],
+      "LLY": [
+        {
+          "alert": 6,
+          "close": 1213.86,
+          "peak": 2,
+          "cross": -3.170456237747034,
+          "symbol": "LLY",
+          "msg_id": "19f1dcee9279b8c8",
+          "received_at": "2026-07-01T13:12:05+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1212.145,
+          "peak": 1,
+          "cross": -3.170456237747034,
+          "symbol": "LLY",
+          "msg_id": "19f1dced60cd939d",
+          "received_at": "2026-07-01T13:12:01+00:00"
+        }
       ]
     },
     "backtest": {
@@ -273,9 +293,20 @@
         "entry_price": 47.22,
         "entry_time": "2026-07-01T12:56:44+00:00",
         "current_price": 47.22,
-        "current_time": "2026-07-01T13:00:34.135830+00:00",
+        "current_time": "2026-07-01T13:12:34.743106+00:00",
         "highest_price": 47.22,
         "highest_time": "2026-07-01T13:00:07.142945+00:00"
+      },
+      "LLY": {
+        "option_symbol": "LLY261218C01220000",
+        "strike": 1220.0,
+        "expiry": "2026-12-18",
+        "entry_price": 132.96,
+        "entry_time": "2026-07-01T13:12:01+00:00",
+        "current_price": 132.96,
+        "current_time": "2026-07-01T13:12:35.589584+00:00",
+        "highest_price": 132.96,
+        "highest_time": "2026-07-01T13:12:35.589610+00:00"
       }
     }
   }
