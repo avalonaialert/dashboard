@@ -1,8 +1,108 @@
 {
-  "last_updated": "2026-07-01T08:01:06.748032+00:00",
+  "last_updated": "2026-07-01T08:16:05.797391+00:00",
   "today": {
     "date": "2026-07-01",
-    "alerts": {},
+    "alerts": {
+      "LRCX": [
+        {
+          "alert": 66,
+          "close": 425.07500000000005,
+          "peak": 0,
+          "cross": -2.7972688678260424,
+          "symbol": "LRCX",
+          "msg_id": "19f1cb2a742b8697",
+          "received_at": "2026-07-01T08:01:35+00:00"
+        }
+      ],
+      "TER": [
+        {
+          "alert": 66,
+          "close": 480.4175,
+          "peak": 6,
+          "cross": -5.80080939714584,
+          "symbol": "TER",
+          "msg_id": "19f1cb29abf1819d",
+          "received_at": "2026-07-01T08:01:33+00:00"
+        }
+      ],
+      "INCY": [
+        {
+          "alert": 66,
+          "close": 113.38,
+          "peak": 0,
+          "cross": 27.380773000006208,
+          "symbol": "INCY",
+          "msg_id": "19f1cb299e6f5468",
+          "received_at": "2026-07-01T08:01:33+00:00"
+        }
+      ],
+      "KLAC": [
+        {
+          "alert": 66,
+          "close": 298.57,
+          "peak": 8,
+          "cross": 1.2426751848149846,
+          "symbol": "KLAC",
+          "msg_id": "19f1cb28f372aaac",
+          "received_at": "2026-07-01T08:01:29+00:00"
+        }
+      ],
+      "ALAB": [
+        {
+          "alert": 66,
+          "close": 479.01,
+          "peak": 0,
+          "cross": -2.973997474569491,
+          "symbol": "ALAB",
+          "msg_id": "19f1cb25302da492",
+          "received_at": "2026-07-01T08:01:14+00:00"
+        }
+      ],
+      "CAT": [
+        {
+          "alert": 66,
+          "close": 1057.0775,
+          "peak": 0,
+          "cross": -2.280857105157968,
+          "symbol": "CAT",
+          "msg_id": "19f1cb2423337d49",
+          "received_at": "2026-07-01T08:01:10+00:00"
+        }
+      ],
+      "APH": [
+        {
+          "alert": 66,
+          "close": 176.11249999999998,
+          "peak": 0,
+          "cross": -1.15627231647296,
+          "symbol": "APH",
+          "msg_id": "19f1cb239c7cf05b",
+          "received_at": "2026-07-01T08:01:08+00:00"
+        }
+      ],
+      "AMAT": [
+        {
+          "alert": 66,
+          "close": 715.76,
+          "peak": 0,
+          "cross": 1.6757438001799592,
+          "symbol": "AMAT",
+          "msg_id": "19f1cb224478460f",
+          "received_at": "2026-07-01T08:01:02+00:00"
+        }
+      ],
+      "GLW": [
+        {
+          "alert": 66,
+          "close": 249.635,
+          "peak": 0,
+          "cross": -1.0825476972735317,
+          "symbol": "GLW",
+          "msg_id": "19f1cb1fca044b63",
+          "received_at": "2026-07-01T08:00:53+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
