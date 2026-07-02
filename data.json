@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T13:38:37.088842+00:00",
+  "last_updated": "2026-07-02T13:39:14.909440+00:00",
   "today": {
     "date": "2026-07-02",
     "alerts": {
@@ -66,6 +66,15 @@
           "symbol": "MRNA",
           "msg_id": "19f230d24a6a7c12",
           "received_at": "2026-07-02T13:38:11+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 76.35249999999999,
+          "peak": 13,
+          "cross": 5.0883320380492325,
+          "symbol": "MRNA",
+          "msg_id": "19f230d9eb7a36b0",
+          "received_at": "2026-07-02T13:38:37+00:00"
         }
       ],
       "VRTX": [
@@ -95,6 +104,15 @@
           "symbol": "VRTX",
           "msg_id": "19f230d1bd89bbef",
           "received_at": "2026-07-02T13:38:07+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 504.725,
+          "peak": 11,
+          "cross": 22.752579713976857,
+          "symbol": "VRTX",
+          "msg_id": "19f230d8d6902427",
+          "received_at": "2026-07-02T13:38:36+00:00"
         }
       ],
       "DAL": [
@@ -134,8 +152,8 @@
         "expiry": "2026-12-18",
         "entry_price": 16.2,
         "entry_time": "2026-07-02T13:33:38+00:00",
-        "current_price": 16.84,
-        "current_time": "2026-07-02T13:38:36.421232+00:00",
+        "current_price": 16.99,
+        "current_time": "2026-07-02T13:39:14.089374+00:00",
         "highest_price": 17.11,
         "highest_time": "2026-07-02T13:35:35.851547+00:00"
       },
@@ -145,10 +163,10 @@
         "expiry": "2026-12-18",
         "entry_price": 42.12,
         "entry_time": "2026-07-02T13:34:20+00:00",
-        "current_price": 41.94,
-        "current_time": "2026-07-02T13:38:36.737306+00:00",
-        "highest_price": 42.12,
-        "highest_time": "2026-07-02T13:34:36.931897+00:00"
+        "current_price": 43.03,
+        "current_time": "2026-07-02T13:39:14.460937+00:00",
+        "highest_price": 43.03,
+        "highest_time": "2026-07-02T13:39:14.460962+00:00"
       },
       "DAL": {
         "option_symbol": "DAL261218C00100000",
@@ -156,8 +174,8 @@
         "expiry": "2026-12-18",
         "entry_price": 8.86,
         "entry_time": "2026-07-02T13:36:11+00:00",
-        "current_price": 8.89,
-        "current_time": "2026-07-02T13:38:37.088800+00:00",
+        "current_price": 8.98,
+        "current_time": "2026-07-02T13:39:14.909255+00:00",
         "highest_price": 9.11,
         "highest_time": "2026-07-02T13:37:36.769950+00:00"
       }
