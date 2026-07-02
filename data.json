@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T13:34:03.985384+00:00",
+  "last_updated": "2026-07-02T13:34:36.931919+00:00",
   "today": {
     "date": "2026-07-02",
     "alerts": {
@@ -12,6 +12,35 @@
           "symbol": "MRNA",
           "msg_id": "19f23090a05a967e",
           "received_at": "2026-07-02T13:33:38+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 75.9375,
+          "peak": 8,
+          "cross": 5.0883320380492325,
+          "symbol": "MRNA",
+          "msg_id": "19f23098bab45fe6",
+          "received_at": "2026-07-02T13:34:13+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 75.7975,
+          "peak": 7,
+          "cross": 5.0883320380492325,
+          "symbol": "MRNA",
+          "msg_id": "19f2309535d63750",
+          "received_at": "2026-07-02T13:33:58+00:00"
+        }
+      ],
+      "VRTX": [
+        {
+          "alert": 6,
+          "close": 503.68500000000006,
+          "peak": 8,
+          "cross": 22.752579713976857,
+          "symbol": "VRTX",
+          "msg_id": "19f2309a8e046d05",
+          "received_at": "2026-07-02T13:34:20+00:00"
         }
       ]
     },
@@ -22,10 +51,21 @@
         "expiry": "2026-12-18",
         "entry_price": 16.2,
         "entry_time": "2026-07-02T13:33:38+00:00",
-        "current_price": 16.2,
-        "current_time": "2026-07-02T13:34:03.985328+00:00",
-        "highest_price": 16.2,
-        "highest_time": "2026-07-02T13:34:03.985349+00:00"
+        "current_price": 16.72,
+        "current_time": "2026-07-02T13:34:36.330327+00:00",
+        "highest_price": 16.72,
+        "highest_time": "2026-07-02T13:34:36.330351+00:00"
+      },
+      "VRTX": {
+        "option_symbol": "VRTX261218C00520000",
+        "strike": 520.0,
+        "expiry": "2026-12-18",
+        "entry_price": 42.12,
+        "entry_time": "2026-07-02T13:34:20+00:00",
+        "current_price": 42.12,
+        "current_time": "2026-07-02T13:34:36.931878+00:00",
+        "highest_price": 42.12,
+        "highest_time": "2026-07-02T13:34:36.931897+00:00"
       }
     }
   }
