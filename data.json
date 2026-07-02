@@ -1,8 +1,32 @@
 {
-  "last_updated": "2026-07-02T08:01:07.638108+00:00",
+  "last_updated": "2026-07-02T13:34:03.985384+00:00",
   "today": {
     "date": "2026-07-02",
-    "alerts": {},
-    "backtest": {}
+    "alerts": {
+      "MRNA": [
+        {
+          "alert": 6,
+          "close": 75.63,
+          "peak": 6,
+          "cross": 5.0883320380492325,
+          "symbol": "MRNA",
+          "msg_id": "19f23090a05a967e",
+          "received_at": "2026-07-02T13:33:38+00:00"
+        }
+      ]
+    },
+    "backtest": {
+      "MRNA": {
+        "option_symbol": "MRNA261218C00080000",
+        "strike": 80.0,
+        "expiry": "2026-12-18",
+        "entry_price": 16.2,
+        "entry_time": "2026-07-02T13:33:38+00:00",
+        "current_price": 16.2,
+        "current_time": "2026-07-02T13:34:03.985328+00:00",
+        "highest_price": 16.2,
+        "highest_time": "2026-07-02T13:34:03.985349+00:00"
+      }
+    }
   }
 }
