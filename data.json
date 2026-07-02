@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T13:40:13.888522+00:00",
+  "last_updated": "2026-07-02T13:40:42.810552+00:00",
   "today": {
     "date": "2026-07-02",
     "alerts": {
@@ -93,6 +93,15 @@
           "symbol": "MRNA",
           "msg_id": "19f230e7d0da8f96",
           "received_at": "2026-07-02T13:39:39+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 76.5425,
+          "peak": 16,
+          "cross": 5.0883320380492325,
+          "symbol": "MRNA",
+          "msg_id": "19f230f03c9b358b",
+          "received_at": "2026-07-02T13:40:13+00:00"
         }
       ],
       "VRTX": [
@@ -149,6 +158,15 @@
           "symbol": "VRTX",
           "msg_id": "19f230e850b7ce79",
           "received_at": "2026-07-02T13:39:41+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 505.655,
+          "peak": 14,
+          "cross": 22.752579713976857,
+          "symbol": "VRTX",
+          "msg_id": "19f230ee72d24686",
+          "received_at": "2026-07-02T13:40:05+00:00"
         }
       ],
       "DAL": [
@@ -196,6 +214,15 @@
           "symbol": "DAL",
           "msg_id": "19f230e82cf0c2aa",
           "received_at": "2026-07-02T13:39:40+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 95.3625,
+          "peak": 12,
+          "cross": 12.336245157450207,
+          "symbol": "DAL",
+          "msg_id": "19f230f2006c130a",
+          "received_at": "2026-07-02T13:40:20+00:00"
         }
       ],
       "V": [
@@ -216,6 +243,15 @@
           "symbol": "V",
           "msg_id": "19f230e9af9bc4dd",
           "received_at": "2026-07-02T13:39:45+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 355.7625,
+          "peak": 3,
+          "cross": 12.797131056111441,
+          "symbol": "V",
+          "msg_id": "19f230f0512a81f3",
+          "received_at": "2026-07-02T13:40:13+00:00"
         }
       ]
     },
@@ -226,10 +262,10 @@
         "expiry": "2026-12-18",
         "entry_price": 16.2,
         "entry_time": "2026-07-02T13:33:38+00:00",
-        "current_price": 17.05,
-        "current_time": "2026-07-02T13:40:12.773044+00:00",
-        "highest_price": 17.11,
-        "highest_time": "2026-07-02T13:35:35.851547+00:00"
+        "current_price": 17.15,
+        "current_time": "2026-07-02T13:40:41.695740+00:00",
+        "highest_price": 17.15,
+        "highest_time": "2026-07-02T13:40:41.695770+00:00"
       },
       "VRTX": {
         "option_symbol": "VRTX261218C00520000",
@@ -237,8 +273,8 @@
         "expiry": "2026-12-18",
         "entry_price": 42.12,
         "entry_time": "2026-07-02T13:34:20+00:00",
-        "current_price": 44.27,
-        "current_time": "2026-07-02T13:40:13.053832+00:00",
+        "current_price": 44.05,
+        "current_time": "2026-07-02T13:40:42.158611+00:00",
         "highest_price": 44.27,
         "highest_time": "2026-07-02T13:40:13.053879+00:00"
       },
@@ -248,8 +284,8 @@
         "expiry": "2026-12-18",
         "entry_price": 8.86,
         "entry_time": "2026-07-02T13:36:11+00:00",
-        "current_price": 8.89,
-        "current_time": "2026-07-02T13:40:13.483922+00:00",
+        "current_price": 9.07,
+        "current_time": "2026-07-02T13:40:42.507859+00:00",
         "highest_price": 9.11,
         "highest_time": "2026-07-02T13:37:36.769950+00:00"
       },
@@ -259,8 +295,8 @@
         "expiry": "2026-12-18",
         "entry_price": 23.75,
         "entry_time": "2026-07-02T13:39:12+00:00",
-        "current_price": 23.49,
-        "current_time": "2026-07-02T13:40:13.888419+00:00",
+        "current_price": 23.6,
+        "current_time": "2026-07-02T13:40:42.810499+00:00",
         "highest_price": 23.75,
         "highest_time": "2026-07-02T13:39:42.518305+00:00"
       }
