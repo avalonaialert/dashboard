@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T13:34:36.931919+00:00",
+  "last_updated": "2026-07-02T13:35:08.542447+00:00",
   "today": {
     "date": "2026-07-02",
     "alerts": {
@@ -30,6 +30,15 @@
           "symbol": "MRNA",
           "msg_id": "19f2309535d63750",
           "received_at": "2026-07-02T13:33:58+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 76.07875,
+          "peak": 9,
+          "cross": 5.0883320380492325,
+          "symbol": "MRNA",
+          "msg_id": "19f2309fd5c3e962",
+          "received_at": "2026-07-02T13:34:43+00:00"
         }
       ],
       "VRTX": [
@@ -41,6 +50,15 @@
           "symbol": "VRTX",
           "msg_id": "19f2309a8e046d05",
           "received_at": "2026-07-02T13:34:20+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 503.8,
+          "peak": 9,
+          "cross": 22.752579713976857,
+          "symbol": "VRTX",
+          "msg_id": "19f2309d9bae3517",
+          "received_at": "2026-07-02T13:34:33+00:00"
         }
       ]
     },
@@ -51,10 +69,10 @@
         "expiry": "2026-12-18",
         "entry_price": 16.2,
         "entry_time": "2026-07-02T13:33:38+00:00",
-        "current_price": 16.72,
-        "current_time": "2026-07-02T13:34:36.330327+00:00",
-        "highest_price": 16.72,
-        "highest_time": "2026-07-02T13:34:36.330351+00:00"
+        "current_price": 16.82,
+        "current_time": "2026-07-02T13:35:08.216029+00:00",
+        "highest_price": 16.82,
+        "highest_time": "2026-07-02T13:35:08.216098+00:00"
       },
       "VRTX": {
         "option_symbol": "VRTX261218C00520000",
@@ -62,8 +80,8 @@
         "expiry": "2026-12-18",
         "entry_price": 42.12,
         "entry_time": "2026-07-02T13:34:20+00:00",
-        "current_price": 42.12,
-        "current_time": "2026-07-02T13:34:36.931878+00:00",
+        "current_price": 41.05,
+        "current_time": "2026-07-02T13:35:08.542382+00:00",
         "highest_price": 42.12,
         "highest_time": "2026-07-02T13:34:36.931897+00:00"
       }
