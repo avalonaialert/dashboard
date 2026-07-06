@@ -1,9 +1,143 @@
 {
-  "last_updated": "2026-07-06T08:32:10.265357+00:00",
+  "last_updated": "2026-07-06T08:47:21.477913+00:00",
   "today": {
-    "date": "2026-07-03",
+    "date": "2026-07-06",
     "alerts": {
+      "LLY": [
+        {
+          "alert": 6,
+          "close": 1216.96,
+          "peak": 3,
+          "cross": -3.2304687260383025,
+          "symbol": "LLY",
+          "msg_id": "19f3698e4b4f880f",
+          "received_at": "2026-07-06T08:43:36+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1217.14,
+          "peak": 2,
+          "cross": 20.364783908201257,
+          "symbol": "LLY",
+          "msg_id": "19f368c7d891111c",
+          "received_at": "2026-07-06T08:30:03+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 1217.585,
+          "peak": 1,
+          "cross": -2.918806939006888,
+          "symbol": "LLY",
+          "msg_id": "19f3671e6268fdf7",
+          "received_at": "2026-07-06T08:01:00+00:00"
+        }
+      ],
+      "CAT": [
+        {
+          "alert": 6,
+          "close": 977.77,
+          "peak": 6,
+          "cross": 9.024343403843014,
+          "symbol": "CAT",
+          "msg_id": "19f3697f0a7349b2",
+          "received_at": "2026-07-06T08:42:33+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 977.7550000000001,
+          "peak": 5,
+          "cross": 9.024343403843014,
+          "symbol": "CAT",
+          "msg_id": "19f3691829434b0b",
+          "received_at": "2026-07-06T08:35:32+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 977.09,
+          "peak": 4,
+          "cross": 9.024343403843014,
+          "symbol": "CAT",
+          "msg_id": "19f369070faa116a",
+          "received_at": "2026-07-06T08:34:22+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 976.93,
+          "peak": 3,
+          "cross": 9.024343403843014,
+          "symbol": "CAT",
+          "msg_id": "19f368f3835d1764",
+          "received_at": "2026-07-06T08:33:02+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 977.09,
+          "peak": 2,
+          "cross": 33.24115430665688,
+          "symbol": "CAT",
+          "msg_id": "19f368c7a406c1f4",
+          "received_at": "2026-07-06T08:30:02+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 975.33,
+          "peak": 1,
+          "cross": 33.24115430665688,
+          "symbol": "CAT",
+          "msg_id": "19f3681f65eac5de",
+          "received_at": "2026-07-06T08:18:33+00:00"
+        }
+      ],
+      "GOOG": [
+        {
+          "alert": 6,
+          "close": 356.65,
+          "peak": 1,
+          "cross": -0.1138530734606944,
+          "symbol": "GOOG",
+          "msg_id": "19f36977809aca86",
+          "received_at": "2026-07-06T08:42:03+00:00"
+        }
+      ],
+      "VRTX": [
+        {
+          "alert": 7,
+          "close": 529.12,
+          "peak": 0,
+          "cross": 1.4511680310774975,
+          "symbol": "VRTX",
+          "msg_id": "19f3693cc7e37a5e",
+          "received_at": "2026-07-06T08:38:02+00:00"
+        },
+        {
+          "alert": 66,
+          "close": 528.155,
+          "peak": 0,
+          "cross": 0.0308227975952039,
+          "symbol": "VRTX",
+          "msg_id": "19f36726dc57068e",
+          "received_at": "2026-07-06T08:01:35+00:00"
+        }
+      ],
       "GLW": [
+        {
+          "alert": -6,
+          "close": 200.08999999999997,
+          "peak": 10,
+          "cross": 5.326068522270395,
+          "symbol": "GLW",
+          "msg_id": "19f3691417798d59",
+          "received_at": "2026-07-06T08:35:13+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 200.87,
+          "peak": 10,
+          "cross": 5.326068522270395,
+          "symbol": "GLW",
+          "msg_id": "19f368d866c98d07",
+          "received_at": "2026-07-06T08:31:11+00:00"
+        },
         {
           "alert": 6,
           "close": 200.90000000000003,
@@ -84,46 +218,6 @@
           "symbol": "GLW",
           "msg_id": "19f367711ef27373",
           "received_at": "2026-07-06T08:06:35+00:00"
-        }
-      ],
-      "LLY": [
-        {
-          "alert": 6,
-          "close": 1217.14,
-          "peak": 2,
-          "cross": 20.364783908201257,
-          "symbol": "LLY",
-          "msg_id": "19f368c7d891111c",
-          "received_at": "2026-07-06T08:30:03+00:00"
-        },
-        {
-          "alert": 6,
-          "close": 1217.585,
-          "peak": 1,
-          "cross": -2.918806939006888,
-          "symbol": "LLY",
-          "msg_id": "19f3671e6268fdf7",
-          "received_at": "2026-07-06T08:01:00+00:00"
-        }
-      ],
-      "CAT": [
-        {
-          "alert": 6,
-          "close": 977.09,
-          "peak": 2,
-          "cross": 33.24115430665688,
-          "symbol": "CAT",
-          "msg_id": "19f368c7a406c1f4",
-          "received_at": "2026-07-06T08:30:02+00:00"
-        },
-        {
-          "alert": 6,
-          "close": 975.33,
-          "peak": 1,
-          "cross": 33.24115430665688,
-          "symbol": "CAT",
-          "msg_id": "19f3681f65eac5de",
-          "received_at": "2026-07-06T08:18:33+00:00"
         }
       ],
       "ALAB": [
@@ -760,17 +854,6 @@
           "received_at": "2026-07-06T08:02:53+00:00"
         }
       ],
-      "VRTX": [
-        {
-          "alert": 66,
-          "close": 528.155,
-          "peak": 0,
-          "cross": 0.0308227975952039,
-          "symbol": "VRTX",
-          "msg_id": "19f36726dc57068e",
-          "received_at": "2026-07-06T08:01:35+00:00"
-        }
-      ],
       "JNJ": [
         {
           "alert": 66,
@@ -806,17 +889,6 @@
       ]
     },
     "backtest": {
-      "GLW": {
-        "option_symbol": "GLW261218C00210000",
-        "strike": 210.0,
-        "expiry": "2026-12-18",
-        "entry_price": 41.44,
-        "entry_time": "2026-07-06T08:06:35+00:00",
-        "current_price": 41.44,
-        "current_time": "2026-07-06T08:32:06.599513+00:00",
-        "highest_price": 41.44,
-        "highest_time": "2026-07-06T08:32:06.599533+00:00"
-      },
       "LLY": {
         "option_symbol": "LLY261218C01220000",
         "strike": 1220.0,
@@ -824,9 +896,9 @@
         "entry_price": 132.24,
         "entry_time": "2026-07-06T08:01:00+00:00",
         "current_price": 132.24,
-        "current_time": "2026-07-06T08:32:07.155902+00:00",
+        "current_time": "2026-07-06T08:47:17.138526+00:00",
         "highest_price": 132.24,
-        "highest_time": "2026-07-06T08:32:07.155930+00:00"
+        "highest_time": "2026-07-06T08:47:17.138557+00:00"
       },
       "CAT": {
         "option_symbol": "CAT261218C00980000",
@@ -835,9 +907,31 @@
         "entry_price": 120.96,
         "entry_time": "2026-07-06T08:18:33+00:00",
         "current_price": 120.96,
-        "current_time": "2026-07-06T08:32:07.512913+00:00",
+        "current_time": "2026-07-06T08:47:17.737694+00:00",
         "highest_price": 120.96,
-        "highest_time": "2026-07-06T08:32:07.512941+00:00"
+        "highest_time": "2026-07-06T08:47:17.737720+00:00"
+      },
+      "GOOG": {
+        "option_symbol": "GOOG261218C00360000",
+        "strike": 360.0,
+        "expiry": "2026-12-18",
+        "entry_price": 36.67,
+        "entry_time": "2026-07-06T08:42:03+00:00",
+        "current_price": 36.67,
+        "current_time": "2026-07-06T08:47:18.201896+00:00",
+        "highest_price": 36.67,
+        "highest_time": "2026-07-06T08:47:18.201921+00:00"
+      },
+      "GLW": {
+        "option_symbol": "GLW261218C00210000",
+        "strike": 210.0,
+        "expiry": "2026-12-18",
+        "entry_price": 41.44,
+        "entry_time": "2026-07-06T08:06:35+00:00",
+        "current_price": 41.44,
+        "current_time": "2026-07-06T08:47:18.591148+00:00",
+        "highest_price": 41.44,
+        "highest_time": "2026-07-06T08:47:18.591176+00:00"
       },
       "ALAB": {
         "option_symbol": "ALAB261218C00420000",
@@ -846,9 +940,9 @@
         "entry_price": 115.21,
         "entry_time": "2026-07-06T08:01:34+00:00",
         "current_price": 115.21,
-        "current_time": "2026-07-06T08:32:07.895716+00:00",
+        "current_time": "2026-07-06T08:47:18.986345+00:00",
         "highest_price": 115.21,
-        "highest_time": "2026-07-06T08:32:07.895744+00:00"
+        "highest_time": "2026-07-06T08:47:18.986386+00:00"
       },
       "TER": {
         "option_symbol": "TER270115C00390000",
@@ -857,9 +951,9 @@
         "entry_price": 96.38,
         "entry_time": "2026-07-06T08:03:08+00:00",
         "current_price": 96.38,
-        "current_time": "2026-07-06T08:32:08.950193+00:00",
+        "current_time": "2026-07-06T08:47:19.995739+00:00",
         "highest_price": 96.38,
-        "highest_time": "2026-07-06T08:32:08.950211+00:00"
+        "highest_time": "2026-07-06T08:47:19.995767+00:00"
       },
       "APH": {
         "option_symbol": "APH261218C00170000",
@@ -868,9 +962,9 @@
         "entry_price": 23.1,
         "entry_time": "2026-07-06T08:06:44+00:00",
         "current_price": 23.1,
-        "current_time": "2026-07-06T08:32:09.312669+00:00",
+        "current_time": "2026-07-06T08:47:20.391886+00:00",
         "highest_price": 23.1,
-        "highest_time": "2026-07-06T08:32:09.312696+00:00"
+        "highest_time": "2026-07-06T08:47:20.391913+00:00"
       },
       "LRCX": {
         "option_symbol": "LRCX261218C00370000",
@@ -879,9 +973,9 @@
         "entry_price": 74.34,
         "entry_time": "2026-07-06T08:03:03+00:00",
         "current_price": 74.34,
-        "current_time": "2026-07-06T08:32:09.863594+00:00",
+        "current_time": "2026-07-06T08:47:20.953578+00:00",
         "highest_price": 74.34,
-        "highest_time": "2026-07-06T08:32:09.863646+00:00"
+        "highest_time": "2026-07-06T08:47:20.953595+00:00"
       },
       "AMAT": {
         "option_symbol": "AMAT261218C00630000",
@@ -890,9 +984,9 @@
         "entry_price": 125.62,
         "entry_time": "2026-07-06T08:02:23+00:00",
         "current_price": 125.62,
-        "current_time": "2026-07-06T08:32:10.265280+00:00",
+        "current_time": "2026-07-06T08:47:21.477839+00:00",
         "highest_price": 125.62,
-        "highest_time": "2026-07-06T08:32:10.265306+00:00"
+        "highest_time": "2026-07-06T08:47:21.477866+00:00"
       }
     }
   }
