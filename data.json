@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T08:47:21.477913+00:00",
+  "last_updated": "2026-07-06T09:16:53.105107+00:00",
   "today": {
     "date": "2026-07-06",
     "alerts": {
@@ -97,6 +97,204 @@
           "symbol": "GOOG",
           "msg_id": "19f36977809aca86",
           "received_at": "2026-07-06T08:42:03+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 357.17,
+          "peak": 23,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36b11d6ec5b13",
+          "received_at": "2026-07-06T09:10:03+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 357.17,
+          "peak": 22,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36afd96e33581",
+          "received_at": "2026-07-06T09:08:40+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 357.09749999999997,
+          "peak": 21,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36af6aca2c8a5",
+          "received_at": "2026-07-06T09:08:09+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.99,
+          "peak": 20,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36af0752db4f3",
+          "received_at": "2026-07-06T09:07:46+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 357.025,
+          "peak": 19,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36aa651f56881",
+          "received_at": "2026-07-06T09:02:43+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.995,
+          "peak": 18,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36a9dd51731a7",
+          "received_at": "2026-07-06T09:02:08+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.97,
+          "peak": 17,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36a9aff0d967f",
+          "received_at": "2026-07-06T09:01:56+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.94500000000005,
+          "peak": 16,
+          "cross": 3.706183614417935,
+          "symbol": "GOOG",
+          "msg_id": "19f36a9492fa1637",
+          "received_at": "2026-07-06T09:01:29+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.96750000000003,
+          "peak": 15,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a855f34d56e",
+          "received_at": "2026-07-06T09:00:26+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.94,
+          "peak": 14,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a7296549d33",
+          "received_at": "2026-07-06T08:59:11+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.9,
+          "peak": 13,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a6d9a6059e8",
+          "received_at": "2026-07-06T08:58:50+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.885,
+          "peak": 12,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a66f4e34d7d",
+          "received_at": "2026-07-06T08:58:23+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.9,
+          "peak": 11,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a5b483e4276",
+          "received_at": "2026-07-06T08:57:35+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.86,
+          "peak": 10,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a5a2f02c281",
+          "received_at": "2026-07-06T08:57:30+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.83,
+          "peak": 9,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a2e0c415b1c",
+          "received_at": "2026-07-06T08:54:30+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.84,
+          "peak": 8,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a2018ac72d3",
+          "received_at": "2026-07-06T08:53:32+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.85,
+          "peak": 7,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a1a2420e3f8",
+          "received_at": "2026-07-06T08:53:08+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.78625000000005,
+          "peak": 6,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a1655e7b641",
+          "received_at": "2026-07-06T08:52:52+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.79,
+          "peak": 5,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a0bc2d00f0e",
+          "received_at": "2026-07-06T08:52:06+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.8,
+          "peak": 4,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a05e763ef32",
+          "received_at": "2026-07-06T08:51:46+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.75,
+          "peak": 3,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f36a0248f90eed",
+          "received_at": "2026-07-06T08:51:30+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 356.63,
+          "peak": 2,
+          "cross": -1.390421217177476,
+          "symbol": "GOOG",
+          "msg_id": "19f369e61ca4db6f",
+          "received_at": "2026-07-06T08:49:35+00:00"
         }
       ],
       "VRTX": [
@@ -117,6 +315,15 @@
           "symbol": "VRTX",
           "msg_id": "19f36726dc57068e",
           "received_at": "2026-07-06T08:01:35+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 529.12,
+          "peak": 0,
+          "cross": -0.1930787385282814,
+          "symbol": "VRTX",
+          "msg_id": "19f36b0abc10709e",
+          "received_at": "2026-07-06T09:09:34+00:00"
         }
       ],
       "GLW": [
@@ -310,6 +517,24 @@
           "symbol": "ALAB",
           "msg_id": "19f36726a039ab84",
           "received_at": "2026-07-06T08:01:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 419.47,
+          "peak": 11,
+          "cross": -2.909318233875644,
+          "symbol": "ALAB",
+          "msg_id": "19f36af44663903f",
+          "received_at": "2026-07-06T09:08:02+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 421.44,
+          "peak": 11,
+          "cross": 6.409878740947543,
+          "symbol": "ALAB",
+          "msg_id": "19f369b261dea305",
+          "received_at": "2026-07-06T08:46:03+00:00"
         }
       ],
       "TER": [
@@ -429,6 +654,24 @@
           "symbol": "TER",
           "msg_id": "19f3673db480b400",
           "received_at": "2026-07-06T08:03:08+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 383.9,
+          "peak": 15,
+          "cross": -0.3852789218412628,
+          "symbol": "TER",
+          "msg_id": "19f36a2e9c4b8a8a",
+          "received_at": "2026-07-06T08:54:32+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 383.9,
+          "peak": 14,
+          "cross": -0.3852789218412628,
+          "symbol": "TER",
+          "msg_id": "19f369f3f3c0d6c4",
+          "received_at": "2026-07-06T08:50:32+00:00"
         }
       ],
       "APH": [
@@ -797,6 +1040,24 @@
           "symbol": "AMAT",
           "msg_id": "19f3673316bfa2b7",
           "received_at": "2026-07-06T08:02:23+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 624.2125,
+          "peak": 0,
+          "cross": 0.4173420612822862,
+          "symbol": "AMAT",
+          "msg_id": "19f36b6062b26037",
+          "received_at": "2026-07-06T09:15:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 624.525,
+          "peak": 0,
+          "cross": 2.1898249115702755,
+          "symbol": "AMAT",
+          "msg_id": "19f36a970ef8bd7b",
+          "received_at": "2026-07-06T09:01:40+00:00"
         }
       ],
       "ABNB": [
@@ -896,7 +1157,7 @@
         "entry_price": 132.24,
         "entry_time": "2026-07-06T08:01:00+00:00",
         "current_price": 132.24,
-        "current_time": "2026-07-06T08:47:17.138526+00:00",
+        "current_time": "2026-07-06T09:16:51.634053+00:00",
         "highest_price": 132.24,
         "highest_time": "2026-07-06T08:47:17.138557+00:00"
       },
@@ -907,7 +1168,7 @@
         "entry_price": 120.96,
         "entry_time": "2026-07-06T08:18:33+00:00",
         "current_price": 120.96,
-        "current_time": "2026-07-06T08:47:17.737694+00:00",
+        "current_time": "2026-07-06T09:16:51.815710+00:00",
         "highest_price": 120.96,
         "highest_time": "2026-07-06T08:47:17.737720+00:00"
       },
@@ -918,7 +1179,7 @@
         "entry_price": 36.67,
         "entry_time": "2026-07-06T08:42:03+00:00",
         "current_price": 36.67,
-        "current_time": "2026-07-06T08:47:18.201896+00:00",
+        "current_time": "2026-07-06T09:16:52.005568+00:00",
         "highest_price": 36.67,
         "highest_time": "2026-07-06T08:47:18.201921+00:00"
       },
@@ -929,7 +1190,7 @@
         "entry_price": 41.44,
         "entry_time": "2026-07-06T08:06:35+00:00",
         "current_price": 41.44,
-        "current_time": "2026-07-06T08:47:18.591148+00:00",
+        "current_time": "2026-07-06T09:16:52.189611+00:00",
         "highest_price": 41.44,
         "highest_time": "2026-07-06T08:47:18.591176+00:00"
       },
@@ -940,7 +1201,7 @@
         "entry_price": 115.21,
         "entry_time": "2026-07-06T08:01:34+00:00",
         "current_price": 115.21,
-        "current_time": "2026-07-06T08:47:18.986345+00:00",
+        "current_time": "2026-07-06T09:16:52.373112+00:00",
         "highest_price": 115.21,
         "highest_time": "2026-07-06T08:47:18.986386+00:00"
       },
@@ -951,7 +1212,7 @@
         "entry_price": 96.38,
         "entry_time": "2026-07-06T08:03:08+00:00",
         "current_price": 96.38,
-        "current_time": "2026-07-06T08:47:19.995739+00:00",
+        "current_time": "2026-07-06T09:16:52.550332+00:00",
         "highest_price": 96.38,
         "highest_time": "2026-07-06T08:47:19.995767+00:00"
       },
@@ -962,7 +1223,7 @@
         "entry_price": 23.1,
         "entry_time": "2026-07-06T08:06:44+00:00",
         "current_price": 23.1,
-        "current_time": "2026-07-06T08:47:20.391886+00:00",
+        "current_time": "2026-07-06T09:16:52.737754+00:00",
         "highest_price": 23.1,
         "highest_time": "2026-07-06T08:47:20.391913+00:00"
       },
@@ -973,7 +1234,7 @@
         "entry_price": 74.34,
         "entry_time": "2026-07-06T08:03:03+00:00",
         "current_price": 74.34,
-        "current_time": "2026-07-06T08:47:20.953578+00:00",
+        "current_time": "2026-07-06T09:16:52.928507+00:00",
         "highest_price": 74.34,
         "highest_time": "2026-07-06T08:47:20.953595+00:00"
       },
@@ -984,7 +1245,7 @@
         "entry_price": 125.62,
         "entry_time": "2026-07-06T08:02:23+00:00",
         "current_price": 125.62,
-        "current_time": "2026-07-06T08:47:21.477839+00:00",
+        "current_time": "2026-07-06T09:16:53.105043+00:00",
         "highest_price": 125.62,
         "highest_time": "2026-07-06T08:47:21.477866+00:00"
       }
