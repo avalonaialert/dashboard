@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-07",
+  "alerts": {
+    "WDC": [
+      {
+        "long": "long",
+        "alert": -66,
+        "close": 462.952875,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "WDC",
+        "msg_id": "19f71abe9b5cb2bc",
+        "received_at": "2026-07-17T20:01:58+00:00"
+      }
+    ],
+    "SNDK": [
+      {
+        "long": "long",
+        "alert": -66,
+        "close": 1386.8587499999999,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "SNDK",
+        "msg_id": "19f71ab654cc77ca",
+        "received_at": "2026-07-17T20:01:24+00:00"
+      }
+    ],
+    "NFLX": [
+      {
+        "long": "long",
+        "alert": -66,
+        "close": 67.22625000000001,
+        "peak": 0,
+        "cross": 0,
+        "symbol": "NFLX",
+        "msg_id": "19f71ab383115bb4",
+        "received_at": "2026-07-17T20:01:07+00:00"
+      }
+    ]
+  },
+  "backtest": {}
+}
