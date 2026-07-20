@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T14:02:33.346567+00:00",
+  "last_updated": "2026-07-20T14:03:04.321077+00:00",
   "today": {
     "date": "2026-07-20",
     "alerts": {
@@ -21,6 +21,15 @@
           "symbol": "TRV",
           "msg_id": "19f7ea7782a206a4",
           "received_at": "2026-07-20T08:32:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 372.02,
+          "peak": 0,
+          "cross": 4.677112598052999,
+          "symbol": "TRV",
+          "msg_id": "19f7ebb814807ce1",
+          "received_at": "2026-07-20T08:54:03+00:00"
         }
       ],
       "EA": [
@@ -52,6 +61,24 @@
           "symbol": "ALL",
           "msg_id": "19f7f6bbe497f335",
           "received_at": "2026-07-20T12:06:32+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 250.315,
+          "peak": 0,
+          "cross": 0.3736131890053145,
+          "symbol": "ALL",
+          "msg_id": "19f7f30ba42b9f71",
+          "received_at": "2026-07-20T11:02:06+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 250,
+          "peak": 0,
+          "cross": 0.2657555267588469,
+          "symbol": "ALL",
+          "msg_id": "19f7eb1860fdc050",
+          "received_at": "2026-07-20T08:43:09+00:00"
         }
       ],
       "GOOG": [
@@ -63,6 +90,26 @@
           "symbol": "GOOG",
           "msg_id": "19f7fd2d3731430e",
           "received_at": "2026-07-20T13:59:05+00:00"
+        }
+      ],
+      "ADM": [
+        {
+          "alert": 7,
+          "close": 85.97,
+          "peak": 0,
+          "cross": 12.83198965326877,
+          "symbol": "ADM",
+          "msg_id": "19f7ea844e8c46a0",
+          "received_at": "2026-07-20T08:33:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 85.9,
+          "peak": 0,
+          "cross": 0.582303676031625,
+          "symbol": "ADM",
+          "msg_id": "19f7e8be8be6460d",
+          "received_at": "2026-07-20T08:02:04+00:00"
         }
       ]
     },
