@@ -1,67 +1,8 @@
 {
-  "last_updated": "2026-07-17T23:01:02.652776+00:00",
+  "last_updated": "2026-07-20T08:01:05.537363+00:00",
   "today": {
-    "date": "2026-07-17",
-    "alerts": {
-      "WDC": [
-        {
-          "long": "long",
-          "alert": -66,
-          "close": 462.952875,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "WDC",
-          "msg_id": "19f71abe9b5cb2bc",
-          "received_at": "2026-07-17T20:01:58+00:00"
-        }
-      ],
-      "SNDK": [
-        {
-          "long": "long",
-          "alert": -66,
-          "close": 1386.8587499999999,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "SNDK",
-          "msg_id": "19f71ab654cc77ca",
-          "received_at": "2026-07-17T20:01:24+00:00"
-        }
-      ],
-      "NFLX": [
-        {
-          "long": "long",
-          "alert": -66,
-          "close": 67.22625000000001,
-          "peak": 0,
-          "cross": 0,
-          "symbol": "NFLX",
-          "msg_id": "19f71ab383115bb4",
-          "received_at": "2026-07-17T20:01:07+00:00"
-        }
-      ],
-      "ALL": [
-        {
-          "alert": 7,
-          "close": 249.96,
-          "peak": 0,
-          "cross": 1.5831870241985884,
-          "symbol": "ALL",
-          "msg_id": "19f722eeb7fd2402",
-          "received_at": "2026-07-17T22:25:03+00:00"
-        }
-      ],
-      "ADM": [
-        {
-          "alert": 7,
-          "close": 85.98,
-          "peak": 0,
-          "cross": 3.0394872703515485,
-          "symbol": "ADM",
-          "msg_id": "19f724c3a5ffdf13",
-          "received_at": "2026-07-17T22:57:04+00:00"
-        }
-      ]
-    },
+    "date": "2026-07-20",
+    "alerts": {},
     "backtest": {}
   }
 }
