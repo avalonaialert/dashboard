@@ -930,15 +930,23 @@
     const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
     const ALERT_META = {
-       "6":   { label: "Call Alert",    cls: "tile-call", badgeCls: "badge-call",  icon: "▲" },
-       "66":  { label: "Another Bull",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "~" },
-      "-6":   { label: "Bear Change",   cls: "tile-bear", badgeCls: "badge-bear",  icon: "▼" },
-      "-66":  { label: "SMA Break",     cls: "tile-bear", badgeCls: "badge-bear",  icon: "⚠" },
-       "8":   { label: "Call",    cls: "tile-call", badgeCls: "badge-call",  icon: "▲" },
-      "-8":   { label: "Put",     cls: "tile-bear", badgeCls: "badge-bear",  icon: "▼" },
-       "7":   { label: "RSI 70 Pre-Mkt",cls: "tile-sma",  badgeCls: "badge-rsi70", icon: "◆" },
-       "30":  { label: "Bull SAR",      cls: "tile-sar",  badgeCls: "badge-sar",   icon: "◉" },
-      "-30":  { label: "Break",         cls: "tile-sar",  badgeCls: "badge-break", icon: "✕" },
+       "6":       { label: "Call Alert",      cls: "tile-call", badgeCls: "badge-call",  icon: "▲" },
+       "66":      { label: "Another Bull",    cls: "tile-sma",  badgeCls: "badge-sma",   icon: "~" },
+      "-6":       { label: "Bear Change",     cls: "tile-bear", badgeCls: "badge-bear",  icon: "▼" },
+      "-66":      { label: "SMA Break",       cls: "tile-bear", badgeCls: "badge-bear",  icon: "⚠" },
+       "8":       { label: "Call",            cls: "tile-call", badgeCls: "badge-call",  icon: "▲" },
+      "-8":       { label: "Put",             cls: "tile-bear", badgeCls: "badge-bear",  icon: "▼" },
+      "-9":       { label: "Exit All",        cls: "tile-bear", badgeCls: "badge-bear",  icon: "✕" },
+       "5":       { label: "Profit Take #1",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "55":      { label: "Profit Take #2",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "555":     { label: "Profit Take #3",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "5555":    { label: "Profit Take #4",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "55555":   { label: "Profit Take #5",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "555555":  { label: "Profit Take #6",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "5555555": { label: "Profit Take #7",  cls: "tile-sma",  badgeCls: "badge-sma",   icon: "$" },
+       "7":       { label: "RSI 70 Pre-Mkt",  cls: "tile-sma",  badgeCls: "badge-rsi70", icon: "◆" },
+       "30":      { label: "Bull SAR",        cls: "tile-sar",  badgeCls: "badge-sar",   icon: "◉" },
+      "-30":      { label: "Break",           cls: "tile-sar",  badgeCls: "badge-break", icon: "✕" },
     };
 
     function meta(v) {
@@ -1108,8 +1116,6 @@
       const gainMap    = {};
       const rsi70Map   = {};   // sym -> [all alert-7 records]
       const bigMoveMap = {};   // sym -> latest alert-66666 record
-      const alert5List = [];   // flat list of {sym, a} for alert code 5
-      const seen5      = new Set();
       const symsCode4  = new Set(); // symbols with 15-min-simple alert (code 4)
       const symsCode30 = new Set(); // symbols with Bull SAR alert (code 30 or -30)
 
@@ -1129,9 +1135,6 @@
             if (!bigMoveMap[sym] || new Date(a.received_at) > new Date(bigMoveMap[sym].received_at)) {
               bigMoveMap[sym] = a;
             }
-          } else if (code === 5) {
-            const k5 = `${sym}|${key}`;
-            if (!seen5.has(k5)) { seen5.add(k5); alert5List.push({ sym, a }); }
           } else if (code === 4) {
             symsCode4.add(sym);
           } else if (code === 30 || code === -30) {
@@ -1145,9 +1148,10 @@
         }
       }
 
-      // Drop symbols with only SMA Gaining (6666) — keep if they have a Call, Index Call, or Index Put
+      // Drop symbols with only SMA Gaining (6666) — keep if they have a tradeable alert
+      const KEEP_CODES = new Set([6, 8, -8, -9, 5, 55, 555, 5555, 55555, 555555, 5555555]);
       for (const sym of Object.keys(symbolMap)) {
-        if (!symbolMap[sym].some(a => [6, 8, -8].includes(Number(a.alert)))) delete symbolMap[sym];
+        if (!symbolMap[sym].some(a => KEEP_CODES.has(Number(a.alert)))) delete symbolMap[sym];
       }
 
       const symbols = Object.entries(symbolMap);
@@ -1186,32 +1190,6 @@
 
       const hiddenCount = symbols.length - visibleSymbols.length;
       statusEl.textContent = `${visibleSymbols.length} symbol${visibleSymbols.length !== 1 ? "s" : ""}${hiddenCount > 0 ? ` · ${hiddenCount} older hidden` : ""}`;
-
-      // ── 5 Min Alerts tile — rendered first ────────────────────────────
-      if (alert5List.length > 0) {
-        alert5List.sort((x, y) => new Date(y.a.received_at) - new Date(x.a.received_at));
-        const tile5 = document.createElement("div");
-        tile5.className = "tile tile-5min";
-        const rows5 = alert5List.map(({ sym, a }) =>
-          `<div class="history-row">
-            <span class="five-sym">${symLink(sym)}</span>
-            <span class="hist-close">${fmtClose(a.close)}</span>
-            <span class="hist-time">${fmtTime(a.received_at)}</span>
-          </div>`
-        ).join("");
-        tile5.innerHTML = `
-          <div class="tile-header">
-            <div class="tile-top">
-              <div class="tile-5min-title">⚡ 5 Min Alerts</div>
-              <span class="tile-badge" style="background:#3a1800;color:#f97316">${alert5List.length}</span>
-            </div>
-          </div>
-          <div class="tile-history">
-            <div class="history-label">Stocks (${alert5List.length})</div>
-            ${rows5}
-          </div>`;
-        grid.appendChild(tile5);
-      }
 
       visibleSymbols.forEach(([symbol, history]) => {
         const latest = history[0];
