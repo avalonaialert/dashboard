@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-07-20T08:01:05.537363+00:00",
+  "last_updated": "2026-07-20T08:16:03.179125+00:00",
   "today": {
     "date": "2026-07-20",
-    "alerts": {},
+    "alerts": {
+      "TRV": [
+        {
+          "alert": 7,
+          "close": 368.54,
+          "peak": 0,
+          "cross": 2.3952446885006005,
+          "symbol": "TRV",
+          "msg_id": "19f7e8bf149b8b8d",
+          "received_at": "2026-07-20T08:02:04+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
