@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T15:34:02.703559+00:00",
+  "last_updated": "2026-07-20T15:34:34.068225+00:00",
   "today": {
     "date": "2026-07-20",
     "alerts": {
@@ -184,6 +184,15 @@
           "symbol": "AMZN",
           "msg_id": "19f8028e2c9c3cfe",
           "received_at": "2026-07-20T15:33:09+00:00"
+        },
+        {
+          "alert": 5555,
+          "close": 251.5,
+          "peak": 0,
+          "cross": 4.210218395932518,
+          "symbol": "AMZN",
+          "msg_id": "19f8029c8d9dab03",
+          "received_at": "2026-07-20T15:34:07+00:00"
         }
       ]
     },
@@ -194,8 +203,8 @@
         "expiry": "2026-12-18",
         "entry_price": 26.71,
         "entry_time": "2026-07-20T14:35:14+00:00",
-        "current_price": 27.75,
-        "current_time": "2026-07-20T15:34:02.703525+00:00",
+        "current_price": 27.25,
+        "current_time": "2026-07-20T15:34:34.068176+00:00",
         "highest_price": 27.75,
         "highest_time": "2026-07-20T15:34:02.703544+00:00"
       },
@@ -205,10 +214,10 @@
         "expiry": "2026-12-18",
         "entry_price": 14.75,
         "entry_time": "2026-07-20T14:47:12+00:00",
-        "current_price": 15.22,
-        "current_time": "2026-07-20T15:34:02.458512+00:00",
-        "highest_price": 15.22,
-        "highest_time": "2026-07-20T15:34:02.458542+00:00"
+        "current_price": 15.47,
+        "current_time": "2026-07-20T15:34:33.913268+00:00",
+        "highest_price": 15.47,
+        "highest_time": "2026-07-20T15:34:33.913296+00:00"
       }
     }
   }
