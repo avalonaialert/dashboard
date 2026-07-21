@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T10:16:04.785014+00:00",
+  "last_updated": "2026-07-21T10:31:05.493610+00:00",
   "today": {
     "date": "2026-07-21",
     "alerts": {
@@ -48,6 +48,24 @@
           "symbol": "AVGO",
           "msg_id": "19f8411961cadcd9",
           "received_at": "2026-07-21T09:46:11+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 388.11,
+          "peak": 0,
+          "cross": 0.5077694431580007,
+          "symbol": "AVGO",
+          "msg_id": "19f8439f80d99694",
+          "received_at": "2026-07-21T10:30:16+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 388.26,
+          "peak": 0,
+          "cross": 0.2855125810565189,
+          "symbol": "AVGO",
+          "msg_id": "19f842cef26de539",
+          "received_at": "2026-07-21T10:16:03+00:00"
         }
       ],
       "WDC": [
@@ -104,6 +122,24 @@
           "symbol": "WDC",
           "msg_id": "19f841179d55d8ab",
           "received_at": "2026-07-21T09:46:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 521,
+          "peak": 0,
+          "cross": 1.9241957710463369,
+          "symbol": "WDC",
+          "msg_id": "19f843a8120aa0b9",
+          "received_at": "2026-07-21T10:30:53+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 519.1400000000001,
+          "peak": 0,
+          "cross": 1.8938538982704891,
+          "symbol": "WDC",
+          "msg_id": "19f842cfd2b3c2df",
+          "received_at": "2026-07-21T10:16:07+00:00"
         }
       ],
       "AMD": [
@@ -160,6 +196,24 @@
           "symbol": "AMD",
           "msg_id": "19f841ebb47c2dff",
           "received_at": "2026-07-21T10:00:32+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 524.5699999999999,
+          "peak": 0,
+          "cross": 0.0261724362544467,
+          "symbol": "AMD",
+          "msg_id": "19f843a1c6e2a8ee",
+          "received_at": "2026-07-21T10:30:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 524.53,
+          "peak": 0,
+          "cross": 0.3870910563342387,
+          "symbol": "AMD",
+          "msg_id": "19f842d6fdbff81a",
+          "received_at": "2026-07-21T10:16:35+00:00"
         }
       ],
       "SNDK": [
@@ -243,6 +297,15 @@
           "symbol": "SNDK",
           "msg_id": "19f842c55c6ec5a5",
           "received_at": "2026-07-21T10:15:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1501.6799999999998,
+          "peak": 0,
+          "cross": 2.2749238392701057,
+          "symbol": "SNDK",
+          "msg_id": "19f843a1340093d4",
+          "received_at": "2026-07-21T10:30:23+00:00"
         }
       ],
       "GOOG": [
@@ -328,6 +391,15 @@
           "symbol": "NVDA",
           "msg_id": "19f842c52b3e4bf0",
           "received_at": "2026-07-21T10:15:23+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 205.485,
+          "peak": 0,
+          "cross": 0.0349214774707321,
+          "symbol": "NVDA",
+          "msg_id": "19f843a0417cfd2a",
+          "received_at": "2026-07-21T10:30:21+00:00"
         }
       ]
     },
