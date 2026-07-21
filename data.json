@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T09:01:04.544400+00:00",
+  "last_updated": "2026-07-21T09:16:04.941860+00:00",
   "today": {
     "date": "2026-07-21",
     "alerts": {
@@ -21,6 +21,15 @@
           "symbol": "AVGO",
           "msg_id": "19f83db0a32d7e9a",
           "received_at": "2026-07-21T08:46:36+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 387.5,
+          "peak": 0,
+          "cross": 0.0298162609477326,
+          "symbol": "AVGO",
+          "msg_id": "19f83f5b89cb66c0",
+          "received_at": "2026-07-21T09:15:45+00:00"
         }
       ],
       "WDC": [
@@ -50,6 +59,15 @@
           "symbol": "WDC",
           "msg_id": "19f83d9ba0ce71b7",
           "received_at": "2026-07-21T08:45:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 519.1800000000001,
+          "peak": 0,
+          "cross": -2.08161185168019,
+          "symbol": "WDC",
+          "msg_id": "19f83e93077fdadb",
+          "received_at": "2026-07-21T09:02:04+00:00"
         }
       ],
       "AMD": [
@@ -79,6 +97,15 @@
           "symbol": "AMD",
           "msg_id": "19f83da2b1e800bd",
           "received_at": "2026-07-21T08:45:39+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 526.3499999999999,
+          "peak": 0,
+          "cross": 0.3223942692817131,
+          "symbol": "AMD",
+          "msg_id": "19f83e875b2c690f",
+          "received_at": "2026-07-21T09:01:16+00:00"
         }
       ],
       "SNDK": [
@@ -117,6 +144,15 @@
           "symbol": "SNDK",
           "msg_id": "19f83e7aefce6655",
           "received_at": "2026-07-21T09:00:24+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1504.1875,
+          "peak": 0,
+          "cross": 0.0105835442433409,
+          "symbol": "SNDK",
+          "msg_id": "19f83f542b572523",
+          "received_at": "2026-07-21T09:15:14+00:00"
         }
       ],
       "GOOG": [
@@ -157,6 +193,24 @@
           "symbol": "NVDA",
           "msg_id": "19f83d9f6d44a0ff",
           "received_at": "2026-07-21T08:45:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 205.62,
+          "peak": 0,
+          "cross": -0.3131466268547274,
+          "symbol": "NVDA",
+          "msg_id": "19f83f58fad884d6",
+          "received_at": "2026-07-21T09:15:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 205.70499999999998,
+          "peak": 0,
+          "cross": 0.4417916789823649,
+          "symbol": "NVDA",
+          "msg_id": "19f83e8384acf8ff",
+          "received_at": "2026-07-21T09:01:00+00:00"
         }
       ]
     },
