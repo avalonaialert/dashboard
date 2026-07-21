@@ -1,8 +1,53 @@
 {
-  "last_updated": "2026-07-21T08:01:04.892522+00:00",
+  "last_updated": "2026-07-21T08:16:12.736512+00:00",
   "today": {
     "date": "2026-07-21",
-    "alerts": {},
+    "alerts": {
+      "AVGO": [
+        {
+          "alert": 7,
+          "close": 386.5,
+          "peak": 0,
+          "cross": 38.83600623204483,
+          "symbol": "AVGO",
+          "msg_id": "19f83bec44b1d817",
+          "received_at": "2026-07-21T08:15:43+00:00"
+        }
+      ],
+      "WDC": [
+        {
+          "alert": 7,
+          "close": 516.645,
+          "peak": 0,
+          "cross": 70.38483320575921,
+          "symbol": "WDC",
+          "msg_id": "19f83beb09ca75d6",
+          "received_at": "2026-07-21T08:15:38+00:00"
+        }
+      ],
+      "AMD": [
+        {
+          "alert": 7,
+          "close": 522.3625000000001,
+          "peak": 0,
+          "cross": 77.68660975789204,
+          "symbol": "AMD",
+          "msg_id": "19f83be80e348cdf",
+          "received_at": "2026-07-21T08:15:26+00:00"
+        }
+      ],
+      "SNDK": [
+        {
+          "alert": 7,
+          "close": 1501.5900000000001,
+          "peak": 0,
+          "cross": 60.38155721893828,
+          "symbol": "SNDK",
+          "msg_id": "19f83be6a1c5e178",
+          "received_at": "2026-07-21T08:15:20+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
