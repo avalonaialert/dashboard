@@ -1,47 +1,4 @@
 {
-  "date": "2026-07-20",
-  "positions": [
-    {
-      "symbol": "AMZN",
-      "option_symbol": "AMZN261218C00250000",
-      "strike": 250.0,
-      "expiry": "2026-12-18",
-      "qty": 6,
-      "qty_remaining": 0,
-      "buy_price": 26.71,
-      "current_price": 27.86,
-      "total_cost": 16026.0,
-      "buy_time": "2026-07-20T14:35:14+00:00",
-      "order_id": "d858a887-1325-4d35-8fd3-b18ed443a170",
-      "stop_order_id": null,
-      "sell_price": 27.86,
-      "sell_time": "2026-07-20T16:05:32.850325+00:00",
-      "sell_order_id": "f18a87a7-60c6-47ec-85fe-649dc73399e8",
-      "close_reason": "profit_take_complete",
-      "pnl": null,
-      "unrealized_pnl": 0.0,
-      "status": "closed"
-    },
-    {
-      "symbol": "WDC",
-      "option_symbol": "WDC261218C00510000",
-      "strike": 510.0,
-      "expiry": "2026-12-18",
-      "qty": 6,
-      "qty_remaining": 0,
-      "buy_price": 127.62,
-      "current_price": 122.18,
-      "total_cost": 76572.0,
-      "buy_time": "2026-07-20T16:20:22+00:00",
-      "order_id": "d0bd6e9f-1116-46de-afaa-585fcd283087",
-      "stop_order_id": null,
-      "sell_price": 122.18,
-      "sell_time": "2026-07-20T19:50:02.674556+00:00",
-      "sell_order_id": "c929e699-6677-4dc5-a8b7-63accbd338d8",
-      "close_reason": "eod",
-      "pnl": -3264.0,
-      "unrealized_pnl": 0.0,
-      "status": "closed"
-    }
-  ]
+  "date": "2026-07-21",
+  "positions": []
 }
