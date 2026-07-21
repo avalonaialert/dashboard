@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T10:01:05.006925+00:00",
+  "last_updated": "2026-07-21T10:16:04.785014+00:00",
   "today": {
     "date": "2026-07-21",
     "alerts": {
@@ -234,6 +234,15 @@
           "symbol": "SNDK",
           "msg_id": "19f841ea3411585d",
           "received_at": "2026-07-21T10:00:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1498.665,
+          "peak": 0,
+          "cross": 0.4627026761974219,
+          "symbol": "SNDK",
+          "msg_id": "19f842c55c6ec5a5",
+          "received_at": "2026-07-21T10:15:24+00:00"
         }
       ],
       "GOOG": [
@@ -310,6 +319,15 @@
           "symbol": "NVDA",
           "msg_id": "19f8410d41ab0ceb",
           "received_at": "2026-07-21T09:45:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 205.6,
+          "peak": 0,
+          "cross": 0.9723343104955141,
+          "symbol": "NVDA",
+          "msg_id": "19f842c52b3e4bf0",
+          "received_at": "2026-07-21T10:15:23+00:00"
         }
       ]
     },
