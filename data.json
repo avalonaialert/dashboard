@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T13:33:32.422021+00:00",
+  "last_updated": "2026-07-21T13:34:03.793556+00:00",
   "today": {
     "date": "2026-07-21",
     "alerts": {
@@ -508,9 +508,30 @@
           "symbol": "NVDA",
           "msg_id": "19f84e177b86eaae",
           "received_at": "2026-07-21T13:33:14+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 207.9875,
+          "peak": 0,
+          "cross": 9.877264174807575,
+          "symbol": "NVDA",
+          "msg_id": "19f84e1b7c2743e3",
+          "received_at": "2026-07-21T13:33:29+00:00"
         }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "NVDA": {
+        "option_symbol": "NVDA261218C00210000",
+        "strike": 210.0,
+        "expiry": "2026-12-18",
+        "entry_price": 22.53,
+        "entry_time": "2026-07-21T13:33:29+00:00",
+        "current_price": 22.53,
+        "current_time": "2026-07-21T13:34:03.793517+00:00",
+        "highest_price": 22.53,
+        "highest_time": "2026-07-21T13:34:03.793535+00:00"
+      }
+    }
   }
 }
