@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T15:13:03.215967+00:00",
+  "last_updated": "2026-07-21T15:13:33.322671+00:00",
   "today": {
     "date": "2026-07-21",
     "alerts": {
@@ -477,6 +477,15 @@
           "symbol": "SNDK",
           "msg_id": "19f8539394910919",
           "received_at": "2026-07-21T15:09:05+00:00"
+        },
+        {
+          "alert": 5,
+          "close": 1554.3500000000001,
+          "peak": 0,
+          "cross": 5.767141342872333,
+          "symbol": "SNDK",
+          "msg_id": "19f853cec4921daf",
+          "received_at": "2026-07-21T15:13:06+00:00"
         }
       ],
       "GOOG": [
@@ -774,8 +783,8 @@
         "expiry": "2026-12-18",
         "entry_price": 22.53,
         "entry_time": "2026-07-21T13:33:29+00:00",
-        "current_price": 22.5,
-        "current_time": "2026-07-21T15:13:03.052675+00:00",
+        "current_price": 21.98,
+        "current_time": "2026-07-21T15:13:33.165452+00:00",
         "highest_price": 22.8,
         "highest_time": "2026-07-21T13:35:03.792582+00:00"
       },
@@ -785,8 +794,8 @@
         "expiry": "2026-12-18",
         "entry_price": 24.62,
         "entry_time": "2026-07-21T14:25:33+00:00",
-        "current_price": 25.45,
-        "current_time": "2026-07-21T15:13:03.215919+00:00",
+        "current_price": 24.86,
+        "current_time": "2026-07-21T15:13:33.322639+00:00",
         "highest_price": 25.45,
         "highest_time": "2026-07-21T15:13:03.215947+00:00"
       },
@@ -796,10 +805,10 @@
         "expiry": "2026-12-18",
         "entry_price": 133.28,
         "entry_time": "2026-07-21T14:40:12+00:00",
-        "current_price": 142.7,
-        "current_time": "2026-07-21T15:13:02.651721+00:00",
-        "highest_price": 143.6,
-        "highest_time": "2026-07-21T15:04:03.436142+00:00"
+        "current_price": 144.13,
+        "current_time": "2026-07-21T15:13:32.846166+00:00",
+        "highest_price": 144.13,
+        "highest_time": "2026-07-21T15:13:32.846253+00:00"
       },
       "SNDK": {
         "option_symbol": "SNDK261218C01550000",
@@ -807,8 +816,8 @@
         "expiry": "2026-12-18",
         "entry_price": 499.04,
         "entry_time": "2026-07-21T15:07:10+00:00",
-        "current_price": 503.31,
-        "current_time": "2026-07-21T15:13:02.877006+00:00",
+        "current_price": 492.62,
+        "current_time": "2026-07-21T15:13:33.009788+00:00",
         "highest_price": 504.32,
         "highest_time": "2026-07-21T15:09:33.257633+00:00"
       }
