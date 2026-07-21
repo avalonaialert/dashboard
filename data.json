@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T08:46:04.900713+00:00",
+  "last_updated": "2026-07-21T09:01:04.544400+00:00",
   "today": {
     "date": "2026-07-21",
     "alerts": {
@@ -12,6 +12,15 @@
           "symbol": "AVGO",
           "msg_id": "19f83bec44b1d817",
           "received_at": "2026-07-21T08:15:43+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 387.465,
+          "peak": 0,
+          "cross": 0.9468818507237764,
+          "symbol": "AVGO",
+          "msg_id": "19f83db0a32d7e9a",
+          "received_at": "2026-07-21T08:46:36+00:00"
         }
       ],
       "WDC": [
@@ -99,6 +108,15 @@
           "symbol": "SNDK",
           "msg_id": "19f83d9b8f6c1713",
           "received_at": "2026-07-21T08:45:10+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1508.3425,
+          "peak": 0,
+          "cross": -2.6170469693436473,
+          "symbol": "SNDK",
+          "msg_id": "19f83e7aefce6655",
+          "received_at": "2026-07-21T09:00:24+00:00"
         }
       ],
       "GOOG": [
