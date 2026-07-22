@@ -7,19 +7,19 @@
       "strike": 390.0,
       "expiry": "2026-12-18",
       "qty": 6,
-      "qty_remaining": 6,
+      "qty_remaining": 5,
       "buy_price": 52.56,
-      "current_price": 54.97,
+      "current_price": 54.15,
       "total_cost": 31536.0,
       "buy_time": "2026-07-22T13:34:25+00:00",
       "order_id": "d865d735-a06d-4bd4-9890-f553c965ef59",
-      "stop_order_id": "e4122066-6d92-4a9c-98c0-8092dce6c0d6",
+      "stop_order_id": "9a0a1a37-bfcd-44b8-9d9a-e42e29be006a",
       "sell_price": null,
       "sell_time": null,
       "sell_order_id": null,
       "close_reason": null,
       "pnl": null,
-      "unrealized_pnl": 1446.0,
+      "unrealized_pnl": 795.0,
       "status": "open"
     }
   ]
