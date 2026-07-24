@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T15:31:03.059717+00:00",
+  "last_updated": "2026-07-24T15:45:02.955701+00:00",
   "today": {
     "date": "2026-07-24",
     "alerts": {
@@ -207,6 +207,15 @@
           "symbol": "META",
           "msg_id": "19f94be307a7f25c",
           "received_at": "2026-07-24T15:28:38+00:00"
+        },
+        {
+          "alert": -6,
+          "close": 607.96,
+          "peak": 0,
+          "cross": 5.7384674453126925,
+          "symbol": "META",
+          "msg_id": "19f94ccc302af914",
+          "received_at": "2026-07-24T15:44:33+00:00"
         }
       ]
     },
@@ -217,10 +226,10 @@
         "expiry": "2026-12-18",
         "entry_price": 25.89,
         "entry_time": "2026-07-24T13:45:25+00:00",
-        "current_price": 27.26,
-        "current_time": "2026-07-24T15:31:02.648864+00:00",
-        "highest_price": 27.27,
-        "highest_time": "2026-07-24T15:17:32.932168+00:00"
+        "current_price": 27.96,
+        "current_time": "2026-07-24T15:45:02.493591+00:00",
+        "highest_price": 27.96,
+        "highest_time": "2026-07-24T15:45:02.493622+00:00"
       },
       "NVDA": {
         "option_symbol": "NVDA261218C00220000",
@@ -228,8 +237,8 @@
         "expiry": "2026-12-18",
         "entry_price": 19.75,
         "entry_time": "2026-07-24T15:16:16+00:00",
-        "current_price": 19.23,
-        "current_time": "2026-07-24T15:31:02.865973+00:00",
+        "current_price": 19.35,
+        "current_time": "2026-07-24T15:45:02.690253+00:00",
         "highest_price": 19.75,
         "highest_time": "2026-07-24T15:16:32.792788+00:00"
       },
@@ -239,8 +248,8 @@
         "expiry": "2026-12-18",
         "entry_price": 71.85,
         "entry_time": "2026-07-24T15:16:37+00:00",
-        "current_price": 71.85,
-        "current_time": "2026-07-24T15:31:03.059671+00:00",
+        "current_price": 70.97,
+        "current_time": "2026-07-24T15:45:02.955645+00:00",
         "highest_price": 71.85,
         "highest_time": "2026-07-24T15:17:03.991278+00:00"
       }
