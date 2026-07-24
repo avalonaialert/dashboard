@@ -30,7 +30,7 @@
       "qty": 6,
       "qty_remaining": 6,
       "buy_price": 19.88,
-      "current_price": 19.51,
+      "current_price": 19.98,
       "total_cost": 11928.0,
       "buy_time": "2026-07-24T17:35:12+00:00",
       "order_id": "b813c949-28eb-4d0f-b16c-6daa991ba814",
@@ -40,7 +40,7 @@
       "sell_order_id": null,
       "close_reason": null,
       "pnl": null,
-      "unrealized_pnl": -222.0,
+      "unrealized_pnl": 60.0,
       "status": "open"
     }
   ]
