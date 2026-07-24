@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T19:09:32.698794+00:00",
+  "last_updated": "2026-07-24T19:30:34.088706+00:00",
   "today": {
     "date": "2026-07-24",
     "alerts": {
@@ -129,6 +129,15 @@
           "symbol": "AAPL",
           "msg_id": "19f9587885f64257",
           "received_at": "2026-07-24T19:08:34+00:00"
+        },
+        {
+          "alert": -9,
+          "close": 332.52625,
+          "peak": 0,
+          "cross": -3.056024220906154,
+          "symbol": "AAPL",
+          "msg_id": "19f959b46c7cfc5e",
+          "received_at": "2026-07-24T19:30:07+00:00"
         }
       ],
       "MSFT": [
@@ -325,8 +334,8 @@
         "expiry": "2026-12-18",
         "entry_price": 25.89,
         "entry_time": "2026-07-24T13:45:25+00:00",
-        "current_price": 27.97,
-        "current_time": "2026-07-24T19:09:32.343113+00:00",
+        "current_price": 27.88,
+        "current_time": "2026-07-24T19:30:33.660806+00:00",
         "highest_price": 28.84,
         "highest_time": "2026-07-24T16:06:02.623252+00:00"
       },
@@ -336,8 +345,8 @@
         "expiry": "2026-12-18",
         "entry_price": 19.75,
         "entry_time": "2026-07-24T15:16:16+00:00",
-        "current_price": 17.49,
-        "current_time": "2026-07-24T19:09:32.522673+00:00",
+        "current_price": 17.81,
+        "current_time": "2026-07-24T19:30:33.889359+00:00",
         "highest_price": 20.91,
         "highest_time": "2026-07-24T16:10:32.993038+00:00"
       },
@@ -347,8 +356,8 @@
         "expiry": "2026-12-18",
         "entry_price": 71.85,
         "entry_time": "2026-07-24T15:16:37+00:00",
-        "current_price": 67.1,
-        "current_time": "2026-07-24T19:09:32.698748+00:00",
+        "current_price": 66.69,
+        "current_time": "2026-07-24T19:30:34.088660+00:00",
         "highest_price": 71.85,
         "highest_time": "2026-07-24T15:17:03.991278+00:00"
       }
