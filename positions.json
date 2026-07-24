@@ -1,25 +1,25 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-24",
   "positions": [
     {
-      "symbol": "AVGO",
-      "option_symbol": "AVGO261218C00390000",
-      "strike": 390.0,
+      "symbol": "AAPL",
+      "option_symbol": "AAPL261218C00330000",
+      "strike": 330.0,
       "expiry": "2026-12-18",
       "qty": 6,
-      "qty_remaining": 5,
-      "buy_price": 52.56,
-      "current_price": 52.55,
-      "total_cost": 31536.0,
-      "buy_time": "2026-07-22T13:34:25+00:00",
-      "order_id": "d865d735-a06d-4bd4-9890-f553c965ef59",
-      "stop_order_id": "9a0a1a37-bfcd-44b8-9d9a-e42e29be006a",
+      "qty_remaining": 6,
+      "buy_price": 25.92,
+      "current_price": 25.66,
+      "total_cost": 15552.0,
+      "buy_time": "2026-07-24T13:45:25+00:00",
+      "order_id": "4e0db3ba-156d-4e91-a68e-0486c20d1590",
+      "stop_order_id": "d184aef4-8990-4ad3-8e17-cc7fab66cb4f",
       "sell_price": null,
       "sell_time": null,
       "sell_order_id": null,
       "close_reason": null,
       "pnl": null,
-      "unrealized_pnl": -5.0,
+      "unrealized_pnl": -156.0,
       "status": "open"
     }
   ]
