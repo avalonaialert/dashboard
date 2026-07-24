@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T16:16:32.632103+00:00",
+  "last_updated": "2026-07-24T16:42:33.772929+00:00",
   "today": {
     "date": "2026-07-24",
     "alerts": {
@@ -223,6 +223,15 @@
           "symbol": "NVDA",
           "msg_id": "19f94e935acdccd9",
           "received_at": "2026-07-24T16:15:33+00:00"
+        },
+        {
+          "alert": -9,
+          "close": 210.2725,
+          "peak": 0,
+          "cross": 0.7729263330831857,
+          "symbol": "NVDA",
+          "msg_id": "19f9501726e1132b",
+          "received_at": "2026-07-24T16:42:05+00:00"
         }
       ],
       "META": [
@@ -271,8 +280,8 @@
         "expiry": "2026-12-18",
         "entry_price": 25.89,
         "entry_time": "2026-07-24T13:45:25+00:00",
-        "current_price": 27.68,
-        "current_time": "2026-07-24T16:16:32.229024+00:00",
+        "current_price": 27.97,
+        "current_time": "2026-07-24T16:42:33.296066+00:00",
         "highest_price": 28.84,
         "highest_time": "2026-07-24T16:06:02.623252+00:00"
       },
@@ -282,8 +291,8 @@
         "expiry": "2026-12-18",
         "entry_price": 19.75,
         "entry_time": "2026-07-24T15:16:16+00:00",
-        "current_price": 20.11,
-        "current_time": "2026-07-24T16:16:32.417119+00:00",
+        "current_price": 19.56,
+        "current_time": "2026-07-24T16:42:33.584549+00:00",
         "highest_price": 20.91,
         "highest_time": "2026-07-24T16:10:32.993038+00:00"
       },
@@ -293,8 +302,8 @@
         "expiry": "2026-12-18",
         "entry_price": 71.85,
         "entry_time": "2026-07-24T15:16:37+00:00",
-        "current_price": 67.45,
-        "current_time": "2026-07-24T16:16:32.632069+00:00",
+        "current_price": 67.5,
+        "current_time": "2026-07-24T16:42:33.772882+00:00",
         "highest_price": 71.85,
         "highest_time": "2026-07-24T15:17:03.991278+00:00"
       }
