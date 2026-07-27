@@ -21,6 +21,27 @@
       "pnl": 200.0,
       "unrealized_pnl": 0.0,
       "status": "closed"
+    },
+    {
+      "symbol": "EXPE",
+      "option_symbol": "EXPE261218C00280000",
+      "strike": 280.0,
+      "expiry": "2026-12-18",
+      "qty": 6,
+      "qty_remaining": 6,
+      "buy_price": 34.2,
+      "current_price": 34.2,
+      "total_cost": 20520.0,
+      "buy_time": "2026-07-27T15:16:20+00:00",
+      "order_id": "2289faf5-963e-4022-8c34-c7185a01a489",
+      "stop_order_id": "93523798-e7d4-47ae-a685-eb0450d3057e",
+      "sell_price": null,
+      "sell_time": null,
+      "sell_order_id": null,
+      "close_reason": null,
+      "pnl": null,
+      "unrealized_pnl": 0.0,
+      "status": "open"
     }
   ]
 }
