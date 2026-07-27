@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T11:01:04.950497+00:00",
+  "last_updated": "2026-07-27T11:16:04.509466+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -308,6 +308,15 @@
           "symbol": "MSFT",
           "msg_id": "19fa32e8f3bcf14f",
           "received_at": "2026-07-27T10:46:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 386.66,
+          "peak": 0,
+          "cross": 3.737652301221465,
+          "symbol": "MSFT",
+          "msg_id": "19fa349b326e9a69",
+          "received_at": "2026-07-27T11:15:42+00:00"
         }
       ],
       "WDC": [
@@ -627,6 +636,15 @@
           "symbol": "META",
           "msg_id": "19fa32e967f3a10a",
           "received_at": "2026-07-27T10:46:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 605.63,
+          "peak": 0,
+          "cross": -5.042945164451944,
+          "symbol": "META",
+          "msg_id": "19fa34963bca94b9",
+          "received_at": "2026-07-27T11:15:21+00:00"
         }
       ],
       "NVDA": [
