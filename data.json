@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T10:16:07.673467+00:00",
+  "last_updated": "2026-07-27T10:31:07.039774+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -472,6 +472,33 @@
           "symbol": "WDC",
           "msg_id": "19fa3064d131bffb",
           "received_at": "2026-07-27T10:02:04+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.1800000000001,
+          "peak": 0,
+          "cross": -0.8821397693830988,
+          "symbol": "WDC",
+          "msg_id": "19fa316cb2c62a3f",
+          "received_at": "2026-07-27T10:20:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.1800000000001,
+          "peak": 0,
+          "cross": -0.8821397693830988,
+          "symbol": "WDC",
+          "msg_id": "19fa316c5995343b",
+          "received_at": "2026-07-27T10:20:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.1800000000001,
+          "peak": 0,
+          "cross": -0.8821397693830988,
+          "symbol": "WDC",
+          "msg_id": "19fa316c28d9cf3e",
+          "received_at": "2026-07-27T10:20:04+00:00"
         }
       ],
       "META": [
@@ -537,6 +564,15 @@
           "symbol": "META",
           "msg_id": "19fa305d1ebab11e",
           "received_at": "2026-07-27T10:01:33+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 605.06,
+          "peak": 0,
+          "cross": -1.9069661193660319,
+          "symbol": "META",
+          "msg_id": "19fa31390f7a7d0c",
+          "received_at": "2026-07-27T10:16:32+00:00"
         }
       ],
       "NVDA": [
@@ -577,6 +613,15 @@
           "symbol": "GOOG",
           "msg_id": "19fa2f7989f42a4f",
           "received_at": "2026-07-27T09:46:01+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 324.48,
+          "peak": 0,
+          "cross": -3.261032809074374,
+          "symbol": "GOOG",
+          "msg_id": "19fa32014e4c6429",
+          "received_at": "2026-07-27T10:30:08+00:00"
         }
       ],
       "AVGO": [
@@ -653,6 +698,15 @@
           "symbol": "AMZN",
           "msg_id": "19fa304f0522052a",
           "received_at": "2026-07-27T10:00:36+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 235.5,
+          "peak": 0,
+          "cross": 1.2125949012163373,
+          "symbol": "AMZN",
+          "msg_id": "19fa31393deefc1b",
+          "received_at": "2026-07-27T10:16:34+00:00"
         }
       ]
     },
