@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T09:16:07.189628+00:00",
+  "last_updated": "2026-07-27T09:31:07.603132+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -68,6 +68,15 @@
           "symbol": "SNDK",
           "msg_id": "19fa2db9e2ec542f",
           "received_at": "2026-07-27T09:15:28+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1502.4850000000001,
+          "peak": 0,
+          "cross": 0.1312610282102555,
+          "symbol": "SNDK",
+          "msg_id": "19fa2e99265d4cea",
+          "received_at": "2026-07-27T09:30:42+00:00"
         }
       ],
       "TSLA": [
@@ -115,6 +124,15 @@
           "symbol": "TSLA",
           "msg_id": "19fa2db7f8af7216",
           "received_at": "2026-07-27T09:15:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 317.31,
+          "peak": 0,
+          "cross": -2.6793781480778707,
+          "symbol": "TSLA",
+          "msg_id": "19fa2e9647ef0af9",
+          "received_at": "2026-07-27T09:30:30+00:00"
         }
       ],
       "AAPL": [
@@ -292,6 +310,24 @@
           "symbol": "WDC",
           "msg_id": "19fa2cf52e89163d",
           "received_at": "2026-07-27T09:02:02+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.88,
+          "peak": 0,
+          "cross": -1.0097698000216626,
+          "symbol": "WDC",
+          "msg_id": "19fa2e13b3c6c318",
+          "received_at": "2026-07-27T09:21:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.88,
+          "peak": 0,
+          "cross": -1.0097698000216626,
+          "symbol": "WDC",
+          "msg_id": "19fa2e12d425d5aa",
+          "received_at": "2026-07-27T09:21:32+00:00"
         }
       ],
       "META": [
@@ -321,6 +357,24 @@
           "symbol": "META",
           "msg_id": "19fa2cf5e8a2cfd7",
           "received_at": "2026-07-27T09:02:05+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 605,
+          "peak": 0,
+          "cross": 0.1503601264095654,
+          "symbol": "META",
+          "msg_id": "19fa2e9c273e17a6",
+          "received_at": "2026-07-27T09:30:55+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 604.9,
+          "peak": 0,
+          "cross": -2.4544935804438692,
+          "symbol": "META",
+          "msg_id": "19fa2dd1fd383244",
+          "received_at": "2026-07-27T09:17:05+00:00"
         }
       ],
       "NVDA": [
