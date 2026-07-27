@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T08:16:04.140367+00:00",
+  "last_updated": "2026-07-27T08:31:05.004265+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -23,6 +23,15 @@
           "symbol": "SNDK",
           "msg_id": "19fa2a4ac906c9c6",
           "received_at": "2026-07-27T08:15:27+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 1503.055,
+          "peak": 0,
+          "cross": 0.0974072341195461,
+          "symbol": "SNDK",
+          "msg_id": "19fa2b25981e176b",
+          "received_at": "2026-07-27T08:30:23+00:00"
         }
       ],
       "TSLA": [
@@ -34,6 +43,15 @@
           "symbol": "TSLA",
           "msg_id": "19fa2a4ab8b8304f",
           "received_at": "2026-07-27T08:15:26+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 318.23,
+          "peak": 0,
+          "cross": 3.6405339793877647,
+          "symbol": "TSLA",
+          "msg_id": "19fa2b24b4ae59b8",
+          "received_at": "2026-07-27T08:30:19+00:00"
         }
       ],
       "AAPL": [
@@ -56,6 +74,44 @@
           "symbol": "MSFT",
           "msg_id": "19fa2a4914463fba",
           "received_at": "2026-07-27T08:15:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 386.25,
+          "peak": 0,
+          "cross": 4.151090587918643,
+          "symbol": "MSFT",
+          "msg_id": "19fa2b276fdfb6d8",
+          "received_at": "2026-07-27T08:30:31+00:00"
+        }
+      ],
+      "WDC": [
+        {
+          "alert": 7,
+          "close": 540.02,
+          "peak": 0,
+          "cross": 166.1986607268156,
+          "symbol": "WDC",
+          "msg_id": "19fa2a571c24a56f",
+          "received_at": "2026-07-27T08:16:17+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.02,
+          "peak": 0,
+          "cross": 166.1986607268156,
+          "symbol": "WDC",
+          "msg_id": "19fa2a56c3e3cef6",
+          "received_at": "2026-07-27T08:16:16+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 540.02,
+          "peak": 0,
+          "cross": 166.1986607268156,
+          "symbol": "WDC",
+          "msg_id": "19fa2a569db58cc3",
+          "received_at": "2026-07-27T08:16:15+00:00"
         }
       ]
     },
