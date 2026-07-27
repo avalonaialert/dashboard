@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T17:34:03.084334+00:00",
+  "last_updated": "2026-07-27T17:34:33.643316+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -434,6 +434,15 @@
           "symbol": "MSFT",
           "msg_id": "19fa3c8e3bdc4bf9",
           "received_at": "2026-07-27T13:34:35+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 392.3275,
+          "peak": 0,
+          "cross": 2.396584139073602,
+          "symbol": "MSFT",
+          "msg_id": "19fa4a444c9802a8",
+          "received_at": "2026-07-27T17:34:09+00:00"
         }
       ],
       "WDC": [
@@ -1061,8 +1070,8 @@
         "expiry": "2026-12-18",
         "entry_price": 28.18,
         "entry_time": "2026-07-27T13:35:17+00:00",
-        "current_price": 28.2,
-        "current_time": "2026-07-27T17:34:02.896249+00:00",
+        "current_price": 28.42,
+        "current_time": "2026-07-27T17:34:33.475258+00:00",
         "highest_price": 30.38,
         "highest_time": "2026-07-27T14:21:32.827534+00:00"
       },
@@ -1072,8 +1081,8 @@
         "expiry": "2026-12-18",
         "entry_price": 34.2,
         "entry_time": "2026-07-27T15:16:20+00:00",
-        "current_price": 37.58,
-        "current_time": "2026-07-27T17:34:03.084290+00:00",
+        "current_price": 36.91,
+        "current_time": "2026-07-27T17:34:33.643288+00:00",
         "highest_price": 37.58,
         "highest_time": "2026-07-27T17:32:32.946221+00:00"
       }
