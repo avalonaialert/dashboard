@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T10:46:03.527292+00:00",
+  "last_updated": "2026-07-27T11:01:04.950497+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -290,6 +290,24 @@
           "symbol": "MSFT",
           "msg_id": "19fa32119eaf1187",
           "received_at": "2026-07-27T10:31:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 386.23,
+          "peak": 0,
+          "cross": -0.0625484257318016,
+          "symbol": "MSFT",
+          "msg_id": "19fa33b996891d7d",
+          "received_at": "2026-07-27T11:00:17+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 386.25,
+          "peak": 0,
+          "cross": 3.430985622420562,
+          "symbol": "MSFT",
+          "msg_id": "19fa32e8f3bcf14f",
+          "received_at": "2026-07-27T10:46:03+00:00"
         }
       ],
       "WDC": [
@@ -591,6 +609,24 @@
           "symbol": "META",
           "msg_id": "19fa32236ab6ffa8",
           "received_at": "2026-07-27T10:32:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 606.315,
+          "peak": 0,
+          "cross": 0.6549853137406381,
+          "symbol": "META",
+          "msg_id": "19fa33bef755daae",
+          "received_at": "2026-07-27T11:00:40+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 606.745,
+          "peak": 0,
+          "cross": 3.8358845495904093,
+          "symbol": "META",
+          "msg_id": "19fa32e967f3a10a",
+          "received_at": "2026-07-27T10:46:05+00:00"
         }
       ],
       "NVDA": [
@@ -640,6 +676,15 @@
           "symbol": "GOOG",
           "msg_id": "19fa32014e4c6429",
           "received_at": "2026-07-27T10:30:08+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 324.46500000000003,
+          "peak": 0,
+          "cross": -5.236667981285762,
+          "symbol": "GOOG",
+          "msg_id": "19fa32ebb7197f21",
+          "received_at": "2026-07-27T10:46:15+00:00"
         }
       ],
       "AVGO": [
@@ -725,6 +770,15 @@
           "symbol": "AMZN",
           "msg_id": "19fa31393deefc1b",
           "received_at": "2026-07-27T10:16:34+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 235.85,
+          "peak": 0,
+          "cross": 0.5660982736248874,
+          "symbol": "AMZN",
+          "msg_id": "19fa33b8e6fd93fe",
+          "received_at": "2026-07-27T11:00:09+00:00"
         }
       ]
     },
