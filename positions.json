@@ -42,6 +42,27 @@
       "pnl": 408.0,
       "unrealized_pnl": 0.0,
       "status": "closed"
+    },
+    {
+      "symbol": "MSFT",
+      "option_symbol": "MSFT261218C00400000",
+      "strike": 400.0,
+      "expiry": "2026-12-18",
+      "qty": 6,
+      "qty_remaining": 6,
+      "buy_price": 35.28,
+      "current_price": 34.62,
+      "total_cost": 21168.0,
+      "buy_time": "2026-07-27T17:35:05+00:00",
+      "order_id": "a35ac8f5-94a9-4547-a655-c84aa25a0448",
+      "stop_order_id": "f4d8b3e7-02c1-4af7-bfa0-1d6469a91ac2",
+      "sell_price": null,
+      "sell_time": null,
+      "sell_order_id": null,
+      "close_reason": null,
+      "pnl": null,
+      "unrealized_pnl": -396.0,
+      "status": "open"
     }
   ]
 }
