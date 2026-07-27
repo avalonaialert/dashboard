@@ -1,8 +1,64 @@
 {
-  "last_updated": "2026-07-27T08:01:07.984579+00:00",
+  "last_updated": "2026-07-27T08:16:04.140367+00:00",
   "today": {
     "date": "2026-07-27",
-    "alerts": {},
+    "alerts": {
+      "AMD": [
+        {
+          "alert": 7,
+          "close": 535.4250000000001,
+          "peak": 0,
+          "cross": 123.51087822793747,
+          "symbol": "AMD",
+          "msg_id": "19fa2a4c79fb7255",
+          "received_at": "2026-07-27T08:15:32+00:00"
+        }
+      ],
+      "SNDK": [
+        {
+          "alert": 7,
+          "close": 1493.4499999999998,
+          "peak": 0,
+          "cross": 109.8329281935745,
+          "symbol": "SNDK",
+          "msg_id": "19fa2a4ac906c9c6",
+          "received_at": "2026-07-27T08:15:27+00:00"
+        }
+      ],
+      "TSLA": [
+        {
+          "alert": 7,
+          "close": 317.355,
+          "peak": 0,
+          "cross": 74.86564930364042,
+          "symbol": "TSLA",
+          "msg_id": "19fa2a4ab8b8304f",
+          "received_at": "2026-07-27T08:15:26+00:00"
+        }
+      ],
+      "AAPL": [
+        {
+          "alert": 7,
+          "close": 334.5,
+          "peak": 0,
+          "cross": 10.820824536718815,
+          "symbol": "AAPL",
+          "msg_id": "19fa2a4a85a001e2",
+          "received_at": "2026-07-27T08:15:26+00:00"
+        }
+      ],
+      "MSFT": [
+        {
+          "alert": 7,
+          "close": 385.975,
+          "peak": 0,
+          "cross": 117.79883697934311,
+          "symbol": "MSFT",
+          "msg_id": "19fa2a4914463fba",
+          "received_at": "2026-07-27T08:15:19+00:00"
+        }
+      ]
+    },
     "backtest": {}
   }
 }
