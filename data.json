@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T13:35:02.654270+00:00",
+  "last_updated": "2026-07-27T13:35:34.677125+00:00",
   "today": {
     "date": "2026-07-27",
     "alerts": {
@@ -225,6 +225,15 @@
           "symbol": "AAPL",
           "msg_id": "19fa2b32272f7445",
           "received_at": "2026-07-27T08:31:15+00:00"
+        },
+        {
+          "alert": 6666,
+          "close": 336.79375,
+          "peak": 0,
+          "cross": 6.121965224041246,
+          "symbol": "AAPL",
+          "msg_id": "19fa3c99289885c3",
+          "received_at": "2026-07-27T13:35:23+00:00"
         }
       ],
       "MSFT": [
@@ -784,6 +793,15 @@
           "symbol": "GOOG",
           "msg_id": "19fa32ebb7197f21",
           "received_at": "2026-07-27T10:46:15+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 327.06,
+          "peak": 0,
+          "cross": 3.3898701055915565,
+          "symbol": "GOOG",
+          "msg_id": "19fa3c986bd42f3e",
+          "received_at": "2026-07-27T13:35:17+00:00"
         }
       ],
       "AVGO": [
@@ -881,6 +899,18 @@
         }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "GOOG": {
+        "option_symbol": "GOOG261218C00330000",
+        "strike": 330.0,
+        "expiry": "2026-12-18",
+        "entry_price": 28.18,
+        "entry_time": "2026-07-27T13:35:17+00:00",
+        "current_price": 28.18,
+        "current_time": "2026-07-27T13:35:34.677084+00:00",
+        "highest_price": 28.18,
+        "highest_time": "2026-07-27T13:35:34.677100+00:00"
+      }
+    }
   }
 }
