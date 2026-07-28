@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T15:46:32.661158+00:00",
+  "last_updated": "2026-07-28T15:47:02.857078+00:00",
   "today": {
     "date": "2026-07-28",
     "alerts": {
@@ -219,6 +219,17 @@
           "msg_id": "19fa95a07a7b0f6f",
           "received_at": "2026-07-28T15:31:16+00:00"
         }
+      ],
+      "AVGO": [
+        {
+          "alert": 6,
+          "close": 384.28000000000003,
+          "peak": 0,
+          "cross": 8.537329028752955,
+          "symbol": "AVGO",
+          "msg_id": "19fa9680fcb115cf",
+          "received_at": "2026-07-28T15:46:34+00:00"
+        }
       ]
     },
     "backtest": {
@@ -228,10 +239,21 @@
         "expiry": "2026-12-18",
         "entry_price": 26.46,
         "entry_time": "2026-07-28T15:31:16+00:00",
-        "current_price": 26.87,
-        "current_time": "2026-07-28T15:46:32.661119+00:00",
+        "current_price": 26.58,
+        "current_time": "2026-07-28T15:47:02.478204+00:00",
         "highest_price": 26.87,
         "highest_time": "2026-07-28T15:46:32.661136+00:00"
+      },
+      "AVGO": {
+        "option_symbol": "AVGO261218C00390000",
+        "strike": 390.0,
+        "expiry": "2026-12-18",
+        "entry_price": 51.36,
+        "entry_time": "2026-07-28T15:46:34+00:00",
+        "current_price": 51.36,
+        "current_time": "2026-07-28T15:47:02.857044+00:00",
+        "highest_price": 51.36,
+        "highest_time": "2026-07-28T15:47:02.857061+00:00"
       }
     }
   }
