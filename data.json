@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T10:01:02.802333+00:00",
+  "last_updated": "2026-07-28T10:31:03.717879+00:00",
   "today": {
     "date": "2026-07-28",
     "alerts": {
@@ -39,6 +39,15 @@
           "symbol": "AAPL",
           "msg_id": "19fa81dc741b597b",
           "received_at": "2026-07-28T09:45:49+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 338.99,
+          "peak": 0,
+          "cross": -2.052139173313473,
+          "symbol": "AAPL",
+          "msg_id": "19fa839d923b7bdf",
+          "received_at": "2026-07-28T10:16:30+00:00"
         }
       ],
       "MSFT": [
@@ -50,6 +59,24 @@
           "symbol": "MSFT",
           "msg_id": "19fa81ee54430979",
           "received_at": "2026-07-28T09:47:03+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 393.04249999999996,
+          "peak": 0,
+          "cross": -1.485921653032944,
+          "symbol": "MSFT",
+          "msg_id": "19fa846c9a172809",
+          "received_at": "2026-07-28T10:30:38+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 393.18,
+          "peak": 0,
+          "cross": 0.1778649676578287,
+          "symbol": "MSFT",
+          "msg_id": "19fa8398fcd0e2ed",
+          "received_at": "2026-07-28T10:16:09+00:00"
         }
       ]
     },
