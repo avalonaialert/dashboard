@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T12:31:03.366775+00:00",
+  "last_updated": "2026-07-28T12:46:02.732367+00:00",
   "today": {
     "date": "2026-07-28",
     "alerts": {
@@ -131,6 +131,15 @@
           "symbol": "MSFT",
           "msg_id": "19fa8b440e148df8",
           "received_at": "2026-07-28T12:30:11+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 396.225,
+          "peak": 0,
+          "cross": 2.3429720920425816,
+          "symbol": "MSFT",
+          "msg_id": "19fa8c1fa290920f",
+          "received_at": "2026-07-28T12:45:10+00:00"
         }
       ],
       "AMZN": [
@@ -142,6 +151,17 @@
           "symbol": "AMZN",
           "msg_id": "19fa87d97c27d598",
           "received_at": "2026-07-28T11:30:29+00:00"
+        }
+      ],
+      "META": [
+        {
+          "alert": 7,
+          "close": 599.67,
+          "peak": 0,
+          "cross": 5.93498085038093,
+          "symbol": "META",
+          "msg_id": "19fa8c21964f2b43",
+          "received_at": "2026-07-28T12:45:19+00:00"
         }
       ]
     },
