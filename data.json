@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T15:20:03.351152+00:00",
+  "last_updated": "2026-07-28T15:31:33.467326+00:00",
   "today": {
     "date": "2026-07-28",
     "alerts": {
@@ -200,9 +200,30 @@
           "symbol": "GOOG",
           "msg_id": "19fa94c3635a55bf",
           "received_at": "2026-07-28T15:16:06+00:00"
+        },
+        {
+          "alert": 6,
+          "close": 332.1425,
+          "peak": 0,
+          "cross": 11.674670622155762,
+          "symbol": "GOOG",
+          "msg_id": "19fa95a07a7b0f6f",
+          "received_at": "2026-07-28T15:31:16+00:00"
         }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "GOOG": {
+        "option_symbol": "GOOG261218C00340000",
+        "strike": 340.0,
+        "expiry": "2026-12-18",
+        "entry_price": 26.46,
+        "entry_time": "2026-07-28T15:31:16+00:00",
+        "current_price": 26.46,
+        "current_time": "2026-07-28T15:31:33.467286+00:00",
+        "highest_price": 26.46,
+        "highest_time": "2026-07-28T15:31:33.467306+00:00"
+      }
+    }
   }
 }
