@@ -1,26 +1,4 @@
 {
-  "date": "2026-07-28",
-  "positions": [
-    {
-      "symbol": "GOOG",
-      "option_symbol": "GOOG261218C00340000",
-      "strike": 340.0,
-      "expiry": "2026-12-18",
-      "qty": 6,
-      "qty_remaining": 0,
-      "buy_price": 26.86,
-      "current_price": 28.05,
-      "total_cost": 16116.0,
-      "buy_time": "2026-07-28T15:31:16+00:00",
-      "order_id": "802597f5-4624-4ee8-8d1d-3953da5190a2",
-      "stop_order_id": null,
-      "sell_price": 27.41,
-      "sell_time": "2026-07-28T17:45:02.101636+00:00",
-      "sell_order_id": "ff0b3145-a495-4e10-a0b5-7d0ea6708656",
-      "close_reason": "bear_change",
-      "pnl": 330.0,
-      "unrealized_pnl": 0.0,
-      "status": "closed"
-    }
-  ]
+  "date": "2026-07-29",
+  "positions": []
 }
