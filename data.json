@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T18:48:32.929307+00:00",
+  "last_updated": "2026-07-29T19:01:04.548582+00:00",
   "today": {
     "date": "2026-07-29",
     "alerts": {
@@ -71,8 +71,31 @@
           "msg_id": "19faf34b2259835c",
           "received_at": "2026-07-29T18:48:12+00:00"
         }
+      ],
+      "AVGO": [
+        {
+          "alert": 6,
+          "close": 384.29875,
+          "peak": 0,
+          "cross": 12.841685202296727,
+          "symbol": "AVGO",
+          "msg_id": "19faf4039188d345",
+          "received_at": "2026-07-29T19:00:46+00:00"
+        }
       ]
     },
-    "backtest": {}
+    "backtest": {
+      "AVGO": {
+        "option_symbol": "AVGO261218C00390000",
+        "strike": 390.0,
+        "expiry": "2026-12-18",
+        "entry_price": 51.2,
+        "entry_time": "2026-07-29T19:00:46+00:00",
+        "current_price": 51.2,
+        "current_time": "2026-07-29T19:01:04.548533+00:00",
+        "highest_price": 51.2,
+        "highest_time": "2026-07-29T19:01:04.548557+00:00"
+      }
+    }
   }
 }
