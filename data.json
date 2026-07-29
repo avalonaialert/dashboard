@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T22:16:04.243560+00:00",
+  "last_updated": "2026-07-29T22:31:04.706686+00:00",
   "today": {
     "date": "2026-07-29",
     "alerts": {
@@ -166,6 +166,15 @@
           "symbol": "MSFT",
           "msg_id": "19faff25d0cbe4ae",
           "received_at": "2026-07-29T22:15:19+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 420.905,
+          "peak": 0,
+          "cross": 8.763916574097438,
+          "symbol": "MSFT",
+          "msg_id": "19faffffbde0941e",
+          "received_at": "2026-07-29T22:30:14+00:00"
         }
       ],
       "TSLA": [
@@ -189,7 +198,7 @@
         "entry_price": 51.2,
         "entry_time": "2026-07-29T19:00:46+00:00",
         "current_price": 43.62,
-        "current_time": "2026-07-29T22:16:04.049958+00:00",
+        "current_time": "2026-07-29T22:31:04.518475+00:00",
         "highest_price": 52.17,
         "highest_time": "2026-07-29T19:03:03.211824+00:00"
       },
@@ -200,7 +209,7 @@
         "entry_price": 324.87,
         "entry_time": "2026-07-29T19:01:53+00:00",
         "current_price": 261.12,
-        "current_time": "2026-07-29T22:16:04.243498+00:00",
+        "current_time": "2026-07-29T22:31:04.706616+00:00",
         "highest_price": 330.16,
         "highest_time": "2026-07-29T19:07:02.681456+00:00"
       }
