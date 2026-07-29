@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T08:16:03.448582+00:00",
+  "last_updated": "2026-07-29T08:46:02.878375+00:00",
   "today": {
     "date": "2026-07-29",
     "alerts": {
@@ -21,6 +21,15 @@
           "symbol": "AAPL",
           "msg_id": "19facf1a735fac97",
           "received_at": "2026-07-29T08:15:42+00:00"
+        },
+        {
+          "alert": 7,
+          "close": 341.43,
+          "peak": 0,
+          "cross": -0.9351865027939584,
+          "symbol": "AAPL",
+          "msg_id": "19fad0cd04cfa98b",
+          "received_at": "2026-07-29T08:45:24+00:00"
         }
       ]
     },
