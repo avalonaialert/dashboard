@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T19:03:03.440821+00:00",
+  "last_updated": "2026-07-29T19:03:33.455333+00:00",
   "today": {
     "date": "2026-07-29",
     "alerts": {
@@ -90,6 +90,15 @@
           "symbol": "AVGO",
           "msg_id": "19faf4039188d345",
           "received_at": "2026-07-29T19:00:46+00:00"
+        },
+        {
+          "alert": 5,
+          "close": 385.905,
+          "peak": 0,
+          "cross": 12.841685202296727,
+          "symbol": "AVGO",
+          "msg_id": "19faf426a756fb4e",
+          "received_at": "2026-07-29T19:03:08+00:00"
         }
       ],
       "SNDK": [
@@ -122,8 +131,8 @@
         "expiry": "2026-12-18",
         "entry_price": 51.2,
         "entry_time": "2026-07-29T19:00:46+00:00",
-        "current_price": 52.17,
-        "current_time": "2026-07-29T19:03:03.211791+00:00",
+        "current_price": 51.15,
+        "current_time": "2026-07-29T19:03:33.263287+00:00",
         "highest_price": 52.17,
         "highest_time": "2026-07-29T19:03:03.211824+00:00"
       },
@@ -133,8 +142,8 @@
         "expiry": "2026-12-18",
         "entry_price": 324.87,
         "entry_time": "2026-07-29T19:01:53+00:00",
-        "current_price": 330.09,
-        "current_time": "2026-07-29T19:03:03.440691+00:00",
+        "current_price": 326.81,
+        "current_time": "2026-07-29T19:03:33.455260+00:00",
         "highest_price": 330.09,
         "highest_time": "2026-07-29T19:03:03.440755+00:00"
       }
