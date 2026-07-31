@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-30",
+  "alerts": {
+    "ANET": [
+      {
+        "alert": 55,
+        "close": 171.385,
+        "peak": 0,
+        "cross": 0.4198603312470605,
+        "symbol": "ANET",
+        "msg_id": "19fb379d4d3557c0",
+        "received_at": "2026-07-30T14:42:11+00:00"
+      },
+      {
+        "alert": 55,
+        "close": 171.37,
+        "peak": 0,
+        "cross": 0.4198603312470605,
+        "symbol": "ANET",
+        "msg_id": "19fb375ab0e72171",
+        "received_at": "2026-07-30T14:37:39+00:00"
+      },
+      {
+        "alert": 55,
+        "close": 171.305,
+        "peak": 0,
+        "cross": 0.4198603312470605,
+        "symbol": "ANET",
+        "msg_id": "19fb372e09d4dff0",
+        "received_at": "2026-07-30T14:34:36+00:00"
+      }
+    ]
+  },
+  "backtest": {}
+}
