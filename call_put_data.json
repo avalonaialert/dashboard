@@ -1,24 +1,7 @@
 {
-  "last_updated": "2026-08-01T19:39:34.065246+00:00",
+  "last_updated": "2026-08-01T19:40:46.476305+00:00",
   "today": {
     "date": "2026-08-01",
-    "alerts": {
-      "TESTQP": [
-        {
-          "symbol": "TESTQP",
-          "alert": 8,
-          "close": 180.5,
-          "received_at": "2026-08-01T19:38:55.919322+00:00"
-        }
-      ],
-      "NVDA": [
-        {
-          "symbol": "NVDA",
-          "alert": 8,
-          "close": 180.5,
-          "received_at": "2026-08-01T19:39:32.613112+00:00"
-        }
-      ]
-    }
+    "alerts": {}
   }
 }
