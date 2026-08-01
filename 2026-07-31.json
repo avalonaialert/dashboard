@@ -1,0 +1,37 @@
+{
+  "date": "2026-07-31",
+  "alerts": {
+    "SNDK": [
+      {
+        "alert": -8,
+        "close": 1210.1225,
+        "peak": 3,
+        "cross": 0,
+        "symbol": "SNDK",
+        "msg_id": "19fba3130f90d610",
+        "received_at": "2026-07-31T22:00:09+00:00"
+      },
+      {
+        "alert": -8,
+        "close": 1206.42,
+        "peak": 7,
+        "cross": 0,
+        "symbol": "SNDK",
+        "msg_id": "19fba9fefbe74c07",
+        "received_at": "2026-08-01T00:01:10+00:00"
+      }
+    ],
+    "AMD": [
+      {
+        "alert": -8,
+        "close": 474.8325,
+        "peak": 12,
+        "cross": 0,
+        "symbol": "AMD",
+        "msg_id": "19fba83cb40bb8ba",
+        "received_at": "2026-07-31T23:30:25+00:00"
+      }
+    ]
+  },
+  "backtest": {}
+}
