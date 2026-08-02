@@ -283,6 +283,9 @@
 
     .hist-close { font-size: 0.78rem; color: #e6edf3; white-space: nowrap; flex-shrink: 0; }
     .hist-time  { font-size: 0.68rem; color: #8b949e; white-space: nowrap; flex-shrink: 0; }
+    .hist-rsi   { font-size: 0.72rem; font-weight: 600; white-space: nowrap; flex-shrink: 0; color: #8b949e; }
+    .hist-rsi.up   { color: #3fb950; }
+    .hist-rsi.down { color: #f85149; }
 
     /* ── Tile colour themes ── */
     .tile-call { background: #0d2118; border-color: #238636; }
@@ -776,11 +779,23 @@
         const gain = fmtGain(first.close, latest.close);
         const gainHtml = gain ? `<span class="tile-gain ${gain.positive ? "pos" : "neg"}">${gain.text}</span>` : "";
 
-        const histRows = history.map(h => {
+        const histRows = history.map((h, i) => {
           const hm = meta(h.alert);
+          const prevRsi = history[i + 1]?.rsi; // history is newest -> oldest, so i+1 is the prior alert
+          let rsiHtml = "";
+          if (h.rsi != null) {
+            let dirCls = "", arrow = "–";
+            if (prevRsi != null) {
+              if (h.rsi > prevRsi)      { dirCls = "up";   arrow = "▲"; }
+              else if (h.rsi < prevRsi) { dirCls = "down"; arrow = "▼"; }
+              else                       { arrow = "▬"; }
+            }
+            rsiHtml = `<span class="hist-rsi ${dirCls}">RSI ${h.rsi.toFixed(1)} ${arrow}</span>`;
+          }
           return `<div class="history-row">
             <span class="hist-badge ${hm.cls === "tile-call" ? "badge-call" : "badge-bear"}">${hm.icon} ${hm.label}</span>
             <span class="hist-close">${fmtClose(h.close)}</span>
+            ${rsiHtml}
             <span class="hist-time">${fmtTimeOnly(h.received_at)}</span>
           </div>`;
         }).join("");
