@@ -508,6 +508,27 @@
         Show all
       </label>
 
+      <div class="section-title">🎯 Pivot-Based Earnings Plays</div>
+      <div class="pos-table-wrap" id="earnopts-wrap" style="display:none">
+        <table class="pos-table">
+          <thead><tr>
+            <th>Symbol</th>
+            <th>Earnings</th>
+            <th>Price</th>
+            <th>Pivot (S1/PP/R1)</th>
+            <th>Expiry</th>
+            <th>Call Target</th>
+            <th>Call Contract</th>
+            <th>Call Mid / Δ / IV</th>
+            <th>Put Target</th>
+            <th>Put Contract</th>
+            <th>Put Mid / Δ / IV</th>
+          </tr></thead>
+          <tbody id="earnopts-tbody"></tbody>
+        </table>
+      </div>
+      <p id="earnopts-empty" style="color:#8b949e;font-size:0.82rem;margin-bottom:32px">No watchlist earnings in the next 7 days.</p>
+
       <div class="section-title">📋 Today's Call/Put Signals</div>
       <div class="grid" id="grid"></div>
 
@@ -634,6 +655,7 @@
     const CALLPUT_POSITIONS_URL = `https://api.github.com/repos/${REPO}/contents/call_put_positions.json`;
     const CALLPUT_MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/call_put_manifest.json`;
     const CALLPUT_HISTORY_URL   = d => `https://api.github.com/repos/${REPO}/contents/call_put_history/${d}.json`;
+    const EARNINGS_OPTIONS_URL  = `https://api.github.com/repos/${REPO}/contents/earnings_options.json`;
     const GH_READ_TOKEN = "__GH_READ_TOKEN__"; // injected by CI from GitHub Secret
     const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
@@ -905,6 +927,47 @@
       });
     }
 
+    function renderEarningsOptions(data) {
+      const wrap  = document.getElementById("earnopts-wrap");
+      const empty = document.getElementById("earnopts-empty");
+      const tbody = document.getElementById("earnopts-tbody");
+      const symbols = data?.symbols ?? [];
+
+      if (!symbols.length) {
+        wrap.style.display = "none";
+        empty.style.display = "block";
+        return;
+      }
+      wrap.style.display = "block";
+      empty.style.display = "none";
+
+      const hourLabel = h => h === "bmo" ? "BMO" : h === "amc" ? "AMC" : "TBD";
+      const legCell = (leg) => {
+        if (!leg) return "—";
+        const parts = [];
+        if (leg.mid != null) parts.push(`$${leg.mid.toFixed(2)}`);
+        if (leg.delta != null) parts.push(`Δ${Math.abs(leg.delta).toFixed(2)}`);
+        if (leg.iv != null) parts.push(`IV ${(leg.iv * 100).toFixed(0)}%`);
+        return parts.join("  ") || "—";
+      };
+
+      tbody.innerHTML = symbols.map(s => `
+        <tr>
+          <td class="pos-symbol">${symLink(s.symbol)}</td>
+          <td class="pos-time">${fmtShortDate(s.earnings_date)} (${hourLabel(s.earnings_hour)})</td>
+          <td class="pos-price">$${s.price.toFixed(2)}</td>
+          <td class="pos-time">${s.pivots.S1.toFixed(2)} / ${s.pivots.PP.toFixed(2)} / ${s.pivots.R1.toFixed(2)}</td>
+          <td class="pos-time">${s.expiry}</td>
+          <td class="pos-price">$${s.call_target.toFixed(2)}</td>
+          <td class="pos-option">${s.call?.option_symbol ?? "—"}<br><span class="pos-price">$${s.call?.strike?.toFixed(2) ?? "—"}</span></td>
+          <td class="pos-time">${legCell(s.call)}</td>
+          <td class="pos-price">$${s.put_target.toFixed(2)}</td>
+          <td class="pos-option">${s.put?.option_symbol ?? "—"}<br><span class="pos-price">$${s.put?.strike?.toFixed(2) ?? "—"}</span></td>
+          <td class="pos-time">${legCell(s.put)}</td>
+        </tr>
+      `).join("");
+    }
+
     function renderCallPutPositions() {
       const tbody = document.getElementById("callput-tbody");
       if (!_callputPositions.length) {
@@ -1014,14 +1077,16 @@
       statusEl.innerHTML = "Loading…";
       try {
         const prevLastUpdated = _liveData?.last_updated;
-        const [data, posData, manifest] = await Promise.all([
+        const [data, posData, manifest, earnOpts] = await Promise.all([
           _ghFetch(CALLPUT_DATA_URL).catch(() => null),
           _ghFetch(CALLPUT_POSITIONS_URL).catch(() => null),
           _ghFetch(CALLPUT_MANIFEST_URL).catch(() => []),
+          _ghFetch(EARNINGS_OPTIONS_URL).catch(() => null),
         ]);
         _liveData      = data;
         _livePositions = posData?.positions ?? [];
         _manifest      = Array.isArray(manifest) ? manifest : [];
+        renderEarningsOptions(earnOpts);
 
         document.getElementById("last-updated").textContent =
           _liveData?.last_updated ? "Updated " + fmtTime(_liveData.last_updated) : "";
