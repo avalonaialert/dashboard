@@ -613,6 +613,14 @@
       });
     }
 
+    function fmtTimeOnly(iso) {
+      if (!iso) return "—";
+      return new Date(iso).toLocaleTimeString("en-US", {
+        timeZone: "America/New_York",
+        hour: "2-digit", minute: "2-digit", hour12: true,
+      });
+    }
+
     function symLink(sym) {
       return `<a href="https://finviz.com/quote?t=${sym}&p=d" target="_blank" rel="noopener" class="sym-link">${sym}</a>`;
     }
@@ -773,7 +781,7 @@
           return `<div class="history-row">
             <span class="hist-badge ${hm.cls === "tile-call" ? "badge-call" : "badge-bear"}">${hm.icon} ${hm.label}</span>
             <span class="hist-close">${fmtClose(h.close)}</span>
-            <span class="hist-time">${fmtTime(h.received_at)}</span>
+            <span class="hist-time">${fmtTimeOnly(h.received_at)}</span>
           </div>`;
         }).join("");
         const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histRows}</div>`;
