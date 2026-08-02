@@ -508,6 +508,9 @@
         Show all
       </label>
 
+      <div class="section-title">📋 Today's Call/Put Signals</div>
+      <div class="grid" id="grid"></div>
+
       <div class="section-title">🎯 Pivot-Based Earnings Plays</div>
       <div class="pos-table-wrap" id="earnopts-wrap" style="display:none">
         <table class="pos-table">
@@ -526,10 +529,7 @@
           <tbody id="earnopts-tbody"></tbody>
         </table>
       </div>
-      <p id="earnopts-empty" style="color:#8b949e;font-size:0.82rem;margin-bottom:32px">No watchlist earnings in the next 7 days.</p>
-
-      <div class="section-title">📋 Today's Call/Put Signals</div>
-      <div class="grid" id="grid"></div>
+      <p id="earnopts-empty" style="color:#8b949e;font-size:0.82rem;margin-bottom:32px">No actionable earnings play today (AMC) or next trading day (BMO).</p>
 
       <div class="section-title">📞📉 Call/Put Positions</div>
       <div class="pos-table-wrap">
@@ -926,11 +926,35 @@
       });
     }
 
+    function todayDateStrEST() {
+      return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+    }
+
+    function nextTradingDayStrEST() {
+      const [y, m, d] = todayDateStrEST().split("-").map(Number);
+      const dt = new Date(Date.UTC(y, m - 1, d));
+      do {
+        dt.setUTCDate(dt.getUTCDate() + 1);
+      } while (dt.getUTCDay() === 0 || dt.getUTCDay() === 6); // skip Sat/Sun
+      return dt.toISOString().slice(0, 10);
+    }
+
     function renderEarningsOptions(data) {
       const wrap  = document.getElementById("earnopts-wrap");
       const empty = document.getElementById("earnopts-empty");
       const tbody = document.getElementById("earnopts-tbody");
-      const symbols = data?.symbols ?? [];
+      const allSymbols = data?.symbols ?? [];
+
+      // Only show a play when it's actually actionable right now: an AMC report
+      // happening today (buy before the close), or a BMO report on the next
+      // trading day (buy before that open). Anything further out isn't shown yet.
+      const today = todayDateStrEST();
+      const nextTradingDay = nextTradingDayStrEST();
+      const symbols = allSymbols.filter(s => {
+        if (s.earnings_hour === "amc") return s.earnings_date === today;
+        if (s.earnings_hour === "bmo") return s.earnings_date === nextTradingDay;
+        return s.earnings_date === today || s.earnings_date === nextTradingDay;
+      });
 
       if (!symbols.length) {
         wrap.style.display = "none";
