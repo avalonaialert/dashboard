@@ -512,6 +512,10 @@
       <div class="grid" id="grid"></div>
 
       <div class="section-title">🎯 Pivot-Based Earnings Plays</div>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.8rem;color:#8b949e;cursor:pointer;white-space:nowrap;margin-bottom:16px;width:fit-content">
+        <input type="checkbox" id="earnopts-full-week-chk" style="cursor:pointer;accent-color:#58a6ff" />
+        Show full next week (default: only today's AMC / next trading day's BMO)
+      </label>
       <div class="pos-table-wrap" id="earnopts-wrap" style="display:none">
         <table class="pos-table">
           <thead><tr>
@@ -606,6 +610,7 @@
     })();
 
     document.getElementById("show-all-chk").addEventListener("change", () => renderTiles());
+    document.getElementById("earnopts-full-week-chk").addEventListener("change", () => renderEarningsOptions());
 
     // ── Alert sound notification ─────────────────────────────────────────
     let _soundEnabled = localStorage.getItem("cp_sound") !== "off";
@@ -939,18 +944,23 @@
       return dt.toISOString().slice(0, 10);
     }
 
+    let _earningsOptionsData = null;
+
     function renderEarningsOptions(data) {
+      if (data !== undefined) _earningsOptionsData = data;   // cache so the checkbox can re-render without refetching
       const wrap  = document.getElementById("earnopts-wrap");
       const empty = document.getElementById("earnopts-empty");
       const tbody = document.getElementById("earnopts-tbody");
-      const allSymbols = data?.symbols ?? [];
+      const allSymbols = _earningsOptionsData?.symbols ?? [];
 
-      // Only show a play when it's actually actionable right now: an AMC report
-      // happening today (buy before the close), or a BMO report on the next
-      // trading day (buy before that open). Anything further out isn't shown yet.
+      const showFullWeek = document.getElementById("earnopts-full-week-chk")?.checked;
+
+      // Default: only show a play when it's actually actionable right now — an AMC
+      // report happening today (buy before the close), or a BMO report on the next
+      // trading day (buy before that open). "Show full next week" bypasses this.
       const today = todayDateStrEST();
       const nextTradingDay = nextTradingDayStrEST();
-      const symbols = allSymbols.filter(s => {
+      const symbols = showFullWeek ? allSymbols : allSymbols.filter(s => {
         if (s.earnings_hour === "amc") return s.earnings_date === today;
         if (s.earnings_hour === "bmo") return s.earnings_date === nextTradingDay;
         return s.earnings_date === today || s.earnings_date === nextTradingDay;
@@ -958,6 +968,9 @@
 
       if (!symbols.length) {
         wrap.style.display = "none";
+        empty.textContent = showFullWeek
+          ? "No watchlist earnings in the next 7 days."
+          : "No actionable earnings play today (AMC) or next trading day (BMO).";
         empty.style.display = "block";
         return;
       }
