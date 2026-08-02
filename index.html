@@ -677,6 +677,14 @@
     const REC_RSI_MOMENTUM_DIFF = 0.5;
     const REC_DELTA_EXIT        = 0.78;
     const REC_THETA_RATIO_EXIT  = 0.04;
+    const REC_IV_HIGH           = 0.80;
+
+    function ivLabel(iv) {
+      if (iv >= REC_IV_HIGH * 1.5) return "🔥 Very High";
+      if (iv >= REC_IV_HIGH)       return "⚠️ High";
+      if (iv >= REC_IV_HIGH * 0.5) return "Normal";
+      return "Low";
+    }
 
     function callPutRec(history, position) {
       const latest = history[0];
@@ -716,6 +724,7 @@
         let greeksNote = "";
         if (delta != null) greeksNote += `Δ${delta.toFixed(2)}`;
         if (thetaRatio != null) greeksNote += `${greeksNote ? "  " : ""}θ${(thetaRatio * 100).toFixed(1)}%/day`;
+        if (position.current_iv != null) greeksNote += `${greeksNote ? "  " : ""}IV ${(position.current_iv * 100).toFixed(0)}% (${ivLabel(position.current_iv)})`;
 
         if (delta != null && thetaRatio != null) {
           const worst = Math.max(delta / REC_DELTA_EXIT, thetaRatio / REC_THETA_RATIO_EXIT);
