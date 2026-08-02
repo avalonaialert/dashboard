@@ -671,12 +671,12 @@
         : { label: "Put",  cls: "tile-bear", icon: "▼" };
     }
 
-    // Approximate thresholds mirroring call_put.py's .env defaults — the live
-    // exit decision (with fresh Greeks) always happens server-side; this is a
-    // quick read from the RSI already sitting in the alert data.
-    const REC_RSI_OVERBOUGHT   = 70;
-    const REC_RSI_OVERSOLD     = 30;
+    // Thresholds mirroring call_put.py's .env defaults.
+    const REC_RSI_OVERBOUGHT    = 70;
+    const REC_RSI_OVERSOLD      = 30;
     const REC_RSI_MOMENTUM_DIFF = 0.5;
+    const REC_DELTA_EXIT        = 0.78;
+    const REC_THETA_RATIO_EXIT  = 0.04;
 
     function callPutRec(history, position) {
       const latest = history[0];
@@ -704,13 +704,40 @@
           ? (position.current_price - position.buy_price) / position.buy_price * 100 : null;
         const pnlStr = pnlPct != null ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(1)}%` : "—";
 
+        // Greeks: same rank scale as the server (0=hold, 1=watch, 2=exit)
+        let rank = 0;
+        const reasons = [];
+        const delta = position.current_delta != null ? Math.abs(position.current_delta) : null;
+        const theta = position.current_theta;
+        const qty   = position.qty || 1;
+        const thetaRatio = (theta != null && position.current_price)
+          ? Math.abs(theta) * qty * 100 / (position.current_price * qty * 100) : null;
+
+        let greeksNote = "";
+        if (delta != null) greeksNote += `Δ${delta.toFixed(2)}`;
+        if (thetaRatio != null) greeksNote += `${greeksNote ? "  " : ""}θ${(thetaRatio * 100).toFixed(1)}%/day`;
+
+        if (delta != null && thetaRatio != null) {
+          const worst = Math.max(delta / REC_DELTA_EXIT, thetaRatio / REC_THETA_RATIO_EXIT);
+          if (worst >= 1.0)       { rank = 2; reasons.push("Greeks: exit threshold hit"); }
+          else if (worst >= 0.85) { rank = 1; reasons.push("Greeks: approaching exit"); }
+        }
+
         if (rsiFlag === "turning" && pnlPct != null && pnlPct > 0) {
-          return { action: "🔴 Consider Exit — RSI stalling", detail: `In profit ${pnlStr}  ·  ${rsiNote}`, cls: "rec-sell" };
+          rank = Math.max(rank, 2);
+          reasons.push("RSI stalling in profit");
+        } else if (rsiFlag) {
+          rank = Math.max(rank, 1);
+          reasons.push("RSI extended");
         }
-        if (rsiFlag) {
-          return { action: "🟡 Watch — RSI extended", detail: `PnL ${pnlStr}  ·  ${rsiNote}`, cls: "rec-watch" };
-        }
-        return { action: "🟢 Hold Position", detail: `PnL ${pnlStr}  ·  ${rsiNote || "no RSI data"}`, cls: "rec-hold" };
+
+        const labels = { 0: "🟢 Hold Position", 1: "🟡 Watch — approaching exit", 2: "🔴 Consider Exit" };
+        const detailParts = [`PnL ${pnlStr}`, greeksNote, rsiNote].filter(Boolean);
+        return {
+          action: labels[rank],
+          detail: detailParts.join("  ·  ") + (reasons.length ? `  ·  ${reasons.join(", ")}` : ""),
+          cls: rank === 2 ? "rec-sell" : rank === 1 ? "rec-watch" : "rec-hold",
+        };
       }
 
       if (position && position.status === "closed") {
