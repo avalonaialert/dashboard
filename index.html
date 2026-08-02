@@ -98,6 +98,35 @@
     .spy-label { font-weight: 900; letter-spacing: 0.5px; }
     .spy-pct   { font-weight: 700; }
 
+    /* ── Earnings this week bar ── */
+    #earnings-week-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 24px;
+      border-bottom: 1px solid #21262d;
+      background: #0d1117;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      min-height: 36px;
+    }
+
+    .earnings-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+    .earnings-chip.bmo { background: #0d1b2e; border: 1px solid #1f6feb; color: #58a6ff; }
+    .earnings-chip.amc { background: #1e1b4b; border: 1px solid #6d28d9; color: #c084fc; }
+    .earnings-chip.tbd { background: #161b22; border: 1px solid #30363d; color: #8b949e; }
+    .earnings-sym  { font-weight: 700; }
+    .earnings-date { opacity: 0.85; }
+    .earnings-hour { font-weight: 700; font-size: 0.68rem; }
+
     /* ── Sidebar ── */
     .sidebar {
       width: 148px;
@@ -464,6 +493,7 @@
   </header>
 
   <div id="movers-bar"></div>
+  <div id="earnings-week-bar" style="display:none"></div>
 
   <div class="app">
     <nav class="sidebar" id="sidebar">
@@ -1083,6 +1113,51 @@
       }
     }
 
+    // ── Earnings this week (fixed watchlist) ──────────────────────────────
+    const EARNINGS_WATCHLIST = ["AAPL","AMD","AMZN","AVGO","GOOG","MSFT","MU","NVDA","SNDK","TSLA","WDC"];
+
+    function fmtShortDate(dateStr) {
+      return new Date(dateStr + "T12:00:00Z").toLocaleDateString("en-US", {
+        timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric",
+      });
+    }
+
+    async function loadEarningsWeek() {
+      if (!FINNHUB_API_KEY || FINNHUB_API_KEY === "YOUR_FINNHUB_KEY") return;
+      try {
+        const from = new Date();
+        const to   = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+        const fmt  = d => d.toISOString().slice(0, 10);
+        const resp = await fetch(
+          `https://finnhub.io/api/v1/calendar/earnings?from=${fmt(from)}&to=${fmt(to)}&token=${FINNHUB_API_KEY}`,
+          { cache: "no-store" }
+        );
+        if (!resp.ok) return;
+        const json = await resp.json();
+        const watchSet = new Set(EARNINGS_WATCHLIST);
+        const entries = (json.earningsCalendar || [])
+          .filter(e => watchSet.has(e.symbol))
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        const bar = document.getElementById("earnings-week-bar");
+        if (!entries.length) { bar.style.display = "none"; return; }
+
+        bar.innerHTML = '<span class="movers-label">Earnings This Week</span>' +
+          entries.map(e => {
+            const hourCls   = e.hour === "bmo" ? "bmo" : e.hour === "amc" ? "amc" : "tbd";
+            const hourLabel = e.hour === "bmo" ? "BMO" : e.hour === "amc" ? "AMC" : "TBD";
+            return `<span class="earnings-chip ${hourCls}">
+              <span class="earnings-sym">${symLink(e.symbol)}</span>
+              <span class="earnings-date">${fmtShortDate(e.date)}</span>
+              <span class="earnings-hour">${hourLabel}</span>
+            </span>`;
+          }).join("");
+        bar.style.display = "flex";
+      } catch (_) {
+        // non-critical
+      }
+    }
+
     // ── Market hours indicator ───────────────────────────────────────────
     function getMarketStatus() {
       const est  = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
@@ -1114,7 +1189,9 @@
     load().then(() => scheduleRefresh());
     loadTopMovers();
     loadSpyQuote();
+    loadEarningsWeek();
     setInterval(loadSpyQuote, 60_000);
+    setInterval(loadEarningsWeek, 30 * 60_000);
   </script>
 </body>
 </html>
