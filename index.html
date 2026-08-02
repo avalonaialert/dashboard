@@ -517,10 +517,10 @@
             <th>Price</th>
             <th>Pivot (S1/PP/R1)</th>
             <th>Expiry</th>
-            <th>Call Contract</th>
-            <th>Call Mid / Δ</th>
-            <th>Put Contract</th>
-            <th>Put Mid / Δ</th>
+            <th>Call Strike</th>
+            <th>Call Mid</th>
+            <th>Put Strike</th>
+            <th>Put Mid</th>
           </tr></thead>
           <tbody id="earnopts-tbody"></tbody>
         </table>
@@ -940,13 +940,7 @@
       empty.style.display = "none";
 
       const hourLabel = h => h === "bmo" ? "BMO" : h === "amc" ? "AMC" : "TBD";
-      const legCell = (leg) => {
-        if (!leg) return "—";
-        const parts = [];
-        if (leg.mid != null) parts.push(`$${leg.mid.toFixed(2)}`);
-        if (leg.delta != null) parts.push(`Δ${Math.abs(leg.delta).toFixed(2)}`);
-        return parts.join("  ") || "—";
-      };
+      const midCell = (leg) => leg?.mid != null ? `$${leg.mid.toFixed(2)}` : "—";
 
       tbody.innerHTML = symbols.map(s => `
         <tr>
@@ -955,10 +949,10 @@
           <td class="pos-price">$${s.price.toFixed(2)}</td>
           <td class="pos-time">${s.pivots.S1.toFixed(2)} / ${s.pivots.PP.toFixed(2)} / ${s.pivots.R1.toFixed(2)}</td>
           <td class="pos-time">${s.expiry}</td>
-          <td class="pos-option">${s.call?.option_symbol ?? "—"}<br><span class="pos-price">$${s.call?.strike?.toFixed(2) ?? "—"}</span></td>
-          <td class="pos-time">${legCell(s.call)}</td>
-          <td class="pos-option">${s.put?.option_symbol ?? "—"}<br><span class="pos-price">$${s.put?.strike?.toFixed(2) ?? "—"}</span></td>
-          <td class="pos-time">${legCell(s.put)}</td>
+          <td class="pos-price">$${s.call?.strike?.toFixed(2) ?? "—"}</td>
+          <td class="pos-price">${midCell(s.call)}</td>
+          <td class="pos-price">$${s.put?.strike?.toFixed(2) ?? "—"}</td>
+          <td class="pos-price">${midCell(s.put)}</td>
         </tr>
       `).join("");
     }
