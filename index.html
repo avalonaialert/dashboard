@@ -461,6 +461,10 @@
 
     <main class="content">
       <p id="status">Loading…</p>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.8rem;color:#8b949e;cursor:pointer;white-space:nowrap;margin-bottom:16px;width:fit-content">
+        <input type="checkbox" id="show-all-chk" style="cursor:pointer;accent-color:#58a6ff" />
+        Show all (ignore 20-min filter during market hours)
+      </label>
 
       <div class="section-title">📋 Today's Call/Put Signals</div>
       <div class="grid" id="grid"></div>
@@ -538,6 +542,8 @@
         btn.title       = collapsed ? "Expand sidebar" : "Collapse sidebar";
       });
     })();
+
+    document.getElementById("show-all-chk").addEventListener("change", () => renderTiles());
 
     const REPO = "avalonaialert/dashboard";
     const CALLPUT_DATA_URL      = `https://api.github.com/repos/${REPO}/contents/call_put_data.json`;
@@ -681,9 +687,22 @@
       // Symbols with the most recent overall activity first
       symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
 
-      statusEl.textContent = `${symbols.length} symbol${symbols.length !== 1 ? "s" : ""}`;
+      // Hide symbols with no alert in the last 20 min — but only while the market is
+      // actually in session (call_put.py only trades 9:30-16:00 ET) and only for "today".
+      // Outside session, or on a "Show all" checkbox, or viewing history: show everything.
+      const showAll   = document.getElementById("show-all-chk")?.checked;
+      const inSession = getMarketStatus().cls === "market-open";
+      const applyFilter = inSession && !showAll && _activeDay === "today";
+      const cutoff = Date.now() - 20 * 60 * 1000;
+      const visibleSymbols = applyFilter
+        ? symbols.filter(([, h]) => new Date(h[0].received_at).getTime() >= cutoff)
+        : symbols;
 
-      symbols.forEach(([symbol, history]) => {
+      const hiddenCount = symbols.length - visibleSymbols.length;
+      statusEl.textContent = `${visibleSymbols.length} symbol${visibleSymbols.length !== 1 ? "s" : ""}` +
+        (hiddenCount > 0 ? ` · ${hiddenCount} older (>20min) hidden` : "");
+
+      visibleSymbols.forEach(([symbol, history]) => {
         const latest = history[0];
         const first  = history[history.length - 1];
         const m      = meta(latest.alert);
