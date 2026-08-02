@@ -521,6 +521,7 @@
             <th>Call Mid</th>
             <th>Put Strike</th>
             <th>Put Mid</th>
+            <th>Capital Needed</th>
           </tr></thead>
           <tbody id="earnopts-tbody"></tbody>
         </table>
@@ -942,6 +943,23 @@
       const hourLabel = h => h === "bmo" ? "BMO" : h === "amc" ? "AMC" : "TBD";
       const midCell = (leg) => leg?.mid != null ? `$${leg.mid.toFixed(2)}` : "—";
 
+      // Capital rule: buy 1 contract of whichever leg is priced higher, then use
+      // that same dollar amount as the budget for the cheaper leg.
+      const capitalCell = (call, put) => {
+        if (call?.mid == null || put?.mid == null) return "—";
+        const [higherLabel, higherMid, lowerLabel, lowerMid] = call.mid >= put.mid
+          ? ["CALL", call.mid, "PUT", put.mid]
+          : ["PUT", put.mid, "CALL", call.mid];
+
+        const higherCost = higherMid * 100;
+        const lowerContracts = Math.floor(higherCost / (lowerMid * 100));
+        const lowerSpent = lowerContracts * lowerMid * 100;
+        const total = higherCost + higherCost; // same $ budgeted to the lower leg
+
+        return `$${total.toFixed(0)}  (1 ${higherLabel} @ $${higherCost.toFixed(0)} + `
+             + `${lowerContracts} ${lowerLabel} @ $${lowerSpent.toFixed(0)})`;
+      };
+
       tbody.innerHTML = symbols.map(s => `
         <tr>
           <td class="pos-symbol">${symLink(s.symbol)}</td>
@@ -953,6 +971,7 @@
           <td class="pos-price">${midCell(s.call)}</td>
           <td class="pos-price">$${s.put?.strike?.toFixed(2) ?? "—"}</td>
           <td class="pos-price">${midCell(s.put)}</td>
+          <td class="pos-time">${capitalCell(s.call, s.put)}</td>
         </tr>
       `).join("");
     }
