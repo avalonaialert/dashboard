@@ -1,70 +1,7 @@
 {
-  "last_updated": "2026-08-01T20:25:31.651633+00:00",
+  "last_updated": "2026-08-02T10:26:13.940133+00:00",
   "today": {
-    "date": "2026-08-01",
-    "alerts": {
-      "AAPL": [
-        {
-          "symbol": "AAPL",
-          "alert": 8,
-          "close": 308.91,
-          "received_at": "2026-08-01T19:46:51.288844+00:00"
-        },
-        {
-          "symbol": "AAPL",
-          "alert": 8,
-          "close": 308.91,
-          "received_at": "2026-08-01T19:49:13.416195+00:00"
-        },
-        {
-          "symbol": "AAPL",
-          "alert": 8,
-          "close": 308.91,
-          "received_at": "2026-08-01T19:49:32.391761+00:00"
-        }
-      ],
-      "AMD": [
-        {
-          "symbol": "AMD",
-          "alert": -8,
-          "close": 473.39,
-          "rsi": 18.5,
-          "smarsi": 23.71,
-          "received_at": "2026-08-01T20:18:48.935234+00:00"
-        },
-        {
-          "symbol": "AMD",
-          "alert": -8,
-          "close": 473.39,
-          "rsi": 18.5,
-          "smarsi": 23.71,
-          "received_at": "2026-08-01T20:19:16.713744+00:00"
-        },
-        {
-          "symbol": "AMD",
-          "alert": -8,
-          "close": 473.39,
-          "rsi": 19,
-          "smarsi": 23.71,
-          "received_at": "2026-08-01T20:20:20.345887+00:00"
-        },
-        {
-          "symbol": "AMD",
-          "alert": -8,
-          "close": 473.39,
-          "rsi": 19,
-          "smarsi": 23.71,
-          "received_at": "2026-08-01T20:22:02.516870+00:00"
-        },
-        {
-          "symbol": "AMD",
-          "alert": -8,
-          "close": 473.39,
-          "rsi": 19,
-          "smarsi": 23.71,
-          "received_at": "2026-08-01T20:25:28.485112+00:00"
-        }
-      ]
-    }
+    "date": "2026-08-02",
+    "alerts": {}
   }
 }
