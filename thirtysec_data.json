@@ -1,28 +1,7 @@
 {
-  "last_updated": "2026-08-03T20:02:17.779903+00:00",
+  "last_updated": "2026-08-03T20:02:40.844445+00:00",
   "today": {
     "date": "2026-08-03",
-    "alerts": {
-      "TESTSEC": [
-        {
-          "symbol": "TESTSEC",
-          "alert": 6,
-          "close": 100.0,
-          "received_at": "2026-08-03T20:00:27.363842+00:00"
-        },
-        {
-          "symbol": "TESTSEC",
-          "alert": 6,
-          "close": 100.0,
-          "received_at": "2026-08-03T20:02:14.990297+00:00"
-        },
-        {
-          "symbol": "TESTSEC",
-          "alert": -9,
-          "close": 95.0,
-          "received_at": "2026-08-03T20:02:17.282176+00:00"
-        }
-      ]
-    }
+    "alerts": {}
   }
 }
