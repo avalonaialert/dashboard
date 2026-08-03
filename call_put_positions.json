@@ -34,22 +34,23 @@
       "expiry": "2026-12-18",
       "qty": 6,
       "buy_price": 41.77,
-      "current_price": 41.77,
+      "current_price": 42.62,
       "entry_delta": 0.5664,
       "entry_theta": -0.1638,
       "entry_iv": 0.3235,
-      "current_delta": 0.5664,
-      "current_theta": -0.1638,
-      "current_iv": 0.3235,
+      "current_delta": 0.571,
+      "current_theta": -0.1649,
+      "current_iv": 0.3236,
       "entry_rsi": 91.61984671674284,
       "entry_smarsi": 82.61228073458713,
       "buy_time": "2026-08-03T14:00:09.879355+00:00",
       "order_id": "b89fe5a5-4472-4eba-ab18-e2b005988946",
-      "sell_price": null,
-      "sell_time": null,
-      "close_reason": null,
-      "pnl": null,
-      "status": "open"
+      "sell_price": 42.42,
+      "sell_time": "2026-08-03T18:30:21.208034+00:00",
+      "close_reason": "rsi_momentum_exit",
+      "pnl": 390.0,
+      "status": "closed",
+      "last_rsi": 74.99979951855946
     }
   ]
 }
