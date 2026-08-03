@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T13:15:32.377449+00:00",
+  "generated_at": "2026-08-03T13:30:43.968417+00:00",
   "symbols": [
     {
       "symbol": "AMD",
-      "price": 463.95,
+      "price": 465.44,
       "earnings_date": "2026-08-04",
       "earnings_hour": "amc",
       "expiry": "2026-08-05",
@@ -25,15 +25,15 @@
       "call": {
         "option_symbol": "AMD260805C00492500",
         "strike": 492.5,
-        "mid": 16.2,
-        "delta": 0.3714,
-        "theta": -6.4938,
-        "iv": 1.9958
+        "mid": 10.34,
+        "delta": 0.3062,
+        "theta": -4.9465,
+        "iv": 1.6541
       },
       "put": {
         "option_symbol": "AMD260805P00410000",
         "strike": 410.0,
-        "mid": 3.5,
+        "mid": 4.88,
         "delta": null,
         "theta": null,
         "iv": null
@@ -41,7 +41,7 @@
     },
     {
       "symbol": "SNDK",
-      "price": 1167.17,
+      "price": 1170.28,
       "earnings_date": "2026-08-05",
       "earnings_hour": "amc",
       "expiry": "2026-08-07",
@@ -63,7 +63,7 @@
       "call": {
         "option_symbol": "SNDK260807C01445000",
         "strike": 1445.0,
-        "mid": 40.56,
+        "mid": 25.26,
         "delta": null,
         "theta": null,
         "iv": null
@@ -71,7 +71,7 @@
       "put": {
         "option_symbol": "SNDK260807P00765000",
         "strike": 765.0,
-        "mid": 4.75,
+        "mid": 4.32,
         "delta": null,
         "theta": null,
         "iv": null
@@ -101,7 +101,7 @@
       "call": {
         "option_symbol": "WDC260807C00632500",
         "strike": 632.5,
-        "mid": 12.7,
+        "mid": 6.24,
         "delta": null,
         "theta": null,
         "iv": null
@@ -109,10 +109,10 @@
       "put": {
         "option_symbol": "WDC260807P00527500",
         "strike": 527.5,
-        "mid": 29.84,
-        "delta": -0.5042,
-        "theta": -3.3548,
-        "iv": 1.2415
+        "mid": 40.88,
+        "delta": -0.5105,
+        "theta": -4.386,
+        "iv": 1.6361
       }
     }
   ]
