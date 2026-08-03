@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T12:30:36.796446+00:00",
+  "generated_at": "2026-08-03T12:45:41.339523+00:00",
   "symbols": [
     {
       "symbol": "AMD",
-      "price": 476.03,
+      "price": 464,
       "earnings_date": "2026-08-04",
       "earnings_hour": "amc",
       "expiry": "2026-08-05",
@@ -26,9 +26,9 @@
         "option_symbol": "AMD260805C00492500",
         "strike": 492.5,
         "mid": 16.2,
-        "delta": 0.374,
-        "theta": -6.4386,
-        "iv": 1.9706
+        "delta": 0.3759,
+        "theta": -6.3993,
+        "iv": 1.9528
       },
       "put": {
         "option_symbol": "AMD260805P00410000",
@@ -79,7 +79,7 @@
     },
     {
       "symbol": "WDC",
-      "price": 544.61,
+      "price": 528.55,
       "earnings_date": "2026-08-05",
       "earnings_hour": "amc",
       "expiry": "2026-08-07",
@@ -110,9 +110,9 @@
         "option_symbol": "WDC260807P00527500",
         "strike": 527.5,
         "mid": 29.84,
-        "delta": -0.4694,
-        "theta": -3.7215,
-        "iv": 1.365
+        "delta": -0.4649,
+        "theta": -3.7706,
+        "iv": 1.382
       }
     }
   ]
