@@ -276,16 +276,6 @@
     .tile-gain.pos { background: #1a4a2e; color: #3fb950; }
     .tile-gain.neg { background: #4a1a1a; color: #f85149; }
 
-    .tile-pos {
-      margin: 0 18px 12px;
-      font-size: 0.78rem;
-      color: #8b949e;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
     .tile-history {
       border-top: 1px solid rgba(255,255,255,0.06);
       padding: 0 18px 14px;
@@ -372,17 +362,8 @@
     .pos-table td { padding: 9px 14px; white-space: nowrap; }
 
     .pos-symbol { font-weight: 700; font-size: 0.95rem; color: #34d399; }
-    .pos-option { font-size: 0.78rem; color: #8b949e; }
     .pos-price  { color: #e6edf3; font-weight: 600; }
-    .pos-qty    { color: #e6edf3; text-align: center; }
-    .pos-pnl    { font-weight: 700; }
-    .pos-pnl.pos { color: #3fb950; }
-    .pos-pnl.neg { color: #f85149; }
     .pos-time   { color: #8b949e; font-size: 0.75rem; }
-    .pos-reason { color: #8b949e; font-size: 0.78rem; }
-    .pos-status { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; }
-    .pos-open   { background: #0d3a26; color: #34d399; border: 1px solid #34d399; }
-    .pos-closed { background: #1a1a2e; color: #8b949e; border: 1px solid #30363d; }
 
     /* ── Login overlay ── */
     #login-overlay {
@@ -535,29 +516,6 @@
       </div>
       <p id="earnopts-empty" style="color:#8b949e;font-size:0.82rem;margin-bottom:32px">No actionable earnings play today (AMC) or next trading day (BMO).</p>
 
-      <div class="section-title">📞📉 Call/Put Positions</div>
-      <div class="pos-table-wrap">
-        <table class="pos-table">
-          <thead><tr>
-            <th>Symbol</th>
-            <th>Side</th>
-            <th>Option</th>
-            <th>Strike</th>
-            <th>Exp</th>
-            <th>Qty</th>
-            <th>Buy @</th>
-            <th>Current / Sell @</th>
-            <th>P&L</th>
-            <th>P&L %</th>
-            <th>Status</th>
-            <th>Close Reason</th>
-            <th>Entry RSI</th>
-            <th>Buy Time</th>
-            <th>Close Time</th>
-          </tr></thead>
-          <tbody id="callput-tbody"></tbody>
-        </table>
-      </div>
     </main>
   </div>
 
@@ -656,7 +614,6 @@
 
     const REPO = "avalonaialert/dashboard";
     const CALLPUT_DATA_URL      = `https://api.github.com/repos/${REPO}/contents/call_put_data.json`;
-    const CALLPUT_POSITIONS_URL = `https://api.github.com/repos/${REPO}/contents/call_put_positions.json`;
     const CALLPUT_MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/call_put_manifest.json`;
     const CALLPUT_HISTORY_URL   = d => `https://api.github.com/repos/${REPO}/contents/call_put_history/${d}.json`;
     const EARNINGS_OPTIONS_URL  = `https://api.github.com/repos/${REPO}/contents/earnings_options.json`;
@@ -703,11 +660,9 @@
     }
 
     let _callputData      = null;   // currently displayed (today or a history day)
-    let _callputPositions = [];
     let _liveData         = null;   // today's live data, kept aside so switching back to "today" is instant
-    let _livePositions    = [];
     let _manifest         = [];     // archived dates, from call_put_manifest.json
-    let _dayCache         = {};     // date -> {alerts, positions}
+    let _dayCache         = {};     // date -> {alerts}
     let _activeDay        = "today";
     let _spyQuote         = null;
     let _topGainers       = [];
@@ -731,18 +686,8 @@
     const REC_RSI_OVERBOUGHT    = 70;
     const REC_RSI_OVERSOLD      = 30;
     const REC_RSI_MOMENTUM_DIFF = 0.5;
-    const REC_DELTA_EXIT        = 0.78;
-    const REC_THETA_RATIO_EXIT  = 0.04;
-    const REC_IV_HIGH           = 0.80;
 
-    function ivLabel(iv) {
-      if (iv >= REC_IV_HIGH * 1.5) return "🔥 Very High";
-      if (iv >= REC_IV_HIGH)       return "⚠️ High";
-      if (iv >= REC_IV_HIGH * 0.5) return "Normal";
-      return "Low";
-    }
-
-    function callPutRec(history, position) {
+    function callPutRec(history) {
       const latest = history[0];
       const prev   = history[1];
       const side   = Number(latest.alert) === 8 ? "call" : "put";
@@ -763,61 +708,7 @@
         rsiNote = `RSI ${rsi.toFixed(1)}${prevRsi != null ? ` (prev ${prevRsi.toFixed(1)})` : ""}`;
       }
 
-      if (position && position.status === "open") {
-        const pnlPct = position.buy_price && position.current_price != null
-          ? (position.current_price - position.buy_price) / position.buy_price * 100 : null;
-        const pnlStr = pnlPct != null ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(1)}%` : "—";
-
-        // Greeks: same rank scale as the server (0=hold, 1=watch, 2=exit)
-        let rank = 0;
-        const reasons = [];
-        const delta = position.current_delta != null ? Math.abs(position.current_delta) : null;
-        const theta = position.current_theta;
-        const qty   = position.qty || 1;
-        const thetaRatio = (theta != null && position.current_price)
-          ? Math.abs(theta) * qty * 100 / (position.current_price * qty * 100) : null;
-
-        let greeksNote = "";
-        if (delta != null) greeksNote += `Δ${delta.toFixed(2)}`;
-        if (thetaRatio != null) greeksNote += `${greeksNote ? "  " : ""}θ${(thetaRatio * 100).toFixed(1)}%/day`;
-        if (position.current_iv != null) greeksNote += `${greeksNote ? "  " : ""}IV ${(position.current_iv * 100).toFixed(0)}% (${ivLabel(position.current_iv)})`;
-
-        if (delta != null && thetaRatio != null) {
-          const worst = Math.max(delta / REC_DELTA_EXIT, thetaRatio / REC_THETA_RATIO_EXIT);
-          if (worst >= 1.0)       { rank = 2; reasons.push("Greeks: exit threshold hit"); }
-          else if (worst >= 0.85) { rank = 1; reasons.push("Greeks: approaching exit"); }
-        }
-
-        if (rsiFlag === "turning" && pnlPct != null && pnlPct > 0) {
-          rank = Math.max(rank, 2);
-          reasons.push("RSI stalling in profit");
-        } else if (rsiFlag) {
-          rank = Math.max(rank, 1);
-          reasons.push("RSI extended");
-        }
-
-        const labels = { 0: "🟢 Hold Position", 1: "🟡 Watch — approaching exit", 2: "🔴 Consider Exit" };
-        const detailParts = [`PnL ${pnlStr}`, greeksNote, rsiNote].filter(Boolean);
-        return {
-          action: labels[rank],
-          detail: detailParts.join("  ·  ") + (reasons.length ? `  ·  ${reasons.join(", ")}` : ""),
-          cls: rank === 2 ? "rec-sell" : rank === 1 ? "rec-watch" : "rec-hold",
-        };
-      }
-
-      if (position && position.status === "closed") {
-        const pnl = position.pnl;
-        const pnlStr = pnl != null ? `${pnl >= 0 ? "+" : ""}$${pnl.toFixed(2)}` : "—";
-        const reason = (position.close_reason || "").replace(/_/g, " ");
-        return {
-          action: pnl != null && pnl >= 0 ? "✅ Closed — Win" : "⛔ Closed — Loss",
-          detail: `${reason || "closed"}  ·  ${pnlStr}`,
-          cls: pnl != null && pnl >= 0 ? "rec-hold" : "rec-sell",
-        };
-      }
-
-      // No position yet (outside market hours, or not opened) — signal-only read
-      const label = rsiFlag === "turning" ? "🟡 Momentum stalling" : "📋 Signal Only — no live position";
+      const label = rsiFlag === "turning" ? "🟡 Momentum stalling" : "📋 Signal";
       return { action: label, detail: rsiNote || "no RSI data", cls: "rec-building" };
     }
 
@@ -893,20 +784,7 @@
         }).join("");
         const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histRows}</div>`;
 
-        // Most recent position for this symbol (open takes priority over closed)
-        const symPositions = _callputPositions.filter(p => p.symbol === symbol);
-        const position = symPositions.find(p => p.status === "open")
-          || symPositions.sort((a, b) => new Date(b.buy_time) - new Date(a.buy_time))[0];
-
-        const posHtml = position
-          ? `<div class="tile-pos">
-               <span>${position.option_symbol ?? ""}</span>
-               <span class="pos-status ${position.status === "open" ? "pos-open" : "pos-closed"}">${position.status.toUpperCase()}</span>
-               <span>@ $${position.buy_price != null ? Number(position.buy_price).toFixed(2) : "—"}</span>
-             </div>`
-          : "";
-
-        const rec = callPutRec(history, position);
+        const rec = callPutRec(history);
         const recHtml = `<div class="tile-rec ${rec.cls}">
              <span class="rec-action">${rec.action}</span>
              <span class="rec-detail">${rec.detail}</span>
@@ -926,7 +804,7 @@
               ${gainHtml}
             </div>
             <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
-          </div>${recHtml}${posHtml}${histSection}`;
+          </div>${recHtml}${histSection}`;
         grid.appendChild(tile);
       });
     }
@@ -1013,56 +891,6 @@
       `).join("");
     }
 
-    function renderCallPutPositions() {
-      const tbody = document.getElementById("callput-tbody");
-      if (!_callputPositions.length) {
-        tbody.innerHTML = `<tr><td colspan="15" style="color:#8b949e">No positions for this day</td></tr>`;
-        return;
-      }
-
-      const reasonLabel = {
-        reversal: "Reversal", eod: "EOD Close",
-        greeks_exit: "Greeks Exit", rsi_momentum_exit: "RSI Momentum Exit",
-      };
-
-      tbody.innerHTML = _callputPositions.map(pos => {
-        const isOpen = pos.status === "open";
-        const isCall = pos.side === "call";
-
-        const current = isOpen && pos.current_price != null
-          ? "$" + Number(pos.current_price).toFixed(2)
-          : pos.sell_price != null ? "$" + Number(pos.sell_price).toFixed(2) : "—";
-
-        const pnl    = pos.pnl;
-        const pnlStr = pnl != null ? `${pnl >= 0 ? "+" : ""}$${pnl.toFixed(2)}` : "—";
-        const pnlCls = pnl == null ? "" : pnl >= 0 ? "pos" : "neg";
-
-        const refPrice = pos.sell_price ?? pos.current_price;
-        const pnlPct = pos.buy_price && refPrice != null
-          ? (refPrice - pos.buy_price) / pos.buy_price * 100 : null;
-        const pnlPctStr = pnlPct != null ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(1)}%` : "—";
-        const pnlPctCls = pnlPct == null ? "" : pnlPct >= 0 ? "pos" : "neg";
-
-        return `<tr>
-          <td class="pos-symbol">${symLink(pos.symbol)}</td>
-          <td><span class="hist-badge ${isCall ? "badge-call" : "badge-bear"}">${isCall ? "CALL" : "PUT"}</span></td>
-          <td class="pos-option">${pos.option_symbol ?? "—"}</td>
-          <td class="pos-price">$${pos.strike != null ? Number(pos.strike).toFixed(2) : "—"}</td>
-          <td class="pos-time">${pos.expiry ?? "—"}</td>
-          <td class="pos-qty">${pos.qty}</td>
-          <td class="pos-price">$${pos.buy_price != null ? Number(pos.buy_price).toFixed(2) : "—"}</td>
-          <td class="pos-price">${current}</td>
-          <td class="pos-pnl ${pnlCls}">${pnlStr}</td>
-          <td class="pos-pnl ${pnlPctCls}">${pnlPctStr}</td>
-          <td><span class="pos-status ${isOpen ? "pos-open" : "pos-closed"}">${isOpen ? "OPEN" : "CLOSED"}</span></td>
-          <td class="pos-reason">${reasonLabel[pos.close_reason] ?? pos.close_reason ?? "—"}</td>
-          <td class="pos-time">${pos.entry_rsi != null ? Number(pos.entry_rsi).toFixed(1) : "—"}</td>
-          <td class="pos-time">${fmtTime(pos.buy_time)}</td>
-          <td class="pos-time">${pos.sell_time ? fmtTime(pos.sell_time) : "—"}</td>
-        </tr>`;
-      }).join("");
-    }
-
     function buildSidebar() {
       const sidebar = document.getElementById("sidebar");
       const toggle  = document.getElementById("sidebar-toggle");
@@ -1100,18 +928,15 @@
     async function setActiveDay(key) {
       _activeDay = key;
       if (key === "today") {
-        _callputData      = _liveData;
-        _callputPositions = _livePositions;
+        _callputData = _liveData;
       } else {
         if (!_dayCache[key]) {
           const day = await _ghFetch(CALLPUT_HISTORY_URL(key)).catch(() => null);
-          _dayCache[key] = day || { alerts: {}, positions: [] };
+          _dayCache[key] = day || { alerts: {} };
         }
-        _callputData      = _dayCache[key];
-        _callputPositions = _dayCache[key].positions ?? [];
+        _callputData = _dayCache[key];
       }
       renderTiles();
-      renderCallPutPositions();
       buildSidebar();
     }
 
@@ -1122,15 +947,13 @@
       statusEl.innerHTML = "Loading…";
       try {
         const prevLastUpdated = _liveData?.last_updated;
-        const [data, posData, manifest, earnOpts] = await Promise.all([
+        const [data, manifest, earnOpts] = await Promise.all([
           _ghFetch(CALLPUT_DATA_URL).catch(() => null),
-          _ghFetch(CALLPUT_POSITIONS_URL).catch(() => null),
           _ghFetch(CALLPUT_MANIFEST_URL).catch(() => []),
           _ghFetch(EARNINGS_OPTIONS_URL).catch(() => null),
         ]);
-        _liveData      = data;
-        _livePositions = posData?.positions ?? [];
-        _manifest      = Array.isArray(manifest) ? manifest : [];
+        _liveData = data;
+        _manifest = Array.isArray(manifest) ? manifest : [];
         renderEarningsOptions(earnOpts);
 
         document.getElementById("last-updated").textContent =
@@ -1149,10 +972,8 @@
 
         buildSidebar();
         if (_activeDay === "today") {
-          _callputData      = _liveData;
-          _callputPositions = _livePositions;
+          _callputData = _liveData;
           renderTiles();
-          renderCallPutPositions();
         }
         statusEl.innerHTML = "";
       } catch (err) {
