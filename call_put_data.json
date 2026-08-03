@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T19:45:10.941587+00:00",
+  "last_updated": "2026-08-03T19:45:22.836959+00:00",
   "today": {
     "date": "2026-08-03",
     "alerts": {
@@ -929,94 +929,6 @@
           "smarsi": 69.76285484219139,
           "symbol": "TSLA",
           "received_at": "2026-08-03T19:15:02.911241+00:00"
-        }
-      ],
-      "RACETEST1": [
-        {
-          "symbol": "RACETEST1",
-          "alert": 8,
-          "close": 100.0,
-          "received_at": "2026-08-03T19:42:04.985367+00:00"
-        }
-      ],
-      "RACETEST2": [
-        {
-          "symbol": "RACETEST2",
-          "alert": 8,
-          "close": 200.0,
-          "received_at": "2026-08-03T19:42:04.986477+00:00"
-        }
-      ],
-      "RACESTRESS4": [
-        {
-          "symbol": "RACESTRESS4",
-          "alert": 8,
-          "close": 104.0,
-          "received_at": "2026-08-03T19:42:43.262481+00:00"
-        }
-      ],
-      "RACESTRESS2": [
-        {
-          "symbol": "RACESTRESS2",
-          "alert": 8,
-          "close": 102.0,
-          "received_at": "2026-08-03T19:42:43.264292+00:00"
-        }
-      ],
-      "RACESTRESS5": [
-        {
-          "symbol": "RACESTRESS5",
-          "alert": 8,
-          "close": 105.0,
-          "received_at": "2026-08-03T19:42:43.266230+00:00"
-        }
-      ],
-      "RACESTRESS1": [
-        {
-          "symbol": "RACESTRESS1",
-          "alert": 8,
-          "close": 101.0,
-          "received_at": "2026-08-03T19:42:43.266855+00:00"
-        }
-      ],
-      "RACESTRESS6": [
-        {
-          "symbol": "RACESTRESS6",
-          "alert": 8,
-          "close": 106.0,
-          "received_at": "2026-08-03T19:43:58.434672+00:00"
-        }
-      ],
-      "RACESTRESS9": [
-        {
-          "symbol": "RACESTRESS9",
-          "alert": 8,
-          "close": 109.0,
-          "received_at": "2026-08-03T19:43:58.437893+00:00"
-        }
-      ],
-      "RACESTRESS7": [
-        {
-          "symbol": "RACESTRESS7",
-          "alert": 8,
-          "close": 107.0,
-          "received_at": "2026-08-03T19:43:58.440364+00:00"
-        }
-      ],
-      "RACESTRESS8": [
-        {
-          "symbol": "RACESTRESS8",
-          "alert": 8,
-          "close": 108.0,
-          "received_at": "2026-08-03T19:43:58.442221+00:00"
-        }
-      ],
-      "RACESTRESS10": [
-        {
-          "symbol": "RACESTRESS10",
-          "alert": 8,
-          "close": 110.0,
-          "received_at": "2026-08-03T19:43:58.443313+00:00"
         }
       ]
     }
