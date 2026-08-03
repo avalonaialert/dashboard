@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T09:30:38.219151+00:00",
+  "generated_at": "2026-08-03T09:45:24.917650+00:00",
   "symbols": [
     {
       "symbol": "AMD",
@@ -26,9 +26,9 @@
         "option_symbol": "AMD260805C00492500",
         "strike": 492.5,
         "mid": 16.2,
-        "delta": 0.4183,
-        "theta": -5.5827,
-        "iv": 1.6141
+        "delta": 0.4163,
+        "theta": -5.6183,
+        "iv": 1.6277
       },
       "put": {
         "option_symbol": "AMD260805P00410000",
