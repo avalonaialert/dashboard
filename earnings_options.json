@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T09:00:38.934009+00:00",
+  "generated_at": "2026-08-03T09:15:20.885354+00:00",
   "symbols": [
     {
       "symbol": "AMD",
@@ -26,9 +26,9 @@
         "option_symbol": "AMD260805C00492500",
         "strike": 492.5,
         "mid": 16.2,
-        "delta": 0.4386,
-        "theta": -5.232,
-        "iv": 1.4848
+        "delta": 0.4317,
+        "theta": -5.3494,
+        "iv": 1.5271
       },
       "put": {
         "option_symbol": "AMD260805P00410000",
@@ -102,17 +102,17 @@
         "option_symbol": "WDC260807C00632500",
         "strike": 632.5,
         "mid": 12.7,
-        "delta": 0.2394,
-        "theta": -3.8234,
-        "iv": 1.7122
+        "delta": null,
+        "theta": null,
+        "iv": null
       },
       "put": {
         "option_symbol": "WDC260807P00527500",
         "strike": 527.5,
         "mid": 29.84,
-        "delta": -0.3815,
-        "theta": -4.7717,
-        "iv": 1.7543
+        "delta": -0.3918,
+        "theta": -4.6372,
+        "iv": 1.7013
       }
     }
   ]
