@@ -1,4 +1,30 @@
 {
-  "date": "2026-08-02",
-  "positions": []
+  "date": "2026-08-03",
+  "positions": [
+    {
+      "symbol": "AMZN",
+      "side": "call",
+      "option_symbol": "AMZN261218C00290000",
+      "strike": 290.0,
+      "expiry": "2026-12-18",
+      "qty": 6,
+      "buy_price": 25.31,
+      "current_price": 25.31,
+      "entry_delta": 0.5475,
+      "entry_theta": -0.1046,
+      "entry_iv": 0.3583,
+      "current_delta": 0.5475,
+      "current_theta": -0.1046,
+      "current_iv": 0.3583,
+      "entry_rsi": 91.28995696591316,
+      "entry_smarsi": 80.488848728963,
+      "buy_time": "2026-08-03T13:45:07.863371+00:00",
+      "order_id": "f00eb434-b594-41ad-bf61-835f5f52a4b0",
+      "sell_price": null,
+      "sell_time": null,
+      "close_reason": null,
+      "pnl": null,
+      "status": "open"
+    }
+  ]
 }
