@@ -329,6 +329,14 @@
     .tile-call .tile-badge { background: #1a4a2e; color: #3fb950; }
     .tile-bear .tile-badge { background: #4a1a1a; color: #f85149; }
 
+    .tile-exit { background: #161b22; border-color: #30363d; }
+    .tile-exit .tile-symbol, .tile-exit .tile-close { color: #8b949e; }
+    .tile-exit .tile-badge { background: #21262d; color: #8b949e; }
+
+    .tile-profit { background: #1c1400; border-color: #b45309; }
+    .tile-profit .tile-symbol, .tile-profit .tile-close { color: #fbbf24; }
+    .tile-profit .tile-badge { background: #2d1600; color: #fbbf24; }
+
     .tile.recent {
       border-color: #3b82f6 !important;
       box-shadow: 0 0 0 2px #3b82f6, 0 0 24px 6px rgba(59,130,246,0.35);
@@ -504,7 +512,14 @@
         Show all
       </label>
 
-      <div class="section-title">📋 Today's Call/Put Signals</div>
+      <div class="section-title">⚡ 30 Sec Signals</div>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.8rem;color:#8b949e;cursor:pointer;white-space:nowrap;margin-bottom:16px;width:fit-content">
+        <input type="checkbox" id="thirtysec-show-exited-chk" style="cursor:pointer;accent-color:#58a6ff" />
+        Show exited
+      </label>
+      <div class="grid" id="grid-30sec"></div>
+
+      <div class="section-title">📋 15Mins Call/Put Signals</div>
       <div class="grid" id="grid"></div>
 
       <div class="section-title">🎯 Pivot-Based Earnings Plays</div>
@@ -584,6 +599,7 @@
 
     document.getElementById("show-all-chk").addEventListener("change", () => renderTiles());
     document.getElementById("earnopts-full-week-chk").addEventListener("change", () => renderEarningsOptions());
+    document.getElementById("thirtysec-show-exited-chk").addEventListener("change", () => renderThirtySecTiles(_thirtysecData));
 
     // ── Alert sound notification ─────────────────────────────────────────
     let _soundEnabled = localStorage.getItem("cp_sound") !== "off";
@@ -632,6 +648,7 @@
     const CALLPUT_MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/call_put_manifest.json`;
     const CALLPUT_HISTORY_URL   = d => `https://api.github.com/repos/${REPO}/contents/call_put_history/${d}.json`;
     const EARNINGS_OPTIONS_URL  = `https://api.github.com/repos/${REPO}/contents/earnings_options.json`;
+    const THIRTYSEC_DATA_URL    = `https://api.github.com/repos/${REPO}/contents/thirtysec_data.json`;
     const GH_READ_TOKEN = "__GH_READ_TOKEN__"; // injected by CI from GitHub Secret
     const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
@@ -843,6 +860,91 @@
       });
     }
 
+    // ── 30 Sec Signals: alert 6=Call, -6=Put, -9=Exit, 5/55/.../5555555=Profit 0-6.
+    // Payload only ever has {symbol, alert, close} — no RSI, so no recommendation strip.
+    const THIRTYSEC_PROFIT_CODES = [5, 55, 555, 5555, 55555, 555555, 5555555];
+
+    function meta30(code) {
+      code = Number(code);
+      if (code === 6)  return { label: "Call", cls: "tile-call", icon: "▲" };
+      if (code === -6) return { label: "Put",  cls: "tile-bear", icon: "▼" };
+      if (code === -9) return { label: "Exit", cls: "tile-exit", icon: "✕" };
+      const level = THIRTYSEC_PROFIT_CODES.indexOf(code);
+      return { label: `Profit ${level >= 0 ? level : "?"}`, cls: "tile-profit", icon: "$" };
+    }
+
+    function renderThirtySecTiles(data) {
+      if (data !== undefined) _thirtysecData = data;   // cache so the checkbox can re-render without refetching
+      const grid = document.getElementById("grid-30sec");
+      grid.innerHTML = "";
+
+      const alerts = _thirtysecData?.today?.alerts ?? {};
+      const symbols = Object.entries(alerts).filter(([, h]) => h && h.length);
+
+      if (!symbols.length) return;
+
+      for (const [, history] of symbols) {
+        history.sort((a, b) => new Date(b.received_at) - new Date(a.received_at));
+      }
+      symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
+
+      // Active = most recent alert isn't Exit (-9). Exited symbols are hidden by
+      // default; the "Show exited" checkbox reveals them.
+      const showExited = document.getElementById("thirtysec-show-exited-chk")?.checked;
+      const visibleSymbols = symbols.filter(([, h]) => showExited || Number(h[0].alert) !== -9);
+
+      visibleSymbols.forEach(([symbol, history]) => {
+        const latest = history[0];
+        const first  = history[history.length - 1];
+        const m      = meta30(latest.alert);
+        const age      = Date.now() - new Date(latest.received_at).getTime();
+        const isRecent = age <= 5 * 60 * 1000;
+        const isNew    = age <= 10 * 60 * 1000;
+
+        const tile = document.createElement("div");
+        tile.className = `tile ${m.cls}${isRecent ? " recent" : ""}`;
+        if (isNew) setTimeout(() => tile.classList.remove("recent"), 10 * 60 * 1000 - age);
+
+        const gain = fmtGain(first.close, latest.close);
+        const gainHtml = gain ? `<span class="tile-gain ${gain.positive ? "pos" : "neg"}">${gain.text}</span>` : "";
+
+        const sessionLabel = { pre: "🌙 Pre-Market", market: "☀️ Market Hours", after: "🌆 After-Hours" };
+        const histParts = [];
+        let lastSession = null;
+        history.forEach(h => {
+          const session = marketSession(h.received_at);
+          if (session !== lastSession) {
+            histParts.push(`<div class="history-session${session === "after" ? " after-hours" : ""}">${sessionLabel[session]}</div>`);
+            lastSession = session;
+          }
+          const hm = meta30(h.alert);
+          histParts.push(`<div class="history-row">
+            <span class="hist-badge ${hm.cls === "tile-call" ? "badge-call" : hm.cls === "tile-bear" ? "badge-bear" : ""}">${hm.icon} ${hm.label}</span>
+            <span class="hist-close">${fmtClose(h.close)}</span>
+            <span class="hist-time">${fmtTimeOnly(h.received_at)}</span>
+          </div>`);
+        });
+        const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histParts.join("")}</div>`;
+
+        tile.innerHTML = `
+          <div class="tile-header">
+            <div class="tile-top">
+              <div class="tile-symbol">${symLink(symbol)}</div>
+              <div class="tile-close-wrap">
+                <div class="tile-close-label">Close</div>
+                <div class="tile-close">${fmtClose(latest.close)}</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <span class="tile-badge">${m.icon} ${m.label}</span>
+              ${gainHtml}
+            </div>
+            <div class="tile-time-latest">${fmtTime(latest.received_at)}</div>
+          </div>${histSection}`;
+        grid.appendChild(tile);
+      });
+    }
+
     function todayDateStrEST() {
       return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
     }
@@ -857,6 +959,7 @@
     }
 
     let _earningsOptionsData = null;
+    let _thirtysecData = null;
 
     function renderEarningsOptions(data) {
       if (data !== undefined) _earningsOptionsData = data;   // cache so the checkbox can re-render without refetching
@@ -981,14 +1084,16 @@
       statusEl.innerHTML = "Loading…";
       try {
         const prevLastUpdated = _liveData?.last_updated;
-        const [data, manifest, earnOpts] = await Promise.all([
+        const [data, manifest, earnOpts, thirtysecData] = await Promise.all([
           _ghFetch(CALLPUT_DATA_URL).catch(() => null),
           _ghFetch(CALLPUT_MANIFEST_URL).catch(() => []),
           _ghFetch(EARNINGS_OPTIONS_URL).catch(() => null),
+          _ghFetch(THIRTYSEC_DATA_URL).catch(() => null),
         ]);
         _liveData = data;
         _manifest = Array.isArray(manifest) ? manifest : [];
         renderEarningsOptions(earnOpts);
+        renderThirtySecTiles(thirtysecData);
 
         document.getElementById("last-updated").textContent =
           _liveData?.last_updated ? "Updated " + fmtTime(_liveData.last_updated) : "";
