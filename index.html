@@ -290,6 +290,21 @@
       padding: 10px 0 6px;
     }
 
+    .history-session {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #58a6ff;
+      padding: 8px 0 4px;
+    }
+    .history-session::after { content: ""; flex: 1; height: 1px; background: rgba(88,166,255,0.25); }
+    .history-session.after-hours { color: #c084fc; }
+    .history-session.after-hours::after { background: rgba(192,132,252,0.25); }
+
     .history-row {
       display: flex;
       align-items: center;
@@ -637,6 +652,15 @@
       });
     }
 
+    // Matches call_put.py's MARKET_OPEN (9:30) / MARKET_CLOSE (16:00) window.
+    function marketSession(iso) {
+      const parts = new Date(iso).toLocaleTimeString("en-US", { timeZone: "America/New_York", hour12: false }).split(":");
+      const mins = Number(parts[0]) * 60 + Number(parts[1]);
+      if (mins < 9 * 60 + 30) return "pre";
+      if (mins < 16 * 60) return "market";
+      return "after";
+    }
+
     function symLink(sym) {
       return `<a href="https://finviz.com/quote?t=${sym}&p=d" target="_blank" rel="noopener" class="sym-link">${sym}</a>`;
     }
@@ -762,7 +786,16 @@
         const gain = fmtGain(first.close, latest.close);
         const gainHtml = gain ? `<span class="tile-gain ${gain.positive ? "pos" : "neg"}">${gain.text}</span>` : "";
 
-        const histRows = history.map((h, i) => {
+        const sessionLabel = { pre: "🌙 Pre-Market", market: "☀️ Market Hours", after: "🌆 After-Hours" };
+        const histParts = [];
+        let lastSession = null;
+        history.forEach((h, i) => {
+          const session = marketSession(h.received_at);
+          if (session !== lastSession) {
+            histParts.push(`<div class="history-session${session === "after" ? " after-hours" : ""}">${sessionLabel[session]}</div>`);
+            lastSession = session;
+          }
+
           const hm = meta(h.alert);
           const prevRsi = history[i + 1]?.rsi; // history is newest -> oldest, so i+1 is the prior alert
           let rsiHtml = "";
@@ -775,13 +808,14 @@
             }
             rsiHtml = `<span class="hist-rsi ${dirCls}">${h.rsi.toFixed(1)} ${arrow}</span>`;
           }
-          return `<div class="history-row">
+          histParts.push(`<div class="history-row">
             <span class="hist-badge ${hm.cls === "tile-call" ? "badge-call" : "badge-bear"}">${hm.icon} ${hm.label}</span>
             <span class="hist-close">${fmtClose(h.close)}</span>
             ${rsiHtml}
             <span class="hist-time">${fmtTimeOnly(h.received_at)}</span>
-          </div>`;
-        }).join("");
+          </div>`);
+        });
+        const histRows = histParts.join("");
         const histSection = `<div class="tile-history"><div class="history-label">History (${history.length})</div>${histRows}</div>`;
 
         const rec = callPutRec(history);
