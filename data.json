@@ -1,9 +1,7 @@
 {
   "last_updated": "2026-08-01T19:11:53.067682+00:00",
-  "today": {
-    "date": "2026-08-01",
-    "alerts": {
-      "AAPL": [
+
+    "alerts": [
         {
           "symbol": "AAPL",
           "alert": 6,
@@ -11,19 +9,4 @@
           "received_at": "2026-08-01T19:11:47.725652+00:00"
         }
       ]
-    },
-    "backtest": {
-      "AAPL": {
-        "option_symbol": "AAPL261218C00310000",
-        "strike": 310.0,
-        "expiry": "2026-12-18",
-        "entry_price": 22.71,
-        "entry_time": "2026-08-01T19:11:47.725652+00:00",
-        "current_price": 22.71,
-        "current_time": "2026-08-01T19:11:53.067541+00:00",
-        "highest_price": 22.71,
-        "highest_time": "2026-08-01T19:11:53.067567+00:00"
-      }
-    }
-  }
 }
