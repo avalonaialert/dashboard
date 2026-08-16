@@ -211,6 +211,7 @@
     }
     .badge-call { background: #1a4a2e; color: #3fb950; }
     .badge-bear { background: #4a1a1a; color: #f85149; }
+    .badge-neutral { background: #21262d; color: #8b949e; }
 
     .sym-link { color: inherit; text-decoration: none; }
     .sym-link:hover { text-decoration: underline; }
@@ -333,9 +334,6 @@
     .tile-exit .tile-symbol, .tile-exit .tile-close { color: #8b949e; }
     .tile-exit .tile-badge { background: #21262d; color: #8b949e; }
 
-    .tile-profit { background: #1c1400; border-color: #b45309; }
-    .tile-profit .tile-symbol, .tile-profit .tile-close { color: #fbbf24; }
-    .tile-profit .tile-badge { background: #2d1600; color: #fbbf24; }
 
     .tile.recent {
       border-color: #3b82f6 !important;
@@ -515,7 +513,7 @@
       </label>
       <div class="grid" id="grid-30sec"></div>
 
-      <div class="section-title">📋 15Mins Call/Put Signals</div>
+      <div class="section-title">📋 5 Mins Call/Put Signals</div>
       <label style="display:flex;align-items:center;gap:6px;font-size:0.8rem;color:#8b949e;cursor:pointer;white-space:nowrap;margin-bottom:16px;width:fit-content">
         <input type="checkbox" id="show-all-chk" style="cursor:pointer;accent-color:#58a6ff" />
         Show all
@@ -599,7 +597,7 @@
 
     document.getElementById("show-all-chk").addEventListener("change", () => renderTiles());
     document.getElementById("earnopts-full-week-chk").addEventListener("change", () => renderEarningsOptions());
-    document.getElementById("thirtysec-show-exited-chk").addEventListener("change", () => renderThirtySecTiles(_thirtysecData));
+    document.getElementById("thirtysec-show-exited-chk").addEventListener("change", () => renderThirtySecTiles());
 
     // ── Alert sound notification ─────────────────────────────────────────
     let _soundEnabled = localStorage.getItem("cp_sound") !== "off";
@@ -644,11 +642,12 @@
     }
 
     const REPO = "avalonaialert/dashboard";
-    const CALLPUT_DATA_URL      = `https://api.github.com/repos/${REPO}/contents/call_put_data.json`;
+    // Unified feed: flat {last_updated, alerts:[{symbol,alert,close,received_at},...]}
+    // covers BOTH the 5-min and 30-sec sections, split client-side by alert code.
+    const DATA_URL               = `https://api.github.com/repos/${REPO}/contents/data.json`;
     const CALLPUT_MANIFEST_URL  = `https://api.github.com/repos/${REPO}/contents/call_put_manifest.json`;
     const CALLPUT_HISTORY_URL   = d => `https://api.github.com/repos/${REPO}/contents/call_put_history/${d}.json`;
     const EARNINGS_OPTIONS_URL  = `https://api.github.com/repos/${REPO}/contents/earnings_options.json`;
-    const THIRTYSEC_DATA_URL    = `https://api.github.com/repos/${REPO}/contents/thirtysec_data.json`;
     const GH_READ_TOKEN = "__GH_READ_TOKEN__"; // injected by CI from GitHub Secret
     const FINNHUB_API_KEY = "d89995pr01qla01mkncgd89995pr01qla01mknd0";  // free key from finnhub.io
 
@@ -717,10 +716,74 @@
       return { text: `${sign}${pct.toFixed(2)}%`, positive: pct >= 0 };
     }
 
-    function meta(alertCode) {
-      return Number(alertCode) === 8
-        ? { label: "Call", cls: "tile-call", icon: "▲" }
-        : { label: "Put",  cls: "tile-bear", icon: "▼" };
+    // data.json is a flat list of {symbol, alert, close, received_at} — group by symbol.
+    // Archived history days (call_put_history/*.json) are still the older
+    // {alerts: {symbol: [...]}} shape, so accept either.
+    function normalizeAlerts(raw) {
+      if (Array.isArray(raw)) {
+        const bySymbol = {};
+        for (const a of raw) {
+          if (!a?.symbol) continue;
+          (bySymbol[a.symbol] ??= []).push(a);
+        }
+        return bySymbol;
+      }
+      return raw || {};
+    }
+
+    // 30-sec signals live in the same feed as 5-min ones, distinguished only by code.
+    const THIRTYSEC_CODES = new Set([6767, -6767, 7676, -7676]);
+    const PROFIT_CODES     = [5, 55, 555, 5555, 55555, 555555, 5555555];
+
+    function splitTimeframes(bySymbol) {
+      const fivemin = {}, thirtysec = {};
+      for (const [sym, recs] of Object.entries(bySymbol)) {
+        const fm = recs.filter(r => !THIRTYSEC_CODES.has(Number(r.alert)));
+        const ts = recs.filter(r => THIRTYSEC_CODES.has(Number(r.alert)));
+        if (fm.length) fivemin[sym] = fm;
+        if (ts.length) thirtysec[sym] = ts;
+      }
+      return { fivemin, thirtysec };
+    }
+
+    // Unified alert-code -> {label, cls, icon}. General rule: positive code = call
+    // side (green), negative = put side (red) — with a few explicit exceptions below.
+    function metaCode(code) {
+      code = Number(code);
+      const positive = code > 0;
+      const abs = Math.abs(code);
+
+      if (abs === 6767) {
+        // Inverted on purpose: 6767 (positive) closes a PUT, -6767 closes a CALL.
+        return code === 6767
+          ? { label: "Put Early Exit",  cls: "tile-bear", icon: "⏱" }
+          : { label: "Call Early Exit", cls: "tile-call", icon: "⏱" };
+      }
+      if (abs === 7676) {
+        return { label: "Changing", cls: "tile-exit", icon: "↺" };
+      }
+      if (abs === 666) {
+        return code === 666
+          ? { label: "Gaining",    cls: "tile-call", icon: "📈" }
+          : { label: "Decreasing", cls: "tile-bear", icon: "📉" };
+      }
+      if (abs === 6) {
+        return positive ? { label: "Call", cls: "tile-call", icon: "▲" } : { label: "Put", cls: "tile-bear", icon: "▼" };
+      }
+      if (abs === 67) {
+        return { label: "Dump", cls: positive ? "tile-call" : "tile-bear", icon: "⚠" };
+      }
+      if (abs === 9) {
+        return { label: "Exit", cls: positive ? "tile-call" : "tile-bear", icon: "✕" };
+      }
+      const profitLevel = PROFIT_CODES.indexOf(abs);
+      if (profitLevel >= 0) {
+        return { label: `Profit ${profitLevel}`, cls: positive ? "tile-call" : "tile-bear", icon: "$" };
+      }
+      // Unmapped code — fall back to the general positive/negative rule.
+      return positive
+        ? { label: `Call (${code})`, cls: "tile-call", icon: "▲" }
+        : { label: `Put (${code})`,  cls: "tile-bear", icon: "▼" };
     }
 
     // Thresholds mirroring call_put.py's .env defaults.
@@ -731,7 +794,7 @@
     function callPutRec(history) {
       const latest = history[0];
       const prev   = history[1];
-      const side   = Number(latest.alert) === 8 ? "call" : "put";
+      const side   = Number(latest.alert) > 0 ? "call" : "put";
       const rsi    = latest.rsi;
       const prevRsi = prev?.rsi;
 
@@ -758,8 +821,9 @@
       const grid     = document.getElementById("grid");
       grid.innerHTML = "";
 
-      const alerts = _callputData?.today?.alerts ?? _callputData?.alerts ?? {};
-      const symbols = Object.entries(alerts).filter(([, h]) => h && h.length);
+      const bySymbol = normalizeAlerts(_callputData?.alerts ?? _callputData?.today?.alerts);
+      const { fivemin } = splitTimeframes(bySymbol);
+      const symbols = Object.entries(fivemin).filter(([, h]) => h && h.length);
 
       if (!symbols.length) {
         statusEl.textContent = "No signals for this day.";
@@ -791,7 +855,7 @@
       visibleSymbols.forEach(([symbol, history]) => {
         const latest = history[0];
         const first  = history[history.length - 1];
-        const m      = meta(latest.alert);
+        const m      = metaCode(latest.alert);
         const age      = Date.now() - new Date(latest.received_at).getTime();
         const isRecent = age <= 5 * 60 * 1000;
         const isNew    = age <= 10 * 60 * 1000;
@@ -813,7 +877,7 @@
             lastSession = session;
           }
 
-          const hm = meta(h.alert);
+          const hm = metaCode(h.alert);
           const prevRsi = history[i + 1]?.rsi; // history is newest -> oldest, so i+1 is the prior alert
           let rsiHtml = "";
           if (h.rsi != null) {
@@ -825,8 +889,9 @@
             }
             rsiHtml = `<span class="hist-rsi ${dirCls}">${h.rsi.toFixed(1)} ${arrow}</span>`;
           }
+          const hmBadgeCls = hm.cls === "tile-call" ? "badge-call" : hm.cls === "tile-bear" ? "badge-bear" : "badge-neutral";
           histParts.push(`<div class="history-row">
-            <span class="hist-badge ${hm.cls === "tile-call" ? "badge-call" : "badge-bear"}">${hm.icon} ${hm.label}</span>
+            <span class="hist-badge ${hmBadgeCls}">${hm.icon} ${hm.label}</span>
             <span class="hist-close">${fmtClose(h.close)}</span>
             ${rsiHtml}
             <span class="hist-time">${fmtTimeOnly(h.received_at)}</span>
@@ -860,26 +925,17 @@
       });
     }
 
-    // ── 30 Sec Signals: alert 6=Call, -6=Put, -9=Exit, 5/55/.../5555555=Profit 0-6.
+    // ── 30 Sec Signals: alert 6767 (Put Early Exit), -6767 (Call Early Exit), 7676
+    // (Changing). Sourced from the SAME data.json feed as the 5-min section, split
+    // by code — see THIRTYSEC_CODES / splitTimeframes() / metaCode() above.
     // Payload only ever has {symbol, alert, close} — no RSI, so no recommendation strip.
-    const THIRTYSEC_PROFIT_CODES = [5, 55, 555, 5555, 55555, 555555, 5555555];
-
-    function meta30(code) {
-      code = Number(code);
-      if (code === 6)  return { label: "Call", cls: "tile-call", icon: "▲" };
-      if (code === -6) return { label: "Put",  cls: "tile-bear", icon: "▼" };
-      if (code === -9) return { label: "Exit", cls: "tile-exit", icon: "✕" };
-      const level = THIRTYSEC_PROFIT_CODES.indexOf(code);
-      return { label: `Profit ${level >= 0 ? level : "?"}`, cls: "tile-profit", icon: "$" };
-    }
-
-    function renderThirtySecTiles(data) {
-      if (data !== undefined) _thirtysecData = data;   // cache so the checkbox can re-render without refetching
+    function renderThirtySecTiles() {
       const grid = document.getElementById("grid-30sec");
       grid.innerHTML = "";
 
-      const alerts = _thirtysecData?.today?.alerts ?? {};
-      const symbols = Object.entries(alerts).filter(([, h]) => h && h.length);
+      const bySymbol = normalizeAlerts(_liveData?.alerts);
+      const { thirtysec } = splitTimeframes(bySymbol);
+      const symbols = Object.entries(thirtysec).filter(([, h]) => h && h.length);
 
       if (!symbols.length) return;
 
@@ -888,15 +944,15 @@
       }
       symbols.sort((a, b) => new Date(b[1][0].received_at) - new Date(a[1][0].received_at));
 
-      // Active = most recent alert isn't Exit (-9). Exited symbols are hidden by
-      // default; the "Show exited" checkbox reveals them.
+      // Active = most recent signal isn't an early-exit (6767/-6767). Exited symbols
+      // are hidden by default; the "Show exited" checkbox reveals them.
       const showExited = document.getElementById("thirtysec-show-exited-chk")?.checked;
-      const visibleSymbols = symbols.filter(([, h]) => showExited || Number(h[0].alert) !== -9);
+      const visibleSymbols = symbols.filter(([, h]) => showExited || Math.abs(Number(h[0].alert)) !== 6767);
 
       visibleSymbols.forEach(([symbol, history]) => {
         const latest = history[0];
         const first  = history[history.length - 1];
-        const m      = meta30(latest.alert);
+        const m      = metaCode(latest.alert);
         const age      = Date.now() - new Date(latest.received_at).getTime();
         const isRecent = age <= 5 * 60 * 1000;
         const isNew    = age <= 10 * 60 * 1000;
@@ -917,9 +973,10 @@
             histParts.push(`<div class="history-session${session === "after" ? " after-hours" : ""}">${sessionLabel[session]}</div>`);
             lastSession = session;
           }
-          const hm = meta30(h.alert);
+          const hm = metaCode(h.alert);
+          const hmBadgeCls = hm.cls === "tile-call" ? "badge-call" : hm.cls === "tile-bear" ? "badge-bear" : "badge-neutral";
           histParts.push(`<div class="history-row">
-            <span class="hist-badge ${hm.cls === "tile-call" ? "badge-call" : hm.cls === "tile-bear" ? "badge-bear" : ""}">${hm.icon} ${hm.label}</span>
+            <span class="hist-badge ${hmBadgeCls}">${hm.icon} ${hm.label}</span>
             <span class="hist-close">${fmtClose(h.close)}</span>
             <span class="hist-time">${fmtTimeOnly(h.received_at)}</span>
           </div>`);
@@ -959,7 +1016,6 @@
     }
 
     let _earningsOptionsData = null;
-    let _thirtysecData = null;
 
     function renderEarningsOptions(data) {
       if (data !== undefined) _earningsOptionsData = data;   // cache so the checkbox can re-render without refetching
@@ -1084,16 +1140,15 @@
       statusEl.innerHTML = "Loading…";
       try {
         const prevLastUpdated = _liveData?.last_updated;
-        const [data, manifest, earnOpts, thirtysecData] = await Promise.all([
-          _ghFetch(CALLPUT_DATA_URL).catch(() => null),
+        const [data, manifest, earnOpts] = await Promise.all([
+          _ghFetch(DATA_URL).catch(() => null),
           _ghFetch(CALLPUT_MANIFEST_URL).catch(() => []),
           _ghFetch(EARNINGS_OPTIONS_URL).catch(() => null),
-          _ghFetch(THIRTYSEC_DATA_URL).catch(() => null),
         ]);
         _liveData = data;
         _manifest = Array.isArray(manifest) ? manifest : [];
         renderEarningsOptions(earnOpts);
-        renderThirtySecTiles(thirtysecData);
+        renderThirtySecTiles();
 
         document.getElementById("last-updated").textContent =
           _liveData?.last_updated ? "Updated " + fmtTime(_liveData.last_updated) : "";
@@ -1101,8 +1156,8 @@
         // Sound: only for genuinely new alerts on a refresh tick, never on first page load
         if (_hasLoadedOnce && _liveData?.last_updated && _liveData.last_updated !== prevLastUpdated) {
           const now = Date.now();
-          const alerts = _liveData?.today?.alerts ?? {};
-          const hasFreshAlert = Object.values(alerts).some(records =>
+          const bySymbol = normalizeAlerts(_liveData?.alerts);
+          const hasFreshAlert = Object.values(bySymbol).some(records =>
             records.some(r => now - new Date(r.received_at).getTime() < 3 * 60 * 1000)
           );
           if (hasFreshAlert) playAlertTone();
